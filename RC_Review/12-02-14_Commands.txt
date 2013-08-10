@@ -1,0 +1,26 @@
+cpf keys/root/fitOrix100Nom//pdfKeys_* keys/root/fitOrix100/
+PlotFit FitAll/fits/TextFinalDataSi2x050.txt sig All candM2 26 1.5 10 histoIsox050
+cpf keys/eps/FinalFit/sigcandM2_histoIsox050.eps public_html/
+
+PlotFit FitAll/fits/TextFinalDataSi2x100.txt sig All candM2 26 1.5 10 histoIsox100
+cpf keys/eps/FinalFit/sigcandM2_histoIsox100.eps public_html/
+
+PlotFit FitAll/fits/TextFinalDataSi2x200.txt sig All candM2 26 1.5 10 histoIsox200
+cpf keys/eps/FinalFit/sigcandM2_histoIsox200.eps public_html/
+
+PlotFit FitAll/fits/TextFinalDataSi2x050.txt sig All candM2 26 1.5 10 histox050
+cpf keys/eps/FinalFit/sigcandM2_histox050.eps public_html/
+
+PlotFit FitAll/fits/TextFinalDataSi2x100.txt sig All candM2 26 1.5 10 histox100
+cpf keys/eps/FinalFit/sigcandM2_histox100.eps public_html/
+
+PlotFit FitAll/fits/TextFinalDataSi2x200.txt sig All candM2 26 1.5 10 histox200
+cpf keys/eps/FinalFit/sigcandM2_histox200.eps public_html/
+
+
+cpf keys/root/fitSigx100Test/pdfKeys_* keys/root/fitOrix100/
+PlotFit FitAll/fits/TextRCFinalDataSi2x100.txt sig All candM2 26 1.5 10 histoIsox100RC
+cpf keys/eps/FinalFit/sigcandM2_histoIsox100RC.eps public_html/
+
+
+

@@ -1,0 +1,73 @@
+###############################################################################
+# This is a DECAY.DEC file for B+/B-  -> D npi l nu :
+#						                              #
+#   Up(4S) -> B+/B-  myB-/myB+                            +CC                 #
+#             |      |                                                        #
+#             |       -> D npi l nu (l = e or mu)                             # 
+#             |                                                               #
+#              -> X                                                           #
+# Modified .dec file from the $BFROOT/prod/ProdDecayFiles		      #	
+# F.Bernlochner, H.Ahmed and R. Kowalewski__UVic			      #	
+#                                                                             #
+#                                                                             #
+# Mail: hossain@uvic.ca
+###############################################################################
+Alias myB+  B+
+Alias myB-  B-
+ChargeConj myB+ myB-
+#
+yesPhotos
+#
+
+Decay Upsilon(4S)
+0.500 B+  myB-                     VSS;
+0.500 B-  myB+                     VSS;
+Enddecay
+#
+Decay myB-
+#
+0.0804   D0 pi- pi+   e-   anti-nu_e         PHSP;
+0.0536   D0 pi0 pi0   e-   anti-nu_e         PHSP;
+0.0536   D+ pi- pi0   e-   anti-nu_e         PHSP;
+0.0804   D0 pi- pi+   mu-   anti-nu_mu       PHSP;
+0.0536   D0 pi0 pi0   mu-   anti-nu_mu       PHSP;
+0.0536   D+ pi- pi0   mu-   anti-nu_mu       PHSP;
+#
+0.0804   D*0 pi- pi+  e-   anti-nu_e         PHSP;
+0.0536   D*0 pi0 pi0  e-   anti-nu_e         PHSP;
+0.0536   D*+ pi- pi0  e-   anti-nu_e         PHSP;
+0.0804   D*0 pi- pi+  mu-   anti-nu_mu       PHSP;
+0.0536   D*0 pi0 pi0  mu-   anti-nu_mu       PHSP;
+0.0536   D*+ pi- pi0  mu-   anti-nu_mu       PHSP;
+#
+0.0625   D0 eta       e- anti-nu_e           PHSP; 
+0.0625   D0 eta       mu- anti-nu_mu         PHSP; 
+#
+0.0625   D*0 eta      e- anti-nu_e           PHSP; 
+0.0625   D*0 eta      mu- anti-nu_mu         PHSP; 
+Enddecay
+#
+Decay myB+
+#
+0.0804   anti-D0 pi- pi+   e+   nu_e         PHSP;
+0.0536   anti-D0 pi0 pi0   e+   nu_e         PHSP;
+0.0536   D- pi+ pi0        e+   nu_e         PHSP;
+0.0804   anti-D0 pi- pi+   mu+   nu_mu       PHSP;
+0.0536   anti-D0 pi0 pi0   mu+   nu_mu       PHSP;
+0.0536   D- pi+ pi0        mu+   nu_mu       PHSP;
+#
+0.0804   anti-D*0 pi- pi+  e+   nu_e         PHSP;
+0.0536   anti-D*0 pi0 pi0  e+   nu_e         PHSP;
+0.0536   D*- pi+ pi0       e+   nu_e         PHSP;
+0.0804   anti-D*0 pi- pi+  mu+   nu_mu       PHSP;
+0.0536   anti-D*0 pi0 pi0  mu+   nu_mu       PHSP;
+0.0536   D*- pi+ pi0       mu+   nu_mu       PHSP;
+#
+0.0625   anti-D0 eta       e+ nu_e           PHSP; 
+0.0625   anti-D0 eta       mu+ nu_mu         PHSP; 
+#
+0.0625   anti-D*0 eta      e+ nu_e           PHSP; 
+0.0625   anti-D*0 eta      mu+ nu_mu         PHSP; 
+Enddecay
+#
+End

@@ -1,0 +1,92 @@
+###############################################################################
+# This is a DECAY.DEC file for B+/B-  -> Xc(Yc) l nu :
+#						                              #
+#   Up(4S) -> B+/B-  myB-/myB+                            +CC                 #
+#             |      |                                                        #
+#             |       -> myD*(2550)0(Yc0)/anti-myD*(2550)0(Yc0) l-/l+ anti-nu_bar/nu_l        #
+#	      |		 (l = e or mu)  				      # 
+#             |                                                               #
+#              -> X                                                           #
+# Modified .dec file from the $BFROOT/prod/ProdDecayFiles		      #	
+# F.Bernlochner, H.Ahmed and R. Kowalewski__UVic		              #	
+#                                                                             #
+#                                                                             #
+# Mail: hossain@uvic.ca
+###############################################################################
+Alias myB+  B+
+Alias myB-  B-
+
+Alias myD*(2550)0 D*(2550)0
+Alias myanti-D*(2550)0 anti-D*(2550)0
+Alias myD*(2600)0 D*(2600)0
+Alias myanti-D*(2600)0 anti-D*(2600)0
+
+ChargeConj myB+ myB-
+#
+yesPhotos
+#
+
+Decay Upsilon(4S)
+0.500 B+  myB-                     VSS;
+0.500 B-  myB+                     VSS;
+Enddecay
+#
+# R1 and R2 parameter values are taken from HFAG (End Of Year 2009 averages.)
+#
+Decay myB-
+0.25   myD*(2550)0   e-   anti-nu_e          PHOTOS   HQET 0.0;
+0.25   myD*(2550)0   mu-   anti-nu_mu        PHOTOS   HQET 0.0;
+0.25   myD*(2600)0   e-   anti-nu_e          PHOTOS   HQET 0.0 1.41 0.84;
+0.25   myD*(2600)0   mu-   anti-nu_mu        PHOTOS   HQET 0.0 1.41 0.84;
+Enddecay
+#
+Decay myB+
+0.25   myanti-D*(2550)0   e+   nu_e          PHOTOS   HQET 0.0;
+0.25   myanti-D*(2550)0   mu+  nu_mu         PHOTOS   HQET 0.0;
+0.25   myanti-D*(2600)0   e+   nu_e          PHOTOS   HQET 0.0 1.41 0.84;
+0.25   myanti-D*(2600)0   mu+  nu_mu         PHOTOS   HQET 0.0 1.41 0.84;
+Enddecay
+#
+Decay myD*(2550)0
+0.214  D0 pi+ pi-   PHSP;
+0.143  D0 pi0 pi0   PHSP;
+0.143  D+ pi0 pi-   PHSP;
+0.222  D*+ pi-      PHSP;
+0.111  D*0 pi0      PHSP;
+0.1667 D*0 eta      PHSP;
+Enddecay
+#
+Decay myD*(2600)0 
+0.214  D*0 pi+ pi-   PHSP;
+0.143  D*0 pi0 pi0   PHSP;
+0.143  D*+ pi0 pi-   PHSP;
+0.111  D+ pi-        PHSP;
+0.056  D0 pi0        PHSP;
+0.111  D*+ pi-       PHSP;
+0.056  D*0 pi0       PHSP;
+0.083  D0 eta        PHSP;
+0.083  D*0 eta       PHSP;
+Enddecay
+#
+Decay anti-D*(2550)0
+0.214  anti-D0 pi+ pi-   PHSP;
+0.143  anti-D0 pi0 pi0   PHSP;
+0.143  D- pi0 pi+        PHSP;
+0.222  D*- pi+           PHSP;
+0.111  anti-D*0 pi0      PHSP;
+0.1667 anti-D*0 eta      PHSP;
+Enddecay
+#
+Decay anti-D*(2600)0
+0.214  anti-D*0 pi+ pi-   PHSP;
+0.143  anti-D*0 pi0 pi0   PHSP;
+0.143  D*- pi0 pi+        PHSP;
+0.111  D- pi+             PHSP;
+0.056  anti-D0 pi0        PHSP;
+0.111  D*- pi+            PHSP;
+0.056  anti-D*0 pi0       PHSP;
+0.083  anti-D0  eta       PHSP;
+0.083  anti-D*0 eta       PHSP;
+Enddecay
+#
+End

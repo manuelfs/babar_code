@@ -1,0 +1,58 @@
+[yakut03] ~/releases/Ntuple52/workdir $ PlotFit FitAll/fits/TextFinalDataSi2x050.txt sig All candM2 25 1.504 4 histoIso3
+Warning in <TClassTable::Add>: class THtml::TFileSysRoot already in TClassTable
+Data: 441, Fit: 412	  -  Ratio: 1.07035 +- 0.05097	 That's 1.38 sigma away
+Data: 192, Fit: 189	  -  Ratio: 1.01777 +- 0.07345	 That's 0.24 sigma away
+Data: 685, Fit: 619	  -  Ratio: 1.10713 +- 0.04230	 That's 2.53 sigma away
+Data: 271, Fit: 272	  -  Ratio: 0.99473 +- 0.06043	 That's -0.09 sigma away
+Info in <TCanvas::Print>: eps file keys/eps/FinalFit/sigcandM2_histoIso3.eps has been created
+[yakut03] ~/releases/Ntuple52/workdir $ PlotFit FitAll/fits/TextFinalDataSi2x050.txt sig All candM2 25 5.008 10 histoIso3
+Warning in <TClassTable::Add>: class THtml::TFileSysRoot already in TClassTable
+Data: 186, Fit: 223	  -  Ratio: 0.83424 +- 0.06117	 That's -2.71 sigma away
+Data: 94, Fit: 99	  -  Ratio: 0.94636 +- 0.09761	 That's -0.55 sigma away
+Data: 291, Fit: 367	  -  Ratio: 0.79349 +- 0.04652	 That's -4.44 sigma away
+Data: 123, Fit: 126	  -  Ratio: 0.97592 +- 0.08800	 That's -0.27 sigma away
+Info in <TCanvas::Print>: eps file keys/eps/FinalFit/sigcandM2_histoIso3.eps has been created
+
+[yakut03] ~/releases/Ntuple52/workdir $ PlotFit FitAll/fits/TextFinalDataSi2x100.txt sig All candM2 25 1.504 4 histoIso
+Warning in <TClassTable::Add>: class THtml::TFileSysRoot already in TClassTable
+Data: 843, Fit: 811	  -  Ratio: 1.04007 +- 0.03582	 That's 1.12 sigma away
+Data: 367, Fit: 364	  -  Ratio: 1.00834 +- 0.05264	 That's 0.16 sigma away
+Data: 1204, Fit: 1145	  -  Ratio: 1.05147 +- 0.03030	 That's 1.70 sigma away
+Data: 520, Fit: 522	  -  Ratio: 0.99705 +- 0.04372	 That's -0.07 sigma away
+Info in <TCanvas::Print>: eps file keys/eps/FinalFit/sigcandM2_histoIso.eps has been created
+[yakut03] ~/releases/Ntuple52/workdir $ PlotFit FitAll/fits/TextFinalDataSi2x100.txt sig All candM2 25 5.008 10 histoIso
+Warning in <TClassTable::Add>: class THtml::TFileSysRoot already in TClassTable
+Data: 435, Fit: 472	  -  Ratio: 0.92174 +- 0.04419	 That's -1.77 sigma away
+Data: 211, Fit: 220	  -  Ratio: 0.95761 +- 0.06592	 That's -0.64 sigma away
+Data: 665, Fit: 726	  -  Ratio: 0.91549 +- 0.03550	 That's -2.38 sigma away
+Data: 275, Fit: 278	  -  Ratio: 0.98974 +- 0.05968	 That's -0.17 sigma away
+Info in <TCanvas::Print>: eps file keys/eps/FinalFit/sigcandM2_histoIso.eps has been created
+
+[yakut03] ~/releases/Ntuple52/workdir $ PlotFit FitAll/fits/TextFinalDataSi2x200.txt sig All candM2 25 1.504 4 histoIso
+Warning in <TClassTable::Add>: class THtml::TFileSysRoot already in TClassTable
+Data: 1563, Fit: 1524	  -  Ratio: 1.02527 +- 0.02593	 That's 0.97 sigma away
+Data: 681, Fit: 684	  -  Ratio: 0.99580 +- 0.03816	 That's -0.11 sigma away
+Data: 2219, Fit: 2139	  -  Ratio: 1.03717 +- 0.02202	 That's 1.69 sigma away
+Data: 960, Fit: 958	  -  Ratio: 1.00162 +- 0.03233	 That's 0.05 sigma away
+[yakut03] ~/releases/Ntuple52/workdir $ PlotFit FitAll/fits/TextFinalDataSi2x200.txt sig All candM2 25 5.008 10 histoIso
+Warning in <TClassTable::Add>: class THtml::TFileSysRoot already in TClassTable
+Data: 993, Fit: 1021	  -  Ratio: 0.97233 +- 0.03086	 That's -0.90 sigma away
+Data: 471, Fit: 497	  -  Ratio: 0.94800 +- 0.04368	 That's -1.19 sigma away
+Data: 1490, Fit: 1570	  -  Ratio: 0.94887 +- 0.02458	 That's -2.08 sigma away
+Data: 631, Fit: 637	  -  Ratio: 0.99011 +- 0.03942	 That's -0.25 sigma away
+
+
+[yakut03] ~/releases/Ntuple52/workdir $ PlotFit FitAll/fits/TextFinalDataSi2x300.txt sig All candM2 25 1.504 4 histoIso
+Warning in <TClassTable::Add>: class THtml::TFileSysRoot already in TClassTable
+Data: 1892, Fit: 1849	  -  Ratio: 1.02333 +- 0.02353	 That's 0.99 sigma away
+Data: 970, Fit: 972	  -  Ratio: 0.99843 +- 0.03206	 That's -0.05 sigma away
+Data: 2818, Fit: 2703	  -  Ratio: 1.04245 +- 0.01964	 That's 2.16 sigma away
+Data: 1352, Fit: 1337	  -  Ratio: 1.01102 +- 0.02750	 That's 0.40 sigma away
+Info in <TCanvas::Print>: eps file keys/eps/FinalFit/sigcandM2_histoIso.eps has been created
+[yakut03] ~/releases/Ntuple52/workdir $ PlotFit FitAll/fits/TextFinalDataSi2x300.txt sig All candM2 25 5.008 10 histoIso
+Warning in <TClassTable::Add>: class THtml::TFileSysRoot already in TClassTable
+Data: 1422, Fit: 1456	  -  Ratio: 0.97647 +- 0.02589	 That's -0.91 sigma away
+Data: 741, Fit: 819	  -  Ratio: 0.90474 +- 0.03324	 That's -2.87 sigma away
+Data: 2251, Fit: 2371	  -  Ratio: 0.94948 +- 0.02001	 That's -2.52 sigma away
+Data: 1014, Fit: 1077	  -  Ratio: 0.94136 +- 0.02956	 That's -1.98 sigma away
+Info in <TCanvas::Print>: eps file keys/eps/FinalFit/sigcandM2_histoIso.eps has been created

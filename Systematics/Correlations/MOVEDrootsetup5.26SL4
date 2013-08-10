@@ -1,0 +1,16 @@
+setenv ROOTVER 5.26-00
+
+setenv MYARCH Linux26SL4_i386_gcc346
+             
+setenv ROOTSYS $BFROOT/package/root/$ROOTVER/$MYARCH
+
+setenv LD_LIBRARY_PATH ${ROOTSYS}/lib:${LD_LIBRARY_PATH}
+
+setenv PATH ${PATH}:${ROOTSYS}/bin
+
+setenv PATH ${PATH}:${ROOTSYS}/bin/rootcint
+
+setenv PATH ${PATH}:${ROOTSYS}/bin/root-config
+
+
+

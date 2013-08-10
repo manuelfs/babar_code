@@ -1,0 +1,2 @@
+variWeights = babar_code/WeightsVari/Weights_
+PlWeightsD  = babar_code/Reweight/wContiPl

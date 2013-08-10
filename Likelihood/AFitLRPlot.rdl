@@ -1,0 +1,59 @@
+/*****************************************************************************
+ * Project: BaBar detector at the SLAC PEP-II B-factory
+ * Package: AFit
+ * Author: A Bevan (a.j.bevan@qmul.ac.uk)
+ *
+ * Copyright (C) 2007 QMUL
+ *****************************************************************************/
+#ifndef AFITLRPLOT
+#define AFITLRPLOT
+
+#include "TNamed.h"
+#include "TObject.h"
+
+#include "AFit/GlobalInfo.hh"
+
+#ifdef __BABARROOFIT__
+#include "RooFitCore/RooDataSet.hh"
+#include "RooFitCore/RooFormulaVar.hh"
+#else
+#include "RooDataSet.h"
+#include "RooFormulaVar.h"
+#endif
+
+class RooAbsPdf;
+class RooArgSet;
+class RooPlot;
+
+class AFitLRPlot : public TObject {
+public:
+  AFitLRPlot();
+  ~AFitLRPlot();
+
+  RooPlot * makePlot(RooAbsPdf * theSignalPDF, RooAbsPdf * theBgPDF, RooArgSet *genVars, RooDataSet * theRefData,
+	Double_t nSig, Double_t nBG);
+
+  void setOutputFile(TString filename) { _outputFile = filename; }
+  void setNToGen(Int_t n) { _nToGen = n; }
+
+private:
+  RooAbsPdf * _sigPDF;
+  RooAbsPdf * _bgPDF;
+
+  RooFormulaVar * _sigLike;
+  RooFormulaVar * _bgLike;
+  RooFormulaVar * _SovBLike;
+
+  RooDataSet * _sGen;
+  RooDataSet * _bgGen;
+  RooDataSet * _theData;
+
+  TString _dataCut;
+  TString _outputFile;
+
+  Int_t _nToGen;
+
+  ClassDef(AFitLRPlot,1) // Likelihood Ratio plot class
+};
+
+#endif

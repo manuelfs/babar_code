@@ -1,0 +1,56 @@
+\begin{tabular}{|l||cc|c|cc|c|}
+\hline
+$\mathbf{D^{*0}}$ & Add_Truth30_Run6_e & Base_e & R_e & Add_Truth30_Run6_{\mu} & Base_{\mu} & R_{\mu} \\
+\hline \hline
+D^{**} \to \text{D}^{*0}\pi^{0} & 49 & 0 &  -  & 42 & 125638312 & 0.00 \\
+D^{**} \to \text{D}^{0}\pi^{0} & 7 & 0 &  -  & 8 & 173606696 & 0.00 \\
+Other D^{**} & 17 & 736 & 0.02 & 7 & 184 & 0.04 \\
+D^{*0} \,l \,\nu & 53 & 170406784 & 0.00 & 34 & 0 &  -  \\
+D^{0} \,l \,\nu & 4 & -1 & -3.99 & 5 & 184 & 0.03 \\
+Crossfeed & 5 & 170406784 & 0.00 & 8 & 0 &  -  \\
+Comb. & 69 & -1 & -68.99 & 184 & 173606736 & 0.00 \\
+\hline \end{tabular}
+\,\,
+
+\begin{tabular}{|l||cc|c|cc|c|}
+\hline
+$\mathbf{D^{0}}$ & Add_Truth30_Run6_e & Base_e & R_e & Add_Truth30_Run6_{\mu} & Base_{\mu} & R_{\mu} \\
+\hline \hline
+D^{**} \to \text{D}^{0}\pi^{0} & 57 & 0 &  -  & 40 & 125638312 & 0.00 \\
+D^{**} \to \text{D}^{*0}\pi^{0} & 41 & 0 &  -  & 26 & 173606696 & 0.00 \\
+Other D^{**} & 29 & 736 & 0.04 & 16 & 184 & 0.09 \\
+D^{*0} \,l \,\nu & 42 & 170406784 & 0.00 & 58 & 0 &  -  \\
+D^{0} \,l \,\nu & 27 & -1 & -26.99 & 25 & 184 & 0.14 \\
+Crossfeed & 12 & 170406784 & 0.00 & 11 & 0 &  -  \\
+Comb. & 88 & -1 & -87.99 & 258 & 173606736 & 0.00 \\
+\hline \end{tabular}
+\,\,
+
+\begin{tabular}{|l||cc|c|cc|c|}
+\hline
+$\mathbf{D^{*+}}$ & Add_Truth30_Run6_e & Base_e & R_e & Add_Truth30_Run6_{\mu} & Base_{\mu} & R_{\mu} \\
+\hline \hline
+D^{**} \to \text{D}^{*+}\pi^{0} & 15 & 0 &  -  & 17 & 125638312 & 0.00 \\
+D^{**} \to \text{D}^{+}\pi^{0} & 0 & 0 &  -  & 0 & 173606696 & 0.00 \\
+Other D^{**} & 2 & 736 & 0.00 & 3 & 184 & 0.02 \\
+D^{*+} \,l \,\nu & 10 & 170406784 & 0.00 & 17 & 0 &  -  \\
+D^{+} \,l \,\nu & 0 & -1 & 0.00 & 1 & 184 & 0.01 \\
+Crossfeed & 0 & 170406784 & 0.00 & 0 & 0 &  -  \\
+Comb. & 11 & -1 & -10.99 & 41 & 173606736 & 0.00 \\
+\hline \end{tabular}
+\,\,
+
+\begin{tabular}{|l||cc|c|cc|c|}
+\hline
+$\mathbf{D^{+}}$ & Add_Truth30_Run6_e & Base_e & R_e & Add_Truth30_Run6_{\mu} & Base_{\mu} & R_{\mu} \\
+\hline \hline
+D^{**} \to \text{D}^{+}\pi^{0} & 28 & 0 &  -  & 18 & 125638312 & 0.00 \\
+D^{**} \to \text{D}^{*+}\pi^{0} & 18 & 0 &  -  & 10 & 173606696 & 0.00 \\
+Other D^{**} & 41 & 736 & 0.06 & 33 & 184 & 0.18 \\
+D^{*+} \,l \,\nu & 16 & 170406784 & 0.00 & 14 & 0 &  -  \\
+D^{+} \,l \,\nu & 11 & -1 & -10.99 & 10 & 184 & 0.05 \\
+Crossfeed & 12 & 170406784 & 0.00 & 7 & 0 &  -  \\
+Comb. & 84 & -1 & -83.99 & 204 & 173606736 & 0.00 \\
+\hline \end{tabular}
+\,\,
+

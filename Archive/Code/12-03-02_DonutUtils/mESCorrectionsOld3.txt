@@ -1,0 +1,17 @@
+Ratio for 100% sample
+MC: 954, data: 1103	  -  Ratio: 0.86556 +- 0.03740
+MC: 1177, data: 1397	  -  Ratio: 0.84303 +- 0.03245
+MC: 445, data: 493	  -  Ratio: 0.90287 +- 0.06021
+MC: 174, data: 172	  -  Ratio: 1.00911 +- 0.13262
+
+Ratio for 200% sample
+MC: 2631, data: 3016	  -  Ratio: 0.87230 +- 0.02242
+MC: 3342, data: 3725	  -  Ratio: 0.89728 +- 0.02040
+MC: 1220, data: 1360	  -  Ratio: 0.89647 +- 0.03479
+MC: 671, data: 722	  -  Ratio: 0.92976 +- 0.05066
+
+Ratio for 300% sample
+MC: 4646, data: 5245	  -  Ratio: 0.88593 +- 0.01712
+MC: 5776, data: 6255	  -  Ratio: 0.92333 +- 0.01576
+MC: 2136, data: 2348	  -  Ratio: 0.90987 +- 0.02652
+MC: 1409, data: 1503	  -  Ratio: 0.93735 +- 0.03262

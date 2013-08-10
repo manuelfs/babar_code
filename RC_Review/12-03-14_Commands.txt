@@ -1,0 +1,93 @@
+CSample OffnoCutSum candPstarLep 60 0 2.4 "candQ2>4XXcandMES>5.27" r no babar_code/Reweight/wFFBF.txt
+cpf keys/eps/CSample/OffnoCutSum_candPstarLep_All_both.eps public_html/Pl_Off_noW.eps
+
+CSample OffnoCutSumPl candPstarLep 60 0 2.4 "candQ2>4XXcandMES>5.27" r no babar_code/Reweight/wPl.txt
+cpf keys/eps/CSample/OffnoCutSumPl_candPstarLep_All_both.eps public_html/Pl_Off_W.eps
+
+CSample noCutSum candPstarLep 60 0 2.4 "candQ2>4XXcandEExtra>1.2&&candEExtra<2.4" r no babar_code/Reweight/wFFBF.txt
+cpf keys/eps/CSample/noCutSum_candPstarLep_All_both.eps public_html/Pl_HiEex_noW.eps
+
+CSample noCutSumPl candPstarLep 60 0 2.4 "candQ2>4XXcandEExtra>1.2&&candEExtra<2.4" r no babar_code/Reweight/wPl.txt
+cpf keys/eps/CSample/noCutSumPl_candPstarLep_All_both.eps public_html/Pl_HiEex_W.eps
+
+CSample noCutSum candM2 80 -2 10 "candQ2>4XXcandEExtra>1.2XXcandEExtra<2.4" l no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/noCutSum_candM2_All_both.eps public_html/M2_HiEex.eps
+
+CSample noMESSum candM2 80 -2 10 "candQ2>4XXcandEExtra>1.2XXcandEExtra<2.4XXcandMES>5.2XXcandMES<5.26" l no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/noMESSum_candM2_All_both.eps public_html/M2_HiEex_SB.eps
+
+CSample noCutSumMedE candM2 80 -2 10 "candQ2>4XXcandEExtra>0.5XXcandEExtra<1.2" no no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/noCutSumMedE_candM2_All_both.eps public_html/M2_MedEex.eps
+
+CSample noMESSumMedE candM2 80 -2 10 "candQ2>4XXcandEExtra>0.5XXcandEExtra<1.2XXcandMES>5.2XXcandMES<5.26" l no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/noMESSumMedE_candM2_All_both.eps public_html/M2_MedEex_SB.eps
+
+CSample noMVASum candM2 80 -2 10 "candQ2>4XXcandEExtra<0.5" no no babar_code/Reweight/wTotal.txt
+cpf  keys/eps/CSample/noMVASum_candM2_All_both.eps public_html/M2_LoEex.eps
+
+CSample noMVASumM2 candM2 40 1.5 10 "candQ2>4XXcandEExtra<0.5" no no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/noMVASumM2_candM2_All_both.eps public_html/M2_LoEexM2.eps
+
+CSample noMvaSum candM2 80 -2 10 "candQ2>4XXcandEExtra<0.5XXcandMES>5.2XXcandMES<5.26" no no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/noMvaSum_candM2_All_both.eps public_html/M2_LoEex_SB.eps
+
+CSample MVASum candM2 80 -2 10 "candQ2>4XXcandMES>5.2XXcandMES<5.26" no no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/MVASum_candM2_All_both.eps public_html/M2_Mva_SB.eps
+
+CSample MVASumM2 candM2 40 1.5 10 "candQ2>4XXcandMES>5.2XXcandMES<5.26" no no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/MVASumM2_candM2_All_both.eps public_html/M2_MvaM2_SB.eps
+
+CSample noCutSum candEExtra 24 0 2.4 "candQ2>4XXcandM2>1.5" no no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/noCutSum_candEExtra_All_both.eps public_html/EExtra.eps
+
+CSample noCutSum candEExtra 20 0 1 "candQ2<=4" r no babar_code/Reweight/wCombCont.txt
+cpf keys/eps/CSample/noCutSum_candEExtra_All_both.eps public_html/EExtra_LoQ2.eps
+
+CSample Reg2Sum candEExtra 20 0 1 "candQ2<=4" r no babar_code/Reweight/wCombCont.txt
+cpf keys/eps/CSample/Reg2Sum_candEExtra_All_both.eps public_html/EExtra_LoQ2_BDT.eps
+
+PlotFit FitAll/fits/TextFinalDataSi2x100.txt dss All candM2 50 -2.5 7.5 curveLegSum
+cpf keys/eps/FinalFit/dsscandM2_curveLegSum.eps public_html/Fit_Dpi0.eps
+
+
+Westhoff
+==================================================
+plotVariable MVA candPstarD 28 0 2 "candM2>1.5" l0 no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/MVASidx100_candPstarD_All_both.eps public_html/Final_PD_Sig.eps 
+
+plotVariable Iso candPstarD 28 0 2 "candM2>1.5" l0 no babar_code/Reweight/wTotal.txt 0123456
+cpf keys/eps/CSample/IsoSidx100_candPstarD_All_both.eps public_html/Final_PD_SigIso.eps
+
+plotVariable MVA candQ2 25 4 12.5 "candM2>1.5" r3 no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/MVASidx100_candQ2_All_both.eps public_html/Final_Q2_Sig.eps
+
+plotVariable Iso candQ2 25 4 12.5 "candM2>1.5" no no babar_code/Reweight/wTotal.txt 0123456
+cpf keys/eps/CSample/IsoSidx100_candQ2_All_both.eps public_html/Final_Q2_SigIso.eps
+
+plotVariable MVA2 candQ2 25 4 12.5 "candM2<1.5" r3 no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/MVA2Sidx100_candQ2_All_both.eps public_html/Final_Q2_Norm.eps
+
+plotVariable MVA candPstarLep 24 0 2.4 "candM2>1.5" r0 no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/MVASidx100_candPstarLep_All_both.eps public_html/Westhoff/Final_Pl_Sig.eps
+
+plotVariable Iso candPstarLep 24 0 2.4 "candM2>1.5" l0 no babar_code/Reweight/wTotal.txt 0123456
+cpf keys/eps/CSample/IsoSidx100_candPstarLep_All_both.eps public_html/Westhoff/Final_Pl_SigIso.eps 
+
+plotVariable MVA candW 30 0.95 1.45 "candM2>1.5" r1 no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/MVASidx100_candW_All_both.eps public_html/Final_W_Sig.eps
+
+plotVariable Iso candW 30 0.95 1.45 "candM2>1.5" r1 no babar_code/Reweight/wTotal.txt 0123456
+cpf keys/eps/CSample/IsoSidx100_candW_All_both.eps public_html/Final_W_SigIso.eps
+
+plotVariable MVA2 candW 30 0.95 1.45 "candM2<1.5" r1 no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/MVA2Sidx100_candW_All_both.eps public_html/Final_W_Norm.eps
+
+plotVariable Iso2 candW 30 0.95 1.45 "candM2<1.5" r3 no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/Iso2Sidx100_candW_All_both.eps public_html/Final_W_NormIso.eps
+
+plotVariable Iso2 candQ2 25 4 12.5 "candM2<1.5" r3 no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/Iso2Sidx100_candQ2_All_both.eps public_html/Final_Q2_NormIso.eps
+
+plotVariable Iso2 candPstarD 28 0 2 "candM2<1.5" l3 no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/Iso2Sidx100_candPstarD_All_both.eps  public_html/Final_PD_NormIso.eps
+

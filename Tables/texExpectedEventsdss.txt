@@ -1,0 +1,18 @@
+\begin{tabular}{|l||c|c|c|c|}
+\hline
+$\boldsymbol{D^{(*)}\pi^0}$ & $D^0$ & $D^{*0}$ & $D^+$ & $D^{*+}$ \\
+\hline \hline
+$D\ell\nu$ & 152 & 13 & 57 & 3 \\
+$D^*\ell\nu$ & 253 & 146 & 65 & 90 \\
+\hline
+$D\tau\nu$ & 9 & 3 & 5 & 0 \\
+$D^*\tau\nu$ & 21 & 12 & 8 & 5 \\
+\hline
+$D^{**}\ell\nu$ & 685 & 247 & 300 & 139 \\
+$D^{**}\tau\nu$ & 43 & 13 & 35 & 6 \\
+\hline\hline
+$D_1^{'}(\to D^*\pi)\ell\nu$ & 89 & 32 & 51 & 5 \\
+$D_1(\to D\pi\pi)\ell\nu$ & 68 & 34 & 34 & 16 \\
+\hline \end{tabular}
+\,\,
+

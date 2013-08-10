@@ -1,0 +1,109 @@
+//=============================================================================
+//  History file for DonutUtils
+//
+//  $Id: History,v 1.11 2012/08/23 02:22:17 manuelf Exp $
+//
+//  Reverse chronological order.
+//  Tags MUST be documented.
+//=============================================================================
+
+
+22 Aug 2012   Manuel Franco Sevilla 
+    TAG V00-03-00
+
+    - Added BToDtaunu.cc/hh and BToDstaunu.cc/hh with B->D(*)(tau/l)nu re-weighting
+      to HQET form factors. They also allow the inclusion of charged Higgs contributions.
+    - Added prdAfterFit.cc which eventually will become the executable to make the PRD
+      plots for kinematic distributions after the fit.
+    - Added prdFit.cc to plot the fit in PRD.
+    - Multiple changes to other packages
+
+03 Mar 2012   Manuel Franco Sevilla 
+    TAG V00-02-00
+
+    - Code updated for RHEL5
+    - Added IterBF.cc, MultiEventMixer.cc, PRL_Plot.cc, SidebandmES.cc, Systematics.cc, 
+      plotVariable.cc
+    - Multiple changes to other packages
+
+21 Feb 2011   Manuel Franco Sevilla 
+    TAG V00-01-04
+
+    - Saving what could be the final code, before adding the D**->Dpipi component to the fit
+    - Removed unused Mazur stuff: GenCombSamples.cc, GenCombYields.cc, README, RatiosPlot.cc, 
+      codes.tex/ps, control.cc/hh, cuts.hh, loadChain.cc/hh
+    - Coded Styles.cc to unify the plot styles, and updated most of the plotting
+    - Re-organized the numbering of the PDFs, and added the continuum components
+    - Added the possibility of constraining isospin, and floating Dl=>Dpi0
+    - Now EventMixer.cc can re-weight to data luminosity, and add continuum to the tree
+
+21 Oct 2010   Manuel Franco Sevilla 
+    TAG V00-01-03
+
+    - Saving before another re-writing of the fitting code
+    - Added CSample.cc, OptiBDT.cc, RatiosPlot.cc, ResolutionFit.cc, ResolutionWidths.cc
+      and WeightVariable.cc
+    - Moved SmallNtuple.cc to XslFFReweighting to avoid the TMVA warnings in SL4
+
+11 May 2010   Manuel Franco Sevilla 
+    TAG V00-01-02
+
+    - Re-wrote all the fitting code, toys and error calculation in DonutFitFinal.cc and
+      deleted DonutFitWrapperKeys.cc/hh and DonutFitter.cc
+    - Added GenHisto.cc (generate perfect generic pdf), PlotFit.cc (plots fit Results),
+      VaryConstraints (poissonizes yields and calculates constraints) and WeightPl.cc
+    - Added the fitting of hTimes KEYS in FitGenSample.cc
+    - Added new pdf samples taken from generics to model tails
+    - Centralized the sample definition in KeysUtils.cc
+
+02 Mar 2010   Manuel Franco Sevilla 
+    TAG V00-01-01
+
+    - Separated the D** samples into (non-)truth-matched and D**taunu to fit generics
+    - Made KeysPlot.cc more versatile
+    - Fixed bugs in weightManager.cc and KeysUtils.cc when plotting empty histograms
+
+14 Feb 2010   Manuel Franco Sevilla 
+    TAG V00-01-00 
+
+    - General clean-up: Added header comments, deleted FitPdfSample.cc, HistMerger.cc
+      DonutFitWrapper.cc/hh, BlindApp.cc, Optimizer.cc, EventRejecter.cc, SysPars.cc,
+      GenMCStatFiles.cc, BlueBands.cc, PstarFitter.cc, DssBlindApp.cc, DssOptimizer.cc, 
+      all RooDonut. Also the following, which might come back
+	ConstraintWiggler NormPlots PRDNormPlots GenCombWeights EffTable 
+	Q2BlindApp Q2CS MesFits KsBlindApp KsCS GenBFWeights GenFFWeights 
+	DstarstarBlindApp CalcPenalties GenPi0Weights MesTest SemilepCS YieldsApp 
+    - Added codes.tex, CompareGen.cc, FitGenSample.cc
+    - Changed the numbering of the samples, because I needed to introduce the tag
+      (non-)truth-matched distributions. This provoked a host of other changes
+
+29 Jan 2010   Manuel Franco Sevilla 
+    TAG V00-00-03 
+
+    - Modified EventMixer.cc, GenCombSamples, GenPdfSamples.cc, EfficiencyApp.cc
+      and other to adapt the fitting to the new selection
+    - Added FitPdfSampleKEYS.cc to make the fits with the KEYS function
+    - Added CrossValidation.cc to find the optimal smoothing parameter
+    - Added donutFitWrapper.cc/hh to perform the final fit with the KEYS
+    - KeysPlot.cc to plot a KEYS function
+    - KeysUtils.cc with some functions needed for KEYS plotting and handling
+
+02 Sep 2009   Manuel Franco Sevilla 
+    TAG V00-00-02 
+
+    - Added SmallNtuple.cc, with the mES correction there. 
+    - Started to adapt the code to the new ntuples (new weights, MVA...)
+
+29 Apr 2009   Michael Kelsey
+    Tag V00-00-01
+
+    - RooDonut{Bifur,CB,CBTail,Semilep}.{cc,rdl}:  Move RooFitModels
+      functions here.  This eliminates need to maintain un-committable
+      code in RFM.
+
+27 Apr 2009   Manuel Franco Sevilla 
+    TAG V00-00-00 for Analysis-50
+
+    - Different utilities for the B->D(*)TauNu.analysis
+
+

@@ -1,0 +1,72 @@
+weightD0        = 1.0179
+weightDs0       = 0.8963
+weightDp        = 1.0145
+weightDsp       = 0.9105
+
+weightD10       = 0.7679
+weightD20       = 1.4000
+weightD00       = 0.8571
+weightD1prime0  = 0.4778
+weightD1p       = 0.7692
+weightD2p       = 1.6957
+weightD0p       = 0.8444
+weightD1primep  = 0.4819
+wDoubleSL 	= 1.0
+
+wDsTaunu 	= 1.031
+wDsmunu 	= 1.006
+wDsEtalnu 	= 0.944
+wDsEtaprimelnu 	= 0.962
+wDsphilnu 	= 0.975
+
+wDzbDs 		= 0.798
+wDzbDsstar 	= 0.703
+wDstarzbDs 	= 0.677
+wDstarzbDsstar 	= 0.648
+wDstarstarDs 	= 1.985
+wDpDzbKz 	= 0.824
+wDzbDstarpKz 	= 1.061
+wDstarzbDpKz 	= 0.984
+wDstarzbDstarpKz = 0.780
+wDzDzbKp 	= 1.400
+wDstarzbDstarzKp = 0.757
+wDstarzDzbKp 	= 1.000
+wDstarmDpKp 	= 0.750
+wDzba1p 	= 1.000
+wDstarzba1p 	= 1.000
+wDzbRhop 	= 1.000
+wDstarzbRhop 	= 1.000
+
+wDmDs 		= 0.822
+wDstarmDs 	= 0.659
+wDmDsstar 	= 0.844
+wDstarmDsstar 	= 0.746
+wDmDzKp 	= 1.0
+wDmDstarzKp 	= 0.939
+wDstarmDstarzKp = 1.180
+wDmDpKz 	= 0.567
+wDstarmDpKz 	= 1.000
+wDstarmDstarpKz = 1.114
+wDstarzDzbKz 	= 0.925
+wDstarpDstarm 	= 0.988
+wDpDstarm 	= 0.910
+wDpDm 		= 0.781
+wDa1p 		= 1.000
+wDstarma1p 	= 1.000
+wDmRhop 	= 1.000
+wDstarmRhop 	= 1.000
+
+
+
+wDzbRhoz 	= 1.103
+wDstarzbRhoz 	= 0.879
+wFakeLep 	= 1.0
+wUnknown 	= 1.0
+weightD0pi      = 0.000
+weightDstar0pi  = 0.000
+weightDpi0      = 0.000
+weightDstarpi0  = 0.000
+weightD0pi0     = 0.000
+weightDstar0pi0 = 0.000
+weightDpi       = 0.000
+weightDstarpi   = 0.000

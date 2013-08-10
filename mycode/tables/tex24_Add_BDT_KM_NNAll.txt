@@ -1,0 +1,56 @@
+\begin{tabular}{|l||cc|c|cc|c|}
+\hline
+$\mathbf{D^{*0}}$ & Add_BDT_KM_e & Base_e & R_e & Add_BDT_KM_{\mu} & Base_{\mu} & R_{\mu} \\
+\hline \hline
+D^{*0} \,\tau \,\nu & 104 & 0 &  -  & 97 & 22194448 & 0.00 \\
+D^{0} \,\tau \,\nu & 6 & -1 & -5.99 & 6 & -1 & -5.99 \\
+D^{*0} \,l \,\nu & 1675 & 0 &  -  & 1484 & 0 &  -  \\
+D^{0} \,l \,\nu & 61 & 0 &  -  & 39 & 0 &  -  \\
+D^{**} \,l \,\nu & 88 & 0 &  -  & 82 & 0 &  -  \\
+Crossfeed & 61 & 0 &  -  & 39 & 0 &  -  \\
+Comb. & 86 & 0 &  -  & 139 & 0 &  -  \\
+\hline \end{tabular}
+\,\,
+
+\begin{tabular}{|l||cc|c|cc|c|}
+\hline
+$\mathbf{D^{0}}$ & Add_BDT_KM_e & Base_e & R_e & Add_BDT_KM_{\mu} & Base_{\mu} & R_{\mu} \\
+\hline \hline
+D^{0} \,\tau \,\nu & 71 & 0 &  -  & 53 & 22194448 & 0.00 \\
+D^{*0} \,\tau \,\nu & 84 & -1 & -83.99 & 77 & -1 & -76.99 \\
+D^{*0} \,l \,\nu & 1562 & 0 &  -  & 1416 & 0 &  -  \\
+D^{0} \,l \,\nu & 602 & 0 &  -  & 543 & 0 &  -  \\
+D^{**} \,l \,\nu & 164 & 0 &  -  & 149 & 0 &  -  \\
+Crossfeed & 193 & 0 &  -  & 179 & 0 &  -  \\
+Comb. & 141 & 0 &  -  & 225 & 0 &  -  \\
+\hline \end{tabular}
+\,\,
+
+\begin{tabular}{|l||cc|c|cc|c|}
+\hline
+$\mathbf{D^{*+}}$ & Add_BDT_KM_e & Base_e & R_e & Add_BDT_KM_{\mu} & Base_{\mu} & R_{\mu} \\
+\hline \hline
+D^{*+} \,\tau \,\nu & 58 & 0 &  -  & 41 & 22194448 & 0.00 \\
+D^{+} \,\tau \,\nu & 1 & -1 & -0.99 & 2 & -1 & -1.99 \\
+D^{*+} \,l \,\nu & 938 & 0 &  -  & 882 & 0 &  -  \\
+D^{+} \,l \,\nu & 8 & 0 &  -  & 4 & 0 &  -  \\
+D^{**} \,l \,\nu & 67 & 0 &  -  & 60 & 0 &  -  \\
+Crossfeed & 27 & 0 &  -  & 16 & 0 &  -  \\
+Comb. & 79 & 0 &  -  & 118 & 0 &  -  \\
+\hline \end{tabular}
+\,\,
+
+\begin{tabular}{|l||cc|c|cc|c|}
+\hline
+$\mathbf{D^{+}}$ & Add_BDT_KM_e & Base_e & R_e & Add_BDT_KM_{\mu} & Base_{\mu} & R_{\mu} \\
+\hline \hline
+D^{+} \,\tau \,\nu & 34 & 0 &  -  & 29 & 22194448 & 0.00 \\
+D^{*+} \,\tau \,\nu & 23 & -1 & -22.99 & 17 & -1 & -16.99 \\
+D^{*+} \,l \,\nu & 330 & 0 &  -  & 281 & 0 &  -  \\
+D^{+} \,l \,\nu & 248 & 0 &  -  & 218 & 0 &  -  \\
+D^{**} \,l \,\nu & 108 & 0 &  -  & 77 & 0 &  -  \\
+Crossfeed & 43 & 0 &  -  & 53 & 0 &  -  \\
+Comb. & 106 & 0 &  -  & 185 & 0 &  -  \\
+\hline \end{tabular}
+\,\,
+

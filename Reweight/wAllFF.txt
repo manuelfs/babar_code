@@ -1,0 +1,2 @@
+FFWeights = babar_code/Reweight/wAllFF
+DlnFF = babar_code/Reweight/wAllFF

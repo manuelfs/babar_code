@@ -1,0 +1,1888 @@
+
+<html>
+<pre style="font-size: 0;display: none;visibility: hidden;">
+
+
+</pre>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Gmail - Inbox</title>
+<link rel="canonical"
+href="https://mail.google.com/mail/" />
+<link rel="shortcut icon"
+href="/mail/images/favicon.ico"
+type="image/x-icon">
+<link rel="stylesheet" type="text/css"
+href="https://mail.google.com/mail/h/66runvzedcvh/?&v=ss&name=c&ver=1u0jjnc8m0l4h">
+<style type="text/css">
+@import url("https://mail.google.com/mail/h/baq2s7dhy3xs/?&v=ss&name=a&ver=1sthyqjwgl8hj"); #gbar,#guser{font-size:13px;padding-right:8px;padding-top:4px !important}#gbar{padding-left:8px;height:22px}#guser{padding-bottom:7px !important;text-align:right}.gbh,.gbd{border-top:1px solid #c9d7f1;font-size:1px}.gbh{height:0;position:absolute;top:24px;width:100%}@media all{.gb1{height:22px;margin-right:.5em;vertical-align:top}#gbar{float:left}}a.gb1,a.gb4{text-decoration:underline !important}a.gb1,a.gb4{color:#00c !important}.gbi .gb4{color:#dd8e27 !important}.gbf .gb4{color:#900 !important}
+</style>
+<base href="https://mail.google.com/mail/h/5q56vdiao7we/">
+<script><!--
+(function(){try{var win=this;while(win.parent!=win){eval("win.frameElement.src").substr(0,1);win=win.parent}if(win.frameElement!=null)throw"";}catch(e){document.write("--\><plaintext style=display:none><\!--");open(location,"_top");top.location=location}})();
+//--></script>
+<script><!--
+
+//-->
+</script>
+</head>
+<body bgcolor=#ffffff>
+<script><!--
+(function(){try{var win=this;while(true){if(win.parent==win)break;eval("win.frameElement.src").substr(0,1);win=win.parent}if(win.frameElement!=null)throw"busted";}catch(e){document.write("--\><plaintext style=display:none><\!--");if(!open(location,"_top"))alert("this content cant be framed");top.location=location}})();
+--></script>
+<div id=gbar><nobr><b class=gb1>Gmail</b> <a target=_blank class=gb1 href="https://www.google.com/calendar?tab=mc">Calendar</a> <a target=_blank class=gb1 href="https://docs.google.com/?tab=mo&authuser=0">Documents</a> <a target=_blank class=gb1 href="https://picasaweb.google.com/home?tab=mq">Photos</a> <a target=_blank class=gb1 href="https://www.google.com/reader/?tab=my">Reader</a> <a target=_blank class=gb1 href="https://sites.google.com/?tab=m3">Sites</a> <a target=_blank class=gb1 href="http://www.google.com/webhp?tab=mw">Web</a> <a target=_blank class=gb1 style="text-decoration:none" href="http://www.google.com/intl/en/options/"><u>more</u> &raquo;</a></nobr></div><div id=guser width=100%><h2 class=hdn>Account Options</h2><nobr><span id=gbn class=gbi></span><span id=gbf class=gbf></span><b class=gb4>manufisico@gmail.com</b> | <span id=gbe><a href="?&redir=/mail/&a=stsv&at=AF6bupOXLI-2LQp-G4aoNwNhjTLl0Qe3eA" class=gb4>Standard View</a> | </span><a href="?&amp;v=prg" class=gb4>Settings</a> | <a href="https://mail.google.com/mail/h/uvp2g36o573m/?logout&amp;hl=en" class=gb4>Sign out</a></nobr></div><div class=gbh style=left:0></div><div class=gbh style=right:0></div>
+<table width=100% cellpadding=0 cellspacing=0 border=0>
+<tr>
+<td width=143 rowspan=3>
+<h1>
+<a href="?">
+<img src="/mail/help/images/logo1.gif"
+width=143 height=59 border=0
+alt="Gmail by Google">
+</a>
+</h1>
+</td>
+<td width=1 rowspan=3>&nbsp;</td>
+<td height=25 colspan=2 align=right valign=top>
+<tr>
+<form action=? name=sf method=GET>
+<input type=hidden name=s value=q>
+</td>
+<td>
+<table width=100% cellpadding=0 cellspacing=0 border=0>
+<tr>
+<td width=1% height=25 nowrap>
+<input size=28 maxlength=2048 title="Search"
+name=q value=""
+>&nbsp;<input type=submit name=nvp_site_mail value="Search Mail"
+>&nbsp;<input type=submit name=nvp_site_web value="Search the Web">
+</td>
+<td>
+<font size=1>
+&nbsp;<a href="?&v=as&pv=tl&st=300"
+>Show&nbsp;search&nbsp;options</a>
+</font>
+<br><font size=1>
+&nbsp;<a href="?&v=caf&pv=tl&st=300"
+>Create&nbsp;a&nbsp;filter</a>
+</font>
+</form>
+</table>
+<tr>
+<td height=25 colspan=2>
+</table>
+<table width=100% cellpadding=0 cellspacing=0 border=0>
+<tr>
+<td width=120 valign=top>
+<table width=100% cellpadding=2 cellspacing=0 border=0 class=m>
+<tr>
+<td>
+<b><a href="?&v=b&pv=tl&st=300&cs=b" accesskey=c
+>Compose&nbsp;Mail</a></b>
+<tr>
+<td height=5>
+<h2 class=hdn>Folders</h2>
+<tr>
+<td bgcolor="#C3D9FF">
+<b><a href="?&"
+accesskey=i
+>Inbox</a></b>
+<tr>
+<td>
+<a href="?&s=r"
+>Starred&nbsp;<img src="/mail/images/star_on_sm_2.gif" width="13" height="13" border="0" alt="star" /></a>
+<tr>
+<td>
+<a href="?&s=s"
+>Sent Mail</a>
+<tr>
+<td>
+<h3><b><a href="?&s=d"
+>Drafts&nbsp;(3)</a></b></h3>
+<tr>
+<td>
+<a href="?&s=a"
+>All Mail</a>
+<tr>
+<td>
+<a href="?&s=m"
+>Spam</a>
+<tr>
+<td>
+<a href="?&s=t"
+>Trash</a>
+<tr>
+<td height=8>
+<tr>
+<td>
+<h3><b><a href="?&v=cl">Contacts</a></b></h3>
+<tr>
+<td height=8>
+</table>
+<table width=100% cellpadding=2 cellspacing=0 border=0 class=l>
+<tr>
+<td class=lb>
+<h2><font color=#000000>Labels</font><br></h2>
+<a href="?&s=l&l=Spain"><font color=#006633
+>Spain</font></a>
+<br>
+<a class="ml" href="?&v=prl">Edit labels</a>
+</td>
+</table>
+</td>
+<td valign=top>
+<table width=100% cellpadding=0 cellspacing=0 border=0>
+<tr>
+<td width=5 bgcolor="#C3D9FF">&nbsp;</td>
+<td>
+<form action="?&at=AF6bupOXLI-2LQp-G4aoNwNhjTLl0Qe3eA" name=f method=POST>
+<input type=hidden name=redir
+value="?&amp;st=300">
+<h2 class=hdn>Inbox</h2>
+<table width=100% cellpadding=2 cellspacing=0 border=0
+bgcolor="#C3D9FF">
+<tr>
+<td>
+<input type=submit name=nvp_a_arch value="Archive">&nbsp;&nbsp;<input type=submit name=nvp_a_sp value="Report Spam">&nbsp;&nbsp;<input type=submit name=nvp_a_tr value="Delete">&nbsp;&nbsp;
+<select name=tact>
+<option value="">More Actions...</option>
+<option value=rd>Mark as read</option>
+<option value=ur>Mark as unread</option>
+<option value=st>Add star</option>
+<option value=xst>Remove star</option>
+<option value=ig>Mute</option>
+<option value="" disabled>--------</option>
+<option value="" disabled>Apply label:</option>
+<option value="ac_Spain"
+>Spain
+</option>
+<option value="" disabled>--------</option>
+<option value="" disabled>Remove label:</option>
+<option value="rc_Spain"
+>Spain
+</option>
+</select>&nbsp;<input type=submit name=nvp_tbu_go value="Go">&nbsp;
+<a href="?&st=300">Refresh</a>
+</td>
+<td align=right>
+<a href="?&"
+><b>&laquo; Newest</b></a>&nbsp;
+<a href="?&st=200"
+><b>&#8249; Newer</b></a>&nbsp;
+<b>301</b>&nbsp;-&nbsp;<b>400</b> of <b>679</b>
+&nbsp;<a href="?&st=400"
+><b>Older &#8250;</b></a>
+&nbsp;<a href="?&st=600"
+><b>Oldest &raquo;</b></a>
+</table>
+<table width=100% cellpadding=2 cellspacing=0 border=0 bgcolor=#e8eef7 class=th>
+<tr bgcolor="#E8EEF7">
+<td width=1% nowrap>
+<input type=checkbox name=t
+value="124ec4ea34471d4a">
+<img src="/mail/images/cleardot.gif"
+width=15 height=15 border=0 alt="">
+</td>
+<td width=25%>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td width=73%>
+<a href="?&v=c&st=300&th=124ec4ea34471d4a">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+weekend
+<font color=#7777CC> - Hi Manu! Hope you will find answers to all the questions soon and still get some sleep... I &hellip;</font></span>
+</a></td>
+<td width=1% nowrap>
+11/12/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124ea7f399fba4f1">
+</td>
+<td>
+<span dir="ltr">Rachel Applefield</span></td>
+<td>
+<a href="?&v=c&st=300&th=124ea7f399fba4f1">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: locura en futbol
+<font color=#7777CC> - On Wed, Nov 11, 2009 at 12:24 PM, Manuel Franco <span dir=ltr>&lt;manufisico@gmail.com&gt;</span> wrote: Oh my God &hellip;</font></span>
+</a></td>
+<td nowrap>
+11/12/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124ea531ce2d6256">
+</td>
+<td>
+<span dir="ltr">Rachel Applefield</span></td>
+<td>
+<a href="?&v=c&st=300&th=124ea531ce2d6256">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+apellidossss españolessss
+<font color=#7777CC> - uh, oh i think this question im going to end up paying for... so, Manuel Franco, what is your &hellip;</font></span>
+</a></td>
+<td nowrap>
+11/12/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124e41025d9c8d50">
+</td>
+<td>
+<span dir="ltr">Rachel Applefield</span></td>
+<td>
+<a href="?&v=c&st=300&th=124e41025d9c8d50">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+locura en futbol
+<font color=#7777CC> - omg! what the hell is this!!! http://www.youtube.com/watch?v=X4Piuuqqs10&amp;feature=related an &hellip;</font></span>
+</a></td>
+<td nowrap>
+11/11/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124e042426a548bc">
+</td>
+<td>
+<span dir="ltr">Manuel Franco</span></td>
+<td>
+<a href="?&v=c&st=300&th=124e042426a548bc">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: [Stanford Intramural Sports] RESCHEDULE REQUEST: Beginner League Playoffs Game: 3 -...
+<font color=#7777CC> - That&#39;s really unfortunate! :o( Tara says she wouldn&#39;t be able to put together a team for &hellip;</font></span>
+</a></td>
+<td nowrap>
+11/10/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124e0291450875d6">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=124e0291450875d6">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+manana
+<font color=#7777CC> - Hi Manu, Tomorrow after soccer at 10pm I&#39;ll bring a friend to the airport. (if I conquer my &hellip;</font></span>
+</a></td>
+<td nowrap>
+11/10/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124e0127a45b15ee">
+</td>
+<td>
+<span dir="ltr">Tara Chang</span></td>
+<td>
+<a href="?&v=c&st=300&th=124e0127a45b15ee">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: [Stanford Intramural Sports] RESCHEDULE REQUEST: Beginner League Playoffs Game: 3 -...
+<font color=#7777CC> - Hi Guys, Bad news from Ace Team Nephron - I think we will have to withdraw completely from the &hellip;</font></span>
+</a></td>
+<td nowrap>
+11/10/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124e00166d10effb">
+</td>
+<td>
+<span dir="ltr">Rachel Sampson</span></td>
+<td>
+<a href="?&v=c&st=300&th=124e00166d10effb">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: [Stanford Intramural Sports] RESCHEDULE REQUEST: Beginner League Playoffs Game: 3 -...
+<font color=#7777CC> - Dear Team captains, I have moved your game to Wednesday at 6pm. Due to the schedule you would &hellip;</font></span>
+</a></td>
+<td nowrap>
+11/10/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124df727f2b43bce">
+</td>
+<td>
+<span dir="ltr">Tara Chang</span></td>
+<td>
+<a href="?&v=c&st=300&th=124df727f2b43bce">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: [Stanford Intramural Sports] RESCHEDULE REQUEST: Beginner League Playoffs Game: 3 -...
+<font color=#7777CC> - Hi, I understand the dilemna - but I&#39;m not sure how it would work since there&#39;s another &hellip;</font></span>
+</a></td>
+<td nowrap>
+11/10/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124df6a161135a45">
+</td>
+<td>
+<span dir="ltr">me</span></td>
+<td>
+<a href="?&v=c&st=300&th=124df6a161135a45">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+[Stanford Intramural Sports] RESCHEDULE REQUEST: Beginner League Playoffs Game: 3 - 11/...
+<font color=#7777CC> - Dear IM Supervisors and 6) Ace Team Nephron team captain, I am hoping to reschedule our game, 3 &hellip;</font></span>
+</a></td>
+<td nowrap>
+11/10/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124dc85e212f0f0d">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=124dc85e212f0f0d">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re:
+<font color=#7777CC> - Hi Manu, Thank you for dedicating 10 minutes of your precious time to explaining how to change &hellip;</font></span>
+</a></td>
+<td nowrap>
+11/9/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124da5ee8e87c8fb">
+</td>
+<td>
+<span dir="ltr">Jose Miguel Franco Sevil.</span></td>
+<td>
+<a href="?&v=c&st=300&th=124da5ee8e87c8fb">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Random Internet Picture
+<font color=#7777CC> - Some guy found a lost notebook, decided to write down his favorite celebrities and posted it on &hellip;</font></span>
+</a></td>
+<td nowrap>
+11/9/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124d9e5f83cb7f05">
+</td>
+<td>
+<span dir="ltr">Rachel Applefield</span></td>
+<td>
+<a href="?&v=c&st=300&th=124d9e5f83cb7f05">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: ¿ q tal?
+<font color=#7777CC> - are you still going to this?!!! http://indico.in2p3.fr/conferenceDisplay.py?confId=1399 and am i &hellip;</font></span>
+</a></td>
+<td nowrap>
+11/9/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124d5e041d0346cc">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=124d5e041d0346cc">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+(no subject)
+<font color=#7777CC> - Hi Manu, Hope you made it back savely. :-) And it was great that you came over yesterday. Well, I &hellip;</font></span>
+</a></td>
+<td nowrap>
+11/8/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124d4f2538bd7432">
+</td>
+<td>
+<span dir="ltr">Rachel Applefield</span></td>
+<td>
+<img src="/mail/images/paperclip.gif"
+width=15 height=15 border=0 alt=Attachment class=p>
+<a href="?&v=c&st=300&th=124d4f2538bd7432">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+more spiders
+<font color=#7777CC> - these are two different spiders. and yes, my dad actually has this many spiders guarding his &hellip;</font></span>
+</a></td>
+<td nowrap>
+11/8/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124cbf324b917393">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=124cbf324b917393">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: I don't know about surfing
+<font color=#7777CC> - Hi Manu, Hope you have a good day and you made it back savely through the rain. Saturday doesn &hellip;</font></span>
+</a></td>
+<td nowrap>
+11/6/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124c60a21ab58a30">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=124c60a21ab58a30">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: Buenas Dias
+<font color=#7777CC> - Hi Manu, Looking forward to seeing you tonight. :-) See you around 7.20pm. Rotes Bussi, Geli 2009 &hellip;</font></span>
+</a></td>
+<td nowrap>
+11/5/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124c0bbe00bb7951">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=124c0bbe00bb7951">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: Buenas Dias
+<font color=#7777CC> - Hi Manu! Non-stop meetings with email-break? ;-) Great, that your enjoying your time! Hope you &hellip;</font></span>
+</a></td>
+<td nowrap>
+11/4/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124bd55aeeb5ed30">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=124bd55aeeb5ed30">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: Buenas Dias
+<font color=#7777CC> - Hi Manu, Great that your presentation went well! :-) Congratulations! Hope you survived the &hellip;</font></span>
+</a></td>
+<td nowrap>
+11/3/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124bac39e5ec4b2f">
+</td>
+<td>
+<span dir="ltr">Rachel Applefield</span></td>
+<td>
+<img src="/mail/images/paperclip.gif"
+width=15 height=15 border=0 alt=Attachment class=p>
+<a href="?&v=c&st=300&th=124bac39e5ec4b2f">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: spidey
+<font color=#7777CC> - Ok, please tell me this is not your pet. Why would anyone keep a black widow in their house. Do &hellip;</font></span>
+</a></td>
+<td nowrap>
+11/3/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124b7fb6fd12556d">
+</td>
+<td>
+<span dir="ltr">Rachel Applefield</span></td>
+<td>
+<img src="/mail/images/paperclip.gif"
+width=15 height=15 border=0 alt=Attachment class=p>
+<a href="?&v=c&st=300&th=124b7fb6fd12556d">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+spidey
+</span>
+</a></td>
+<td nowrap>
+11/2/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124b7e1025a5f570">
+</td>
+<td>
+<span dir="ltr">Rachel Applefield</span></td>
+<td>
+<a href="?&v=c&st=300&th=124b7e1025a5f570">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+(no subject)
+<font color=#7777CC> - are you ever going to send me ur mailing address?? the card is gonna be waaay late now, but I &hellip;</font></span>
+</a></td>
+<td nowrap>
+11/2/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124b656cd2c68986">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=124b656cd2c68986">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Buenas Dias
+<font color=#7777CC> - Hi Manu, I hope your presentation is procressing... You can do it! Halloween has been fun, but &hellip;</font></span>
+</a></td>
+<td nowrap>
+11/2/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124a6863114b5af2">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=124a6863114b5af2">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+(no subject)
+<font color=#7777CC> - Hi Manu, Didn&#39;t hear your phone call yesterday and went I home I thought it was too late to &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/30/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124a5abe3b93f8d5">
+</td>
+<td>
+<span dir="ltr">Rachel Applefield</span></td>
+<td>
+<a href="?&v=c&st=300&th=124a5abe3b93f8d5">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+long over due
+<font color=#7777CC> - i guess i can see ur frustration. i didn&#39;t ever thoroughly respond to this email either. i &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/30/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124a392352440fe0">
+</td>
+<td>
+<span dir="ltr">Rachel Applefield</span></td>
+<td>
+<a href="?&v=c&st=300&th=124a392352440fe0">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+appendage
+<font color=#7777CC> - I wrote this before, some how in my copy psting events it got lost: So, in addition to thinking &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/29/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124a3678278ec298">
+</td>
+<td>
+<span dir="ltr">Rachel Applefield</span></td>
+<td>
+<a href="?&v=c&st=300&th=124a3678278ec298">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+quo!
+<font color=#7777CC> - Vale, pequeña. Querias “quid pro quo,” ahora lo tienes… (ok, armed with Edy&#39;s French &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/29/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124a1d6b497c866f">
+</td>
+<td>
+<span dir="ltr">Rachel Applefield</span></td>
+<td>
+<a href="?&v=c&st=300&th=124a1d6b497c866f">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+(no subject)
+<font color=#7777CC> - p.s. u should be aware that the next time i see u not only will you receive ur two besos, but &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/29/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124a1d3746790d1e">
+</td>
+<td>
+<span dir="ltr">Rachel Applefield</span></td>
+<td>
+<a href="?&v=c&st=300&th=124a1d3746790d1e">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: address please
+<font color=#7777CC> - ugh! I&#39;m sitting here writing ur response, and this is what i get! :P~~~~~ i don&#39;t know &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/29/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124a07c29744c489">
+</td>
+<td>
+<span dir="ltr">Rachel Applefield</span></td>
+<td>
+<a href="?&v=c&st=300&th=124a07c29744c489">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: address please
+<font color=#7777CC> - if I promise to write u my answer before i sleep tonight, can u please send me ur mailing &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/29/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1249df1232412d46">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=1249df1232412d46">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: Hopes
+<font color=#7777CC> - 2009/10/28 Manuel Franco <span dir=ltr>&lt;manufisico@gmail.com&gt;</span> I hope the smile I left you with yesterday &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/28/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1249654a187fb123">
+</td>
+<td>
+<span dir="ltr">Rachel Applefield</span></td>
+<td>
+<a href="?&v=c&st=300&th=1249654a187fb123">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+address please
+<font color=#7777CC> - maybe ur don&#39;t check ur FB msg&#39;s very often, so i&#39;m writing u again here to ask you &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/27/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1248f24055d58e00">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=1248f24055d58e00">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+(no subject)
+<font color=#7777CC> - Hi Manu, Would have time either Tuesday or Friday evening. If movies, I&#39;d suggest the Castro &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/25/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1248e11c01feff16">
+</td>
+<td>
+<span dir="ltr">Rachel Applefield</span></td>
+<td>
+<a href="?&v=c&st=300&th=1248e11c01feff16">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re:
+<font color=#7777CC> - HAHAHA, I didn&#39;t go that crazy in Spain - only with the jamón... jejeje no due dates anytime &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/25/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="12486cf58443b371">
+</td>
+<td>
+<span dir="ltr">Rachel Applefield</span></td>
+<td>
+<a href="?&v=c&st=300&th=12486cf58443b371">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+(no subject)
+<font color=#7777CC> - ooooooooh! I am craving jamon iberico sooooo bad right now :( (hmmm, como se dice &quot;to crave &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/24/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1247ee5be549cbaa">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=1247ee5be549cbaa">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: I'm sorry
+<font color=#7777CC> - Ok. I&#39;ll give you a call when I&#39;m there or if I don&#39;t find it. See you in a couple of &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/22/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1247d9503fffda28">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=1247d9503fffda28">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: I'm sorry
+<font color=#7777CC> - Hi Manu, Thanks, but I prefer taking the car. Then I&#39;m more independant. ;-) And what about &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/22/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1247cac68083a06d">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=1247cac68083a06d">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: I'm sorry
+<font color=#7777CC> - Hi Manu, Ok, then I come with the car. Will be there around 10.15pm. Where should we meet? Beso &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/22/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1247aa6193d5eea6">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=1247aa6193d5eea6">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re:
+<font color=#7777CC> - Hi Manu, Will go to sleep now... For tomorrow: Option 1: I have an appointment downtown until 9pm &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/21/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124799afd60a248f">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=124799afd60a248f">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re:
+<font color=#7777CC> - Hi Manu! I&#39;m happy your talk was decent. ;-) And hope you sleep well! Am looking forward to &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/21/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1247798f9fc29d16">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=1247798f9fc29d16">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+(no subject)
+<font color=#7777CC> - Hi Manu, Good luck for your talk today!!! Dickes Bussi, Geli</font></span>
+</a></td>
+<td nowrap>
+10/21/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1246d68db83748ca">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=1246d68db83748ca">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: Hi Geli
+<font color=#7777CC> - nothing is wrong! :-) Have a good start into the week! 2009/10/19 Manuel Franco &lt;manufisico &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/19/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="12469f5ddf784efb">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=12469f5ddf784efb">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+(no subject)
+<font color=#7777CC> - just a quick &quot; I am thinking of you&quot; :-) P.S.: Birthday yesterday was better as &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/18/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1246958b0d2c1d72">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=1246958b0d2c1d72">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re:
+<font color=#7777CC> - Hi Manu, I&#39;m glad you finally picked up the greeting cards and happy you liked them &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/18/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="12466898f13dd959">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=12466898f13dd959">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+(no subject)
+<font color=#7777CC> - and the German version... itsybitsy tiniwini honolulu Strandbikini http://www.youtube.com/watch?v &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/18/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1246680c2e58dec7">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=1246680c2e58dec7">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+(no subject)
+<font color=#7777CC> - Hi Manu! read something in the Muni today, when I went to the birthday diner and made me think of &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/18/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1245c10a3b260de2">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=1245c10a3b260de2">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+(no subject)
+<font color=#7777CC> - Hey, You still haven&#39;t picked up the greeting card... :-( Hope you had a good run, Besos Geli</font></span>
+</a></td>
+<td nowrap>
+10/15/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1245591db605caa2">
+</td>
+<td>
+<span dir="ltr">Isabel Asensio</span></td>
+<td>
+<a href="?&v=c&st=300&th=1245591db605caa2">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+FW: RV: Hola!!!!!!!!!!!!!!!!!!! (y encuesta de la Fundación del ICAI) :):)
+<font color=#7777CC> - Buenos días a todos!!! Esto no puede ser!!! bueno, soy yo que soy muy despistada... pero &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/14/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="12451bcc6c9c57a2">
+</td>
+<td>
+<span dir="ltr">Grusskartenfreunde Gruss.</span></td>
+<td>
+<a href="?&v=c&st=300&th=12451bcc6c9c57a2">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Eine Grusskartenfreunde Karte von geli
+<font color=#7777CC> - Hallo Manu, Sie haben eine Grusskarte von geli bekommen. Sie können sie unter folgendem Link &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/13/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124461324da24cf2">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=124461324da24cf2">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+(no subject)
+<font color=#7777CC> - Hi Manu, hope you&#39;re getting some work done. I&#39;m really glad we did this trip this &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/11/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="12437f2151d38170">
+</td>
+<td>
+<span dir="ltr">Grusskartenfreunde Gruss.</span></td>
+<td>
+<a href="?&v=c&st=300&th=12437f2151d38170">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Eine Grusskartenfreunde Karte von geli
+<font color=#7777CC> - Hallo manu, Sie haben eine Grusskarte von geli bekommen. Sie können sie unter folgendem Link &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/8/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124355fc0c865cad">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=124355fc0c865cad">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: Quick words
+<font color=#7777CC> - Hi Manu! Was back home at 1am and slept until 10am... :-) But I should stop working at night as &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/8/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1242ab55ddf37518">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<img src="/mail/images/paperclip.gif"
+width=15 height=15 border=0 alt=Attachment class=p>
+<a href="?&v=c&st=300&th=1242ab55ddf37518">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+(no subject)
+<font color=#7777CC> - Hi Manu, My guess is that the guy who inspired you to go into physics did not get the Nobel Prize &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/6/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="12427426e453ef3b">
+</td>
+<td>
+<span dir="ltr">me</span></td>
+<td>
+<a href="?&v=c&st=300&th=12427426e453ef3b">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: B to Tau Nu
+<font color=#7777CC> - Half dome hike - Ear plugs - Sleeping bag and pad - Big backpack - Camera - Electrolyte beverages &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/5/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1242603df5a99d4a">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=1242603df5a99d4a">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+(no subject)
+<font color=#7777CC> - Hi Manu, Thanks for the congrats! :-) Who is your favourite for the physics nobel prize? have a &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/5/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="124042fb6d77f075">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=124042fb6d77f075">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+(no subject)
+<font color=#7777CC> - Hi Manu, I still think that your email wasn&#39;t rough. I&#39;m happy that you caught up your &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/28/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="123feb48f78a36dd">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=123feb48f78a36dd">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: A few thoughts
+<font color=#7777CC> - Hi Manu, Your first email was not rough. :-) No worries. ;-) I actually liked it. The structure &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/27/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="123f9d7486598547">
+</td>
+<td>
+<span dir="ltr">Rachel Applefield</span></td>
+<td>
+<a href="?&v=c&st=300&th=123f9d7486598547">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+(no subject)
+<font color=#7777CC> - i have to go home ASAP b/c of a family emergency. it&#39;s easy to mail things from within the &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/26/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="123f2beb14aaed44">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=123f2beb14aaed44">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re:
+<font color=#7777CC> - Great! Thank you very much! :-) I&#39;m very looking forward to it. Riesebussi ;-) Geli 2009/9/25 &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/25/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="123f2a02b268eaef">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=123f2a02b268eaef">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+(no subject)
+<font color=#7777CC> - Hi Manu, Did you get some tickets? Looking forward to seeing you tonight. Besos Angelika</font></span>
+</a></td>
+<td nowrap>
+9/25/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="123e859e43429700">
+</td>
+<td>
+<span dir="ltr">Rachel Applefield</span></td>
+<td>
+<a href="?&v=c&st=300&th=123e859e43429700">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: Rachel and (?) contra los argentinos
+<font color=#7777CC> - On Wed, Sep 16, 2009 at 6:57 AM, Manuel Franco <span dir=ltr>&lt;manufisico@gmail.com&gt;</span> wrote: Oh wow &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/23/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="123e42256158f994">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=123e42256158f994">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re:
+<font color=#7777CC> - Great! Looking forward to it. :-) besos 2009/9/22 Manuel Franco <span dir=ltr>&lt;manufisico@gmail.com&gt;</span> On &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/22/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="123dfd5858d4a27a">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=123dfd5858d4a27a">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re:
+<font color=#7777CC> - I like it. :-) So buy tickets in advance or the same day? 2009/9/22 Manuel Franco &lt;manufisico &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/21/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="123dfa374d3211c3">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=123dfa374d3211c3">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re:
+<font color=#7777CC> - Two ladies are just too much. ;-) Would be happy if we meet Friday evening. Have no plans yet &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/21/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="123dd6a45592f3f3">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=123dd6a45592f3f3">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+(no subject)
+<font color=#7777CC> - Hi Manu, Hope you&#39;re doing well and you had a good and effective Sunday. Was nice seeing you &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/21/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="123d6cea90091f31">
+</td>
+<td>
+<span dir="ltr">Rachel Applefield</span></td>
+<td>
+<a href="?&v=c&st=300&th=123d6cea90091f31">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re:
+<font color=#7777CC> - p.s. i like the phrase &quot;find you this finde;&quot; it took a split sec to realize what you &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/20/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="123d6b6e9e518187">
+</td>
+<td>
+<span dir="ltr">Rachel Applefield</span></td>
+<td>
+<a href="?&v=c&st=300&th=123d6b6e9e518187">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+(no subject)
+<font color=#7777CC> - i&#39;m afraid I must&#39;ve missed you this weekend. I&#39;ve not been sleeping well, and so I &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/20/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="123d6155218c120c">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=123d6155218c120c">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: I found today
+<font color=#7777CC> - Hi Manu, Great! :-) We&#39;re planing to pick up the car between 9 and 10am. Would give you a &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/19/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="123d117ceb98d2cc">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=123d117ceb98d2cc">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: I found today
+<font color=#7777CC> - Buenas noches! :-) So we&#39;ve booked a car for Sunday. will pick it up at the San Francisco &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/18/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="123cf7368a36f109">
+</td>
+<td>
+<span dir="ltr">Rachel Applefield</span></td>
+<td>
+<a href="?&v=c&st=300&th=123cf7368a36f109">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re:
+<font color=#7777CC> - i&#39;m not in bed yet. which means that i will probably miss u by the time i wake up tomorrow &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/18/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="123cf65322d04607">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=123cf65322d04607">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: Yo
+<font color=#7777CC> - Had an efficient day on Wednesday and Thursday was even better. :-) 2009/9/16 Manuel Franco &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/18/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="123cf641c94c9ee4">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=123cf641c94c9ee4">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: I found today
+<font color=#7777CC> - Hi Manu, Hope everything is going well <span dir=ltr>(you catch up well with your work)</span> and am glad you found &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/18/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="123c9e21c0817e48">
+</td>
+<td>
+<span dir="ltr">Rachel Applefield</span></td>
+<td>
+<a href="?&v=c&st=300&th=123c9e21c0817e48">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re:
+<font color=#7777CC> - jajaja, nop, hadn&#39;t heard about that. lol So! i got something cookin&#39; over here in Spain &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/17/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="123c58ae0ebc562b">
+</td>
+<td>
+<span dir="ltr">Rachel Applefield</span></td>
+<td>
+<a href="?&v=c&st=300&th=123c58ae0ebc562b">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+(no subject)
+<font color=#7777CC> - u heard about this, right? http://www.cnn.com/2009/TECH/space/09/16/new.rocky.planet/index.html</font></span>
+</a></td>
+<td nowrap>
+9/16/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="123ba7ebc5cd6374">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=123ba7ebc5cd6374">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+(no subject)
+<font color=#7777CC> - Hi Manu, How is your stomach? Hope it&#39;s getting better. Do you think that you will come to SF &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/14/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="123b8457d0d375ba">
+</td>
+<td>
+<span dir="ltr">Rachel Applefield</span></td>
+<td>
+<a href="?&v=c&st=300&th=123b8457d0d375ba">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Rachel and (?) contra los argentinos
+<font color=#7777CC> - still working on the democracy question... sorry! please don&#39;t kill me. Anyway, I&#39;m just &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/14/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="123b6d9267900b7a">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=123b6d9267900b7a">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re:
+<font color=#7777CC> - Hi Manu, There are thousands of us out there. ;-) Hope you are doing fine. Big hug and Kuss, Geli</font></span>
+</a></td>
+<td nowrap>
+9/13/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="123b42a0bff8ea39">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=123b42a0bff8ea39">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re:
+<font color=#7777CC> - Hi Manu! I&#39;ve talked to my Dad and he thinks the nurse practicionar is right. You should &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/13/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="123aaacf8eb9f608">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=123aaacf8eb9f608">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re:
+<font color=#7777CC> - P.S.: I doubt that it will get better without doctor... 2009/9/11 Angelika Hoffmann &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/11/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="123aa4b394f65b61">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=123aa4b394f65b61">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re:
+<font color=#7777CC> - Hi Manu, ujui, that doesn&#39;t sound good. Have you gone to the nurse prationer? I think you &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/11/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="123a6f75d891c2fc">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=123a6f75d891c2fc">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+(no subject)
+<font color=#7777CC> - Hi Manu, Hope you had a nice day and your osophagus is doing better again. My day was pretty good &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/10/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1239a83c6326f6c6">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=1239a83c6326f6c6">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+gmail didn't work! &quot;fehler no780&quot;
+<font color=#7777CC> - so now hotmail again... Hi Manu, Ok, then I&#39;ll try it at your home phone one of these days &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/8/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="12397e862e58bb86">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=12397e862e58bb86">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+(no subject)
+<font color=#7777CC> - Hi Manu, Me gustaria hablar contigo un poquito. Si no hoy uno de estos dias. Puedes &quot;add me &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/7/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="12383c1a86b269c6">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=12383c1a86b269c6">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: Saturday
+<font color=#7777CC> - Hi Manu, Great that you got the tickets already. Then we need to break with the other tradition &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/3/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="12381c9b520dcf25">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=12381c9b520dcf25">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: Saturday
+<font color=#7777CC> - Hi Manu, Ok. Perfect. Cu at 1pm my place on Saturday. looking forward to it. So Party wins &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/3/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="12380f87b517beaa">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=12380f87b517beaa">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Saturday
+<font color=#7777CC> - Hi Manu, Hope your week is going well. Need to make the planing for the weekend... Are we still &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/3/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="12372a60f6524a3c">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=12372a60f6524a3c">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: A couple of words
+<font color=#7777CC> - Hi Manu, Forget about the &quot;strict German regulations&quot; ;-) They are just a little too &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/31/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1236520095239b5f">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=1236520095239b5f">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: Surfing
+<font color=#7777CC> - Hi Manu, I mean three out of the four would have been possible on one day. ;-) I&#39;m glad that &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/29/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="12361fb9defa5920">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=12361fb9defa5920">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: Surfing
+<font color=#7777CC> - Hi Manu, Definitely impressed by your &quot;comprehensive&quot; email. ;-) The urls to &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/28/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1235cdccbf03aeba">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=1235cdccbf03aeba">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: Surfing
+<font color=#7777CC> - Hi Manu! It&#39;s great to be pampered! :-) Theater or Museum sounds good. I haven&#39;t been to &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/27/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="12352e00fb18303e">
+</td>
+<td>
+<span dir="ltr">guadalupe ortiz</span></td>
+<td>
+<a href="?&v=c&st=300&th=12352e00fb18303e">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+RE: Surfing
+<font color=#7777CC> - hei!! Manu!! Siento responder tan tarde pero vi tu mail el sabado por la mañana......este finde &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/25/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1234fedef0b33a13">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=1234fedef0b33a13">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: Surfing
+<font color=#7777CC> - Hi Manu! Sorry for writing that late, but family is still here until Friday. ;-) And work is not &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/24/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="12348ef60d4e702c">
+</td>
+<td>
+<span dir="ltr">Rachel Applefield</span></td>
+<td>
+<a href="?&v=c&st=300&th=12348ef60d4e702c">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: anuncio. puedes corregir?
+<font color=#7777CC> - Muchisimas muchisimas gracias, Manuel!!!! I can&#39;t wait to walk the Camino! I leave in two &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/23/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1233dc320b3ab884">
+</td>
+<td>
+<span dir="ltr">Rachel Applefield</span></td>
+<td>
+<img src="/mail/images/paperclip.gif"
+width=15 height=15 border=0 alt=Attachment class=p>
+<a href="?&v=c&st=300&th=1233dc320b3ab884">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+anuncio. puedes corregir?
+<font color=#7777CC> - Hi Manuel, Only if you have time, can you please read the following anuncio y correguelo. The &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/21/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1233d84b218bc943">
+</td>
+<td>
+<span dir="ltr">Rachel Applefield</span></td>
+<td>
+<a href="?&v=c&st=300&th=1233d84b218bc943">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: buenas
+<font color=#7777CC> - oh dear! It&#39;s been sooo long, since I&#39;ve written. And I&#39;m writing you in English now &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/21/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1232fe8e1a01fef5">
+</td>
+<td>
+<span dir="ltr">Angelika Hoffmann</span></td>
+<td>
+<a href="?&v=c&st=300&th=1232fe8e1a01fef5">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+again old phone number
+<font color=#7777CC> - Hi everyone, I have my old phone number again. :-) So from now on again: 510 809 5894 Cu Angelika &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/18/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="12300e34e7d3c185">
+</td>
+<td>
+<span dir="ltr">guadalupe ortiz</span></td>
+<td>
+<a href="?&v=c&st=300&th=12300e34e7d3c185">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+RE: Weekend!
+<font color=#7777CC> - hola!!! te contesto ahora el mail que son los primeros 10min libres que tengo para mi este finde &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/9/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="122fb7035196495f">
+</td>
+<td>
+<span dir="ltr">Jose Miguel Franco Sevil.</span></td>
+<td>
+<a href="?&v=c&st=300&th=122fb7035196495f">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+I knew I should have learnt Chinese.
+<font color=#7777CC> - I came across this page https://www.cia.gov/library/publications/the-world-factbook/rankorder &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/8/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="122f645ba5077453">
+</td>
+<td>
+<span dir="ltr">me</span></td>
+<td>
+<a href="?&v=c&st=300&th=122f645ba5077453">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: B to Tau Nu
+<font color=#7777CC> - Iberia website - Get a free template from the web - Home saying who we are <span dir=ltr>(not very many)</span>, the &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/7/09
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="122cda75ba8c9bbe">
+</td>
+<td>
+<span dir="ltr">Rachel Applefield</span></td>
+<td>
+<a href="?&v=c&st=300&th=122cda75ba8c9bbe">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+buenas
+<font color=#7777CC> - Manuelito! So sorry it&#39;s been so long since i&#39;ve written! I miss hearing from you. How &hellip;</font></span>
+</a></td>
+<td nowrap>
+7/30/09
+</table>
+<table width=100% cellpadding=2 cellspacing=0 border=0
+bgcolor="#C3D9FF">
+<tr>
+<td>
+<input type=submit name=nvp_a_arch value="Archive">&nbsp;&nbsp;<input type=submit name=nvp_a_sp value="Report Spam">&nbsp;&nbsp;<input type=submit name=nvp_a_tr value="Delete">&nbsp;&nbsp;
+<select name=bact>
+<option value="">More Actions...</option>
+<option value=rd>Mark as read</option>
+<option value=ur>Mark as unread</option>
+<option value=st>Add star</option>
+<option value=xst>Remove star</option>
+<option value=ig>Mute</option>
+<option value="" disabled>--------</option>
+<option value="" disabled>Apply label:</option>
+<option value="ac_Spain"
+>Spain
+</option>
+<option value="" disabled>--------</option>
+<option value="" disabled>Remove label:</option>
+<option value="rc_Spain"
+>Spain
+</option>
+</select>&nbsp;<input type=submit name=nvp_bbu_go value="Go">&nbsp;
+<a href="?&st=300">Refresh</a>
+</td>
+<td align=right>
+<a href="?&"
+><b>&laquo; Newest</b></a>&nbsp;
+<a href="?&st=200"
+><b>&#8249; Newer</b></a>&nbsp;
+<b>301</b>&nbsp;-&nbsp;<b>400</b> of <b>679</b>
+&nbsp;<a href="?&st=400"
+><b>Older &#8250;</b></a>
+&nbsp;<a href="?&st=600"
+><b>Oldest &raquo;</b></a>
+</table>
+</tr>
+</form>
+</table>
+<table cellpadding=2 cellspacing=0 border=0 align=center class=ft>
+<tr>
+<td align=center>
+Search accurately with <a style=color:#0000CC target=_blank href="http://mail.google.com/support/bin/answer.py?ctx=%67mail&answer=7190">operators</a> including <b>from:</b> &nbsp;<b>to:</b> &nbsp;<b>subject:</b>.
+<tr>
+<td align=center>
+<span style="color: #006633;
+font-weight: bold;">
+You are currently using
+567 MB
+(7%) of your
+7623 MB
+</span>
+<div style="font-size: 11px; line-height: 17px;">
+Last account activity: 22 minutes ago
+on this computer.
+&nbsp;<a href="?&amp;v=ac"
+target="details">Details</a>
+</div>
+<div style="margin:5 0 10">
+<table cellpadding=0 cellspacing=0 border=0 class=bn>
+<tr><td id=bm bgcolor=#FAE5B0>
+<div style="font-size:85%;margin:3 15 3 15;">
+Gmail view:
+<a href="?&amp;redir=/mail/&amp;a=stsv&amp;at=AF6bupOXLI-2LQp-G4aoNwNhjTLl0Qe3eA">
+standard</a> |
+<b>basic HTML</b>&nbsp;
+<a href="/support/bin/answer.py?ctx=%67mail&answer=15049"
+target="_blank">Learn more</a>
+</div>
+</td></tr>
+</table>
+</div>
+<tr>
+<td align=center>
+<font size=1>
+&copy;2011 Google -
+<a href="/mail/help/terms.html"
+target=_blank>
+Terms
+</a> -
+<a href="/mail/help/privacy.html"
+target=_blank>Privacy Policy</a> -
+<a href="http://gmailblog.blogspot.com/?utm_source=uifooter&utm_medium=et&utm_campaign=en"
+target=_blank>Gmail Blog</a> -
+<a href="http://www.google.com" target=_blank>Google Home</a>
+</font>
+</table>
+<script type="text/javascript" src="https://mail.google.com/mail/h/16ng0fu29cday/?&v=mjs&name=tz&ver=17jde4ey1rxj"></script>
+<script>
+_tz("_84_88_104280_84_446940","?&amp;v=tz");
+</script>
+<script>
+'name="at" value=0&name=at value=0&at=0&amp;at=0&';
+</script>
+</table>
+</body>
+</html>

@@ -1,0 +1,22 @@
+weightD0 = 1.02679
+weightDs0 = 0.96434
+weightDp = 1.02899
+weightDsp = 0.97018
+
+weightD10 = 0.96429
+weightD20 = 1.4
+weightD00 = 0.966102
+weightD1prime0 = 0.966102
+weightD0pi0 = 0.966102
+weightDstar0pi0 = 0.966102
+weightDpi = 0.966102
+weightDstarpi = 0.966102
+
+weightD1p = 0.96154
+weightD2p = 1.69565
+weightD0p = 0.946429
+weightD1primep = 0.946429
+weightD0pi = 0.946429
+weightDstar0pi = 0.946429
+weightDpi0 = 0.946429
+weightDstarpi0 = 0.946429

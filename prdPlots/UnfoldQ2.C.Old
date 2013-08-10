@@ -1,0 +1,143 @@
+#include "TString.h"
+#include "TSystem.h"
+#include "TROOT.h"
+#include "TCanvas.h"
+#include "TH1D.h"
+#include "TH2D.h"
+#include "TChain.h"
+#include "babar_code/prdPlots/TSVDUnfold.h"
+#include "babar_code/FF/BToDtaunu.cc"
+#include "babar_code/FF/BToDstaunu.cc"
+#include <fstream>
+#include <iostream>
+
+using namespace TMath;
+using namespace std;
+using std::cout;
+using std::endl;
+
+void UnfoldQ2(){
+  //gSystem->CompileMacro("babar_code/prdPlots/TSVDUnfold.cxx", "k") ; 
+  //gSystem->Load("babar_code/prdPlots/TSVDUnfold_cxx.so") ; 
+  BToDtaunu Dtaunu; BToDstaunu Dstaunu;
+  int nBins[] = {18,18}, nValues = 50, nBinsRes = 60, color[] = {4,1,2};
+  double minQ2[] = {3.5, 3.5}, maxQ2[] = {12.5, 12.5}, limRes = 2, ml[] = {Dtaunu.mTau, Dtaunu.mTau, Dtaunu.mMu};
+  TString hName;
+//   TString mcCuts[] = {"weight*((MCType==5&&candType==1||MCType==11&&candType==3)&&candM2>1.5)",
+// 		      "weight*((MCType==6&&candType==2||MCType==12&&candType==4)&&candM2>1.5)" ,
+// 		      "weight*((MCType==5&&candType==1||MCType==11&&candType==3))",
+// 		      "weight*((MCType==6&&candType==2||MCType==12&&candType==4))",
+// 		      "weight*(((MCType==1||MCType==3)&&candType==1||(MCType==7||MCType==9)&&candType==3))",
+// 		      "weight*(((MCType==2||MCType==4)&&candType==2||(MCType==8||MCType==10)&&candType==4))"};
+//   TString mcCuts[] = {"weight*((MCType==11&&candType==3)&&candM2>1.5)",
+// 		      "weight*((MCType==12&&candType==4)&&candM2>1.5)" ,
+// 		      "weight*((MCType==11&&candType==3))",
+// 		      "weight*((MCType==12&&candType==4))",
+// 		      "weight*(((MCType==7||MCType==9)&&candType==3))",
+// 		      "weight*(((MCType==8||MCType==10)&&candType==4))"};
+  TString mcCuts[] = {"weight*((MCType==5&&candType==1)&&candM2>1.5)",
+		      "weight*((MCType==6&&candType==2)&&candM2>1.5)" ,
+		      "weight*((MCType==5&&candType==1))",
+		      "weight*((MCType==6&&candType==2))",
+		      "weight*(((MCType==1||MCType==3)&&candType==1))",
+		      "weight*(((MCType==2||MCType==4)&&candType==2))"};
+  
+  TCanvas can("can","",1400,800); can.Divide(3,2);
+  TChain MC("ntp1");
+  MC.Add("AWG82/ntuples/small/FitRAllNewx100_RunAll.root");
+
+  TH1D *hbini[2], *hxini[2][3], *hQ2[2][3], *hEff[2][3], *hRes[2], *hRes2[2];
+  //TH1D *hxdat[2], *hD[2], *hbdat[2];
+  TH2D *hAdet[2];
+  double scaleEff = 1;
+  for(int isDs=0; isDs<2; isDs++){
+    for(int isNorm=2; isNorm>=0; isNorm--){
+      hName = "xini"; hName += isDs; hName += isNorm;
+      hxini[isDs][isNorm] = new TH1D(hName,"",nBins[isDs], minQ2[isDs], maxQ2[isDs]);
+      hxini[isDs][isNorm]->Sumw2(); hxini[isDs][isNorm]->SetLineColor(color[isNorm]); hxini[isDs][isNorm]->SetMarkerStyle(20); 
+      hxini[isDs][isNorm]->SetMarkerSize(0.5); hxini[isDs][isNorm]->SetMarkerColor(color[isNorm]);
+      MC.Project(hName,"trueQ2",mcCuts[isDs+2*isNorm]);
+      hName = "hQ2"; hName += isDs; hName += isNorm;
+      hQ2[isDs][isNorm] = new TH1D(hName,"",nBins[isDs],minQ2[isDs], maxQ2[isDs]);
+      for(int bin=1; bin<=nBins[isDs]; bin++){
+	double q2 = hQ2[isDs][isNorm]->GetBinLowEdge(bin), val=0;
+	double dq2 = (hQ2[isDs][isNorm]->GetBinLowEdge(bin)-q2)/(double)nValues;
+	q2 += dq2/2.;
+	for(int ival=0; ival<nValues; ival++) {
+	  if(isDs==0) val += 1e16*Dtaunu.Compute(q2,1, ml[isNorm]);
+	  else        val += 1e16*Dstaunu.Compute(q2,1, ml[isNorm]);
+	  q2 += dq2;
+	}
+	hQ2[isDs][isNorm]->SetBinContent(bin,val); hQ2[isDs][isNorm]->SetBinError(bin,0);
+      }
+      hEff[isDs][isNorm] = (TH1D*)hxini[isDs][isNorm]->Clone(); 
+      hEff[isDs][isNorm]->Divide(hQ2[isDs][isNorm]);
+      if(isNorm==2) scaleEff = 1/hEff[isDs][isNorm]->GetMaximum();
+      if(isNorm==1) scaleEff = hEff[isDs][2]->Integral(nBins[isDs]/3,nBins[isDs]/3*2)/
+	hEff[isDs][1]->Integral(nBins[isDs]/3,nBins[isDs]/3*2);
+      hEff[isDs][isNorm]->Scale(scaleEff);
+    }
+
+    hName = "bini"; hName += isDs;
+    hbini[isDs] = new TH1D(hName,"",nBins[isDs], minQ2[isDs], maxQ2[isDs]);
+    hbini[isDs]->Sumw2(); hbini[isDs]->SetLineColor(1); hbini[isDs]->SetLineWidth(2); 
+    MC.Project(hName,"candQ2",mcCuts[isDs]);
+    hName = "Adet"; hName += isDs;
+    hAdet[isDs] = new TH2D(hName,"",nBins[isDs], minQ2[isDs], maxQ2[isDs],
+			   nBins[isDs], minQ2[isDs], maxQ2[isDs]);
+    MC.Project(hName,"trueQ2:candQ2",mcCuts[isDs]);
+
+    hName = "Res"; hName += isDs;
+    hRes[isDs] = new TH1D(hName,"",nBinsRes, -limRes, limRes);
+    hRes[isDs]->SetLineColor(color[0]); hRes[isDs]->Sumw2(); 
+    MC.Project(hName,"candQ2-trueQ2",mcCuts[isDs]);
+    hName = "Res2"; hName += isDs;
+    hRes2[isDs] = new TH1D(hName,"",nBinsRes, -limRes, limRes);
+    hRes2[isDs]->SetLineColor(color[2]); hRes2[isDs]->Sumw2(); 
+    MC.Project(hName,"candQ2-trueQ2",mcCuts[isDs+2]);
+    hRes2[isDs]->Scale(hRes[isDs]->Integral()/hRes2[isDs]->Integral());
+
+//     hbdat[isDs] = (TH1D*)hbini[isDs]->Clone();
+//     cout<<"Doing the unfolding "<<isDs<<endl;
+//     TSVDUnfold unfold(hbdat[isDs], hbini[isDs], hxini[isDs], hAdet[isDs]);
+//     hxdat[isDs] = unfold.Unfold(5);
+//     hxdat[isDs]->SetLineColor(4); hxdat[isDs]->SetLineWidth(2); 
+//     hD[isDs] = (TH1D*)unfold.GetD();
+
+    can.cd(3*isDs+1);
+    hxini[isDs][0]->Draw("hist"); hbini[isDs]->Draw("same");  //hxdat[isDs]->Draw("same"); 
+    //unfold.Delete();
+
+    can.cd(3*isDs+2);
+    hRes2[isDs]->Draw("hist"); hRes[isDs]->Draw("e0 same");
+
+    can.cd(3*isDs+3);
+    hEff[isDs][1]->Draw();
+    hEff[isDs][2]->Draw("same");
+    //hEff[isDs][0]->Draw("same");
+//     hQ2[isDs][2]->Draw();
+//     hQ2[isDs][1]->Draw("same");
+//     hQ2[isDs][0]->Draw("same");
+
+  }
+
+  can.SaveAs("public_html/UnfoldQ2.eps");
+
+  for(int isDs=0; isDs<2; isDs++){
+    if(hbini[isDs]) hbini[isDs]->Delete();
+    if(hAdet[isDs]) hAdet[isDs]->Delete();
+    if(hRes[isDs]) hRes[isDs]->Delete();
+    if(hRes2[isDs]) hRes2[isDs]->Delete();
+    for(int isNorm=0; isNorm<3; isNorm++){
+      if(hEff[isDs][isNorm]) hEff[isDs][isNorm]->Delete();
+      if(hQ2[isDs][isNorm]) hQ2[isDs][isNorm]->Delete();
+      if(hxini[isDs][isNorm]) hxini[isDs][isNorm]->Delete();
+    }
+  }
+}
+
+
+
+
+
+

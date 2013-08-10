@@ -1,0 +1,4 @@
+Framework event selection, N-tuple production, and analysis executables for B -> D(*) tau nu vs. BSemiExcl tags.
+
+This package contains code that was original hand-copied and maintained outside of CVS in BetaMiniUser, from Michael Mazur.
+Copied and committed by Manuel Franco Sevilla in 2009 for update of analysis to full Runs 1-6 BaBar dataset.

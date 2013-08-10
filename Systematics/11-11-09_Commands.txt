@@ -1,0 +1,42 @@
+CSample noCut candEExtra 40 0 2 "candQ2>4XXcandM2>1.5" no no babar_code/Reweight/wCombCont.txt 
+cpf keys/eps/CSample/noCut_candEExtra_All_both.eps public_html/
+
+CSample noCut candDeltaE 35 -0.07 0.07 "candQ2>4XXcandM2>1.5XXcandEExtra<0.8" no yes babar_code/Reweight/wCombCont.txt
+cpf keys/eps/CSample/noCut_candDeltaE_All_both.eps public_html/
+
+CSample noCut candCosT 40 -1 1 "candQ2>4XXcandM2>1.5XXcandEExtra<0.8" l yes babar_code/Reweight/wCombCont.txt
+cpf keys/eps/CSample/noCut_candCosT_All_both.eps public_html/
+
+CSample noCut candBTagDmass 25 1.8401 1.8899 "candQ2>4XXcandM2>1.5XXcandEExtra<0.8" no yes babar_code/Reweight/wCombCont.txt
+cpf keys/eps/CSample/noCut_candBTagDmass_All_both.eps public_html/
+
+CSample noCutZ candEExtra 5 0 1 "candQ2>4XXcandM2>2" no no babar_code/Reweight/wCombCont.txt
+cpf keys/eps/CSample/noCutZ_candEExtra_All_both.eps public_html/
+
+CSample noMES candEExtra 5 0 1 "candQ2>4XXcandM2>2XXcandMES>5.2XXcandMES<5.26" no no babar_code/Reweight/wCombCont.txt
+cpf keys/eps/CSample/noMES_candEExtra_All_both.eps public_html/
+
+CSample MVA candMES 10 5.2 5.26 "candQ2>4XXcandM2>2XXcandMvaDl>0.05" no no babar_code/Reweight/wTotal.txt
+cpf  keys/eps/CSample/MVA_candMES_All_both.eps public_html/mES_SB.eps
+
+CSample noMvaSR candEExtra 5 0 1 "candQ2>4XXcandM2>2XXcandMES>5.27" no no babar_code/Reweight/wCombCont.txt
+cpf keys/eps/CSample/noMvaSR_candEExtra_All_both.eps public_html/EExtra_SR_noMva.eps
+
+CSample noMva candEExtra 5 0 1 "candQ2>4XXcandM2>2XXcandMES>5.2XXcandMES<5.26" no no babar_code/Reweight/wCombCont.txt
+cpf keys/eps/CSample/noMva_candEExtra_All_both.eps public_html/EExtra_SB_noMva.eps
+
+CSample noMva candMES 15 5.2 5.3 "candQ2>4XXcandM2>2XXcandEExtra<0.5" no no babar_code/Reweight/wCombCont.txt
+cp keys/eps/CSample/noMva_candMES_All_both.eps public_html/mES_Full.eps
+
+PlotFit FitAll/fits/TextFinalDataDf2x100.txt sig All candM2 48 -2.25 9.75 curveLegPl 18 1 12 0.85 24
+cpf keys/eps/FinalFit/sigcandM2_curveLegPl.eps public_html/Fit_x100.eps
+
+PlotFit FitAll/fits/TextFinalDataSi2x300.txt sig All candM2 48 -2.25 9.75 curveLegPl 10 1 12 0.85 36
+cpf keys/eps/FinalFit/sigcandM2_curveLegPl.eps public_html/Fit_x300.eps
+
+PlotFit FitAll/fits/TextFinalDataSi2x030.txt sig All candM2 32 -2.25 9.75 curveLegPl 25 1 12 0.85 12
+cpf keys/eps/FinalFit/sigcandM2_curveLegPl.eps public_html/Fit_x030.eps
+
+babar_code/Scripts/sendChi2.tcsh 15 15 100
+cp keys/eps/FinalFit/sig100candM2_histoPl.eps public_html/Fit_x100_histo_15_15.eps
+

@@ -1,0 +1,50 @@
+CSample OffnoCutSum candPstarLep 60 0 2.4 "candQ2>4XXcandMES>5.27" r no babar_code/Reweight/wFFBF.txt
+cpf keys/eps/CSample/OffnoCutSum_candPstarLep_All_both.eps public_html/PRL_Off_PlnoW.eps 
+
+CSample noCutSum candPstarLep 60 0 2.4 "candQ2>4XXcandEExtra>1.2&&candEExtra<2.4" r yes babar_code/Reweight/wFFBF.txt
+cpf keys/eps/CSample/noCutSum_candPstarLep_All_both.eps public_html/PRL_PlnoW.eps 
+
+CSample OffnoCutSumPl candPstarLep 60 0 2.4 "candQ2>4XXcandMES>5.27" r no babar_code/Reweight/wPl.txt
+cpf keys/eps/CSample/OffnoCutSumPl_candPstarLep_All_both.eps public_html/PRL_Off_PlW.eps 
+
+CSample noCutSumPl candPstarLep 60 0 2.4 "candQ2>4XXcandEExtra>1.2&&candEExtra<2.4" r yes babar_code/Reweight/wPl.txt
+cpf keys/eps/CSample/noCutSumPl_candPstarLep_All_both.eps public_html/PRL_PlW.eps 
+
+CSample noCutSumMidEx candPstarLep 50 0 2 "candQ2>4XXcandEExtra>0.5&&candEExtra<1.2XXcandM2>1" r yes babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/noCutSumMidEx_candPstarLep_All_both.eps public_html/PRL_PlMidex.eps
+
+CSample noMESSumSB candPstarLep 50 0 2 "candQ2>4XXcandMES>5.2XXcandMES<5.26XXcandEExtra<0.5XXcandM2>1" r yes babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/noMESSumSB_candPstarLep_All_both.eps public_html/PRL_PL_mESsb.eps
+
+plotVariable MVAIso candMES 40 5.27 5.29 "candM2>1.5" r3 1 babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/MVAIsoNewx100_candMES_All_both.eps public_html/PRL_mES.eps
+
+plotVariable MVA candEExtra 10 0 0.5 "candQ2>4XXcandM2>1.5" r0 1.15 babar_code/Reweight/wTotal.txt 
+cpf keys/eps/CSample/MVANewx100_candEExtra_All_both.eps public_html/PRL_EExtra.eps
+
+plotVariable MVAChiSubIso candEExtra 10 0 0.5 "candQ2>4XXcandM2>1.5" no 1.15 babar_code/Reweight/wTotal.txt 0123456 
+cpf keys/eps/CSample/MVAChiSubIsoNewx100_candEExtra_All_both.eps public_html/PRL_EExtraSub.eps
+
+
+PlotFit FitAll/fits/TextFinalDataNe2x100.txt dss All candM2 50 -2.5 7.5 curveLegPlSum 1 -4 12 1 40
+cpf keys/eps/FinalFit/dsscandM2_curveLegPlSum.eps public_html/PRL_Fit_dspiz.eps
+
+
+PlotFit FitAll/fits/TextFinalDataDpip2x100.txt dss All candM2 50 -2.5 7.5 curveLegPlSumDpipi 1 -4 12 1 40
+cpf keys/eps/FinalFit/dsscandM2_curveLegPlSumDpipi.eps public_html/PRL_Fit_dspiz_Dpipi.eps 
+
+
+
+
+CSample noCutDsp candDeltam 50 0.141 0.1495 "candDstarType==1XXcandM2<1" l yes babar_code/Reweight/wTotal.txt
+cp keys/eps/CSample/noCutDsp_candDeltam_All_both.eps public_html/Deltam_Dsp_pi.eps
+
+CSample noCutDs0 candDeltam 50 0.134 0.148 "candDstarType==1XXcandM2<1" l yes babar_code/Reweight/wTotal.txt
+cp keys/eps/CSample/noCutDs0_candDeltam_All_both.eps public_html/Deltam_Ds0_pi.eps
+
+
+CSample noCutDspp candDeltam 50 0.136 0.1447 "candDstarType==2XXcandM2<1" l yes babar_code/Reweight/wTotal.txt
+cp keys/eps/CSample/noCutDspp_candDeltam_All_both.eps public_html/Deltam_Dsp_pi0.eps
+
+CSample noCutDs0g candDeltam 50 0.12 0.152 "candDstarType==2XXcandM2<1" l yes babar_code/Reweight/wTotal.txt
+cp keys/eps/CSample/noCutDs0g_candDeltam_All_both.eps public_html/Deltam_Ds0_g.eps

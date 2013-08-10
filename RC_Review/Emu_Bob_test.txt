@@ -1,0 +1,220 @@
+Electrons
+Ratio for 100% sample
+MC: 831, data: 885.2	  -  Ratio: 0.93893 +- 0.03671
+MC: 299, data: 282.1	  -  Ratio: 1.06163 +- 0.07459
+MC: 831, data: 885.2	  -  Ratio: 0.93893 +- 0.03671
+MC: 299, data: 282.1	  -  Ratio: 1.06163 +- 0.07459
+Ratio for 100% sample
+MC: 546, data: 583.0	  -  Ratio: 0.93608 +- 0.04501
+MC: 249, data: 234.2	  -  Ratio: 1.06377 +- 0.08233
+MC: 285, data: 302.2	  -  Ratio: 0.94444 +- 0.06345
+MC: 50, data: 47.8	  -  Ratio: 1.05118 +- 0.17605
+
+
+Muons
+Ratio for 100% sample
+MC: 1856, data: 2089.3	  -  Ratio: 0.88833 +- 0.02199
+MC: 711, data: 774.5	  -  Ratio: 0.91837 +- 0.03769
+MC: 1856, data: 2089.3	  -  Ratio: 0.88833 +- 0.02199
+MC: 711, data: 774.5	  -  Ratio: 0.91837 +- 0.03769
+
+
+
+
+
+
+
+
+
+
+[yakut16] ~/releases/Ntuple52/workdir $ CSample MVAe candPstarLep 20 0 2.4 "candMES>5.27XXcandM2>1XXcandIsMu==0" r no babar_code/Reweight/wTotal.txt
+Warning in <TClassTable::Add>: class THtml::TFileSysRoot already in TClassTable
+MC: 895, data: 946	  -  Ratio: 0.94573 +- 0.03251
+MC: 328, data: 384	  -  Ratio: 0.85333 +- 0.04630
+MC: 332, data: 363	  -  Ratio: 0.91544 +- 0.05089
+MC: 132, data: 163	  -  Ratio: 0.81279 +- 0.06789
+MC: 1687, data: 1856	  -  Ratio: 0.90901 +- 0.02236	 That's -4.07 sigma away
+
+[yakut16] ~/releases/Ntuple52/workdir $ CSample MVAe candPstarLep 20 0 0.8 "candMES>5.27XXcandM2>1XXcandIsMu==0" r no babar_code/Reweight/wTotal.txt
+Warning in <TClassTable::Add>: class THtml::TFileSysRoot already in TClassTable
+MC: 341, data: 345	  -  Ratio: 0.98781 +- 0.05610
+MC: 157, data: 180	  -  Ratio: 0.87413 +- 0.06919
+MC: 153, data: 168	  -  Ratio: 0.91299 +- 0.07462
+MC: 61, data: 84	  -  Ratio: 0.72176 +- 0.08462
+MC: 712, data: 777	  -  Ratio: 0.91654 +- 0.03482	 That's -2.40 sigma away
+
+[yakut16] ~/releases/Ntuple52/workdir $ CSample MVAe candPstarLep 20 1 2.4 "candMES>5.27XXcandM2>1XXcandIsMu==0" r no babar_code/Reweight/wTotal.txt
+Warning in <TClassTable::Add>: class THtml::TFileSysRoot already in TClassTable
+MC: 398, data: 427	  -  Ratio: 0.93234 +- 0.04774
+MC: 115, data: 142	  -  Ratio: 0.81121 +- 0.07260
+MC: 122, data: 135	  -  Ratio: 0.90003 +- 0.08212
+MC: 50, data: 56	  -  Ratio: 0.89035 +- 0.12621
+MC: 685, data: 760	  -  Ratio: 0.90087 +- 0.03464	 That's -2.86 sigma away
+
+
+
+[yakut16] ~/releases/Ntuple52/workdir $ CSample MVAmu candPstarLep 20 0 2.4 "candMES>5.27XXcandM2>1XXcandIsMu==1" r no babar_code/Reweight/wTotal.txt
+Warning in <TClassTable::Add>: class THtml::TFileSysRoot already in TClassTable
+MC: 948, data: 1131	  -  Ratio: 0.83806 +- 0.02653
+MC: 396, data: 447	  -  Ratio: 0.88628 +- 0.04448
+MC: 410, data: 469	  -  Ratio: 0.87360 +- 0.04284
+MC: 123, data: 149	  -  Ratio: 0.82367 +- 0.07190
+MC: 1876, data: 2196	  -  Ratio: 0.85449 +- 0.01939	 That's -7.51 sigma away
+
+[yakut16] ~/releases/Ntuple52/workdir $ CSample MVAmu candPstarLep 5 0 0.8 "candMES>5.27XXcandM2>1XXcandIsMu==1" r no babar_code/Reweight/wTotal.txt
+Warning in <TClassTable::Add>: class THtml::TFileSysRoot already in TClassTable
+MC: 433, data: 555	  -  Ratio: 0.78070 +- 0.03543
+MC: 230, data: 262	  -  Ratio: 0.87713 +- 0.05753
+MC: 216, data: 242	  -  Ratio: 0.89447 +- 0.06098
+MC: 66, data: 70	  -  Ratio: 0.93706 +- 0.11848
+MC: 945, data: 1129	  -  Ratio: 0.83716 +- 0.02652	 That's -6.14 sigma away
+
+[yakut16] ~/releases/Ntuple52/workdir $ CSample MVAmu candPstarLep 5 1 2.4 "candMES>5.27XXcandM2>1XXcandIsMu==1" r no babar_code/Reweight/wTotal.txt
+Warning in <TClassTable::Add>: class THtml::TFileSysRoot already in TClassTable
+MC: 348, data: 400	  -  Ratio: 0.87026 +- 0.04622
+MC: 101, data: 113	  -  Ratio: 0.89215 +- 0.08902
+MC: 123, data: 142	  -  Ratio: 0.86577 +- 0.07719
+MC: 37, data: 46	  -  Ratio: 0.79747 +- 0.12553
+MC: 609, data: 701	  -  Ratio: 0.86811 +- 0.03483	 That's -3.79 sigma away
+
+
+Electrons
+1	 1063	&	119
+2	 1464	&	163
+3	 600	&	67
+4	 827	&	92
+5	 1273	&	142
+6	 101	&	11
+7	 287	&	32
+8	 9	&	1
+9	 8681	&	968
+10	 24122	&	2690
+11	 4417	&	493
+12	 12843	&	1432
+13	 23930	&	2669
+14	 622	&	69
+15	 5275	&	588
+16	 34	&	4
+17	 296/1840	&	33/205
+18	 100/1148	&	11/128
+19	 173/850	&	19/95
+20	 30/501	&	3/56
+21	 548/2276	&	61/254
+22	 173/1466	&	19/164
+23	 322/1246	&	36/139
+24	 120/1490	&	13/166
+25	 1265	&	141
+26	 980	&	109
+27	 447	&	50
+28	 550	&	61
+29	 316	&	35
+30	 72	&	8
+31	 169	&	19
+32	 13	&	1
+33	 0	&	0
+34	 0	&	0
+35	 0	&	0
+36	 0	&	0
+37	 0	&	0
+38	 0	&	0
+39	 0	&	0
+40	 0	&	0
+41	 1586	&	177
+42	 366	&	41
+43	 295	&	33
+44	 57	&	6
+45	 263	&	29
+46	 125	&	14
+47	 185	&	21
+48	 50	&	6
+49	 0	&	0
+50	 0	&	0
+55	 1579	&	176
+56	 1426	&	159
+57	 1425	&	159
+58	 587	&	65
+61	  568	61	 199	&	43
+62	  218	62	 70	&	15
+63	  245	63	 73	&	16
+64	  13	64	 8	&	2
+65	  708	65	 209	&	45
+66	  440	66	 140	&	30
+67	  391	67	 133	&	29
+68	  90	68	 22	&	5
+69	  813	69	 272	&	58
+70	  231	70	 78	&	17
+51	  1936	51	 1204	&	134
+52	  1227	52	 769	&	86
+53	  1051	53	 697	&	78
+54	  449	54	 303	&	34
+
+
+Muons
+1	       1033	&	115
+2	  1504	&	168
+3	  646	&	72
+4	  759	&	85
+5	  1225	&	137
+6	  96	&	11
+7	  284	&	32
+8	  9	&	1
+9	  8056	&	898
+10	  22526	&	2512
+11	  4241	&	473
+12	  11961	&	1334
+13	  21817	&	2433
+14	  580	&	65
+15	  4907	&	547
+16	  33	&	4
+17	  315/1824	&	35/203
+18	  90/1082	&	10/121
+19	  147/851	&	16/95
+20	  32/456	&	4/51
+21	  557/2304	&	62/257
+22	  167/1405	&	19/157
+23	  260/1267	&	29/141
+24	  132/1604	&	15/179
+25	  1366	&	152
+26	  1069	&	119
+27	  513	&	57
+28	  598	&	67
+29	  440	&	49
+30	  125	&	14
+31	  229	&	26
+32	  18	&	2
+33	  0	&	0
+34	  0	&	0
+35	  0	&	0
+36	  0	&	0
+37	  0	&	0
+38	  0	&	0
+39	  0	&	0
+40	  0	&	0
+41	  1629	&	182
+42	  366	&	41
+43	  287	&	32
+44	  62	&	7
+45	  396	&	44
+46	  214	&	24
+47	  229	&	26
+48	  67	&	7
+49	  0	&	0
+50	  0	&	0
+55	  3418	&	381
+56	  3009	&	336
+57	  2579	&	288
+58	  1158	&	129
+&	122
+&	47
+&	53
+&	3
+&	152
+&	95
+&	84
+&	19
+&	175
+&	50
+&	216
+&	137
+&	117
+&	50

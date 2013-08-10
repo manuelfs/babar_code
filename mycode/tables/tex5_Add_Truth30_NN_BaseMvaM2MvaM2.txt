@@ -1,0 +1,56 @@
+\begin{tabular}{|l||cc|c|cc|c|}
+\hline
+$\mathbf{D^{*0}}$ & Add_Truth30_e & Base_e & R_e & Add_Truth30_{\mu} & Base_{\mu} & R_{\mu} \\
+\hline \hline
+D^{*0} \,\tau \,\nu & 135 & 77 & 1.75 & 127 & 45 & 2.82 \\
+D^{0} \,\tau \,\nu & 10 & 7 & 1.43 & 15 & 3 & 5.00 \\
+D^{*0} \,l \,\nu & 61 & 21 & 2.90 & 19 & 8 & 2.38 \\
+D^{0} \,l \,\nu & 4 & 2 & 2.00 & 1 & 0 &  -  \\
+D^{**} \,l \,\nu & 57 & 26 & 2.19 & 56 & 21 & 2.67 \\
+Crossfeed & 6 & 1 & 6.00 & 6 & 1 & 6.00 \\
+Comb. & 65 & 26 & 2.50 & 91 & 23 & 3.96 \\
+\hline \end{tabular}
+\,\,
+
+\begin{tabular}{|l||cc|c|cc|c|}
+\hline
+$\mathbf{D^{0}}$ & Add_Truth30_e & Base_e & R_e & Add_Truth30_{\mu} & Base_{\mu} & R_{\mu} \\
+\hline \hline
+D^{0} \,\tau \,\nu & 117 & 63 & 1.86 & 94 & 33 & 2.85 \\
+D^{*0} \,\tau \,\nu & 128 & 70 & 1.83 & 112 & 43 & 2.60 \\
+D^{*0} \,l \,\nu & 374 & 178 & 2.10 & 274 & 134 & 2.04 \\
+D^{0} \,l \,\nu & 26 & 13 & 2.00 & 14 & 1 & 14 \\
+D^{**} \,l \,\nu & 206 & 106 & 1.94 & 142 & 75 & 1.89 \\
+Crossfeed & 36 & 9 & 4.00 & 27 & 7 & 3.86 \\
+Comb. & 110 & 30 & 3.67 & 195 & 84 & 2.32 \\
+\hline \end{tabular}
+\,\,
+
+\begin{tabular}{|l||cc|c|cc|c|}
+\hline
+$\mathbf{D^{*+}}$ & Add_Truth30_e & Base_e & R_e & Add_Truth30_{\mu} & Base_{\mu} & R_{\mu} \\
+\hline \hline
+D^{*+} \,\tau \,\nu & 65 & 33 & 1.97 & 45 & 16 & 2.81 \\
+D^{+} \,\tau \,\nu & 0 & 0 &  -  & 0 & 0 &  -  \\
+D^{*+} \,l \,\nu & 21 & 7 & 3.00 & 7 & 2 & 3.50 \\
+D^{+} \,l \,\nu & 1 & 0 &  -  & 0 & 0 &  -  \\
+D^{**} \,l \,\nu & 15 & 10 & 1.50 & 17 & 6 & 2.83 \\
+Crossfeed & 1 & 0 &  -  & 0 & 0 &  -  \\
+Comb. & 23 & 12 & 1.92 & 24 & 13 & 1.85 \\
+\hline \end{tabular}
+\,\,
+
+\begin{tabular}{|l||cc|c|cc|c|}
+\hline
+$\mathbf{D^{+}}$ & Add_Truth30_e & Base_e & R_e & Add_Truth30_{\mu} & Base_{\mu} & R_{\mu} \\
+\hline \hline
+D^{+} \,\tau \,\nu & 43 & 20 & 2.15 & 37 & 12 & 3.08 \\
+D^{*+} \,\tau \,\nu & 18 & 9 & 2.00 & 16 & 5 & 3.20 \\
+D^{*+} \,l \,\nu & 44 & 23 & 1.91 & 18 & 8 & 2.25 \\
+D^{+} \,l \,\nu & 13 & 3 & 4.33 & 3 & 2 & 1.50 \\
+D^{**} \,l \,\nu & 36 & 24 & 1.50 & 35 & 15 & 2.33 \\
+Crossfeed & 4 & 1 & 4.00 & 3 & 0 &  -  \\
+Comb. & 32 & 16 & 2.00 & 61 & 20 & 3.05 \\
+\hline \end{tabular}
+\,\,
+

@@ -1,0 +1,4 @@
+FFWeights = babar_code/Reweight/wAllFF
+DlnFF = babar_code/Reweight/wAllFF
+PlWeights = keys/weights/WeightText_140.txt
+BFWeights = babar_code/Reweight/wAllBF

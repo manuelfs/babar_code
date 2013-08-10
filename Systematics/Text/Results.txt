@@ -1,0 +1,160 @@
+[noric10] ~/releases/Ntuple51/workdir > tail -n 4 FitAll/fits/TextFinalDatax20Pl50.txt 
+R(D0):  0.4301 +- 0.0888, a 20.7 % error.       Tau: 275 +- 56, Norm: 2071 +- 57
+R(D*0): 0.3385 +- 0.0350, a 10.4 % error.       Tau: 679 +- 70, Norm: 9967 +- 110
+R(D+):  0.5483 +- 0.0902, a 16.4 % error.       Tau: 177 +- 28, Norm: 989 +- 35
+R(D*+): 0.3465 +- 0.0462, a 13.3 % error.       Tau: 241 +- 32, Norm: 3734 +- 66
+[noric10] ~/releases/Ntuple51/workdir > tail -n 4 FitAll/fits/TextFinalDatax30Pl50.txt
+R(D0):  0.5020 +- 0.0943, a 18.8 % error.       Tau: 384 +- 71, Norm: 2481 +- 64
+R(D*0): 0.3304 +- 0.0373, a 11.3 % error.       Tau: 778 +- 87, Norm: 11704 +- 122
+R(D+):  0.5031 +- 0.0942, a 18.7 % error.       Tau: 190 +- 35, Norm: 1158 +- 39
+R(D*+): 0.2712 +- 0.0516, a 19.0 % error.       Tau: 213 +- 40, Norm: 4217 +- 71
+[noric10] ~/releases/Ntuple51/workdir > tail -n 2 FitAll/fits/TextFinalIsoDatax20Pl50.txt
+R(D):   0.4889 +- 0.0630, a 12.9 % error.       Tau: 466 +- 59, Norm: 3063 +- 67
+R(D*):  0.3306 +- 0.0264, a 8.0 % error.        Tau: 905 +- 72, Norm: 13699 +- 130
+[noric10] ~/releases/Ntuple51/workdir > tail -n 2 FitAll/fits/TextFinalIsoDatax30Pl50.txt
+R(D):   0.5039 +- 0.0677, a 13.4 % error.       Tau: 561 +- 74, Norm: 3604 +- 74
+R(D*):  0.3161 +- 0.0283, a 8.9 % error.        Tau: 1019 +- 91, Norm: 15973 +- 143
+
+
+[noric10] ~/releases/Ntuple51/workdir > tail -n 4 FitAll/fits/TextFinalDataPl50.txt
+R(D0):  0.3458 +- 0.0812, a 23.5 % error.       Tau: 152 +- 35, Norm: 1427 +- 46
+R(D*0): 0.3212 +- 0.0322, a 10.0 % error.       Tau: 440 +- 44, Norm: 6814 +- 89
+R(D+):  0.4655 +- 0.0860, a 18.5 % error.       Tau: 106 +- 19, Norm: 700 +- 29
+R(D*+): 0.3576 +- 0.0415, a 11.6 % error.       Tau: 185 +- 21, Norm: 2780 +- 55
+[noric09] ~/releases/Ntuple51/workdir > tail -n 4 FitAll/fits/TextFinalDataPl60.txt
+R(D0):  0.3267 +- 0.0889, a 27.2 % error.       Tau: 125 +- 34, Norm: 1404 +- 45
+R(D*0): 0.3290 +- 0.0345, a 10.5 % error.       Tau: 399 +- 42, Norm: 6765 +- 89
+R(D+):  0.5157 +- 0.0944, a 18.3 % error.       Tau: 103 +- 18, Norm: 692 +- 29
+R(D*+): 0.3243 +- 0.0429, a 13.2 % error.       Tau: 150 +- 20, Norm: 2755 +- 55
+[noric10] ~/releases/Ntuple51/workdir > tail -n 4 FitAll/fits/TextFinalDataPl70.txt
+R(D0):  0.2975 +- 0.0955, a 32.1 % error.       Tau: 97 +- 31, Norm: 1379 +- 45
+R(D*0): 0.3314 +- 0.0363, a 10.9 % error.       Tau: 353 +- 38, Norm: 6681 +- 88
+R(D+):  0.5735 +- 0.1049, a 18.3 % error.       Tau: 97 +- 17, Norm: 677 +- 28
+R(D*+): 0.3418 +- 0.0463, a 13.5 % error.       Tau: 140 +- 19, Norm: 2727 +- 55
+[noric10] ~/releases/Ntuple51/workdir > tail -n 2 FitAll/fits/TextFinalIsoDataPl50.txt
+R(D):   0.3959 +- 0.0579, a 14.6 % error.       Tau: 265 +- 38, Norm: 2130 +- 54
+R(D*):  0.3281 +- 0.0245, a 7.5 % error.        Tau: 621 +- 46, Norm: 9592 +- 107
+[noric09] ~/releases/Ntuple51/workdir > tail -n 2 FitAll/fits/TextFinalIsoDataPl60.txt
+R(D):   0.4167 +- 0.0635, a 15.2 % error.       Tau: 243 +- 36, Norm: 2100 +- 53
+R(D*):  0.3183 +- 0.0260, a 8.2 % error.        Tau: 535 +- 43, Norm: 9515 +- 106
+[noric10] ~/releases/Ntuple51/workdir > tail -n 2 FitAll/fits/TextFinalIsoDataPl70.txt
+R(D):   0.4265 +- 0.0689, a 16.2 % error.       Tau: 211 +- 34, Norm: 2060 +- 53
+R(D*):  0.3232 +- 0.0275, a 8.5 % error.        Tau: 478 +- 40, Norm: 9403 +- 105
+
+
+
+
+
+[noric09] ~/releases/Ntuple51/workdir > tail -n 4 FitAll/fits/TextFinalDatax05.txt
+R(D0):  0.4838 +- 0.0816, a 16.9 % error.       Tau: 156 +- 26, Norm: 864 +- 35
+R(D*0): 0.2726 +- 0.0297, a 10.9 % error.       Tau: 280 +- 30, Norm: 4312 +- 70
+R(D+):  0.3855 +- 0.0799, a 20.7 % error.       Tau: 72 +- 14, Norm: 483 +- 24
+R(D*+): 0.3393 +- 0.0420, a 12.4 % error.       Tau: 129 +- 16, Norm: 1726 +- 43
+[noric09] ~/releases/Ntuple51/workdir > tail -n 4 FitAll/fits/TextFinalDatax07.txt
+R(D0):  0.4003 +- 0.0749, a 18.7 % error.       Tau: 164 +- 30, Norm: 1097 +- 39
+R(D*0): 0.2937 +- 0.0297, a 10.1 % error.       Tau: 372 +- 37, Norm: 5326 +- 78
+R(D+):  0.4244 +- 0.0798, a 18.8 % error.       Tau: 91 +- 17, Norm: 560 +- 26
+R(D*+): 0.3404 +- 0.0391, a 11.5 % error.       Tau: 163 +- 18, Norm: 2173 +- 49
+[noric09] ~/releases/Ntuple51/workdir > tail -n 4 FitAll/fits/TextFinalDatax08.txt
+R(D0):  0.4140 +- 0.0739, a 17.8 % error.       Tau: 193 +- 34, Norm: 1250 +- 42
+R(D*0): 0.3044 +- 0.0296, a 9.7 % error.        Tau: 432 +- 42, Norm: 5968 +- 83
+R(D+):  0.4683 +- 0.0792, a 16.9 % error.       Tau: 114 +- 19, Norm: 633 +- 27
+R(D*+): 0.3427 +- 0.0377, a 11.0 % error.       Tau: 187 +- 20, Norm: 2481 +- 52
+[noric10] ~/releases/Ntuple51/workdir > tail -n 4 FitAll/fits/TextFinalDataIter2.txt 
+R(D0):  0.4222 +- 0.0736, a 17.4 % error.       Tau: 226 +- 39, Norm: 1433 +- 46
+R(D*0): 0.3140 +- 0.0298, a 9.5 % error.        Tau: 511 +- 48, Norm: 6839 +- 90
+R(D+):  0.5130 +- 0.0809, a 15.8 % error.       Tau: 139 +- 21, Norm: 704 +- 29
+R(D*+): 0.3563 +- 0.0381, a 10.7 % error.       Tau: 220 +- 23, Norm: 2802 +- 56
+[noric10] ~/releases/Ntuple51/workdir > tail -n 4 FitAll/fits/TextFinalDatax12.txt
+R(D0):  0.4527 +- 0.0752, a 16.6 % error.       Tau: 268 +- 44, Norm: 1585 +- 49
+R(D*0): 0.3283 +- 0.0305, a 9.3 % error.        Tau: 592 +- 55, Norm: 7585 +- 95
+R(D+):  0.5186 +- 0.0799, a 15.4 % error.       Tau: 157 +- 23, Norm: 787 +- 31
+R(D*+): 0.3499 +- 0.0380, a 10.9 % error.       Tau: 240 +- 26, Norm: 3124 +- 59
+[noric09] ~/releases/Ntuple51/workdir > tail -n 4 FitAll/fits/TextFinalDatax15.txt
+R(D0):  0.4598 +- 0.0773, a 16.8 % error.       Tau: 310 +- 51, Norm: 1804 +- 53
+R(D*0): 0.3324 +- 0.0315, a 9.5 % error.        Tau: 680 +- 64, Norm: 8603 +- 102
+R(D+):  0.5412 +- 0.0808, a 14.9 % error.       Tau: 182 +- 26, Norm: 876 +- 33
+R(D*+): 0.3510 +- 0.0395, a 11.3 % error.       Tau: 265 +- 29, Norm: 3430 +- 62
+[noric09] ~/releases/Ntuple51/workdir > tail -n 4 FitAll/fits/TextFinalDatax20.txt
+R(D0):  0.5132 +- 0.0809, a 15.8 % error.       Tau: 399 +- 62, Norm: 2081 +- 58
+R(D*0): 0.3257 +- 0.0327, a 10.0 % error.       Tau: 776 +- 77, Norm: 10017 +- 111
+R(D+):  0.5414 +- 0.0837, a 15.5 % error.       Tau: 207 +- 31, Norm: 995 +- 35
+R(D*+): 0.3875 +- 0.0427, a 11.0 % error.       Tau: 321 +- 35, Norm: 3770 +- 66
+[noric09] ~/releases/Ntuple51/workdir > tail -n 4 FitAll/fits/TextFinalDatax25.txt
+R(D0):  0.5638 +- 0.0841, a 14.9 % error.       Tau: 485 +- 71, Norm: 2301 +- 61
+R(D*0): 0.3182 +- 0.0342, a 10.8 % error.       Tau: 838 +- 90, Norm: 11069 +- 117
+R(D+):  0.5710 +- 0.0860, a 15.1 % error.       Tau: 239 +- 35, Norm: 1089 +- 37
+R(D*+): 0.3492 +- 0.0456, a 13.0 % error.       Tau: 312 +- 40, Norm: 4058 +- 69
+[noric10] ~/releases/Ntuple51/workdir > tail -n 4 FitAll/fits/TextFinalDatax30.txt 
+R(D0):  0.6135 +- 0.0860, a 14.0 % error.       Tau: 572 +- 79, Norm: 2496 +- 65
+R(D*0): 0.3166 +- 0.0348, a 11.0 % error.       Tau: 887 +- 97, Norm: 11781 +- 122
+R(D+):  0.5200 +- 0.0877, a 16.9 % error.       Tau: 233 +- 39, Norm: 1167 +- 39
+R(D*+): 0.3301 +- 0.0482, a 14.6 % error.       Tau: 309 +- 45, Norm: 4261 +- 72
+
+[noric09] ~/releases/Ntuple51/workdir > tail -n 2 FitAll/fits/TextFinalIsoDatax05.txt
+R(D):   0.4275 +- 0.0568, a 13.3 % error.       Tau: 218 +- 28, Norm: 1346 +- 42
+R(D*):  0.2994 +- 0.0237, a 7.9 % error.        Tau: 421 +- 33, Norm: 6040 +- 83
+[noric09] ~/releases/Ntuple51/workdir > tail -n 2 FitAll/fits/TextFinalIsoDatax07.txt
+R(D):   0.4042 +- 0.0535, a 13.2 % error.       Tau: 255 +- 33, Norm: 1662 +- 47
+R(D*):  0.3071 +- 0.0229, a 7.5 % error.        Tau: 538 +- 40, Norm: 7494 +- 93
+[noric09] ~/releases/Ntuple51/workdir > tail -n 2 FitAll/fits/TextFinalIsoDatax08.txt
+R(D):   0.4331 +- 0.0531, a 12.3 % error.       Tau: 309 +- 37, Norm: 1888 +- 50
+R(D*):  0.3145 +- 0.0225, a 7.2 % error.        Tau: 620 +- 44, Norm: 8445 +- 100
+[noric09] ~/releases/Ntuple51/workdir > tail -n 2 FitAll/fits/TextFinalIsoDataIter2.txt
+R(D):   0.4562 +- 0.0534, a 11.7 % error.       Tau: 368 +- 42, Norm: 2140 +- 54
+R(D*):  0.3247 +- 0.0227, a 7.0 % error.        Tau: 730 +- 50, Norm: 9639 +- 107
+[noric10] ~/releases/Ntuple51/workdir > tail -n 2 FitAll/fits/TextFinalIsoDatax12.txt
+R(D):   0.4788 +- 0.0539, a 11.2 % error.       Tau: 430 +- 47, Norm: 2375 +- 57
+R(D*):  0.3304 +- 0.0229, a 6.9 % error.        Tau: 829 +- 57, Norm: 10706 +- 113
+[noric09] ~/releases/Ntuple51/workdir > tail -n 2 FitAll/fits/TextFinalIsoDatax15.txt
+R(D):   0.4932 +- 0.0547, a 11.1 % error.       Tau: 501 +- 54, Norm: 2683 +- 62
+R(D*):  0.3317 +- 0.0235, a 7.1 % error.        Tau: 938 +- 66, Norm: 12030 +- 121
+[noric09] ~/releases/Ntuple51/workdir > tail -n 2 FitAll/fits/TextFinalIsoDatax20.txt
+R(D):   0.5152 +- 0.0572, a 11.1 % error.       Tau: 598 +- 65, Norm: 3079 +- 67
+R(D*):  0.3413 +- 0.0245, a 7.2 % error.        Tau: 1111 +- 79, Norm: 13787 +- 131
+[noric09] ~/releases/Ntuple51/workdir > tail -n 2 FitAll/fits/TextFinalIsoDatax25.txt
+R(D):   0.5667 +- 0.0597, a 10.5 % error.       Tau: 722 +- 75, Norm: 3394 +- 71
+R(D*):  0.3228 +- 0.0258, a 8.0 % error.        Tau: 1157 +- 92, Norm: 15123 +- 138
+[noric10] ~/releases/Ntuple51/workdir > tail -n 2 FitAll/fits/TextFinalIsoDatax30.txt
+R(D):   0.5582 +- 0.0615, a 11.0 % error.       Tau: 758 +- 82, Norm: 3627 +- 75
+R(D*):  0.3293 +- 0.0264, a 8.0 % error.        Tau: 1264 +- 101, Norm: 16096 +- 144
+
+
+[noric10] ~/releases/Ntuple51/workdir > tail -n 4 FitAll/fits/TextFinalDataBDT30.txt 
+R(D0):  0.5732 +- 0.0861, a 15.0 % error.       Tau: 526 +- 78, Norm: 2456 +- 64
+R(D*0): 0.3161 +- 0.0333, a 10.5 % error.       Tau: 873 +- 91, Norm: 11617 +- 121
+R(D+):  0.5570 +- 0.0847, a 15.2 % error.       Tau: 236 +- 35, Norm: 1102 +- 38
+R(D*+): 0.3438 +- 0.0392, a 11.4 % error.       Tau: 293 +- 33, Norm: 3874 +- 68
+[noric10] ~/releases/Ntuple51/workdir > tail -n 4 FitAll/fits/TextFinalDataBDTm20.txt 
+R(D0):  0.5425 +- 0.0840, a 15.5 % error.       Tau: 440 +- 67, Norm: 2171 +- 59
+R(D*0): 0.3271 +- 0.0348, a 10.6 % error.       Tau: 823 +- 87, Norm: 10587 +- 114
+R(D+):  0.5878 +- 0.0863, a 14.7 % error.       Tau: 245 +- 35, Norm: 1087 +- 37
+R(D*+): 0.3340 +- 0.0466, a 13.9 % error.       Tau: 301 +- 42, Norm: 4097 +- 70
+[noric10] ~/releases/Ntuple51/workdir > tail -n 4 FitAll/fits/TextFinalDataBDTm15.txt
+R(D0):  0.5095 +- 0.0811, a 15.9 % error.       Tau: 384 +- 60, Norm: 2018 +- 57
+R(D*0): 0.3241 +- 0.0333, a 10.3 % error.       Tau: 761 +- 78, Norm: 9867 +- 110
+R(D+):  0.5440 +- 0.0838, a 15.4 % error.       Tau: 208 +- 31, Norm: 995 +- 35
+R(D*+): 0.3837 +- 0.0432, a 11.2 % error.       Tau: 319 +- 35, Norm: 3782 +- 66
+[noric10] ~/releases/Ntuple51/workdir > tail -n 4 FitAll/fits/TextFinalDataBDTm12_20m10.txt 
+R(D0):  0.4631 +- 0.0806, a 17.4 % error.       Tau: 339 +- 58, Norm: 1959 +- 56
+R(D*0): 0.3268 +- 0.0351, a 10.8 % error.       Tau: 761 +- 81, Norm: 9796 +- 109
+R(D+):  0.5327 +- 0.0837, a 15.7 % error.       Tau: 204 +- 31, Norm: 997 +- 35
+R(D*+): 0.3459 +- 0.0471, a 13.6 % error.       Tau: 298 +- 40, Norm: 3919 +- 68
+[noric10] ~/releases/Ntuple51/workdir > tail -n 4 FitAll/fits/TextFinalDataBDTm10m05.txt 
+R(D0):  0.4294 +- 0.0773, a 18.0 % error.       Tau: 299 +- 53, Norm: 1866 +- 54
+R(D*0): 0.3481 +- 0.0323, a 9.3 % error.        Tau: 745 +- 69, Norm: 9001 +- 104
+R(D+):  0.5817 +- 0.0826, a 14.2 % error.       Tau: 203 +- 28, Norm: 910 +- 33
+R(D*+): 0.3558 +- 0.0398, a 11.2 % error.       Tau: 274 +- 30, Norm: 3506 +- 63
+
+
+
+[noric09] ~/releases/Ntuple51/workdir > tail -n 4 FitAll/fits/TextFinalDataEexMaz.txt
+R(D0):  0.5480 +- 0.0873, a 15.9 % error.       Tau: 423 +- 66, Norm: 2067 +- 58
+R(D*0): 0.3061 +- 0.0319, a 10.4 % error.       Tau: 654 +- 68, Norm: 8981 +- 106
+R(D+):  0.5509 +- 0.0967, a 17.6 % error.       Tau: 179 +- 31, Norm: 848 +- 34
+R(D*+): 0.3866 +- 0.0408, a 10.5 % error.       Tau: 280 +- 29, Norm: 3295 +- 62
+[noric09] ~/releases/Ntuple51/workdir > tail -n 2 FitAll/fits/TextFinalIsoDataEexMaz.txt
+R(D):   0.5357 +- 0.0634, a 11.8 % error.       Tau: 589 +- 68, Norm: 2919 +- 67
+R(D*):  0.3301 +- 0.0238, a 7.2 % error.        Tau: 958 +- 68, Norm: 12278 +- 126
+
+

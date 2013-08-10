@@ -1,0 +1,22 @@
+weightD0 = 1.4
+weightDs0 = 1.0
+weightDp = 1.
+weightDsp = 1.1
+
+weightD10 = 0.7
+weightD20 = 0.55
+weightD00 = 0.7
+weightD1prime0 = 0.4
+weightD0pi0 = 1.
+weightDstar0pi0 = 1.
+weightDpi = 0
+weightDstarpi = 1.
+
+weightD1p = 0.35
+weightD2p = 0.4
+weightD0p = 0.4
+weightD1primep = 0.3
+weightD0pi = 1.
+weightDstar0pi = 1.
+weightDpi0 = 0
+weightDstarpi0 = 1.

@@ -1,0 +1,56 @@
+\begin{tabular}{|l||cc|c|cc|c|}
+\hline
+$\mathbf{D^{*0}}$ & Add_BDT_KM_Run5_e & Base_e & R_e & Add_BDT_KM_Run5_{\mu} & Base_{\mu} & R_{\mu} \\
+\hline \hline
+D^{**} \to \text{D}^{*0}\pi^{0} & 153 & 0 &  -  & 153 & 79861416 & 0.00 \\
+D^{**} \to \text{D}^{0}\pi^{0} & 28 & 0 &  -  & 22 & 0 &  -  \\
+Other D^{**} & 55 & 0 &  -  & 57 & 0 &  -  \\
+D^{*0} \,l \,\nu & 146 & 0 &  -  & 121 & 0 &  -  \\
+D^{0} \,l \,\nu & 20 & 0 &  -  & 23 & 0 &  -  \\
+Crossfeed & 24 & 0 &  -  & 27 & 0 &  -  \\
+Comb. & 473 & 0 &  -  & 1079 & 0 &  -  \\
+\hline \end{tabular}
+\,\,
+
+\begin{tabular}{|l||cc|c|cc|c|}
+\hline
+$\mathbf{D^{0}}$ & Add_BDT_KM_Run5_e & Base_e & R_e & Add_BDT_KM_Run5_{\mu} & Base_{\mu} & R_{\mu} \\
+\hline \hline
+D^{**} \to \text{D}^{0}\pi^{0} & 171 & 0 &  -  & 144 & 79861416 & 0.00 \\
+D^{**} \to \text{D}^{*0}\pi^{0} & 144 & 0 &  -  & 117 & 0 &  -  \\
+Other D^{**} & 132 & 0 &  -  & 135 & 0 &  -  \\
+D^{*0} \,l \,\nu & 175 & 0 &  -  & 157 & 0 &  -  \\
+D^{0} \,l \,\nu & 61 & 0 &  -  & 65 & 0 &  -  \\
+Crossfeed & 73 & 0 &  -  & 49 & 0 &  -  \\
+Comb. & 563 & 0 &  -  & 1434 & 0 &  -  \\
+\hline \end{tabular}
+\,\,
+
+\begin{tabular}{|l||cc|c|cc|c|}
+\hline
+$\mathbf{D^{*+}}$ & Add_BDT_KM_Run5_e & Base_e & R_e & Add_BDT_KM_Run5_{\mu} & Base_{\mu} & R_{\mu} \\
+\hline \hline
+D^{**} \to \text{D}^{*+}\pi^{0} & 78 & 0 &  -  & 56 & 79861416 & 0.00 \\
+D^{**} \to \text{D}^{+}\pi^{0} & 1 & 0 &  -  & 4 & 0 &  -  \\
+Other D^{**} & 35 & 0 &  -  & 31 & 0 &  -  \\
+D^{*+} \,l \,\nu & 67 & 0 &  -  & 62 & 0 &  -  \\
+D^{+} \,l \,\nu & 3 & 0 &  -  & 0 & 0 &  -  \\
+Crossfeed & 10 & 0 &  -  & 6 & 0 &  -  \\
+Comb. & 229 & 0 &  -  & 488 & 0 &  -  \\
+\hline \end{tabular}
+\,\,
+
+\begin{tabular}{|l||cc|c|cc|c|}
+\hline
+$\mathbf{D^{+}}$ & Add_BDT_KM_Run5_e & Base_e & R_e & Add_BDT_KM_Run5_{\mu} & Base_{\mu} & R_{\mu} \\
+\hline \hline
+D^{**} \to \text{D}^{+}\pi^{0} & 93 & 0 &  -  & 83 & 79861416 & 0.00 \\
+D^{**} \to \text{D}^{*+}\pi^{0} & 54 & 0 &  -  & 43 & 0 &  -  \\
+Other D^{**} & 218 & 0 &  -  & 203 & 0 &  -  \\
+D^{*+} \,l \,\nu & 115 & 0 &  -  & 76 & 0 &  -  \\
+D^{+} \,l \,\nu & 60 & 0 &  -  & 53 & 0 &  -  \\
+Crossfeed & 80 & 0 &  -  & 62 & 0 &  -  \\
+Comb. & 1244 & 0 &  -  & 2409 & 0 &  -  \\
+\hline \end{tabular}
+\,\,
+

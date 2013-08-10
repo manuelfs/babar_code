@@ -1,0 +1,53 @@
+Ratio for 030% sample
+MC: 10593, data: 11585    -  Ratio: 0.91442 +- 0.00961
+MC: 6170, data: 6447      -  Ratio: 0.95699 +- 0.01347
+MC: 7466, data: 7986      -  Ratio: 0.93486 +- 0.01177
+MC: 985, data: 1061       -  Ratio: 0.92873 +- 0.03193
+
+Ratio for 050% sample
+MC: 10174, data: 11041    -  Ratio: 0.92153 +- 0.00993
+MC: 5989, data: 6243      -  Ratio: 0.95917 +- 0.01375
+MC: 7174, data: 7666      -  Ratio: 0.93582 +- 0.01201
+MC: 958, data: 1038       -  Ratio: 0.92367 +- 0.03212
+
+Ratio for 075% sample
+MC: 9642, data: 10369     -  Ratio: 0.92998 +- 0.01036
+MC: 5850, data: 6059      -  Ratio: 0.96540 +- 0.01407
+MC: 7034, data: 7478      -  Ratio: 0.94069 +- 0.01224
+MC: 935, data: 1009       -  Ratio: 0.92672 +- 0.03271
+
+Ratio for 100% sample
+MC: 9028, data: 9669      -  Ratio: 0.93370 +- 0.01078
+MC: 5457, data: 5578      -  Ratio: 0.97837 +- 0.01487
+MC: 6710, data: 7125      -  Ratio: 0.94169 +- 0.01256
+MC: 863, data: 923        -  Ratio: 0.93455 +- 0.03448
+
+Ratio for 120% sample
+MC: 8330, data: 8897      -  Ratio: 0.93630 +- 0.01126
+MC: 5217, data: 5285      -  Ratio: 0.98725 +- 0.01541
+MC: 6405, data: 6833      -  Ratio: 0.93739 +- 0.01276
+MC: 809, data: 853        -  Ratio: 0.94918 +- 0.03640
+
+Ratio for 150% sample
+MC: 7624, data: 8109      -  Ratio: 0.94012 +- 0.01183
+MC: 4760, data: 4824      -  Ratio: 0.98676 +- 0.01610
+MC: 6050, data: 6461      -  Ratio: 0.93637 +- 0.01308
+MC: 725, data: 769        -  Ratio: 0.94353 +- 0.03803
+
+Ratio for 200% sample
+MC: 6071, data: 6452      -  Ratio: 0.94099 +- 0.01325
+MC: 3892, data: 3976      -  Ratio: 0.97879 +- 0.01755
+MC: 5461, data: 5800      -  Ratio: 0.94160 +- 0.01386
+MC: 627, data: 680        -  Ratio: 0.92232 +- 0.03948
+
+Ratio for 250% sample
+MC: 5055, data: 5387      -  Ratio: 0.93847 +- 0.01444
+MC: 3037, data: 3056      -  Ratio: 0.99379 +- 0.02029
+MC: 4990, data: 5273      -  Ratio: 0.94616 +- 0.01457
+MC: 555, data: 598        -  Ratio: 0.92781 +- 0.04223
+
+Ratio for 300% sample
+MC: 4492, data: 4784      -  Ratio: 0.93878 +- 0.01534
+MC: 2446, data: 2498      -  Ratio: 0.97903 +- 0.02208
+MC: 4585, data: 4854      -  Ratio: 0.94467 +- 0.01514
+MC: 496, data: 526        -  Ratio: 0.94179 +- 0.04564

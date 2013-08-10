@@ -1,0 +1,10 @@
+\begin{tabular}{lc}
+\hline\hline
+\bf{Signal } & $\epsilon_{\text{sig}}/\epsilon_{\text{norm}}$ \\ \hline
+$D^0$ & 0.738 $\pm$ 0.019 \\
+$D^{*0}$ & 0.470 $\pm$ 0.007 \\
+$D^+$ & 0.759 $\pm$ 0.027 \\
+$D^{*+}$ & 0.435 $\pm$ 0.010 \\
+$D$ & 0.745 $\pm$ 0.016 \\
+$D^{*}$ & 0.460 $\pm$ 0.006 \\
+\hline\hline \end{tabular}\,\,

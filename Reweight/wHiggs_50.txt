@@ -1,0 +1,6 @@
+FFWeights = babar_code/Reweight/wFF_Higgs_50
+DlnFF = babar_code/Reweight/wFF_Higgs_50
+BFWeights = babar_code/Reweight/wAllBF.Nov
+PlWeightsD  = babar_code/Reweight/wPlConti
+BkgWeights  = babar_code/Reweight/wBkg_CombAll
+variWeights = babar_code/WeightsVari/Weights_

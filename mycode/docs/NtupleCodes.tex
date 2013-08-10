@@ -1,0 +1,165 @@
+\documentclass[10pt,twocolumn]{article}
+%\documentclass[6pt]{article}
+\usepackage{lscape}
+\usepackage{amsmath}
+\usepackage{colortbl}
+\usepackage[left=2cm,top=1cm,right=3cm,nohead,nofoot]{geometry}
+\pagestyle{empty}
+\input{babarsym.tex}
+
+\newcommand{\Red} [1]  {\textcolor{red}{#1}}
+
+\begin{document} 
+
+
+
+\begin{tabular}{r l}\\ \hline\hline
+\multicolumn{2}{c}{\bf MCType}\\ \hline
+0 & Combinatoric\\
+1 & $B\to\Dz e\nu$\\
+2 & $B\to\Dstarz e\nu$\\
+3 & $B\to\Dz\mu\nu$\\
+4 & $B\to\Dstarz\mu\nu$\\
+5 & $B\to\Dz\tau\nu$\\
+6 & $B\to\Dstarz\tau\nu$\\
+7 & $B\to\Dp e\nu$\\
+8 & $B\to\Dstarp e\nu$\\
+9 & $B\to\Dp\mu\nu$\\
+10 & $B\to\Dstarp\mu\nu$\\
+11 & $B\to\Dp\tau\nu$\\
+12 & $B\to\Dstarp\tau\nu$\\
+13 & $B\to D^{(*)}\pi\ell\nu$\\
+14 & $B\to D^{**}\ell\nu$\\ \hline\hline
+\end{tabular}
+
+\noindent In this categorization, ``combinatoric'' means none of
+the other numbered modes. Each of the other modes requires
+the tag $B$ to decay hadronically, so that any event with
+two semileptonic $B$ decays is also marked with MCType = 0.
+
+\begin{tabular}{r l}\\ \hline\hline
+\multicolumn{2}{c}{\bf candType}\\ \hline
+1 & $\Dz$\\
+2 & $\Dstarz$\\
+3 & $\Dp$\\
+4 & $\Dstarp$\\
+5 & $\Dz\piz$\\
+6 & $\Dstarz\piz$\\
+7 & $\Dp\piz$\\
+8 & $\Dstarp\piz$\\ \hline\hline
+\end{tabular}
+
+\noindent The ntuple only uses candType $\le$ 4, and
+these channels include both the signal box and the
+$D^{**}$ control sample. When we go from the ntuples
+to the fit samples, the signal and control samples
+are split, and candTypes 5--8 are introduced.
+
+
+\begin{tabular}{r l}\\ \hline\hline
+\multicolumn{2}{c}{\bf MCCombmode}\\ \hline
+1 & $\Ds\to\tau X$\\
+2 & $\tau$ not from \Ds\\
+3 & $ee$\\
+4 & $\mu\mu$\\
+5 & $e\mu$\\
+6 & $D \to e$\\
+7 & $D \to \mu$\\
+8 & $e$ not coming from $D$ or $\tau$\\ 
+9 & $\mu$ not coming from $D$ or $\tau$\\ 
+10 & More than 3 leptons not coming from $\tau$\\ 
+11 & There is a $K_L^0$\\ 
+12 & Everything else\\ 
+\hline\hline
+\end{tabular}
+
+\noindent These codes are ranked, so that, should an event
+fall into multiple categories, the lowest numbered flag is
+selected.
+
+
+\begin{tabular}{r l | l}\\ \hline\hline
+ & {\bf \Dz Decay} & {\bf \Dp Decay}\\ \hline
+1 & $K\pi$ & $K\pi\pi$\\
+2 & $K\pi\piz$ & $K\pi\pi\piz$\\
+3 & $K3\pi$ & $\KS\pi$\\
+4 & $\KS\pi\pi$ & $\KS\pi\piz$\\
+5 & $\KS\pi\pi\piz$ & $\KS 3\pi$\\
+6 & $\KS\KS$ (not used) & $KK\pi$ (not used)\\ 
+7 & $\KS\piz$ & $\KS K$\\
+8 & $\pi\pi$ (not used)& ---\\
+9 & $K K$ & ---\\ \hline\hline
+ & {\bf \Dstarz Decay} & {\bf \Dstarp Decay}\\ \hline
+1 & $\Dz\piz$ & $\Dz\pi$\\
+2 & $\Dz\gamma$ & $\Dp\piz$\\
+3 & --- & $\Dp\gamma$ (not used) \\\hline\hline
+\end{tabular}
+
+\noindent {\bf MCSubmode} uses the same decay codes, and encodes
+\Dstar decays as $100\times$DstarType $+$DType. Note that
+\Dstar mode 3 is only used in MCSubmode, as it is not
+reconstructed.
+
+
+
+\begin{tabular}{l l r}\\ \hline\hline
+Channel          & Source  & pdf name\\ \hline
+$\Dstarz\ellm$   & $\Dstarz\taum\nutb$ signal           & rds[3]   \\
+                 & $\Dz\taum\nutb$ signal feed-up       & rds[9] \\
+                 & $\Dstarz\ellm\nulb$ normalization    & rdc[0]  \\
+                 & $\Dz\ellm\nulb$ feed-up              & rds[8]   \\
+                 & $D^{**}(\ellm/\taum)\nub$ feed-down  & rds[6]   \\
+                 & Charge-crossfeed                     & comb[3] \\
+                 & Combinatorial background             & comb[0] \\ \hline
+$\Dz\ellm$       & $\Dz\taum\nutb$ signal               & rds[5] \\
+                 & $\Dstarz\taum\nutb$ signal feed-down & rds[4] \\
+                 & $\Dz\ellm\nulb$ normalization        & rdc[1] \\
+                 & $\Dstarz\ellm\nulb$ feed-down        & rds[8] \\
+                 & $D^{**}\ellm\nulb$ feed-down         & rds[7] \\
+                 & Charge-crossfeed                     & comb[2] \\
+                 & Combinatorial background             & comb[0] \\ \hline
+$\Dstarp\ellm$   & $\Dstarp\taum\nutb$ signal           & rds[13] \\
+                 & $\Dp\taum\nutb$ signal feed-up       & rds[19] \\
+                 & $\Dstarp\ellm\nulb$ normalization    & rdc[2] \\
+                 & $\Dp\ellm\nulb$ feed-up              & rds[18]   \\
+                 & $D^{**}\ellm\nulb$ feed-down         & rds[16] \\
+                 & Charge-crossfeed                     & comb[3] \\
+                 & Combinatorial background             & comb[0] \\ \hline
+$\Dp\ellm$       & $\Dp\taum\nutb$ signal               & rds[15] \\
+                 & $\Dstarp\taum\nutb$ signal feed-down & rds[14] \\
+                 & $\Dp\ellm\nulb$ normalization        & rdc[3] \\
+                 & $\Dstarp\ellm\nulb$ feed-down        & rdc[9] \\
+                 & $D^{**}\ellm\nulb$ feed-down         & rds[17] \\
+                 & Charge-crossfeed                     & comb[2] \\
+                 & Combinatorial background             & comb[0] \\ \hline\hline
+\end{tabular}
+
+\begin{tabular}{l l r}\\ \hline\hline
+Channel          & Source  & pdf name\\ \hline
+$\Dstarz\piz\ellm$ & $D^{**}\ellm\nulb$                & rdc[5] \\
+              & $\Dstarz\ellm\nulb$ feed-up            & rds[24] \\
+              & $\Dz\ellm\nulb$ feed-up                & rds[25] \\
+              & Charge-crossfeed                       & comb[4] \\
+              & Combinatorial background               & comb[1] \\ \hline
+$\Dz\piz\ellm$     & $D^{**}\ellm\nulb$                & rdc[4] \\
+              & $\Dstarz\ellm\nulb$ feed-up            & rds[21]  \\
+              & $\Dz\ellm\nulb$ feed-up                & rds[22] \\
+              & Charge-crossfeed                       & comb[4] \\
+              & Combinatorial background               & comb[1] \\ \hline
+$\Dstarp\piz\ellm$ & $D^{**}\ellm\nulb$                & rdc[7] \\
+              & $\Dstarp\ellm\nulb$ feed-up            & rds[30] \\
+              & $\Dp\ellm\nulb$ feed-up                & rds[31]   \\
+              & Charge-crossfeed                       & comb[4]   \\
+              & Combinatorial background               & comb[1] \\ \hline
+$\Dp\piz\ellm$     & $D^{**}\ellm\nulb$                & rdc[6] \\
+              & $\Dstarp\ellm\nulb$ feed-up            & rds[27] \\
+              & $\Dp\ellm\nulb$ feed-up                & rds[28] \\
+              & Charge-crossfeed                       & comb[4] \\
+              & Combinatorial background               & comb[1] \\ \hline\hline
+\end{tabular}
+
+
+
+
+
+\end{document}

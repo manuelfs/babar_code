@@ -1,0 +1,196 @@
+PL RE-WEIGHTING FOR ELECTRONS AND MUONS
+========================================================================================================
+CSample OffnoCut candPstarLep 40 0 2.4 "candQ2>4" r yes babar_code/Reweight/wFFBF.txt
+cpf keys/eps/CSample/OffnoCut_candPstarLep_All_both.eps public_html/AWG_PlOff.eps
+
+CSample OffnoCutw candPstarLep 40 0 2.4 "candQ2>4" r yes babar_code/Reweight/wPl.txt
+cpf  keys/eps/CSample/OffnoCutw_candPstarLep_All_both.eps public_html/AWG_PlOffw.eps
+
+CSample OffnoCute candPstarLep 40 0 2.4 "candQ2>4&&candIsMu==0" r yes babar_code/Reweight/wPl.txt
+cpf  keys/eps/CSample/OffnoCute_candPstarLep_All_both.eps public_html/AWG_PlOffwe.eps
+
+CSample OffnoCutmu candPstarLep 40 0 2.4 "candQ2>4&&candIsMu==1" r yes babar_code/Reweight/wPl.txt
+cpf  keys/eps/CSample/OffnoCutmu_candPstarLep_All_both.eps public_html/AWG_PlOffwmu.eps
+
+
+FIT FOR ELECTRONS AND MUONS
+========================================================================================================
+PlotFit FitAll/fits/TextFinalmuData.txt sig All candM2 25 -2.25 9.75 curveLegPlmu 25 1 12 0.85 20
+cpf keys/eps/FinalFit/sigcandM2_curveLegPlmu.eps public_html/AWG_SigM2PlTailmu.eps
+
+PlotFit FitAll/fits/TextFinaleData.txt sig All candM2 25 -2.25 9.75 curveLegPle 25 1 12 0.85 20
+cpf keys/eps/FinalFit/sigcandM2_curveLegPle.eps public_html/AWG_SigM2PlTaile.eps
+
+
+EXTRA VARIABLES AFTER FIT
+========================================================================================================
+plotVariable MVA candPstarD 20 0 2 "candM2>1" l0 no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/MVA_candPstarD_All_both.eps public_html/AWG_PD.eps
+
+plotVariable MVA candPMiss 20 0 3.4 "candM2>1" l0 no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/MVA_candPMiss_All_both.eps public_html/AWG_PMiss.eps
+
+plotVariable MVA candQ2 20 4 13 "candM2>1" r1 no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/MVA_candQ2_All_both.eps public_html/AWG_Q2Sig.eps
+
+plotVariable MVAAll candQ2 20 4 13 "" r1 no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/MVAAll_candQ2_All_both.eps public_html/AWG_Q2All.eps
+
+
+June 28
+========================================================================================================
+plotVariable dssPeak dmpi0 30 0 1.4 "mm2pi0>-0.6XXmm2pi0<3" 40 no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/dssPeak_dmpi0_All_both.eps public_html/Jun28_dmpi0.eps
+
+plotVariable dssDpipiPeak dmpi0 30 0 1.4 "mm2pi0>-0.6XXmm2pi0<3" r0 no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/dssDpipiPeak_dmpi0_All_both.eps public_html/Jun28_dmpi0Dpipi.eps
+
+plotVariable dssPeak candPstarD 20 0 2 "mm2pi0>-0.6XXmm2pi0<3" l0 no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/dssPeak_candPstarD_All_both.eps public_html/Jun28_PD.eps
+
+plotVariable dssDpipiPeak candPstarD 20 0 2 "mm2pi0>-0.6XXmm2pi0<3" l0 no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/dssDpipiPeak_candPstarD_All_both.eps public_html/Jun28_PDDpipi.eps
+
+plotVariable dssPeak pmisspi0 20 0 3.4 "mm2pi0>-0.6XXmm2pi0<3" r0 no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/dssPeak_pmisspi0_All_both.eps public_html/Jun28_pmiss0.eps
+
+plotVariable dssDpipiPeak pmisspi0 20 0 3.4 "mm2pi0>-0.6XXmm2pi0<3" r0 no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/dssDpipiPeak_pmisspi0_All_both.eps public_html/Jun28_pmiss0Dpipi.eps
+
+plotVariable dssPeak candQ2 20 4 13 "mm2pi0>-0.6XXmm2pi0<3" r1 no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/dssPeak_candQ2_All_both.eps  public_html/Jun28_Q2.eps
+
+plotVariable dssDpipiPeak candQ2 20 4 13 "mm2pi0>-0.6XXmm2pi0<3" r1 no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/dssDpipiPeak_candQ2_All_both.eps public_html/Jun28_Q2Dpipi.eps
+
+July 4
+========================================================================================================
+plotVariable MVAAll candPstarD 20 0 2 "candM2>1.5" l1 no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/MVAAll_candPstarD_All_both.eps public_html/Jul4_PD_150_1300.eps
+
+plotVariable MVAHi candPstarD 20 0 2 "candM2>5" r1 no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/MVAHi_candPstarD_All_both.eps public_html/Jul4_PD_500_1300.eps
+
+plotVariable MVALo candPstarD 20 0 2 "candM2>1.5XXcandM2<=5" l1 no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/MVALo_candPstarD_All_both.eps public_html/Jul4_PD_150_500.eps
+
+echo "1.5   13" > ! babar_code/Systematics/MmissCut.txt
+cpf keys/root/PDfitFinal_150_1300/* keys/root/PDfitFinal/
+PlotPD FitAll/PD/TextFinalData_150_1300.txt sig "" candPstarD 20 0 2
+cpf keys/eps/FinalFit/sigcandPstarD_150_1300.eps public_html/Jul4_PDFit_150_1300.eps
+
+echo "1.5   5" > ! babar_code/Systematics/MmissCut.txt
+cpf keys/root/PDfitFinal_150_500/* keys/root/PDfitFinal/
+PlotPD FitAll/PD/TextFinalData_150_500.txt sig "" candPstarD 20 0 2
+cpf keys/eps/FinalFit/sigcandPstarD_150_500.eps public_html/Jul4_PDFit_150_500.eps
+
+echo "5   13" > ! babar_code/Systematics/MmissCut.txt
+cpf keys/root/PDfitFinal_500_1300/* keys/root/PDfitFinal/
+PlotPD FitAll/PD/TextFinalData_500_1300.txt sig "" candPstarD 20 0 2
+cpf keys/eps/FinalFit/sigcandPstarD_500_1300.eps public_html/Jul4_PDFit_500_1300.eps
+
+PlotFit FitAll/fits/TextFinalDataIter2.txt sig 2456 candM2 32 -2.25 9.75 histoPlNom 0.9 1 12 0.8 30
+cpf keys/eps/FinalFit/sigcandM2_histoPlNom.eps public_html/Jul4_M2PlNomSub.eps
+
+PlotFit FitAll/fits/TextFinalDataFloatContComb.txt sig 2456 candM2 32 -2.25 9.75 histoPlFloatCombCont 0.9 1 12 0.8 30
+cpf keys/eps/FinalFit/sigcandM2_histoPlFloatCombCont.eps public_html/Jul4_M2PlFloatCombCont.eps
+
+PlotFit FitAll/fits/TextFinalDataIter2.txt sig 2456 candM2 15 -2.25 9.75 histoPlNom 0.9 1 12 0.8 15
+cpf keys/eps/FinalFit/sigcandM2_histoPlNom.eps public_html/Jul4_M2PlNomSubWide.eps
+
+PlotFit FitAll/fits/TextFinalDataFloatContComb.txt sig 2456 candM2 15 -2.25 9.75 histoPlFloatCombCont 0.9 1 12 0.8 15
+cpf keys/eps/FinalFit/sigcandM2_histoPlFloatCombCont.eps public_html/Jul4_M2PlFloatCombContWide.eps
+
+BootstrapBands keys/root/Times/hTimes_1_Fit.root
+cpf AWG82/results/keys/eps/Bands/EpsKeys_1_Fit.eps public_html/Jul4_Boots1Stat.eps
+
+BootstrapBands keys/root/Times/hTimes_3_Fit.root
+cpf AWG82/results/keys/eps/Bands/EpsKeys_3_Fit.eps public_html/Jul4_Boots3Stat.eps 
+
+BootstrapBands keys/root/Times/hTimes_51_Fit.root
+cpf AWG82/results/keys/eps/Bands/EpsKeys_51_Fit.eps public_html/Jul4_Boots51Stat.eps
+
+BootstrapBands keys/root/Times/hTimes_53_Fit.root
+cpf AWG82/results/keys/eps/Bands/EpsKeys_53_Fit.eps public_html/Jul4_Boots53Stat.eps 
+
+BootstrapBands AWG82/systematics/BF/KeysTimes/hTimes_51_Fit.root
+cpf AWG82/results/keys/eps/Bands/EpsKeys_51_Fit.eps public_html/Jul4_Boots51Corr.eps
+
+BootstrapBands AWG82/systematics/BF/KeysTimes/hTimes_53_Fit.root
+cpf AWG82/results/keys/eps/Bands/EpsKeys_53_Fit.eps public_html/Jul4_Boots53Corr.eps
+
+BootstrapBands keys/root/Times/hTimes_61_Fit.root
+cpf AWG82/results/keys/eps/Bands/EpsKeys_61_Fit.eps public_html/Jul4_Boots61Stat.eps
+
+BootstrapBands keys/root/Times/hTimes_63_Fit.root
+cpf AWG82/results/keys/eps/Bands/EpsKeys_63_Fit.eps public_html/Jul4_Boots63Stat.eps 
+
+cpf keys/root/fitBDTm12_20m10/* keys/root/Fit/
+PlotFit FitAll/fits/TextFinalDataBDTm12_20m10.txt  sig 2456 candM2 32 -2.25 9.75 histoPlBDTm12_20m10 0.9 1 12 0.8 30
+cpf keys/eps/FinalFit/sigcandM2_histoPlBDTm12_20m10.eps public_html/Jul4_M2PlLoose.eps
+
+cpf keys/root/fitBDTm12_20m10/* keys/root/Fit/
+PlotFit FitAll/fits/TextFinalDataBDTm12_20m10.txt sig 2456 candM2 15 -2.25 9.75 histoPlBDTm12_20m10Wide 0.9 1 12 0.8 15
+cpf keys/eps/FinalFit/sigcandM2_histoPlBDTm12_20m10Wide.eps public_html/Jul4_M2PlLooseWide.eps
+
+
+
+July 6
+========================================================================================================
+cpf keys/root/fitConvNom/* keys/root/Fit/
+cpf AWG82/ntuples/small/FitDataNom_RunAll.root AWG82/ntuples/small/FitData_RunAll.root
+PlotFit FitAll/fits/TextFinalDataConvNom.txt sig 2456 candM2 32 -2.25 9.75 histoConNom
+cpf keys/eps/FinalFit/sigcandM2_histoConNom.eps public_html/Jul6_M2ConvNomSub.eps
+
+PlotFit FitAll/fits/TextFinalDataConvNom.txt sig "" candM2 50 -0.8 1.6 histoConNomPeak
+cpf keys/eps/FinalFit/sigcandM2_histoConNomPeak.eps public_html/Jul6_M2ConvNomPeak.eps
+
+cpf keys/root/fitConvP60/* keys/root/Fit/
+PlotFit FitAll/fits/TextFinalDataConvP60.txt sig 2456 candM2 32 -2.25 9.75 histoConP60
+cpf keys/eps/FinalFit/sigcandM2_histoConP60.eps public_html/Jul6_M2ConvP60Sub.eps
+
+PlotFit FitAll/fits/TextFinalDataConvP60.txt sig "" candM2 50 -0.8 1.6 histoConP60Peak
+cpf keys/eps/FinalFit/sigcandM2_histoConP60Peak.eps public_html/Jul6_M2ConvP60Peak.eps
+
+
+CSample noCut candPstarLep 40 0 2.4 "candQ2>4XXcandEExtra>1&&candEExtra<1.2" r yes babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/noCut_candPstarLep_All_both.eps  public_html/Jul6_PlmisID.eps
+
+cpf keys/root/fitPl70/* keys/root/Fit/
+cpf AWG82/ntuples/small/FitDataPl70_RunAll.root AWG82/ntuples/small/FitData_RunAll.root
+PlotFit FitAll/fits/TextFinalDataPl70.txt sig All candM2 32 -2.25 9.75 curveLegPl 20 1 12 0.85 25
+cpf keys/eps/FinalFit/sigcandM2_curveLegPl.eps public_html/Jul6_M2PlPl70.eps
+
+cpf keys/root/fitx05/* keys/root/Fit/
+cpf AWG82/ntuples/small/FitDatax05_RunAll.root AWG82/ntuples/small/FitData_RunAll.root
+PlotFit FitAll/fits/TextFinalDatax05.txt sig All candM2 32 -2.25 9.75 curveLegPl 20 1 12 0.85 25
+cpf keys/eps/FinalFit/sigcandM2_curveLegPl.eps public_html/Jul6_M2Plx05.eps
+
+PlotFit FitAll/fits/TextFinalDatax05.txt sig 2456 candM2 15 -2.25 9.75 histoPlNom 0.9 1 12 0.8 16
+cpf keys/eps/FinalFit/sigcandM2_histoPlNom.eps public_html/Jul6_M2Plx05Sub.eps
+
+cpf keys/root/fitx08/* keys/root/Fit/
+cpf AWG82/ntuples/small/FitDatax08_RunAll.root AWG82/ntuples/small/FitData_RunAll.root
+PlotFit FitAll/fits/TextFinalDatax08.txt sig All candM2 32 -2.25 9.75 curveLegPl 20 1 12 0.85 25
+cpf keys/eps/FinalFit/sigcandM2_curveLegPl.eps public_html/Jul6_M2Plx08.eps
+
+PlotFit FitAll/fits/TextFinalDatax08.txt sig 2456 candM2 15 -2.25 9.75 histoPlNom 0.9 1 12 0.8 16
+cpf keys/eps/FinalFit/sigcandM2_histoPlNom.eps public_html/Jul6_M2Plx08Sub.eps
+
+cpf keys/root/fitx12/* keys/root/Fit/
+cpf AWG82/ntuples/small/FitDatax12_RunAll.root AWG82/ntuples/small/FitData_RunAll.root
+PlotFit FitAll/fits/TextFinalDatax12.txt sig All candM2 32 -2.25 9.75 curveLegPl 20 1 12 0.85 25
+cpf keys/eps/FinalFit/sigcandM2_curveLegPl.eps public_html/Jul6_M2Plx12.eps
+
+PlotFit FitAll/fits/TextFinalDatax12.txt sig 2456 candM2 15 -2.25 9.75 histoPlNom 0.9 1 12 0.8 16
+cpf keys/eps/FinalFit/sigcandM2_histoPlNom.eps public_html/Jul6_M2Plx12Sub.eps
+
+cpf keys/root/fitx20/* keys/root/Fit/
+cpf AWG82/ntuples/small/FitDatax20_RunAll.root AWG82/ntuples/small/FitData_RunAll.root
+PlotFit FitAll/fits/TextFinalDatax20.txt sig All candM2 32 -2.25 9.75 curveLegPl 20 1 12 0.85 25
+cpf keys/eps/FinalFit/sigcandM2_curveLegPl.eps public_html/Jul6_M2Plx20.eps
+
+PlotFit FitAll/fits/TextFinalDatax20.txt sig 2456 candM2 15 -2.25 9.75 histoPlNom 0.9 1 12 0.8 16
+cpf keys/eps/FinalFit/sigcandM2_histoPlNom.eps public_html/Jul6_M2Plx20Sub.eps
+
+

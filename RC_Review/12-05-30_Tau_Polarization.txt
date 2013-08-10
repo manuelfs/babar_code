@@ -1,0 +1,7 @@
+PlotFit FitAll/fits/TextFinalDataNe2x100.txt sig All candM2 26 1.5 10 histoIsoPl 1 1 12 1 24
+cpf keys/eps/FinalFit/sigcandM2_histoIsoPl.eps public_html/TauPol_Fit_Higx000.eps
+
+PlotFit FitAll/fits/TextFinalDataHi2x100.txt sig All candM2 26 1.5 10 histoIsoPlHig 1 1 12 1 24
+cpf keys/eps/FinalFit/sigcandM2_histoIsoPlHig.eps public_html/TauPol_Fit_Higx100.eps
+
+

@@ -1,0 +1,24 @@
+\begin{tabular}{|l||cc|c|}
+\hline
+$\mathbf{D^{(*)0}}$ \textbf{mode} & New & Base & Ratio \\
+\hline \hline
+Signal & 728 & 725 & 1.00 \\
+Norm. & 775 & 769 & 1.01 \\
+D** & 480 & 532 & 0.90 \\
+Cross. & 73 & 128 & 0.57 \\
+Comb. & 502 & 644 & 0.78 \\
+\hline \end{tabular}
+\,\,
+
+\begin{tabular}{|l||cc|c|}
+\hline
+$\mathbf{D^{(*)+}}$ \textbf{mode} & New & Base & Ratio \\
+\hline \hline
+Signal & 255 & 257 & 0.99 \\
+Norm. & 131 & 160 & 0.82 \\
+D** & 142 & 196 & 0.72 \\
+Cross. & 8 & 27 & 0.30 \\
+Comb. & 174 & 298 & 0.58 \\
+\hline \end{tabular}
+\,\,
+

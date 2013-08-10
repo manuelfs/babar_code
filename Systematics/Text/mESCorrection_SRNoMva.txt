@@ -1,0 +1,53 @@
+Ratio for 030% sample
+MC: 5122, data: 5565      -  Ratio: 0.92034 +- 0.01471
+MC: 2058, data: 2191      -  Ratio: 0.93940 +- 0.02410
+MC: 5122, data: 5565      -  Ratio: 0.92034 +- 0.01471
+MC: 2058, data: 2191      -  Ratio: 0.93940 +- 0.02410
+
+Ratio for 050% sample
+MC: 4882, data: 5274      -  Ratio: 0.92564 +- 0.01503
+MC: 1980, data: 2111      -  Ratio: 0.93809 +- 0.02422
+MC: 4882, data: 5274      -  Ratio: 0.92564 +- 0.01503
+MC: 1980, data: 2111      -  Ratio: 0.93809 +- 0.02422
+
+Ratio for 075% sample
+MC: 4663, data: 4964      -  Ratio: 0.93946 +- 0.01568
+MC: 1926, data: 2015      -  Ratio: 0.95555 +- 0.02515
+MC: 4663, data: 4964      -  Ratio: 0.93946 +- 0.01568
+MC: 1926, data: 2015      -  Ratio: 0.95555 +- 0.02515
+
+Ratio for 100% sample
+MC: 4386, data: 4606      -  Ratio: 0.95231 +- 0.01644
+MC: 1777, data: 1834      -  Ratio: 0.96885 +- 0.02645
+MC: 4386, data: 4606      -  Ratio: 0.95231 +- 0.01644
+MC: 1777, data: 1834      -  Ratio: 0.96885 +- 0.02645
+
+Ratio for 120% sample
+MC: 4100, data: 4280      -  Ratio: 0.95808 +- 0.01705
+MC: 1674, data: 1714      -  Ratio: 0.97658 +- 0.02743
+MC: 4100, data: 4280      -  Ratio: 0.95808 +- 0.01705
+MC: 1674, data: 1714      -  Ratio: 0.97658 +- 0.02743
+
+Ratio for 150% sample
+MC: 3772, data: 3966      -  Ratio: 0.95108 +- 0.01743
+MC: 1501, data: 1544      -  Ratio: 0.97210 +- 0.02851
+MC: 3772, data: 3966      -  Ratio: 0.95108 +- 0.01743
+MC: 1501, data: 1544      -  Ratio: 0.97210 +- 0.02851
+
+Ratio for 200% sample
+MC: 3158, data: 3300      -  Ratio: 0.95683 +- 0.01907
+MC: 1230, data: 1258      -  Ratio: 0.97769 +- 0.03145
+MC: 3158, data: 3300      -  Ratio: 0.95683 +- 0.01907
+MC: 1230, data: 1258      -  Ratio: 0.97769 +- 0.03145
+
+Ratio for 250% sample
+MC: 2711, data: 2845      -  Ratio: 0.95282 +- 0.02033
+MC: 956, data: 993        -  Ratio: 0.96274 +- 0.03462
+MC: 2711, data: 2845      -  Ratio: 0.95282 +- 0.02033
+MC: 956, data: 993        -  Ratio: 0.96274 +- 0.03462
+
+Ratio for 300% sample
+MC: 2416, data: 2557      -  Ratio: 0.94475 +- 0.02123
+MC: 783, data: 779        -  Ratio: 1.00564 +- 0.04069
+MC: 2416, data: 2557      -  Ratio: 0.94475 +- 0.02123
+MC: 783, data: 779        -  Ratio: 1.00564 +- 0.04069

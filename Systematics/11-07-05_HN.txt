@@ -1,0 +1,61 @@
+Hi Guglielmo and Bob
+
+I have been working on the PID, so let me "lightly" address your comments
+first, and I'll post as many thorough studies tonight as possible.
+
+GUGLIELMO
+===============================================
+1. p*l cut
+There are indeed some high bins for low p*l, although in the
+nominal fit there are also low bins. For the loose BDT cut
+the data is more consistently high, and could be due to
+increased mis-ID.
+I'll see if I can repeat the analysis cutting on pl (in the lab)
+for tonight.
+
+2. Off-peak for the continuum
+We indeed use the Off-peak to set both the p*l shape and yield
+of the continuum. The caveat is that we do it before cutting on the
+BDT. After cutting, you have 1-10 off-peak events per channel.
+The fit releasing both continuum and combinatorial was just to
+show that no matter what yields we fix those components at,
+the fit agreement is not going to improve much (unless we change
+the PDFs).
+We believe we know these components to 6-7%, and the control samples
+(of which the off-peak does go down into the signal region)
+and Dpi0 fits do not seem to indicate otherwise. 
+
+3. mmiss issues near zero
+Yes, when we subtract the the normalization the D*0 does not looks great.
+I'm going to try to do a more systematic study of the 
+resolution dependence, and see how much the results change.
+
+4. Tightening the BDT
+Agreed. Another configuration that I'll try to do by tonight.
+
+5. Purity of the tag
+Unfortunately, I don't have Rtc in the ntuples. I'll see if 
+I can repeat the fit for low tag multiplicity, and there's better agreement
+
+BOB
+=========================================
+With the loose BDT, we are basically doubling the events in the signal
+region. That means that half of the events are overlapping (100%
+correlation) and the other half is independent. I'm also not sure
+what the correlation is, but it seems it would be of the order of 50%. 
+Adding the difference as a systematic would add the statistical uncertainty,
+of these new sample of events which is as big as the nominal sample.
+It would seem to me unwarranted. 
+If I have time to repeat the fit for more configurations, 
+maybe we'll see the statistical fluctuation.
+We could assign variations over 1 sigma.
+
+
+
+Finally, I really appreciate all those insights. I feel the review
+process is significantly helping the analysis. Whether we are
+all satisfied by Friday, that is a different matter.
+
+Regards
+Manuel
+

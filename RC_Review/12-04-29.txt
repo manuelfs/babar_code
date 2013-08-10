@@ -1,0 +1,37 @@
+CSample noMESSum candEExtra 20 0 2 "candQ2>4XXcandM2>1.5XXcandMES>5.2XXcandMES<5.26" no no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/noMESSum_candEExtra_All_both.eps public_html/Summary_Eex_mESSB.eps
+
+CSample noCutSum candQ2 85 -2 12.5 "candM2<1&&candEExtra<0.5" no no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/noCutSum_candQ2_All_both.eps public_html/Summary_Q2_LoM2.eps
+
+CSample noCutSum candPstarLep 40 0 2.4 "candQ2>4XXcandEExtra>0.5&&candEExtra<1.2XXcandM2>1.5" r no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/noCutSum_candPstarLep_All_both.eps public_html/Summary_Pl_MidEex.eps
+
+CSample noMESSum candPstarLep 40 0 2.4 "candQ2>4XXcandMES>5.2XXcandMES<5.26XXcandEExtra<0.5" r yes babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/noMESSum_candPstarLep_All_both.eps public_html/Summary_Pl_LoEex_mESSB.eps
+
+CSample noCutSum candM2 60 -2 10 "candQ2>4XXcandEExtra>1.2&&candEExtra<2.4" no no babar_code/Reweight/wPl.txt
+cpf keys/eps/CSample/noCutSum_candM2_All_both.eps public_html/Summary_M2_HiEex.eps
+
+CSample noCutSum candM2 60 -2 10 "candQ2>4XXcandEExtra>0.5&&candEExtra<1.2" no no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/noCutSum_candM2_All_both.eps public_html/Summary_M2_MidEex.eps
+
+CSample noMESSum candM2 60 -2 10 "candQ2>4XXcandMES>5.2XXcandMES<5.26XXcandEExtra<0.5" no yes babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/noMESSum_candM2_All_both.eps public_html/Summary_M2_LoEex_mESSB.eps
+
+CSample noMvaSum candMES 15 5.2 5.3 "candQ2>4XXcandEExtra>0.5XXcandM2>1.5" no no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/noMvaSum_candMES_All_both.eps public_html/Summary_mES_HiEex.eps
+
+CSample noMvaSumLoEx candMES 15 5.2 5.3 "candQ2>4XXcandEExtra<0.5XXcandM2>1.5" no no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/noMvaSumLoEx_candMES_All_both.eps public_html/Summary_mES_LoEex.eps
+
+
+PlotFit FitAll/fits/TextFinalDataNe2x100.txt dss All candM2 80 -2.5 7.5 curveLegPlSum 1 -4 12 1 40
+cpf keys/eps/FinalFit/dsscandM2_curveLegPlSum.eps public_html/Summary_Fit_dspiz.eps
+
+
+
+
+CSample noCutSum candPstarLep 40 0 2.4 "candQ2>4XXcandEExtra>1.2&&candEExtra<2.4" r no babar_code/Reweight/wPl.txt
+cpf keys/eps/CSample/noCutSum_candPstarLep_All_both.eps public_html/Summary_Pl_HiEex.eps
+

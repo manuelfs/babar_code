@@ -1,0 +1,24 @@
+\begin{tabular}{|l||cc|c|}
+\hline
+$\mathbf{D^{(*)0}}$  & New & Base & Ratio \\
+\hline \hline
+D^{(*)0}\, \pi^0 & 277 & 287 & 0.97 \\
+Other D^{**} & 80 & 81 & 0.99 \\
+D^{(*)0} \,l \,\nu & 368 & 375 & 0.98 \\
+Cross. & 39 & 44 & 0.89 \\
+Comb. & 306 & 312 & 0.98 \\
+\hline \end{tabular}
+\,\,
+
+\begin{tabular}{|l||cc|c|}
+\hline
+$\mathbf{D^{(*)+}}$  & New & Base & Ratio \\
+\hline \hline
+D^{(*)+}\, \pi^0 & 91 & 99 & 0.92 \\
+Other D^{**} & 50 & 52 & 0.96 \\
+D^{(*)+} \,l \,\nu & 63 & 65 & 0.97 \\
+Cross. & 15 & 17 & 0.88 \\
+Comb. & 176 & 183 & 0.96 \\
+\hline \end{tabular}
+\,\,
+

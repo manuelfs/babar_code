@@ -1,0 +1,160 @@
+[General]
+    nFont	    = 132
+    nDivisions	    = 505
+    isThesis	    = yes
+
+[Pads_1]
+    CanvasW	    = 500
+    CanvasH	    = 250
+    TextSize	    = 0.069     
+    TitleSize	    = 0.07    
+    LabelSize	    = 0.066     
+    PadRightMargin  = 0.035
+    PadTopMargin    = 0.022 
+    PadBottomMargin = 0.149 
+    xTitleOffset    = 0.977     
+    PadLeftMargin   = 0.12 
+    yTitleOffset    = 0.82
+
+[Pads_1_Digits_2]
+    PadLeftMargin   = 0.09 
+    yTitleOffset    = 0.65 
+[Pads_1_Digits_3]
+    PadLeftMargin   = 0.1 
+    yTitleOffset    = 0.71 
+[Pads_1_Digits_4]
+    PadLeftMargin   = 0.11 
+    yTitleOffset    = 0.85 
+[Pads_1_Digits_5]
+    PadLeftMargin   = 0.13 
+    yTitleOffset    = 1. 
+
+[Pads_2]
+    CanvasW	    = 800
+    CanvasH	    = 300
+    TextSize	    = 0.08        
+    TitleSize	    = 0.072    
+    LabelSize	    = 0.07     
+    PadRightMargin  = 0.029   
+    PadTopMargin    = 0.022 
+    PadBottomMargin = 0.158 
+    xTitleOffset    = 0.94     
+    PadLeftMargin   = 0.155 
+    yTitleOffset    = 1.08     
+
+[Pads_2_Digits_2]
+    PadLeftMargin   = 0.12 
+    yTitleOffset    = 0.77 
+[Pads_2_Digits_3]
+    PadLeftMargin   = 0.135 
+    yTitleOffset    = 0.93 
+[Pads_2_Digits_4]
+    PadLeftMargin   = 0.15 
+    yTitleOffset    = 1.05 
+[Pads_2_Digits_5]
+    PadLeftMargin   = 0.17 
+    yTitleOffset    = 1.29 
+
+[Pads_3]
+    CanvasW	    = 750
+    CanvasH	    = 300
+    TextSize	    = 0.074        
+    TitleSize	    = 0.074    
+    LabelSize	    = 0.069     
+    PadRightMargin  = 0.022    
+    PadTopMargin    = 0.022 
+    PadBottomMargin = 0.16 
+    xTitleOffset    = 0.96     
+    PadLeftMargin   = 0.21 
+    yTitleOffset    = 1.5     
+
+[Pads_3_Digits_2]
+    PadLeftMargin   = 0.168 
+    yTitleOffset    = 1.02 
+[Pads_3_Digits_3]
+    PadLeftMargin   = 0.18 
+    yTitleOffset    = 1.2 
+[Pads_3_Digits_4]
+    PadLeftMargin   = 0.22 
+    yTitleOffset    = 1.5 
+[Pads_3_Digits_5]
+    PadLeftMargin   = 0.23 
+    yTitleOffset    = 1.7 
+
+[Pads_4]
+    CanvasW	    = 800
+    CanvasH	    = 600
+    TextSize	    = 0.08     
+    TitleSize	    = 0.072    
+    LabelSize	    = 0.07     
+    PadRightMargin  = 0.022    
+    PadTopMargin    = 0.022 
+    PadBottomMargin = 0.158 
+    xTitleOffset    = 0.94     
+    PadLeftMargin   = 0.255 
+    yTitleOffset    = 1.08     
+
+[Pads_4_Digits_2]
+    PadLeftMargin   = 0.12
+    yTitleOffset    = 0.77 
+[Pads_4_Digits_3]
+    PadLeftMargin   = 0.13
+    yTitleOffset    = 0.88 
+[Pads_4_Digits_4]
+    PadLeftMargin   = 0.15 
+    yTitleOffset    = 1.05 
+[Pads_4_Digits_5]
+    PadLeftMargin   = 0.17 
+    yTitleOffset    = 1.29 
+
+[Pads_6]
+    CanvasW	    = 800
+    CanvasH	    = 900
+    TextSize	    = 0.08    
+    TitleSize	    = 0.072    
+    LabelSize	    = 0.07     
+    PadRightMargin  = 0.022    
+    PadTopMargin    = 0.022 
+    PadBottomMargin = 0.158 
+    xTitleOffset    = 0.94     
+    PadLeftMargin   = 0.155 
+    yTitleOffset    = 1.08     
+
+[Pads_6_Digits_2]
+    PadLeftMargin   = 0.11 
+    yTitleOffset    = 0.78 
+[Pads_6_Digits_3]
+    PadLeftMargin   = 0.13 
+    yTitleOffset    = 0.88 
+[Pads_6_Digits_4]
+    PadLeftMargin   = 0.15 
+    yTitleOffset    = 1.05 
+[Pads_6_Digits_5]
+    PadLeftMargin   = 0.17 
+    yTitleOffset    = 1.29 
+
+[Pads_8]
+    CanvasW	    = 800
+    CanvasH	    = 950
+    TextSize	    = 0.09           
+    TitleSize	    = 0.088    
+    LabelSize	    = 0.085     
+    PadRightMargin  = 0.029    
+    PadTopMargin    = 0.022 
+    PadBottomMargin = 0.18 
+    xTitleOffset    = 0.93    
+    PadLeftMargin   = 0.15 
+    yTitleOffset    = 0.9     
+
+[Pads_8_Digits_2]
+    PadLeftMargin   = 0.12 
+    yTitleOffset    = 0.78 
+[Pads_8_Digits_3]
+    PadLeftMargin   = 0.148 
+    yTitleOffset    = 0.85 
+[Pads_8_Digits_4]
+    PadLeftMargin   = 0.17 
+    yTitleOffset    = 1.05 
+[Pads_8_Digits_5]
+    PadLeftMargin   = 0.2 
+    yTitleOffset    = 1.29 

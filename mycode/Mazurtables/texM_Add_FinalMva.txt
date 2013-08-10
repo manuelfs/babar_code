@@ -1,0 +1,56 @@
+\begin{tabular}{|l||cc|c|}
+\hline
+$\mathbf{D^{*0}}$ & New & M14 & Ratio \\
+\hline \hline
+D^{*0} \,\tau \,\nu & 532 & 135 & 3.04 \\
+D^{0} \,\tau \,\nu & 38 & 16 & 1.83 \\
+D^{*0} \,l \,\nu & 7959 & 2798 & 2.19 \\
+D^{0} \,l \,\nu & 203 & 72 & 2.17 \\
+D^{**} \,l \,\nu & 290 & 97 & 2.31 \\
+Crossfeed & 128 & 35 & 2.82 \\
+Comb. & 238 & 44 & 4.17 \\
+\hline \end{tabular}
+\,\,
+
+\begin{tabular}{|l||cc|c|}
+\hline
+$\mathbf{D^{0}}$ & New & M14 & Ratio \\
+\hline \hline
+D^{0} \,\tau \,\nu & 381 & 142 & 2.07 \\
+D^{*0} \,\tau \,\nu & 388 & 153 & 1.96 \\
+D^{*0} \,l \,\nu & 7328 & 3010 & 1.88 \\
+D^{0} \,l \,\nu & 3093 & 1143 & 2.09 \\
+D^{**} \,l \,\nu & 690 & 270 & 1.97 \\
+Crossfeed & 486 & 93 & 4.03 \\
+Comb. & 479 & 94 & 3.93 \\
+\hline \end{tabular}
+\,\,
+
+\begin{tabular}{|l||cc|c|}
+\hline
+$\mathbf{D^{*+}}$ & New & M14 & Ratio \\
+\hline \hline
+D^{*+} \,\tau \,\nu & 252 & 92 & 2.11 \\
+D^{+} \,\tau \,\nu & 1 & 4 & 0.19 \\
+D^{*+} \,l \,\nu & 4598 & 1695 & 2.09 \\
+D^{+} \,l \,\nu & 17 & 5 & 2.62 \\
+D^{**} \,l \,\nu & 190 & 50 & 2.93 \\
+Crossfeed & 33 & 2 & 12.73 \\
+Comb. & 155 & 27 & 4.43 \\
+\hline \end{tabular}
+\,\,
+
+\begin{tabular}{|l||cc|c|}
+\hline
+$\mathbf{D^{+}}$ & New & M14 & Ratio \\
+\hline \hline
+D^{+} \,\tau \,\nu & 160 & 43 & 2.87 \\
+D^{*+} \,\tau \,\nu & 51 & 22 & 1.79 \\
+D^{*+} \,l \,\nu & 953 & 380 & 1.93 \\
+D^{+} \,l \,\nu & 1041 & 427 & 1.88 \\
+D^{**} \,l \,\nu & 170 & 34 & 3.86 \\
+Crossfeed & 44 & 9 & 3.77 \\
+Comb. & 157 & 31 & 3.91 \\
+\hline \end{tabular}
+\,\,
+

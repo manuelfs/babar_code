@@ -1,0 +1,117 @@
+###############################################################################
+# This is a DECAY.DEC file for B+/B-  -> D_10(/'_10) l nu :                   #
+#                                                                             #
+#   Up(4S) -> B+/B-  myB-/myB+                            +CC                 #
+#             |      |                                                        #
+#             |       -> D_10(/'_10) l nu (l = e or mu)                       #
+#             |                                                               #
+#              -> X                                                           #
+# Modified .dec file from the $BFROOT/prod/ProdDecayFiles                     #
+# F. Bernlochner,  H.Ahmed and R. Kowalewski__UVic                            #
+#                                                                             #
+#                                                                             #
+# Mail: hossain@uvic.ca  						      #	
+###############################################################################
+
+Alias myB+  B+
+Alias myB-  B-
+ChargeConj myB+ myB-
+#
+Alias myD_10 D_10
+Alias myanti-D_10 anti-D_10
+Alias myD'_10 D'_10
+Alias myanti-D'_10 anti-D'_10
+Alias myD_0*0 D_0*0
+Alias myanti-D_0*0 anti-D_0*0
+Alias myD_2*0 D_2*0
+Alias myanti-D_2*0 anti-D_2*0
+
+#
+yesPhotos
+#
+Decay Upsilon(4S)
+0.50000 B+  myB-                          VSS;
+0.50000 B-  myB+                          VSS;
+Enddecay
+
+
+### B- ###
+Decay myB-
+0.125    myD_10    e-    anti-nu_e          PHOTOS  ISGW2;
+0.125    myD'_10   e-    anti-nu_e          PHOTOS  ISGW2;
+0.125    myD_10    mu-   anti-nu_mu         PHOTOS  ISGW2;
+0.125    myD'_10   mu-   anti-nu_mu         PHOTOS  ISGW2;
+0.125    myD_2*0   e-    anti-nu_e          PHOTOS  ISGW2;
+0.125    myD_0*0   e-    anti-nu_e          PHOTOS  ISGW2;
+0.125    myD_2*0   mu-   anti-nu_mu         PHOTOS  ISGW2;
+0.125    myD_0*0   mu-   anti-nu_mu         PHOTOS  ISGW2;
+Enddecay
+#
+Decay myB+
+0.125 myanti-D_10    e+    nu_e          PHOTOS  ISGW2;
+0.125 myanti-D'_10   e+    nu_e          PHOTOS  ISGW2;
+0.125 myanti-D_10    mu+   nu_mu         PHOTOS  ISGW2;
+0.125 myanti-D'_10   mu+   nu_mu         PHOTOS  ISGW2;
+0.125 myanti-D_2*0   e+    nu_e          PHOTOS  ISGW2;
+0.125 myanti-D_0*0   e+    nu_e          PHOTOS  ISGW2;
+0.125 myanti-D_2*0   mu+   nu_mu         PHOTOS  ISGW2;
+0.125 myanti-D_0*0   mu+   nu_mu         PHOTOS  ISGW2;
+Enddecay
+
+### D** ###
+Decay myD_10
+0.428571  D0 pi+ pi-                      PHSP;
+0.285714  D0 pi0 pi0                      PHSP;
+0.285714  D+ pi- pi0                      PHSP;
+Enddecay
+#
+Decay myanti-D_10
+0.428571  anti-D0 pi+ pi-                 PHSP;
+0.285714  anti-D0 pi0 pi0                 PHSP;
+0.285714  D- pi+ pi0                      PHSP;
+Enddecay
+#
+Decay myD'_10
+0.178571  D0 pi+ pi-                      PHSP;
+0.119048  D0 pi0 pi0                      PHSP;
+0.119048  D+ pi- pi0                      PHSP;
+0.178571  D*0 pi+ pi-                     PHSP;
+0.119048  D*0 pi0 pi0                     PHSP;
+0.119048  D*+ pi- pi0                     PHSP;
+0.166667  D*0 eta                         PHSP;
+Enddecay
+#
+Decay myanti-D'_10
+0.178571  anti-D0 pi+ pi-                 PHSP;
+0.119048  anti-D0 pi0 pi0                 PHSP;
+0.119048  D- pi+ pi0                      PHSP;
+0.178571  anti-D*0 pi+ pi-                PHSP;
+0.119048  anti-D*0 pi0 pi0                PHSP;
+0.119048  D*- pi+ pi0                     PHSP;
+0.166667  anti-D*0 eta                    PHSP;
+Enddecay
+#
+Decay myD_2*0
+0.1667    D0  eta                        TSS;
+0.3571    D*0 pi+ pi-                    PHSP;
+0.2381    D*0 pi0 pi0                    PHSP;
+0.2381    D*+ pi0 pi-                    PHSP;
+Enddecay
+#
+Decay myanti-D_2*0
+0.1667    anti-D0  eta                   TSS;
+0.3571    anti-D*0 pi+ pi-               PHSP;
+0.2381    anti-D*0 pi0 pi0               PHSP;
+0.2381    D*- pi0 pi+                    PHSP;
+Enddecay
+#
+Decay myD_0*0
+1.0000   D0  eta                         PHSP;
+Enddecay
+#
+Decay myanti-D_0*0
+1.0000   anti-D0 eta                     PHSP;
+Enddecay
+
+
+End

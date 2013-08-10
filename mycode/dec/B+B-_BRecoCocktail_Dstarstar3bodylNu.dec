@@ -1,0 +1,399 @@
+#######################################################
+#                                                     #
+# Decay: B+ -> cocktail      B- ->  D**0 l nu         #
+#                                                     #
+# with D**                          BF                #
+#    D_10    ->  D+ pi- pi0         0.2000            #
+#            ->  D0 pi0 pi0         0.2667            #
+#            ->  D0 pi+ pi-         0.5333            #
+#    D'_10   ->  D*0 pi0 pi0        0.1333            #
+#            ->  D*+ pi- pi0        0.1000            #
+#            ->  D*0 pi+ pi-        0.2667            #
+#            ->  D+ pi- pi0         0.1333            #
+#            ->  D0 pi0 pi0         0.1000            #
+#            ->  D0 pi+ pi-         0.2667            #
+#                                                     #
+# with D*+ -> D0 pi+                                  #
+#          -> D+ pi0                                  #
+#      D*0 -> D0 pi0                                  #
+#          -> D0 gamma                                #
+#                                                     #
+# with D0 -> 12 decays                                #
+#      D+ -> 12 decays                                #
+#                                                     #
+#                                                     #
+#   + CC                                              #
+#                                                     #
+#                                                     #
+# Author: Manuel Franco Sevilla                       #
+#                                                     #
+#                                                     #
+# Created:                  Feb/09                    #
+# Mail:  manuelf@SLAC.STANFORD.EDU                    #
+#######################################################
+#
+
+Alias MyB+ B+
+Alias MyB- B-
+Alias MyD*0 D*0
+Alias Myanti-D*0 anti-D*0
+Alias MyD0 D0
+Alias Myanti-D0 anti-D0
+Alias Mya_1+ a_1+
+Alias Mya_1- a_1-
+Alias MyK_1+ K_1+
+Alias MyK_1- K_1-
+Alias MyK*0  K*0
+Alias Myanti-K*0 anti-K*0
+Alias Myomega omega
+Alias MyK0 K0
+Alias Myanti-K0 anti-K0
+Alias MyKs K_S0
+Alias SigD_10 D_10
+Alias Siganti-D_10 anti-D_10
+Alias SigD'_10 D'_10
+Alias Siganti-D'_10 anti-D'_10
+Alias SigD*+ D*+
+Alias SigD*- D*-
+Alias SigD+ D+
+Alias SigD- D-
+Alias SigD*0 D*0
+Alias Siganti-D*0 anti-D*0
+Alias SigD0 D0
+Alias Siganti-D0 anti-D0
+Alias SigK_1- K_1-
+Alias SigK_1+ K_1+
+Alias SigK*0 K*0
+Alias Siganti-K*0 anti-K*0
+Alias Sigomega omega
+Alias SigK*+ K*+
+Alias SigK*- K*-
+Alias SigK*+S K*+
+Alias SigK*-S K*-
+Alias SigK'_10		K'_10
+Alias Siganti-K'_10	anti-K'_10
+#
+Decay Upsilon(4S)
+0.500 B+ MyB-                VSS;
+0.500 B- MyB+                VSS;
+Enddecay
+#
+
+### B- ###
+Decay B-
+0.0056   SigD_10    e-    anti-nu_e          PHOTOS  ISGW2;
+0.0037   SigD'_10   e-    anti-nu_e          PHOTOS  ISGW2;
+0.0056   SigD_10    mu-   anti-nu_mu         PHOTOS  ISGW2;
+0.0037   SigD'_10   mu-   anti-nu_mu         PHOTOS  ISGW2;
+Enddecay
+#
+Decay B+
+0.0056   Siganti-D_10    e+    nu_e          PHOTOS  ISGW2;
+0.0037   Siganti-D'_10   e+    nu_e          PHOTOS  ISGW2;
+0.0056   Siganti-D_10    mu+   nu_mu         PHOTOS  ISGW2;
+0.0037   Siganti-D'_10   mu+   nu_mu         PHOTOS  ISGW2;
+Enddecay
+
+### D** ###
+Decay SigD_10
+0.5333    SigD0 pi+ pi-                      PHSP;
+0.2667    SigD0 pi0 pi0                      PHSP;
+0.2000    SigD+ pi- pi0                      PHSP;
+Enddecay
+#
+Decay Siganti-D_10
+0.5333    Siganti-D0 pi+ pi-                 PHSP;
+0.2667    Siganti-D0 pi0 pi0                 PHSP;
+0.2000    SigD- pi+ pi0                      PHSP;
+Enddecay
+#
+Decay SigD'_10
+0.2667    SigD0 pi+ pi-                      PHSP;
+0.1333    SigD0 pi0 pi0                      PHSP;
+0.1000    SigD+ pi- pi0                      PHSP;
+0.2667    SigD*0 pi+ pi-                     PHSP;
+0.1333    SigD*0 pi0 pi0                     PHSP;
+0.1000    SigD*+ pi- pi0                     PHSP;
+Enddecay
+#
+Decay Siganti-D'_10
+0.2667    Siganti-D0 pi+ pi-                 PHSP;
+0.1333    Siganti-D0 pi0 pi0                 PHSP;
+0.1000    SigD- pi+ pi0                      PHSP;
+0.2667    Siganti-D*0 pi+ pi-                PHSP;
+0.1333    Siganti-D*0 pi0 pi0                PHSP;
+0.1000    SigD*- pi+ pi0                     PHSP;
+Enddecay
+#
+
+### D* ###
+Decay SigD*0
+0.6190    SigD0  pi0                        VSS;
+0.3810    SigD0  gamma                       VSP_PWAVE;
+Enddecay
+#
+Decay Siganti-D*0
+0.6190    Siganti-D0  pi0                       VSS;
+0.3810    Siganti-D0  gamma                      VSP_PWAVE;
+Enddecay
+#
+Decay SigD*+
+0.6830    SigD0  pi+                        VSS;
+0.3060    SigD+  pi0                        VSS;
+Enddecay
+#
+Decay SigD*-
+0.6830    Siganti-D0  pi-                   VSS;
+0.3060    SigD-  pi0                        VSS;
+Enddecay
+#
+
+### D ###
+Decay SigD0
+0.0383   K-  pi+                         PHSP;
+0.1390   K-  pi+  pi0                    D_DALITZ;
+0.0060   K-  pi+  rho0                   PHSP;
+0.0114   Siganti-K*0 rho0                SVV_HELAMP  1.0 0.0 1.0 0.0 1.0 0.0;
+0.0360   Mya_1+ K-                       SVS;
+0.0175   Siganti-K*0 pi+  pi-            PHSP;
+0.0067   SigK_1- pi+                     SVS;
+0.0174   K-  pi+  pi+   pi-              PHSP;
+0.0185   Myanti-K0   pi+  pi-            D_DALITZ;
+0.0064   Sigomega Myanti-K0              SVS;
+0.0342   SigK*- rho+                     SVV_HELAMP  1.0 0.0 1.0 0.0 1.0 0.0;
+0.0029   Myanti-K0   pi+  pi-   pi0      PHSP;
+Enddecay
+#
+Decay Siganti-D0
+0.0383   K+  pi-                         PHSP;
+0.1390   K+  pi-  pi0                    D_DALITZ;
+0.0060   K+  pi-  rho0                   PHSP;
+0.0146   SigK*0 rho0                     SVV_HELAMP 1.0 0.0 1.0 0.0 1.0 0.0;
+0.0730   Mya_1- K+                       SVS;
+0.0225   SigK*0 pi+  pi-                 PHSP;
+0.0107   SigK_1+ pi-                     SVS;
+0.0174   K+  pi-  pi+   pi-              PHSP;
+0.0540   MyK0  pi+  pi-                  D_DALITZ;
+0.0210   Sigomega MyK0                   SVS;
+0.0610   SigK*+ rho-                     SVV_HELAMP 1.0 0.0 1.0 0.0 1.0 0.0;
+0.0085   MyK0  pi+  pi-   pi0            PHSP;
+Enddecay
+#
+Decay SigD+
+0.0900   K-  pi+  pi+                 D_DALITZ;
+0.0140   Myanti-K*0 rho+              SVV_HELAMP  1.0 0.0 1.0 0.0 1.0 0.0;
+0.0299   Siganti-K'_10  pi+           SVS;
+0.0110   K-  rho+  pi+                PHSP;
+0.0067   Myanti-K*0 pi0  pi+          PHSP;
+0.0039   SigK*- pi+  pi+              PHSP;
+0.0120   K-  pi+  pi+   pi0           PHSP;
+0.0099   Myanti-K0   pi+              PHSP;
+0.0333   Myanti-K0   pi+  pi0         D_DALITZ;
+0.0135   Mya_1+ Myanti-K0             SVS;
+0.0017   Myanti-K0   rho0  pi+        PHSP;
+0.0027   Myanti-K0   pi+  pi+   pi-   PHSP;
+Enddecay
+#
+Decay SigD-
+0.0900   K+  pi-  pi-                 D_DALITZ;
+0.0140   MyK*0 rho-                   SVV_HELAMP  1.0 0.0 1.0 0.0 1.0 0.0;
+0.0299   SigK'_10  pi-                SVS;
+0.0110   K+  rho-  pi-                PHSP;
+0.0067   MyK*0 pi0  pi-               PHSP;
+0.0039   SigK*+ pi-  pi-              PHSP;
+0.0120   K+  pi-  pi-   pi0           PHSP;
+0.0099   MyK0  pi-                    PHSP;
+0.0333   MyK0  pi-  pi0               D_DALITZ;
+0.0135   Mya_1- MyK0                  SVS;
+0.0017   MyK0  rho0  pi-              PHSP;
+0.0027   MyK0  pi-  pi-   pi+         PHSP;
+Enddecay
+#
+Decay SigK*0
+0.6657      K+  pi-                      VSS;
+0.1140      MyK0  pi0                    VSS;
+Enddecay
+#
+Decay Siganti-K*0
+0.6657      K-  pi+                      VSS;
+0.1140      Myanti-K0   pi0              VSS;
+Enddecay
+#
+Decay SigK*+
+0.2284      MyK0  pi+                    VSS;
+0.3330      K+  pi0                      VSS;
+Enddecay
+#
+Decay SigK*-
+0.2284      Myanti-K0   pi-              VSS;
+0.3330      K-  pi0                      VSS;
+Enddecay
+#
+Decay SigK*+S
+1.0         MyK0  pi+                    VSS;
+Enddecay
+#
+Decay SigK*-S
+1.0         Myanti-K0  pi-               VSS;
+Enddecay
+#
+Decay SigK_1+
+0.0961   rho+  MyK0                      VVS_PWAVE 1.0 0.0 0.0 0.0 0.0 0.0;
+0.1400   rho0  K+                        VVS_PWAVE 1.0 0.0 0.0 0.0 0.0 0.0;
+0.0832   SigK*0   pi+                    VVS_PWAVE 1.0 0.0 0.0 0.0 0.0 0.0;
+0.0122   SigK*+S   pi0                   VVS_PWAVE 1.0 0.0 0.0 0.0 0.0 0.0;
+0.0024   Myomega  K+                     VVS_PWAVE 1.0 0.0 0.0 0.0 0.0 0.0;
+0.1444   K+    pi+ pi-                   PHSP;
+0.0427   MyK0    pi+ pi0                 PHSP;
+Enddecay
+#
+Decay SigK_1-
+0.0961   rho-  Myanti-K0                 VVS_PWAVE 1.0 0.0 0.0 0.0 0.0 0.0;
+0.1400   rho0  K-                        VVS_PWAVE 1.0 0.0 0.0 0.0 0.0 0.0;
+0.0832   Siganti-K*0   pi-               VVS_PWAVE 1.0 0.0 0.0 0.0 0.0 0.0;
+0.0122   SigK*-S   pi0                   VVS_PWAVE 1.0 0.0 0.0 0.0 0.0 0.0;
+0.0024   Myomega  K-                     VVS_PWAVE 1.0 0.0 0.0 0.0 0.0 0.0;
+0.1444   K-    pi+ pi-                   PHSP;
+0.0427   Myanti-K0    pi- pi0            PHSP;
+Enddecay
+#
+Decay Sigomega
+0.8880    pi-  pi+  pi0                  OMEGA_DALITZ;
+Enddecay
+#
+Decay SigK'_10
+0.3537   SigK*+  pi-                  VVS_PWAVE 1.0 0.0 0.0 0.0 0.0 0.0;
+0.2064   MyK*0  pi0                   VVS_PWAVE 1.0 0.0 0.0 0.0 0.0 0.0;
+0.0200   rho- K+                      VVS_PWAVE 1.0 0.0 0.0 0.0 0.0 0.0;
+0.0034   rho0 MyK0                    VVS_PWAVE 1.0 0.0 0.0 0.0 0.0 0.0;
+0.0002   Myomega MyK0                 VVS_PWAVE 1.0 0.0 0.0 0.0 0.0 0.0;
+0.0046   MyK0  pi+  pi-               PHSP;
+Enddecay
+#
+Decay Siganti-K'_10
+0.3537   SigK*- pi+                   VVS_PWAVE 1.0 0.0 0.0 0.0 0.0 0.0;
+0.2064   Myanti-K*0 pi0               VVS_PWAVE 1.0 0.0 0.0 0.0 0.0 0.0;
+0.0200   rho+ K-                      VVS_PWAVE 1.0 0.0 0.0 0.0 0.0 0.0;
+0.0034   rho0 Myanti-K0               VVS_PWAVE 1.0 0.0 0.0 0.0 0.0 0.0;
+0.0002   Myomega Myanti-K0            VVS_PWAVE 1.0 0.0 0.0 0.0 0.0 0.0;
+0.0046   Myanti-K0   pi+  pi-         PHSP;
+Enddecay
+#
+# Breco cocktail:
+#
+Decay MyB+ 
+0.0046   Myanti-D*0  pi+                       SVS;
+0.0053   Myanti-D0  pi+                        PHSP;
+0.0134   rho+  Myanti-D0                       SVS;
+0.0155   Myanti-D*0  rho+              SVV_HELAMP 0.228 0.95 0.283 1.13 0.932 0;
+0.0005   Myanti-D0  pi0  pi+                   PHSP;
+0.0005   Myanti-D*0  pi0  pi+                  PHSP;
+0.0050   Mya_1+ Myanti-D0                        SVS;
+0.0021   Myanti-D0 rho0 pi+                   PHSP;
+0.0050   Myanti-D0 pi-  pi+  pi+              PHSP;
+0.0190   Myanti-D*0 Mya_1+               SVV_HELAMP 0.336 0.0 0.88 0.0 0.336 0.0;
+0.0005   Myanti-D*0 rho0 pi+                   PHSP;
+0.0005   Myanti-D*0 pi-  pi+  pi+              PHSP;
+0.0005   Myanti-D*0 rho+  pi0                  PHSP;
+0.0005   Myanti-D*0 pi+   pi0  pi0             PHSP;
+Enddecay
+#
+Decay MyB-
+0.0046   MyD*0 pi-                        SVS;
+0.0053   MyD0   pi-                       PHSP;
+0.0134   rho-   MyD0                      SVS;
+0.0155   MyD*0  rho-               SVV_HELAMP 0.228 0.95 0.283 1.13 0.932 0;
+0.0005   MyD0  pi0  pi-                   PHSP;
+0.0005   MyD*0 pi0  pi-                   PHSP;
+0.0050   Mya_1- MyD0                         SVS;
+0.0021   MyD0  rho0 pi-                   PHSP;
+0.0050   MyD0  pi+  pi-  pi-              PHSP;
+0.0190   MyD*0 Mya_1-                      SVV_HELAMP 0.336 0.0 0.88 0.0 0.336 0.0;
+0.0005   MyD*0 rho0 pi-                   PHSP;
+0.0005   MyD*0 pi+  pi-  pi-              PHSP;
+0.0005   MyD*0 rho-  pi0                  PHSP;
+0.0005   MyD*0 pi- pi0  pi0               PHSP;
+Enddecay
+#
+Decay MyD*0
+0.619     MyD0   pi0         VSS;
+0.381     MyD0   gamma       VSP_PWAVE;
+Enddecay
+#
+Decay Myanti-D*0
+0.619     Myanti-D0   pi0    VSS;
+0.381     Myanti-D0   gamma  VSP_PWAVE;
+Enddecay
+#
+Decay MyD0
+0.142     K-  pi+            PHSP;
+0.513     K-  pi+  pi0       D_DALITZ;
+0.068     Myanti-K0 pi+ pi-       D_DALITZ;
+## K 3pi  (0.277 total)
+0.1270    Mya_1+ K-                       SVS;
+0.0123    MyK_1- pi+                      SVS;
+0.0375    Myanti-K*0 pi+ pi-              PHSP;
+0.0194    K- pi+ rho0                     PHSP;
+0.0462    K- pi+ pi+ pi-                  PHSP;
+0.0346    Myanti-K*0 rho0                 SVV_HELAMP 1.0 0.0 1.0 0.0 1.0 0.0;
+Enddecay
+#
+Decay Myanti-D0
+0.142     K+    pi-          PHSP;
+0.513     K+    pi-  pi0     D_DALITZ;
+0.068     MyK0 pi- pi+       D_DALITZ;
+## K 3pi  (0.277 total)
+0.1270    Mya_1- K+                       SVS;
+0.0123    MyK_1+ pi-                      SVS;
+0.0375    MyK*0 pi- pi+                   PHSP;
+0.0194    K+ pi- rho0                     PHSP;
+0.0462    K+ pi- pi- pi+                  PHSP;
+0.0346    MyK*0 rho0                      SVV_HELAMP 1.0 0.0 1.0 0.0 1.0 0.0;
+Enddecay
+#
+Decay MyK0
+1.000     MyKs                              PHSP;
+Enddecay
+#
+Decay Myanti-K0
+1.000     MyKs                              PHSP;
+Enddecay
+#
+Decay MyKs
+1.000     pi+ pi-            PHSP;
+Enddecay
+#
+Decay Mya_1+
+1.0000  rho0 pi+                        VVS_PWAVE 1.0 0.0 0.0 0.0 0.0 0.0;
+Enddecay
+#
+Decay Mya_1-
+1.0000  rho0 pi-                        VVS_PWAVE 1.0 0.0 0.0 0.0 0.0 0.0;
+Enddecay
+#
+Decay MyK_1+
+0.3913  rho0 K+                         VVS_PWAVE 1.0 0.0 0.0 0.0 0.0 0.0;
+0.1984  MyK*0 pi+                       VVS_PWAVE 1.0 0.0 0.0 0.0 0.0 0.0;
+0.0067  Myomega K+                      VVS_PWAVE 1.0 0.0 0.0 0.0 0.0 0.0;
+0.4036  K+ pi- pi+                      PHSP;
+Enddecay
+#
+Decay MyK_1-
+0.3913  rho0 K-                         VVS_PWAVE 1.0 0.0 0.0 0.0 0.0 0.0;
+0.1984  Myanti-K*0 pi-                  VVS_PWAVE 1.0 0.0 0.0 0.0 0.0 0.0;
+0.0067  Myomega K-                      VVS_PWAVE 1.0 0.0 0.0 0.0 0.0 0.0;
+0.4036  K- pi+ pi-                      PHSP;
+Enddecay
+#
+Decay MyK*0
+1.0000  K+ pi-                          VSS;
+Enddecay
+#
+Decay Myanti-K*0
+1.0000  K- pi+                          VSS;
+Enddecay
+#
+Decay Myomega
+1.0000  pi- pi+                         VSS;
+Enddecay
+End

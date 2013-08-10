@@ -1,0 +1,56 @@
+\begin{tabular}{|l||cc|c|cc|c|}
+\hline
+$\mathbf{D^{*0}}$ & Add_Truth30_Run6_e & Base_e & R_e & Add_Truth30_Run6_{\mu} & Base_{\mu} & R_{\mu} \\
+\hline \hline
+D^{**} \to \text{D}^{*0}\pi^{0} & 53 & 49 & 1.08 & 48 & 42 & 1.14 \\
+D^{**} \to \text{D}^{0}\pi^{0} & 8 & 7 & 1.14 & 6 & 8 & 0.75 \\
+Other D^{**} & 15 & 17 & 0.88 & 12 & 7 & 1.71 \\
+D^{*0} \,l \,\nu & 77 & 53 & 1.45 & 87 & 34 & 2.56 \\
+D^{0} \,l \,\nu & 3 & 4 & 0.75 & 1 & 5 & 0.20 \\
+Crossfeed & 10 & 5 & 2.00 & 12 & 8 & 1.50 \\
+Comb. & 50 & 69 & 0.72 & 100 & 184 & 0.54 \\
+\hline \end{tabular}
+\,\,
+
+\begin{tabular}{|l||cc|c|cc|c|}
+\hline
+$\mathbf{D^{0}}$ & Add_Truth30_Run6_e & Base_e & R_e & Add_Truth30_Run6_{\mu} & Base_{\mu} & R_{\mu} \\
+\hline \hline
+D^{**} \to \text{D}^{0}\pi^{0} & 57 & 57 & 1.00 & 35 & 40 & 0.88 \\
+D^{**} \to \text{D}^{*0}\pi^{0} & 36 & 41 & 0.88 & 34 & 26 & 1.31 \\
+Other D^{**} & 33 & 29 & 1.14 & 20 & 16 & 1.25 \\
+D^{*0} \,l \,\nu & 71 & 42 & 1.69 & 66 & 58 & 1.14 \\
+D^{0} \,l \,\nu & 33 & 27 & 1.22 & 30 & 25 & 1.20 \\
+Crossfeed & 8 & 12 & 0.67 & 9 & 11 & 0.82 \\
+Comb. & 50 & 88 & 0.57 & 106 & 258 & 0.41 \\
+\hline \end{tabular}
+\,\,
+
+\begin{tabular}{|l||cc|c|cc|c|}
+\hline
+$\mathbf{D^{*+}}$ & Add_Truth30_Run6_e & Base_e & R_e & Add_Truth30_Run6_{\mu} & Base_{\mu} & R_{\mu} \\
+\hline \hline
+D^{**} \to \text{D}^{*+}\pi^{0} & 13 & 15 & 0.87 & 14 & 17 & 0.82 \\
+D^{**} \to \text{D}^{+}\pi^{0} & 0 & 0 &  -  & 0 & 0 &  -  \\
+Other D^{**} & 2 & 2 & 1.00 & 1 & 3 & 0.33 \\
+D^{*+} \,l \,\nu & 10 & 10 & 1.00 & 17 & 17 & 1.00 \\
+D^{+} \,l \,\nu & 0 & 0 &  -  & 0 & 1 & 0.00 \\
+Crossfeed & 0 & 0 &  -  & 0 & 0 &  -  \\
+Comb. & 8 & 11 & 0.73 & 20 & 41 & 0.49 \\
+\hline \end{tabular}
+\,\,
+
+\begin{tabular}{|l||cc|c|cc|c|}
+\hline
+$\mathbf{D^{+}}$ & Add_Truth30_Run6_e & Base_e & R_e & Add_Truth30_Run6_{\mu} & Base_{\mu} & R_{\mu} \\
+\hline \hline
+D^{**} \to \text{D}^{+}\pi^{0} & 26 & 28 & 0.93 & 16 & 18 & 0.89 \\
+D^{**} \to \text{D}^{*+}\pi^{0} & 14 & 18 & 0.78 & 8 & 10 & 0.80 \\
+Other D^{**} & 28 & 41 & 0.68 & 19 & 33 & 0.58 \\
+D^{*+} \,l \,\nu & 13 & 16 & 0.81 & 7 & 14 & 0.50 \\
+D^{+} \,l \,\nu & 7 & 11 & 0.64 & 9 & 10 & 0.90 \\
+Crossfeed & 12 & 12 & 1.00 & 3 & 7 & 0.43 \\
+Comb. & 45 & 84 & 0.54 & 103 & 204 & 0.50 \\
+\hline \end{tabular}
+\,\,
+

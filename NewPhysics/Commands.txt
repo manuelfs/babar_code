@@ -1,0 +1,6 @@
+bsub -q long -o babar_code/NewPhysics/logfiles/loggscalc1.log babar_code/NewPhysics/gscalc.tcsh    0  500
+bsub -q long -o babar_code/NewPhysics/logfiles/loggscalc2.log babar_code/NewPhysics/gscalc.tcsh  500 1000
+bsub -q long -o babar_code/NewPhysics/logfiles/loggscalc3.log babar_code/NewPhysics/gscalc.tcsh 1000 1500
+bsub -q long -o babar_code/NewPhysics/logfiles/loggscalc4.log babar_code/NewPhysics/gscalc.tcsh 1500 2000
+
+

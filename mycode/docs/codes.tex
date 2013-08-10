@@ -1,0 +1,1245 @@
+%\documentclass[10pt,twocolumn]{article}
+\documentclass[6pt]{article}
+\usepackage{lscape}
+\usepackage{amsmath}
+\usepackage{colortbl}
+\usepackage[left=2cm,top=1cm,right=3cm,nohead,nofoot]{geometry}
+\pagestyle{empty}
+\input{babarsym.tex}
+
+\newcommand{\Red} [1]  {\textcolor{red}{#1}}
+
+\begin{document} 
+
+
+
+\begin{tabular}{r l r r }\\ \hline\hline
+     & \multicolumn{1}{c}{\bf Prob. distribution functions}  & R24+R26 & Data \\ \hline
+1    & $\Dz\tau\nu\Rightarrow\Dz$                             &  1535	     &   171	       \\
+2    & $\Dstarz\tau\nu\Rightarrow\Dstarz$                     &  2968	     &   330	       \\
+3    & $\Dp\tau\nu\Rightarrow\Dp$                             &  919	     &   102	       \\
+4    & $\Dstarp\tau\nu\Rightarrow\Dstarp$                     &  1586	     &   176	       \\
+5    & $\Dstarz\tau\nu\Rightarrow\Dz$                         &  1494	     &   166	       \\
+6    & $\Dz\tau\nu\Rightarrow\Dstarz$                         &  197	     &   22	       \\
+7    & $\Dstarp\tau\nu\Rightarrow\Dp$                         &  338	     &   38	       \\
+8    & $\Dp\tau\nu\Rightarrow\Dstarp$                         &  18	     &   2	       \\
+9    & $\Dz\ell\nu\Rightarrow\Dz$                             &  12261	     &   1362	       \\
+10   & $\Dstarz\ell\nu\Rightarrow\Dstarz$                     &  46648	     &   5183	       \\
+11   & $\Dp\ell\nu\Rightarrow\Dp$                             &  6351	     &   706	       \\
+12   & $\Dstarp\ell\nu\Rightarrow\Dstarp$                     &  24804	     &   2756	       \\
+13   & $\Dstarz\ell\nu\Rightarrow\Dz$                         &  26899	     &   2989	       \\
+14   & $\Dz\ell\nu\Rightarrow\Dstarz$                         &  1202	     &   134	       \\
+15   & $\Dstarp\ell\nu\Rightarrow\Dp$                         &  6289	     &   699	       \\
+16   & $\Dp\ell\nu\Rightarrow\Dstarp$                         &  67	     &   7	       \\
+17   & $D^{**}(\ell/\tau)\nu\Rightarrow\Dz$                   &  343/1891    &   38/210	       \\
+18   & $D^{**}(\ell/\tau)\nu\Rightarrow\Dstarz$               &  190/2230    &   21/248	       \\
+19   & $D^{**}(\ell/\tau)\nu\Rightarrow\Dp$                   &  182/789     &   20/88	 	  \\
+20   & $D^{**}(\ell/\tau)\nu\Rightarrow\Dstarp$               &  62/957	     &   7/106      \\\hline 	 		          
+21   & $D^{**}(\ell/\tau)\nu\Rightarrow\Dz\piz$               &  1114/4609   &   124/512	       \\
+22   & $D^{**}(\ell/\tau)\nu\Rightarrow\Dstarz\piz$           &  339/2868    &   38/319	       \\
+23   & $D^{**}(\ell/\tau)\nu\Rightarrow\Dp\piz$               &  574/2509    &   64/279	       \\
+24   & $D^{**}(\ell/\tau)\nu\Rightarrow\Dstarp\piz$           &  250/3058    &   28/340	       \\
+25   & $D^{*0}(\ell/\tau)\nu\Rightarrow\Dz\piz$               &  2771	     &   308	       \\
+26   & $D^{*0}(\ell/\tau)\nu\Rightarrow\Dstarz\piz$           &  2049	     &   228	       \\
+27   & $D^{*+}(\ell/\tau)\nu\Rightarrow\Dp\piz$               &  970	     &   108	 	  \\
+28   & $D^{*+}(\ell/\tau)\nu\Rightarrow\Dstarp\piz$           &  1133	     &   126	       \\
+29   & $D^{0}(\ell/\tau)\nu\Rightarrow\Dz\piz$                &  798	     &   89	       \\
+30   & $D^{0}(\ell/\tau)\nu\Rightarrow\Dstarz\piz$            &  197	     &   22	       \\
+31   & $D^{+}(\ell/\tau)\nu\Rightarrow\Dp\piz$                &  404	     &   45	 	  \\
+32   & $D^{+}(\ell/\tau)\nu\Rightarrow\Dstarp\piz$            &  31          &   3              \\\hline
+41   & Crossfeed, $D^{0} $                                    &  1525	     &   169	       \\
+42   & Crossfeed, $D^{*0} $                                   &  732	     &   81	       \\
+43   & Crossfeed, $D^{+} $                                    &  235	     &   26	       \\
+44   & Crossfeed, $D^{*+} $                                   &  119	     &   13	       \\
+45   & Crossfeed, $D^{0} \pi^0$                               &  666	     &   74	       \\
+46   & Crossfeed, $D^{*0} \pi^0$                              &  336	     &   37	       \\
+47   & Crossfeed, $D^{+} \pi^0$                               &  416	     &   46	       \\
+48   & Crossfeed, $D^{*+} \pi^0$                              &  117	     &   13	       \\\hline       
+51   & Comb. background, $D^{0} $                             &  1640 	     &   164	       \\
+52   & Comb. background, $D^{*0} $                            &  2266 	     &   227	       \\
+53   & Comb. background, $D^{+} $                             &  863  	     &   86	       \\
+54   & Comb. background, $D^{*+} $                            &  844  	     &   84	       \\
+55   & Comb. background, $D^{0} \pi^0$                        &  5021 	     &   558	       \\
+56   & Comb. background, $D^{*0} \pi^0$                       &  4427 	     &   492	       \\
+57   & Comb. background, $D^{+} \pi^0$                        &  3992 	     &   444	       \\
+58   & Comb. background, $D^{*+} \pi^0$                       &  1733 	     &   193	       \\\hline
+61   & Continuum, $D^{0} $                                    &  281         &   141	        \\
+62   & Continuum, $D^{*0} $                                   &  278         &   139	        \\
+63   & Continuum, $D^{+} $                                    &  109         &   55	        \\
+64   & Continuum, $D^{*+} $                                   &  19          &   10	        \\
+65   & Continuum, $D^{0} \pi^0$                               &  893         &   447	        \\
+66   & Continuum, $D^{*0} \pi^0$                              &  569         &   285	        \\
+67   & Continuum, $D^{+} \pi^0$                               &  513         &   257	        \\
+68   & Continuum, $D^{*+} \pi^0$                              &  111         &   56 	        \\       
+69   & Continuum, $D^{0/+} $                                  &  390         &   195	        \\
+70   & Continuum, $D^{*0/+} $                                 &  297         &   149             \\
+\hline \hline 
+\end{tabular}
+
+
+
+\begin{tabular}{r l r r r r}\\ \hline\hline
+     & \multicolumn{1}{c}{\bf The Probability distribution functions}  &  Cocktail & R24+R26 & Rest2 & Rest  \\ \hline
+0    & $\Dz\tau\nu\Rightarrow\Dz$                             & 16262	    & 1074	  & 174	  	& 204        \\
+1    & $\Dstarz\tau\nu\Rightarrow\Dstarz$                     & 10452	    & 1725	  & 289	  	& 301        \\
+2    & $\Dp\tau\nu\Rightarrow\Dp$                             & 26036	    & 545	  & 103	  	& 108        \\
+3    & $\Dstarp\tau\nu\Rightarrow\Dstarp$                     & 31277	    & 1053	  & 177	  	& 192        \\
+8    & $\Dstarz\tau\nu\Rightarrow\Dz$                         & 6681	    & 1077	  & 175	  	& 176        \\
+9    & $\Dz\tau\nu\Rightarrow\Dstarz$                         & 1564	    & 116	  & 25	  	& 9          \\
+10   & $\Dstarp\tau\nu\Rightarrow\Dp$                         & 11648	    & 192	  & 39	  	& 33         \\
+11   & $\Dp\tau\nu\Rightarrow\Dstarp$                         & 407	    & 14	  & 2	  	& 3          \\
+12   & $\Dz\ell\nu\Rightarrow\Dz$                             & 10151	    & 8438	  & 1385  	& 1432       \\
+13   & $\Dstarz\ell\nu\Rightarrow\Dstarz$                     & 11234	    & 26719	  & 4588  	& 4590       \\
+14   & $\Dp\ell\nu\Rightarrow\Dp$                             & 16358	    & 3796	  & 652	  	& 740        \\
+15   & $\Dstarp\ell\nu\Rightarrow\Dstarp$                     & 17295	    & 15681	  & 2850  	& 2837       \\
+20   & $\Dstarz\ell\nu\Rightarrow\Dz$                         & 8331	    & 19667	  & 3472  	& 3289       \\
+21   & $\Dz\ell\nu\Rightarrow\Dstarz$                         & 708	    & 649	  & 131	  	& 104        \\
+22   & $\Dstarp\ell\nu\Rightarrow\Dp$                         & 4739	    & 3708	  & 639	  	& 653        \\
+23   & $\Dp\ell\nu\Rightarrow\Dstarp$                         & 170	    & 38	  & 10	  	& 8          \\
+26   & $D^{**}(\ell/\tau)\nu\Rightarrow\Dz$                   & 2345/0	    & 1433/86	  & 261/20	& 241/17        \\
+27   & $D^{**}(\ell/\tau)\nu\Rightarrow\Dstarz$               & 1392/0	    & 1037/64	  & 171/17	& 188/21        \\
+28   & $D^{**}(\ell/\tau)\nu\Rightarrow\Dp$                   & 2434/0	    & 510/37	  & 94/9	& 71/10         \\
+29   & $D^{**}(\ell/\tau)\nu\Rightarrow\Dstarp$               & 1997/0	    & 628/34	  & 112/7	& 106/4         \\\hline 
+\hline \hline 
+\end{tabular}\newpage
+\begin{tabular}{r l r r r r}\\ \hline\hline
+     & \multicolumn{1}{c}{\bf The Probability distribution functions}  &  Cocktail & R24+R26 & Rest2 & Rest  \\ \hline
+30   & $D^{**}(\ell/\tau)\nu\Rightarrow\Dz\piz$               & 5806/0	    & 2856/115    & 510/22	& 524/16        \\
+31   & $D^{**}(\ell/\tau)\nu\Rightarrow\Dstarz\piz$           & 1970/0	    & 1350/52	  & 205/8	& 220/5         \\
+32   & $D^{**}(\ell/\tau)\nu\Rightarrow\Dp\piz$               & 9628/0	    & 1627/95	  & 277/19	& 315/24        \\
+33   & $D^{**}(\ell/\tau)\nu\Rightarrow\Dstarp\piz$           & 3271/0	    & 840/23	  & 153/4	& 158/6         \\
+38   & $\Dstarz(\ell/\tau)\nu\Rightarrow\Dz\piz$              & 265/125	    & 852/68	  & 150/8	& 146/10        \\
+39   & $\Dstarz(\ell/\tau)\nu\Rightarrow\Dstarz\piz$          & 233/142	    & 694/57	  & 102/7	& 104/10        \\
+40   & $\Dstarp(\ell/\tau)\nu\Rightarrow\Dp\piz$              & 242/391	    & 361/26	  & 57/5	& 78/4          \\
+41   & $\Dstarp(\ell/\tau)\nu\Rightarrow\Dstarp\piz$          & 563/589	    & 580/37	  & 100/9	& 119/8         \\
+42   & $\Dz(\ell/\tau)\nu\Rightarrow\Dz\piz$                  & 419/212	    & 452/55	  & 73/20	& 81/7          \\
+43   & $\Dz(\ell/\tau)\nu\Rightarrow\Dstarz\piz$              & 34/34	    & 76/7	  & 11/1	& 14/0          \\
+44   & $\Dp(\ell/\tau)\nu\Rightarrow\Dp\piz$                  & 800/484	    & 260/30	  & 50/4	& 54/6          \\
+45   & $\Dp(\ell/\tau)\nu\Rightarrow\Dstarp\piz$              & 16/15       & 8/2         & 1/1         & 2/0           \\\hline 
+\hline \hline 
+\end{tabular}
+\begin{tabular}{r l r r r r}\\ \hline\hline
+     & \multicolumn{1}{c}{\bf The Probability distribution functions}  &  Cocktail & All & Rest2 & Rest  \\ \hline
+46   & Comb. background, signal                               &  -            & 2563    & 425     & 446       \\
+47   & Comb. background, $D^{(*)}\pi^0$                       &  -            & 4790    & 800     & 896       \\
+48   & Crossfeed in $D$ channels, signal                      &  -            & 845     & 145     & 171       \\
+49   & Crossfeed in $D^*$ channels, signal                    &  -            & 336     & 67      & 57        \\
+50   & Crossfeed in $D^{(*)}\pi^0$                            &  -            & 464     & 71      & 77        \\ \hline               
+51   & Comb. background, $D^{0} $                             &  -            & 910     & 159     & 160    \\
+52   & Comb. background, $D^{*0} $                            &  -            & 805     & 145     & 148    \\
+53   & Comb. background, $D^{+} $                             &  -            & 416     & 64      & 68     \\
+54   & Comb. background, $D^{*+} $                            &  -            & 432     & 57      & 70     \\
+55   & Crossfeed, $D^{0} $                                    &  -            & 721     & 127     & 151    \\
+56   & Crossfeed, $D^{*0} $                                   &  -            & 267     & 55      & 42     \\
+57   & Crossfeed, $D^{+} $                                    &  -            & 124     & 18      & 20     \\
+58   & Crossfeed, $D^{*+} $                                   &  -            & 69      & 12      & 15     \\
+59   & Comb. background, $D^{0} \pi^0$                        &  -            & 1552    & 269     & 272    \\
+60   & Comb. background, $D^{*0} \pi^0$                       &  -            & 1006    & 150     & 196    \\
+61   & Comb. background, $D^{+} \pi^0$                        &  -            & 1832    & 304     & 354    \\
+62   & Comb. background, $D^{*+} \pi^0$                       &  -            & 400     & 77      & 74     \\
+63   & Crossfeed, $D^{0} \pi^0$                               &  -            & 171     & 31      & 29     \\
+64   & Crossfeed, $D^{*0} \pi^0$                              &  -            & 83      & 10      & 18     \\
+65   & Crossfeed, $D^{+} \pi^0$                               &  -            & 165     & 21      & 21     \\
+66   & Crossfeed, $D^{*+} \pi^0$                              &  -            & 45      & 9       & 9      \\
+\hline \hline 
+\end{tabular}
+
+\begin{tabular}{r l l r r r}\\ \hline\hline
+    & $Tag$ & \multicolumn{1}{c}{\bf The 51 fitted samples}  &  Cocktail & Rest2 & Rest  \\ \hline
+0   &  True  & $\Dz\tau\nu\Rightarrow\Dz$                             &  57467	     & 164      & 170       \\
+1   &  True  & $\Dstarz\tau\nu\Rightarrow\Dstarz$                     &  29423	     & 213      & 213       \\
+2   &  True  & $\Dp\tau\nu\Rightarrow\Dp$                             &  72026	     & 73       & 59        \\
+3   &  True  & $\Dstarp\tau\nu\Rightarrow\Dstarp$                     &  79279	     & 86       & 100       \\
+\Red{4}   &  \Red{No}   & \Red{$\Dz\tau\nu\Rightarrow\Dz$}                             &  \Red{7078}	     & \Red{33}       & \Red{34}        \\
+\Red{5}   &  \Red{No}   & \Red{$\Dstarz\tau\nu\Rightarrow\Dstarz$}                     &  \Red{4604}	     & \Red{62}       & \Red{57}        \\
+\Red{6}   &  \Red{No}   & \Red{$\Dp\tau\nu\Rightarrow\Dp$}                             &  \Red{5428}	     & \Red{10}       & \Red{10}        \\
+\Red{7}   &  \Red{No}   & \Red{$\Dstarp\tau\nu\Rightarrow\Dstarp$}                     &  \Red{8057}	     & \Red{24}       & \Red{20}        \\
+8   &       & $\Dstarz\tau\nu\Rightarrow\Dz$                         &  29590	     & 210      & 204       \\
+9   &       & $\Dz\tau\nu\Rightarrow\Dstarz$                         &  4652	     & 15       & 21        \\
+10  &       & $\Dstarp\tau\nu\Rightarrow\Dp$                         &  32378	     & 22       & 26        \\
+11  &       & $\Dp\tau\nu\Rightarrow\Dstarp$                         &  1078	     & 0        & 0         \\
+12  &  True  & $\Dz\ell\nu\Rightarrow\Dz$                             &  25843	     & 1271     & 1265      \\
+13  &  True  & $\Dstarz\ell\nu\Rightarrow\Dstarz$                     &  22726	     & 3090     & 3080      \\
+14  &  True  & $\Dp\ell\nu\Rightarrow\Dp$                             &  32033	     & 420      & 450       \\
+15  &  True  & $\Dstarp\ell\nu\Rightarrow\Dstarp$                     &  32064	     & 1759     & 1739      \\
+\Red{16}  &  \Red{No}   & \Red{$\Dz\ell\nu\Rightarrow\Dz$}                             &  \Red{3103}	     & \Red{333}      & \Red{314}       \\
+\Red{17}  &  \Red{No}   & \Red{$\Dstarz\ell\nu\Rightarrow\Dstarz$}                     &  \Red{3374}	     & \Red{948}      & \Red{977}       \\
+\Red{18}  &  \Red{No}   & \Red{$\Dp\ell\nu\Rightarrow\Dp$}                             &  \Red{2403}	     & \Red{70}       & \Red{70}        \\
+\Red{19}  &  \Red{No}   & \Red{$\Dstarp\ell\nu\Rightarrow\Dstarp$}                     &  \Red{3315}	     & \Red{318}      & \Red{370}       \\
+20  &  True  & $\Dstarz\ell\nu\Rightarrow\Dz$                         &  20852	     & 2708     & 2611      \\
+21  &       & $\Dz\ell\nu\Rightarrow\Dstarz$                         &  1648	     & 109      & 105       \\
+22  &  True  & $\Dstarp\ell\nu\Rightarrow\Dp$                         &  8085	     & 329      & 343       \\
+23  &       & $\Dp\ell\nu\Rightarrow\Dstarp$                         &  358	     & 3        & 10        \\
+\Red{24}  &  \Red{No}   & \Red{$\Dstarz\ell\nu\Rightarrow\Dz$}                         &  \Red{5404}	     & \Red{1287}     & \Red{1293}      \\
+\Red{25}  &  \Red{No}   & \Red{$\Dstarp\ell\nu\Rightarrow\Dp$}                         &  \Red{1412}	     & \Red{113}      & \Red{138}       \\ \hline
+26  &       & $D^{**}(\ell/\tau)\nu\Rightarrow\Dz$                   &  8331/3580    & 337/19   & 352/25    \\
+27  &       & $D^{**}(\ell/\tau)\nu\Rightarrow\Dstarz$               &  3058/1826    & 143/14   & 131/9     \\
+28  &       & $D^{**}(\ell/\tau)\nu\Rightarrow\Dp$                   &  4724/1366    & 66/4     & 77/2      \\
+29  &       & $D^{**}(\ell/\tau)\nu\Rightarrow\Dstarp$               &  3319/1937    & 63/11    & 76/7      \\\hline 
+30  &  True  & $D^{**}(\ell/\tau)\nu\Rightarrow\Dz\piz$               &  14300/3455   & 340/11   & 358/13    \\
+31  &  True  & $D^{**}(\ell/\tau)\nu\Rightarrow\Dstarz\piz$           &  5139/1713    & 138/7    & 149/3     \\
+32  &  True  & $D^{**}(\ell/\tau)\nu\Rightarrow\Dp\piz$               &  16535/3776   & 140/14   & 128/7     \\
+33  &  True  & $D^{**}(\ell/\tau)\nu\Rightarrow\Dstarp\piz$           &  7260/2331    & 83/7     & 83/0      \\
+\Red{34}  &  \Red{No}   & \Red{$D^{**}(\ell/\tau)\nu\Rightarrow\Dz\piz$}               &  \Red{3414/990}     & \Red{257/21}   & \Red{291/15}    \\
+\Red{35}  &  \Red{No}   & \Red{$D^{**}(\ell/\tau)\nu\Rightarrow\Dstarz\piz$}           &  \Red{1241/405}     & \Red{90/3}     & \Red{80/5}      \\
+\Red{36}  &  \Red{No}   & \Red{$D^{**}(\ell/\tau)\nu\Rightarrow\Dp\piz$}               &  \Red{2881/731}     & \Red{113/4}    & \Red{138/7}     \\
+\Red{37}  &  \Red{No}   & \Red{$D^{**}(\ell/\tau)\nu\Rightarrow\Dstarp\piz$}           &  \Red{1320/451}     & \Red{50/2}     & \Red{54/2}      \\
+38  &       & $\Dstarz(\ell/\tau)\nu\Rightarrow\Dz\piz$              &  1245/1013    & 283/24   & 261/17    \\
+39  &       & $\Dstarz(\ell/\tau)\nu\Rightarrow\Dstarz\piz$          &  973/746	     & 173/15   & 141/7     \\
+40  &       & $\Dstarp(\ell/\tau)\nu\Rightarrow\Dp\piz$              &  774/1599     & 70/5     & 69/10     \\
+41  &       & $\Dstarp(\ell/\tau)\nu\Rightarrow\Dstarp\piz$          &  1601/2308    & 82/5     & 109/4     \\
+42  &       & $\Dz(\ell/\tau)\nu\Rightarrow\Dz\piz$                  &  1956/1371    & 152/10   & 129/8     \\
+43  &       & $\Dz(\ell/\tau)\nu\Rightarrow\Dstarz\piz$              &  160/186	     & 12/5     & 12/0      \\
+44  &       & $\Dp(\ell/\tau)\nu\Rightarrow\Dp\piz$                  &  2365/1806    & 58/6     & 46/4      \\
+45  &       & $\Dp(\ell/\tau)\nu\Rightarrow\Dstarp\piz$              &  58/62        & 4/0      & 1/0       \\\hline 
+46  &       & Comb. background, signal                               &  -            &   932    & 440   \\
+47  &       & Comb. background, $D^{(*)}\pi^0$                       &  -            &   1103   & 1136   \\
+48  &       & Crossfeed in $D$ channels, signal                      &  -            &   202    & 219   \\
+49  &       & Crossfeed in $D^*$ channels, signal                    &  -            &   69     & 49   \\
+50  &       & Crossfeed in $D^{(*)}\pi^0$                            &  -            &   115    & 107   \\ \hline\hline                
+\end{tabular}
+
+
+
+
+\begin{tabular}{r l l r r}\\ \hline\hline
+\multicolumn{3}{c}{\bf The 37 fitted samples}    &  Signal & Generics  \\ \hline
+0 & pdf0   & $\Dstarz\ell\nu\Rightarrow\Dstarz$    &  26105   &  8097  \\
+1 & pdf1   & $\Dstarz\ell\nu\Rightarrow\Dz$    &   26257  &  7901  \\
+2 & pdf2   & $\Dz\ell\nu\Rightarrow\Dz$    &   28949  &  3183  \\
+3 & pdf3   & $\Dstarz\tau\nu\Rightarrow\Dstarz$    &  34027   &  545  \\
+4 & pdf4   & $\Dstarz\tau\nu\Rightarrow\Dz$    &   29590  &  414  \\
+5 & pdf5   & $\Dz\tau\nu\Rightarrow\Dz$    &  64546   &  401  \\
+6 & pdf6   & $D^{**}(\ell/\tau)\nu\Rightarrow\Dstarz$    &  3058/1826  &  274/23  \\
+7 & pdf7   & $D^{**}(\ell/\tau)\nu\Rightarrow\Dz$    &  8331/3580   &  689/44  \\
+8 & pdf8   & $\Dz\ell\nu\Rightarrow\Dstarz$   &  1649  &  214  \\
+9 & pdf9   & $\Dz\tau\nu\Rightarrow\Dstarz$   & 4652   &  36  \\
+10 & pdf10 & $\Dstarp\ell\nu\Rightarrow\Dstarp$   &  35383  & 4186   \\
+11 & pdf11 & $\Dstarp\ell\nu\Rightarrow\Dp$   &  9498  &  923  \\
+12 & pdf12 & $\Dp\ell\nu\Rightarrow\Dp$   &  34439  & 1010   \\
+13 & pdf13 & $\Dstarp\tau\nu\Rightarrow\Dstarp$   &  87336  &  230  \\
+14 & pdf14 & $\Dstarp\tau\nu\Rightarrow\Dp$   &  32380  & 48   \\
+15 & pdf15 & $\Dp\tau\nu\Rightarrow\Dp$   & 77454   &  152  \\
+16 & pdf16 & $D^{**}(\ell/\tau)\nu\Rightarrow\Dstarp$   & 3319/1937   & 139/18   \\
+17 & pdf17 & $D^{**}(\ell/\tau)\nu\Rightarrow\Dp$   & 4724/1366   & 143/6   \\
+18 & pdf18 & $\Dp\ell\nu\Rightarrow\Dstarp$   & 358   &  13  \\
+19 & pdf19 & $\Dp\tau\nu\Rightarrow\Dstarp$   &  1078  &  0  \\\hline
+20 & dss0  & $D^{**}(\ell/\tau)\nu\Rightarrow\Dz\piz$   &  17714/4445  &  1246/60  \\
+21 & dss1  & $\Dstarz(\ell/\tau)\nu\Rightarrow\Dz\piz$   &  1245/1013  &  544/41  \\
+22 & dss2  & $\Dz(\ell/\tau)\nu\Rightarrow\Dz\piz$   &  1956/1371  &  281/18  \\
+23 & dss3  & $D^{**}(\ell/\tau)\nu\Rightarrow\Dstarz\piz$   &  6380/2118  &  457/18  \\
+24 & dss4  & $\Dstarz(\ell/\tau)\nu\Rightarrow\Dstarz\piz$   &  973/746  &  314/22  \\
+25 & dss5  & $\Dz(\ell/\tau)\nu\Rightarrow\Dstarz\piz$   & 160/186   &  24/5  \\
+26 & dss6  & $D^{**}(\ell/\tau)\nu\Rightarrow\Dp\piz$   & 19416/4507   &  519/32  \\
+27 & dss7  & $\Dstarp(\ell/\tau)\nu\Rightarrow\Dp\piz$   & 774/1599   &  139/15  \\
+28 & dss8  & $\Dp(\ell/\tau)\nu\Rightarrow\Dp\piz$   & 2365/1806   & 104/10   \\
+29 & dss9  & $D^{**}(\ell/\tau)\nu\Rightarrow\Dstarp\piz$   & 8580/2782   & 270/11   \\
+30 & dss10 & $\Dstarp(\ell/\tau)\nu\Rightarrow\Dstarp\piz$   & 1601/2308   &  191/9  \\
+31 & dss11 & $\Dp(\ell/\tau)\nu\Rightarrow\Dstarp\piz$   & 58/62   &  5/0  \\\hline
+32 & comb0       & Comb. background, signal   & -   &  932  \\
+33 & comb1       & Comb. background, $D^{(*)}\pi^0$    &  -  &  1103  \\
+34 & comb2       & Crossfeed in $D$ channels, signal    &  -  &  202  \\
+35 & comb3       & Crossfeed in $D^*$ channels, signal    &  -  &  69  \\
+36 & comb4       & Crossfeed in $D^{(*)}\pi^0$    &  -  &  115  \\ \hline\hline
+\end{tabular}
+
+\begin{tabular}{r l}\\ \hline\hline
+\multicolumn{2}{c}{\bf MCType}\\ \hline
+-2 & $uds$\\
+-1 & $c\bar{c}$\\
+0 & Combinatoric\\
+1 & $B\to\Dz e\nu$\\
+2 & $B\to\Dstarz e\nu$\\
+3 & $B\to\Dz\mu\nu$\\
+4 & $B\to\Dstarz\mu\nu$\\
+5 & $B\to\Dz\tau\nu$\\
+6 & $B\to\Dstarz\tau\nu$\\
+7 & $B\to\Dp e\nu$\\
+8 & $B\to\Dstarp e\nu$\\
+9 & $B\to\Dp\mu\nu$\\
+10 & $B\to\Dstarp\mu\nu$\\
+11 & $B\to\Dp\tau\nu$\\
+12 & $B\to\Dstarp\tau\nu$\\
+13 & $B\to D^{(*)}\pi\ell\nu$\\
+14 & $B\to D^{**}\ell\nu$\\ \hline\hline
+\end{tabular}
+
+\noindent In this categorization, ``combinatoric'' means none of
+the other numbered modes. Each of the other modes requires
+the tag $B$ to decay hadronically, so that any event with
+two semileptonic $B$ decays is also marked with MCType = 0.
+
+\begin{tabular}{r l}\\ \hline\hline
+\multicolumn{2}{c}{\bf candType}\\ \hline
+1 & $\Dz$\\
+2 & $\Dstarz$\\
+3 & $\Dp$\\
+4 & $\Dstarp$\\
+5 & $\Dz\piz$\\
+6 & $\Dstarz\piz$\\
+7 & $\Dp\piz$\\
+8 & $\Dstarp\piz$\\ \hline\hline
+\end{tabular}
+
+\noindent The ntuple only uses candType $\le$ 4, and
+these channels include both the signal box and the
+$D^{**}$ control sample. When we go from the ntuples
+to the fit samples, the signal and control samples
+are split, and candTypes 5--8 are introduced.
+
+
+\begin{tabular}{r l}\\ \hline\hline
+\multicolumn{2}{c}{\bf MCCombmode}\\ \hline
+1 & $\Ds\to\tau X$\\
+2 & $\tau$ not from \Ds\\
+3 & $ee$\\
+4 & $\mu\mu$\\
+5 & $e\mu$\\
+6 & $D \to e$\\
+7 & $D \to \mu$\\
+8 & $e$ not coming from $D$ or $\tau$\\ 
+9 & $\mu$ not coming from $D$ or $\tau$\\ 
+10 & More than 3 leptons not coming from $\tau$\\ 
+11 & There is a $K_L^0$\\ 
+12 & Everything else\\ 
+\hline\hline
+\end{tabular}
+
+\noindent These codes are ranked, so that, should an event
+fall into multiple categories, the lowest numbered flag is
+selected.
+
+
+\begin{tabular}{r l | l}\\ \hline\hline
+ & {\bf \Dz Decay} & {\bf \Dp Decay}\\ \hline
+1 & $K\pi$ & $K\pi\pi$\\
+2 & $K\pi\piz$ & $K\pi\pi\piz$\\
+3 & $K3\pi$ & $\KS\pi$\\
+4 & $\KS\pi\pi$ & $\KS\pi\piz$\\
+5 & $\KS\pi\pi\piz$ & $\KS 3\pi$\\
+6 & $\KS\KS$ (not used) & $KK\pi$ (not used)\\ 
+7 & $\KS\piz$ & $\KS K$\\
+8 & $\pi\pi$ (not used)& ---\\
+9 & $K K$ & ---\\ \hline\hline
+ & {\bf \Dstarz Decay} & {\bf \Dstarp Decay}\\ \hline
+1 & $\Dz\piz$ & $\Dz\pi$\\
+2 & $\Dz\gamma$ & $\Dp\piz$\\
+3 & --- & $\Dp\gamma$ (not used) \\\hline\hline
+\end{tabular}
+
+\noindent {\bf MCSubmode} uses the same decay codes, and encodes
+\Dstar decays as $100\times$DstarType $+$DType. Note that
+\Dstar mode 3 is only used in MCSubmode, as it is not
+reconstructed.
+
+
+%\begin{tabular}{r l}\\ \hline\hline
+%\multicolumn{2}{c}{\bf MCTwoBodyMode}\\ \hline
+%11 & $D\pi$\\
+%12 & $D\rho$\\
+%13 & $DK$\\
+%14 & $D\Kstar$\\
+%21 & $\Dstar\pi$\\
+%22 & $\Dstar\rho$\\
+%23 & $\Dstar K$\\
+%24 & $\Dstar\Kstar$\\
+%31 & $D^{**}\pi$\\
+%32 & $D^{**}\rho$\\
+%33 & $D^{**} K$\\
+%34 & $D^{**}\Kstar$\\
+%111     & $DD$\\
+%112/121 & $D\Dstar$\\
+%113/131 & $D D^{**}$\\
+%114/141 & $D\Ds$\\
+%115/151 & $D\Dss$\\
+%116/161 & $D D^{**}_s$\\
+%122     & $\Dstar\Dstar$\\
+%123/132 & $\Dstar D^{**}$\\
+%124/142 & $\Dstar\Ds$\\
+%125/152 & $\Dstar\Dss$\\
+%126/162 & $\Dstar D^{**}_s$\\
+%133     & $D^{**} D^{**}$\\
+%134/143 & $D^{**}\Ds$\\
+%135/153 & $D^{**}\Dss$\\
+%136/163 & $D^{**}D^{**}_s$\\
+%144     & $\Ds\Ds$\\
+%145/154 & $\Ds\Dss$\\
+%146/164 & $\Ds D^{**}_s$\\
+%155     & $\Dss\Dss$\\
+%156/165 & $\Dss D^{**}_s$\\
+%166     & $D^{**}_s D^{**}_s$\\ \hline\hline
+%\end{tabular}
+
+\begin{tabular}{r l l}\\ \hline\hline
+\multicolumn{3}{c}{\bf Codes for the efficiencies}\\ \hline
+0 & effi 0   & $\Dstarz\tau\nu\Rightarrow\Dstarz$\\
+1 & effi 1   & $\Dstarz\tau\nu\Rightarrow\Dz$\\
+2 & effi 2   & $\Dstarz\ell\nu\Rightarrow\Dstarz$\\
+3 & effi 3   & $\Dstarz\ell\nu\Rightarrow\Dz$\\
+4 & effi 4   & $\Dstarp\tau\nu\Rightarrow\Dstarp$\\
+5 & effi 5   & $\Dstarp\tau\nu\Rightarrow\Dp$\\
+6 & effi 6   & $\Dstarp\ell\nu\Rightarrow\Dstarp$\\
+7 & effi 7   & $\Dstarp\ell\nu\Rightarrow\Dp$\\
+8 & effi 8   & $\Dz\tau\nu\Rightarrow\Dz$\\
+9 & effi 9   & $\Dz\tau\nu\Rightarrow\Dstarz$\\
+10 & effi 10 & $\Dz\ell\nu\Rightarrow\Dz$\\
+11 & effi 11 & $\Dz\ell\nu\Rightarrow\Dstarz$\\
+12 & effi 12 & $\Dp\tau\nu\Rightarrow\Dp$\\
+13 & effi 13 & $\Dp\tau\nu\Rightarrow\Dstarp$\\
+14 & effi 14 & $\Dp\ell\nu\Rightarrow\Dp$\\
+15 & effi 15 & $\Dp\ell\nu\Rightarrow\Dstarp$\\
+16 & effi 16 & $D^{**}\ell\nu\Rightarrow\Dz$\\
+17 & effi 17 & $D^{**}\ell\nu\Rightarrow\Dstarz$\\
+18 & effi 18 & $D^{**}\ell\nu\Rightarrow\Dp$\\
+19 & effi 19 & $D^{**}\ell\nu\Rightarrow\Dstarp$\\
+20 & dsseffi 0  & $D^{**}\ell\nu\Rightarrow\Dz\piz$\\
+21 & dsseffi 1  & $\Dstarz\ell\nu\Rightarrow\Dz\piz$\\
+22 & dsseffi 2  & $\Dz\ell\nu\Rightarrow\Dz\piz$\\
+23 & dsseffi 3  & $D^{**}\ell\nu\Rightarrow\Dstarz\piz$\\
+24 & dsseffi 4  & $\Dstarz\ell\nu\Rightarrow\Dstarz\piz$\\
+25 & dsseffi 5  & $\Dz\ell\nu\Rightarrow\Dstarz\piz$\\
+26 & dsseffi 6  & $D^{**}\ell\nu\Rightarrow\Dp\piz$\\
+27 & dsseffi 7  & $\Dstarp\ell\nu\Rightarrow\Dp\piz$\\
+28 & dsseffi 8  & $\Dp\ell\nu\Rightarrow\Dp\piz$\\
+29 & dsseffi 9  & $D^{**}\ell\nu\Rightarrow\Dstarp\piz$\\
+30 & dsseffi 10 & $\Dstarp\ell\nu\Rightarrow\Dstarp\piz$\\
+31 & dsseffi 11 & $\Dp\ell\nu\Rightarrow\Dstarp\piz$\\
+\hline\hline
+\end{tabular}
+
+\begin{tabular}{l l r}\\ \hline\hline
+Channel          & Source  & pdf name\\ \hline
+$\Dstarz\ellm$   & $\Dstarz\taum\nutb$ signal           & rds[3]   \\
+                 & $\Dz\taum\nutb$ signal feed-up       & rds[9] \\
+                 & $\Dstarz\ellm\nulb$ normalization    & rdc[0]  \\
+                 & $\Dz\ellm\nulb$ feed-up              & rds[8]   \\
+                 & $D^{**}(\ellm/\taum)\nub$ feed-down  & rds[6]   \\
+                 & Charge-crossfeed                     & comb[3] \\
+                 & Combinatorial background             & comb[0] \\ \hline
+$\Dz\ellm$       & $\Dz\taum\nutb$ signal               & rds[5] \\
+                 & $\Dstarz\taum\nutb$ signal feed-down & rds[4] \\
+                 & $\Dz\ellm\nulb$ normalization        & rdc[1] \\
+                 & $\Dstarz\ellm\nulb$ feed-down        & rds[8] \\
+                 & $D^{**}\ellm\nulb$ feed-down         & rds[7] \\
+                 & Charge-crossfeed                     & comb[2] \\
+                 & Combinatorial background             & comb[0] \\ \hline
+$\Dstarp\ellm$   & $\Dstarp\taum\nutb$ signal           & rds[13] \\
+                 & $\Dp\taum\nutb$ signal feed-up       & rds[19] \\
+                 & $\Dstarp\ellm\nulb$ normalization    & rdc[2] \\
+                 & $\Dp\ellm\nulb$ feed-up              & rds[18]   \\
+                 & $D^{**}\ellm\nulb$ feed-down         & rds[16] \\
+                 & Charge-crossfeed                     & comb[3] \\
+                 & Combinatorial background             & comb[0] \\ \hline
+$\Dp\ellm$       & $\Dp\taum\nutb$ signal               & rds[15] \\
+                 & $\Dstarp\taum\nutb$ signal feed-down & rds[14] \\
+                 & $\Dp\ellm\nulb$ normalization        & rdc[3] \\
+                 & $\Dstarp\ellm\nulb$ feed-down        & rdc[9] \\
+                 & $D^{**}\ellm\nulb$ feed-down         & rds[17] \\
+                 & Charge-crossfeed                     & comb[2] \\
+                 & Combinatorial background             & comb[0] \\ \hline\hline
+\end{tabular}
+
+\begin{tabular}{l l r}\\ \hline\hline
+Channel          & Source  & pdf name\\ \hline
+$\Dstarz\piz\ellm$ & $D^{**}\ellm\nulb$                & rdc[5] \\
+              & $\Dstarz\ellm\nulb$ feed-up            & rds[24] \\
+              & $\Dz\ellm\nulb$ feed-up                & rds[25] \\
+              & Charge-crossfeed                       & comb[4] \\
+              & Combinatorial background               & comb[1] \\ \hline
+$\Dz\piz\ellm$     & $D^{**}\ellm\nulb$                & rdc[4] \\
+              & $\Dstarz\ellm\nulb$ feed-up            & rds[21]  \\
+              & $\Dz\ellm\nulb$ feed-up                & rds[22] \\
+              & Charge-crossfeed                       & comb[4] \\
+              & Combinatorial background               & comb[1] \\ \hline
+$\Dstarp\piz\ellm$ & $D^{**}\ellm\nulb$                & rdc[7] \\
+              & $\Dstarp\ellm\nulb$ feed-up            & rds[30] \\
+              & $\Dp\ellm\nulb$ feed-up                & rds[31]   \\
+              & Charge-crossfeed                       & comb[4]   \\
+              & Combinatorial background               & comb[1] \\ \hline
+$\Dp\piz\ellm$     & $D^{**}\ellm\nulb$                & rdc[6] \\
+              & $\Dstarp\ellm\nulb$ feed-up            & rds[27] \\
+              & $\Dp\ellm\nulb$ feed-up                & rds[28] \\
+              & Charge-crossfeed                       & comb[4] \\
+              & Combinatorial background               & comb[1] \\ \hline\hline
+\end{tabular}
+
+
+\renewcommand{\arraystretch}{2.4}
+ \begin{tabular}{r l l l}\\
+\hline\hline
+\multicolumn{3}{c}{\bf Crossfeed constraints} & q\\ \hline
+0 & fDstar0tau   & $\dfrac{\Dstarz\tau\nu\Rightarrow\Dz}
+                   {\Dstarz\tau\nu\Rightarrow\Dstarz}$ & 2\\
+1 & fDstar0lep   & $\dfrac{\Dstarz\ell\nu\Rightarrow\Dz}
+                   {\Dstarz\ell\nu\Rightarrow\Dstarz}$ & 3\\
+2 & fDstarctau  & $\dfrac{\Dstarp\tau\nu\Rightarrow\Dp}
+                   {\Dstarp\tau\nu\Rightarrow\Dstarp}$ & 6\\
+3 & fDstarclep  & $\dfrac{\Dstarp\ell\nu\Rightarrow\Dp}
+                   {\Dstarp\ell\nu\Rightarrow\Dstarp}$ & 7\\
+4 & fD0tau      & $\dfrac{\Dz\tau\nu\Rightarrow\Dstarz}
+                   {\Dz\tau\nu\Rightarrow\Dz}$ & 0\\
+5 & fD0lep      & $\dfrac{\Dz\ell\nu\Rightarrow\Dstarz}
+                   {\Dz\ell\nu\Rightarrow\Dz}$ & 1\\
+6 & fDctau      & $\dfrac{\Dp\tau\nu\Rightarrow\Dstarp}
+                   {\Dp\tau\nu\Rightarrow\Dp}$ & 4\\
+7 & fDclep      & $\dfrac{\Dp\ell\nu\Rightarrow\Dstarp}
+                   {\Dp\ell\nu\Rightarrow\Dp}$ & 5\\
+8 & fDssD0\_Dss  & $\dfrac{D^{**}\ell\nu\Rightarrow\Dz}
+                   {D^{**}\ell\nu\Rightarrow\Dz\piz}$\\
+9 & fDssD0\_Ds   & $\dfrac{\Dstarz\ell\nu\Rightarrow\Dz\piz}
+                   {\Dstarz\ell\nu\Rightarrow\Dstarz}$\\
+10 & fDssD0\_D    & $\dfrac{\Dz\ell\nu\Rightarrow\Dz\piz}
+                   {\Dz\ell\nu\Rightarrow\Dz}$\\
+11 & fDssDs0\_Dss & $\dfrac{D^{**}\ell\nu\Rightarrow\Dstarz}
+                   {D^{**}\ell\nu\Rightarrow\Dstarz\piz}$\\
+12 & fDssDs0\_Ds  & $\dfrac{\Dstarz\ell\nu\Rightarrow\Dstarz\piz}
+                   {\Dstarz\ell\nu\Rightarrow\Dstarz}$\\
+13 & fDssDs0\_D   & $\dfrac{\Dz\ell\nu\Rightarrow\Dstarz\piz}
+                   {\Dz\ell\nu\Rightarrow\Dz}$\\
+14 & fDssDc\_Dss  & $\dfrac{D^{**}\ell\nu\Rightarrow\Dp}
+                   {D^{**}\ell\nu\Rightarrow\Dp\piz}$\\
+15 & fDssDc\_Ds   & $\dfrac{\Dstarp\ell\nu\Rightarrow\Dp\piz}
+                   {\Dstarp\ell\nu\Rightarrow\Dstarp}$\\
+16 & fDssDc\_D    & $\dfrac{\Dp\ell\nu\Rightarrow\Dp\piz}
+                   {\Dp\ell\nu\Rightarrow\Dp}$\\
+17 & fDssDsc\_Dss & $\dfrac{D^{**}\ell\nu\Rightarrow\Dstarp}
+                   {D^{**}\ell\nu\Rightarrow\Dstarp\piz}$\\
+18 & fDssDsc\_Ds  & $\dfrac{\Dstarp\ell\nu\Rightarrow\Dstarp\piz}
+                   {\Dstarp\ell\nu\Rightarrow\Dstarp}$\\
+19 & fDssDsc\_D   & $\dfrac{\Dp\ell\nu\Rightarrow\Dstarp\piz}
+                   {\Dp\ell\nu\Rightarrow\Dp}$\\
+\hline\hline
+\end{tabular}
+
+\renewcommand{\arraystretch}{1}
+
+\begin{tabular}{l @{ $\to$ } l l @{\ \ \ $($} r @{ $\pm$ } l @ { $)\ \times$ } l r | c c |r} \hline\hline
+\multicolumn{6}{c}{}& &\multicolumn{2}{c|}{Combinatoric} & \\
+\multicolumn{3}{l}{Mode} & \multicolumn{3}{c}{$\mathcal B$} & SP8 & $Sig (\%)$ & $D^{**} (\%)$  & Weight \\ \hline
+$\Ds$&$\tau\nu$ & & $6.6$ & $0.6$ & $10^{-2}$ & 6.4 & 20.4 & 13.8 & 1.031 \\
+$\Ds$&$\eta\ell\nu$ && $2.9$ & $0.6$ & $10^{-2}$ & 3.07 & 4.2 & 2.9 & 0.944 \\
+$\Ds$&$\eta'\ell\nu$ && $1.02$ & $0.33$ & $10^{-2}$ & 1.06 & 0.4 & 0.3 & 0.962 \\
+$\Ds$&$\phi\ell\nu$ && $2.36$ & $0.26$ & $10^{-2}$ & 2.42 & 2.7 & 3.2 & 0.975 \\
+$\Ds$&$\mu\nu$ && $6.2$ & $0.6$ & $10^{-3}$ & 6.16 & 6.6 & 4.5 &  1.006\\ \hline
+
+$\Bp$&$\Dzb\Ds$ && $1.03$ & $0.17$ & $10^{-2}$ & 1.29 & 4.4 & 2.5 &0.798 \\
+$\Bp$&$\Dzb\Dss$ && $7.8$ & $1.6$ & $10^{-3}$ & 11.1 & 4.4 & 1.7 &0.703 \\
+$\Bp$&$\Dstarzb\Ds$ && $8.4$ & $1.7$ & $10^{-3}$ & 12.4 & 5.5 & 1.6 &0.677 \\
+$\Bp$&$\Dstarzb\Dss$ && $1.75$ & $0.23$ & $10^{-2}$ & 2.7 & 9.6 & 3.0 &0.648 \\
+$\Bp$&$ D^{**0}D_s^{(*)+}$ && $2.7$ & $1.2$ & $10^{-2}$ & 1.36 & 0.6 & 1.4 & 1.985 \\
+$\Bp$&$\Dp\Dzb\Kz$ & \multicolumn{4}{c}{$< 2.8 \times 10^{-3}$} & 1.7 & 0.9 & 0.2 &0.824 \\
+$\Bp$&$\Dzb\Dstarp\Kz$ && $5.2$ & $1.2$ & $10^{-3}$ & 4.9 & 1.0 & 0.8 &1.061 \\
+$\Bp$&$\Dstarzb\Dp\Kz$ & \multicolumn{4}{c}{$< 6.1 \times 10^{-3}$} & 3.1 & 1.5 & 0.8 &0.984 \\
+$\Bp$&$\Dstarzb\Dstarp\Kz$ && $7.8$ & $2.6$ & $10^{-3}$ & 10.0 & 1.7 & 0.8 &0.780 \\
+$\Bp$&$\Dz\Dzb\Kp$ &  & $2.10$ & $0.26$ & $10^{-3}$ & 1.5 & 0.0 & 0.1 &1.400 \\
+$\Bp$&$\Dstarz\Dstarzb\Kp$ && $5.3$ & $1.6$ & $10^{-3}$ & 7.0 & 0.3 & 0.7 &0.757 \\
+$\Bp$&$\Dstarz\Dzb\Kp$ && $4.7$ & $1.0$ & $10^{-3}$ & 4.7 & 0.6 & 0.4 &1.000 \\
+$\Bp$&$\Dstarm\Dp\Kp$ && $1.5$ & $0.4$ & $10^{-3}$ & 2.0 & 0.2 & 0.2 &0.750 \\ 
+$\Bp$&$\Dzb\rho^+$ && $1.34$ & $0.18$ & $10^{-2}$ & 1.34 & 0.4 & 1.4 &1.000 \\ 
+$\Bp$&$\Dstarzb\rho^+$ && $9.8$ & $1.7$ & $10^{-3}$ & 9.8 & 1.1 & 1.2 &1.000 \\ \hline
+
+$\Bz$&$\Dm\Ds$ && $7.4$ & $0.7$ & $10^{-3}$ & 9.0 & 0.8 & 1.3 &0.822 \\
+$\Bz$&$\Dstarm\Ds$ && $8.3$ & $1.1$ & $10^{-3}$ & 12.6 & 2.1 & 1.5 &0.659 \\
+$\Bz$&$\Dm\Dss$ && $7.6$ & $1.6$ & $10^{-3}$ & 9.0 & 1.8 & 1.0 &0.844 \\
+$\Bz$&$\Dstarm\Dss$ && $1.79$ & $0.14$ & $10^{-2}$ & 2.4 & 4.6 & 2.1 &0.746 \\
+$\Bz$&$\Dm\Dz\Kp$ && $1.7$ & $0.4$ & $10^{-3}$ & 1.7 & 0.0 & 0.1 &1.000 \\
+$\Bz$&$\Dm\Dstarz\Kp$ && $4.6$ & $1.0$ & $10^{-3}$ & 4.9 & 0.4 & 0.6 &0.939 \\
+$\Bz$&$\Dstarm\Dstarz\Kp$ && $1.18$ & $0.20$ & $10^{-2}$ & 1.0 & 0.2 & 0.4 &1.180 \\
+$\Bz$&$\Dp\Dm\Kz$ & \multicolumn{4}{c}{$< 1.7 \times 10^{-3}$} & 1.5 & 0.7 & 0.3 &0.567 \\
+$\Bz$&$\Dstarm\Dp\Kz$ && $6.5$ & $1.6$ & $10^{-3}$ & 6.5 & 1.5 & 1.3 &1.000 \\
+$\Bz$&$\Dstarm\Dstarp\Kz$ && $7.8$ & $1.1$ & $10^{-3}$ & 7.0 & 1.3 & 0.8 &1.114 \\
+$\Bz$&$\Dstarz\Dzb\Kz$ & \multicolumn{4}{c}{$< 3.7 \times 10^{-3}$} & 2.0 & 0.1 & 0.2 &0.925 \\
+$\Bz$&$\Dstarp\Dstarm$ &  & $8.2$ & $0.9$ & $10^{-4}$ & 8.3 & 0.1 & 0.4 &0.988 \\
+$\Bz$&$\Dp\Dstarm$ &  & $6.1$ & $1.5$ & $10^{-4}$ & 6.7 & 0.8 & 0.9 &0.910 \\
+$\Bz$&$\Dp\Dm$ &  & $2.11$ & $0.31$ & $10^{-4}$ & 2.7 & 0.2 & 0.4 &0.781 \\
+%$\Bz$&$\Dzb\rho^0$ && $3.2$ & $0.5$ & $10^{-4}$ & 2.9 & 1.103 \\ 
+$\Bz$&$\Dm\rho^+$ && $7.7$ & $1.3$ & $10^{-3}$ & 7.7 & 0.6 & 1.3 &1.000 \\ 
+%$\Bz$&$\Dstarzb\rho^0$ & \multicolumn{4}{c}{$< 5.1 \times 10^{-4}$} & 2.9 & 0.879 \\ 
+$\Bz$&$\Dstarm\rho^+$ && $6.8$ & $0.9$ & $10^{-3}$ & 6.8 & 0.0 & 1.0 &1.000 \\  \hline\hline
+\end{tabular}
+
+\begin{tabular}{l | cc | cc} \hline\hline
+& \multicolumn{2}{c|}{Signal}&\multicolumn{2}{c}{$D^{**}$}\\
+Mode & Total & Weighted & Total & Weighted \\ \hline
+$D^{(*)} D^{(*)}$ + charmless & 158 & 103 & 418 & 211 \\
+\;\;$\hookrightarrow D^{(*)} D^{(*)}$  & 22 & 10 & 79 & 39 \\
+\;\;$\hookrightarrow D^{(*)} D^{(*)}K^{(*)}$  & 110 & 93 & 230 & 172 \\
+$D^{(*)}_s D^{(*)}$ + charmless & 329 & 318 & 496 & 429 \\
+\;\;$\hookrightarrow D^{(*)}_s D^{(*)}$  & 308 & 307 & 395 & 380 \\
+$\ell\ell$ + charmless & 173 & 5 & 175 & 16 \\
+Other & 194 & 14 & 1049 & 94 \\ \hline
+Total & 890 & 471 & 2239 & 800 \\
+\hline\hline \end{tabular}
+
+
+
+\begin{tabular}{l @{ $\to$ } l l @{\ \ \ $($} r @{ $\pm$ } l @ { $)\ \times$ } l r | r c |c} \hline\hline
+\multicolumn{6}{c}{}& &\multicolumn{2}{c|}{Combinatoric} & \\
+\multicolumn{3}{l}{Mode} & \multicolumn{3}{c}{$\mathcal B$} & SP8 & $Sig (\%)$ & $D^{**} (\%)$  & Weight \\ \hline
+%$\Ds$&$\tau\nu$ & & $6.6$ & $0.6$ & $10^{-2}$ & 6.4 & 24.0 & 4.2 & 1.031 \\
+%$\Ds$&$\mu\nu$ && $6.2$ & $0.6$ & $10^{-3}$ & 6.16 & 7.8 & 1.3 &  1.006\\ 
+%$\Ds$&$\eta\ell\nu$ && $2.9$ & $0.6$ & $10^{-2}$ & 3.07 & 4.8 & 6.7 & 0.944 \\
+%$\Ds$&$\phi\ell\nu$ && $2.36$ & $0.26$ & $10^{-2}$ & 2.42 & 2.4 & 2.4 & 0.975 \\
+%$\Ds$&$\eta'\ell\nu$ && $1.02$ & $0.33$ & $10^{-2}$ & 1.06 & 0.5 & 1.4 & 0.962 \\\hline
+
+$\Bp$&$\Dstarzb\Dss$ && $1.75$ & $0.23$ & $10^{-2}$ & 2.7 & 14.7 & 6.6 & 0.648 \\
+$\Bp$&$\Dstarzb\Ds$ && $8.4$ & $1.7$ & $10^{-3}$ & 12.4 & 7.9 & 3.1 &0.677 \\
+$\Bp$&$\Dzb\Dss$ && $7.8$ & $1.6$ & $10^{-3}$ & 11.1 & 6.4 & 2.8 &0.703 \\
+$\Bp$&$\Dzb\Ds$ && $1.03$ & $0.17$ & $10^{-2}$ & 1.29 & 6.0 & 4.2 &0.798 \\
+%\rowcolor[gray]{.8}
+$\Bp$&$\Dstarzb\mu^+$ && $$ & $$ & $10^{-}$ &  & 5.2 & 0.0 &  \\
+$\Bp$&$\Dstarzb\Dp\Kz$ & \multicolumn{4}{c}{$< 6.1 \times 10^{-3}$} & 3.1 & 2.6 & 1.6 &0.984 \\
+$\Bp$&$\Dstarzb e^+$ && $$ & $$ & $10^{-}$ &  & 2.6 & 0.0 &  \\
+$\Bp$&$\Dstarzb\Dstarp\Kz$ && $7.8$ & $2.6$ & $10^{-3}$ & 10.0 & 2.3 & 2.3 &0.780 \\
+$\Bp$&$\Dstarzb D^{**+}_s$ && $1.2$ & $0.3$ & $10^{-2}$ & 0.98 & 2.3 & 2.4 &  \\
+$\Bp$&$\Dzb D^{**+}_s$ && $3.1$ & $1.0$ & $10^{-3}$ & 4.1 & 1.9 & 1.5 &  \\
+$\Bp$&$\Dstarzb e^+\gamma$ && $$ & $$ & $10^{-}$ &  & 1.9 & 0.0 &  \\
+$\Bp$&$\Dzb\Dstarp\Kz$ && $5.2$ & $1.2$ & $10^{-3}$ & 4.9 & 1.6 & 1.5 &1.061 \\
+$\Bp$&$\Dp\Dzb\Kz$ & \multicolumn{4}{c}{$< 2.8 \times 10^{-3}$} & 1.7 & 1.4 & 0.5 &0.824 \\
+$\Bp$&$\Dstarzb\rho^+$ && $9.8$ & $1.7$ & $10^{-3}$ & 9.8 & 1.4 & 1.9 &1.000 \\ 
+$\Bp$&$D^{**0}\mu^+$ && $$ & $$ & $10^{-}$ &  & 1.4 & 0.0 &  \\
+$\Bp$&$\Dstarzb a_1^+$ && $1.9$ & $0.5$ & $10^{-2}$ & 1.597 & 1.2 & 2.6 &  \\
+$\Bp$&$\Dzb\mu^+$ && $$ & $$ & $10^{-}$ &  & 1.0 & 0.0 &  \\
+$\Bp$&$D^{**0}e^+$ && $$ & $$ & $10^{-}$ &  & 1.0 & 0.0 &  \\
+$\Bp$&$\Dstarz\Dzb\Kp$ && $4.7$ & $1.0$ & $10^{-3}$ & 4.7 & 0.9 & 1.0 &1.000 \\
+$\Bp$&$\Dzb a_1^+$ && $4$ & $4$ & $10^{-3}$ & 8.87 & 0.9 & 2.0 &  \\
+$\Bp$&$\Dzb\Ds\piz$ && $$ & $$ & $10^{-}$ &  & 0.7 & 0.7 &  \\
+$\Bp$&$\Dzb e^+$ && $$ & $$ & $10^{-}$ &  & 0.7 & 0.0 &  \\
+$\Bp$&$\Dzb\pi^+$ && $4.84$ & $0.15$ & $10^{-3}$ & 5 & 0.7 & 0.6 &  \\
+$\Bp$&$\Dzb\pi^+\pi^+\pi^-$ && $5$ & $4$ & $10^{-3}$ & 5 & 0.7 & 0.5 &  \\
+$\Bp$&$\Dzb\pi^+\pi^-\rho^+$ && $$ & $$ & $10^{-}$ &  & 0.7 & 0.5 &  \\
+$\Bp$&$\Dzb\rho^+$ && $1.34$ & $0.18$ & $10^{-2}$ & 1.34 & 0.7 & 2.9 &1.000 \\ 
+$\Bp$&$\Dstarzb\tau^+$ && $$ & $$ & $10^{-}$ &  & 0.7 & 0.0 &  \\
+$\Bp$&$ D^{**0}D_s^{(*)+}$ && $2.7$ & $1.2$ & $10^{-2}$ & 1.36 & 0.7 & 1.5 & 1.985 \\
+$\Bp$&$\Dzb\Dp K^{*0}$ && $$ & $$ & $10^{-}$ &  & 0.5 & 0.6 &  \\
+$\Bp$&$\Dzb\Dstarz K^{*+}$ && $$ & $$ & $10^{-}$ &  & 0.5 & 0.4 &  \\
+$\Bp$&$\Dzb\Ds\pi^+\pi^-$ && $$ & $$ & $10^{-}$ &  & 0.5 & 0.0 &  \\
+$\Bp$&$\Dzb\pi^+\rho^0$ && $4.2$ & $3.0$ & $10^{-3}$ & 2.1 & 0.5 & 0.0 &  \\
+$\Bp$&$\Dss\Dm\pi^+$ && $5.3$ & $1.6$ & $10^{-3}$ & 3.6 & 0.5 & 0.4 &  \\
+$\Bp$&$\Dstarz\Dstarzb\Kp$ && $5.3$ & $1.6$ & $10^{-3}$ & 7.0 & 0.5 & 1.1 &0.757 \\
+$\Bp$&$\Dstarzb \Ds\gamma$ && $$ & $$ & $10^{-}$ &  & 0.5 & 0.0 &  \\
+$\Bp$&$\Dstarzb\mu^+\gamma$ && $$ & $$ & $10^{-}$ &  & 0.5 & 0.0 &  \\
+$\Bp$&$D^{**-}\mu^+\gamma$ && $$ & $$ & $10^{-}$ &  & 0.5 & 0.0 &  \\
+$\Bp$&$\Dstarm\Dp\Kp$ && $1.5$ & $0.4$ & $10^{-3}$ & 2.0 & 0.4 & 0.3 &0.750 \\ 
+$\Bp$&$\Dzb\Dm K^{+}\rho^+$ && $$ & $$ & $10^{-}$ &  & 0.4 & 0.0 &  \\
+$\Bp$&$\Dzb\Dstarm K^{+}\pi^+$ && $$ & $$ & $10^{-}$ &  & 0.4 & 0.0 &  \\
+$\Bp$&$\Dzb\Dstarm K^{*0}$ && $$ & $$ & $10^{-}$ &  & 0.4 & 0.6 &  \\
+$\Bp$&$\Dstarm\pi^+\pi^+\pi^0$ && $1.5$ & $0.7$ & $10^{-2}$ & 1.5 & 0.4 & 2.3 &  \\
+$\Bp$&$\Dzb\pi^0\rho^+$ && $$ & $$ & $10^{-}$ &  & 0.0 & 1.4 &  \\
+$\Bp$&$\Dstarzb\Dstarz K^{*+}$ && $$ & $$ & $10^{-}$ &  & 0.4 & 1.2 &  \\
+$\Bp$&$\Dstarzb\pi^+$ && $5.19$ & $0.26$ & $10^{-3}$ & 4.6 & 0.0 & 1.0 &  \\
+$\Bp$&$D^{**0}\rho^+$ &\multicolumn{4}{c}{$< 1.4+4.7 \times 10^{-3}$} & 6.7 & 0.4 & 1.0 &  \\
+$\Bp$&$\Dstarzb\Dp K^{*0}$ && $$ & $$ & $10^{-}$ &  & 0.2 & 0.9 &  \\
+
+%$\Bp$&$\Dz\Dzb\Kp$ &  & $2.10$ & $0.26$ & $10^{-3}$ & 1.5 & 0.0 & 0.0 &1.400 \\
+\hline\hline
+\end{tabular}
+
+
+\begin{tabular}{l @{ $\to$ } l l @{\ \ \ $($} r @{ $\pm$ } l @ { $)\ \times$ } l r | r c |c} \hline\hline
+\multicolumn{6}{c}{}& &\multicolumn{2}{c|}{Combinatoric} & \\
+\multicolumn{3}{l}{Mode} & \multicolumn{3}{c}{$\mathcal B$} & SP8 & $Sig (\%)$ & $D^{**} (\%)$  & Weight \\ \hline
+%$\Ds$&$\tau\nu$ & & $6.6$ & $0.6$ & $10^{-2}$ & 6.4 & 13.8 & 3.4 & 1.031 \\
+%$\Ds$&$\mu\nu$ && $6.2$ & $0.6$ & $10^{-3}$ & 6.16 & 4.5 & 0.9 &  1.006\\ 
+%$\Ds$&$\eta\ell\nu$ && $2.9$ & $0.6$ & $10^{-2}$ & 3.07 & 2.9 & 4.1 & 0.944 \\
+%$\Ds$&$\phi\ell\nu$ && $2.36$ & $0.26$ & $10^{-2}$ & 2.42 & 3.2 & 2.3 & 0.975 \\
+%$\Ds$&$\eta'\ell\nu$ && $1.02$ & $0.33$ & $10^{-2}$ & 1.06 & 0.3 & 0.6 & 0.962 \\\hline
+
+$\Bz$&$\Dstarm\Dss$ && $1.79$ & $0.14$ & $10^{-2}$ & 2.4 & 13.2 & 6.1 &0.746 \\
+$\Bz$&$\Dstarm\mu^+$ && $$ & $$ & $10^{-}$ &  & 5.5 & 0.0 &  \\
+$\Bz$&$\Dstarm\Ds$ && $8.3$ & $1.1$ & $10^{-3}$ & 12.6 & 5.1 & 2.4 &0.659 \\
+$\Bz$&$\Dm\Dss$ && $7.6$ & $1.6$ & $10^{-3}$ & 9.0 & 4.8 & 2.4 &0.844 \\
+$\Bz$&$\Dstarm\Dp\Kz$ && $6.5$ & $1.6$ & $10^{-3}$ & 6.5 & 4.2 & 3.0 &1.000 \\
+$\Bz$&$\Dstarm\Dstarp\Kz$ && $7.8$ & $1.1$ & $10^{-3}$ & 7.0 & 3.5 & 1.7 &1.114 \\
+$\Bz$&$D^{**-}\mu^+$ && $$ & $$ & $10^{-}$ &  & 3.5 & 0.0 &  \\
+$\Bz$&$\Dstarm D^{**+}_s$ && $9.3$ & $2.2$ & $10^{-3}$ & 11.2 & 2.6 & 2.4 &  \\
+$\Bz$&$\Dstarm e^+$ && $$ & $$ & $10^{-}$ &  & 2.6 & 0.0 &  \\
+$\Bz$&$\Dp\Dm\Kz$ & \multicolumn{4}{c}{$< 1.7 \times 10^{-3}$} & 1.5 & 1.9 & 1.1 &0.567 \\
+$\Bz$&$\Dstarm e^+\gamma$ && $$ & $$ & $10^{-}$ &  & 1.9 & 0.0 &  \\
+$\Bz$&$\Dstarm\Dp K^{*0}$ && $$ & $$ & $10^{-}$ &  & 1.6 & 2.1 &  \\
+$\Bz$&$\Dm\Ds$ && $7.4$ & $0.7$ & $10^{-3}$ & 9.0 & 1.6 & 2.4 &0.822 \\
+$\Bz$&$\Dm\rho^+$ && $7.7$ & $1.3$ & $10^{-3}$ & 7.7 & 1.6 & 1.9 &1.000 \\ 
+$\Bz$&$D^{**-}\Dss$ && $$ & $$ & $10^{-}$ &  & 1.6 & 1.2 &  \\
+$\Bz$&$\Dm\Dstarz\Kp$ && $4.6$ & $1.0$ & $10^{-3}$ & 4.9 & 1.3 & 0.7 &0.939 \\
+$\Bz$&$\Dm\pi^+\omega$ && $2.8$ & $0.6$ & $10^{-3}$ & ? & 1.3 & 1.0 &  \\
+$\Bz$&$\Dstarm\Dstarz K^{*+}$ && $$ & $$ & $10^{-}$ &  & 1.3 & 0.0 &  \\
+$\Bz$&$D^{**-} e^+$ && $$ & $$ & $10^{-}$ &  & 1.3 & 0.0 &  \\
+$\Bz$&$\Dm a_1^+$ && $6.0$ & $3.3$ & $10^{-3}$ & 8.34 & 1.0 & 1.7 &  \\
+$\Bz$&$\Dstarm K^+ K^0$ && $$ & $$ & $10^{-}$ &  & 1.0 & 0.0 &  \\
+$\Bz$&$\Dz\Dstarm\Kp$ && $3.1$ & $0.6$ & $10^{-3}$ & 3.1 & 0.6 & 0.3 &  \\
+$\Bz$&$\Dm\Dp K^{*0}$ && $$ & $$ & $10^{-}$ &  & 0.6 & 0.6 &  \\
+$\Bz$&$\Dm\Dstarz K^{*+}$ && $$ & $$ & $10^{-}$ &  & 0.6 & 0.4 &  \\
+$\Bz$&$\Dp\Dstarm$ &  & $6.1$ & $1.5$ & $10^{-4}$ & 6.7 & 0.6 & 0.6 &0.910 \\
+$\Bz$&$\Dm\Ds \pi^0$ && $$ & $$ & $10^{-}$ &  & 0.6 & 0.6 &  \\
+$\Bz$&$\Dm\Dss \pi^+\pi^-$ && $$ & $$ & $10^{-}$ &  & 0.6 & 0.0 &  \\
+$\Bz$&$\Dm\pi^+$ && $2.68$ & $0.13$ & $10^{-3}$ & 2.8 & 0.6 & 0.4 &  \\
+$\Bz$&$\Dm\pi^+\pi^0\rho^0$ && $$ & $$ & $10^{-}$ &  & 0.6 & 0.4 &  \\
+$\Bz$&$\Dstarm\Dstarz\Kp$ && $1.18$ & $0.20$ & $10^{-2}$ & 1.0 & 0.6 & 1.6 &1.180 \\
+$\Bz$&$\Dstarm \Ds \gamma$ && $$ & $$ & $10^{-}$ &  & 0.6 & 0.0 &  \\
+$\Bz$&$\Dstarm e^+\gamma\gamma$ && $$ & $$ & $10^{-}$ &  & 0.6 & 0.0 &  \\
+$\Bz$&$\Dstarm \tau^+$ && $$ & $$ & $10^{-}$ &  & 0.6 & 0.0 &  \\
+$\Bz$&$\Dstarm a_1^+$ && $1.3$ & $0.27$ & $10^{-2}$ & 1.2 & 0.6 & 1.9 &  \\
+$\Bz$&$D^{**-} \Ds$ && $$ & $$ & $10^{-}$ &  & 0.6 & 1.3 &  \\
+$\Bz$&$D^{**-} e^+\gamma$ && $$ & $$ & $10^{-}$ &  & 0.6 & 0.0 &  \\
+$\Bz$&$\Dzb\Dz\Kz$ &\multicolumn{4}{c}{$< 1.4 \times 10^{-3}$} & 0.5 & 0.3 & 0.0 &  \\
+$\Bz$&$\Dstarz\Dzb\Kz$ & \multicolumn{4}{c}{$< 3.7 \times 10^{-3}$} & 2.0 & 0.3 & 0.3 &0.925 \\
+$\Bz$&$\Dz\Dstarm K^{*+}$ && $$ & $$ & $10^{-}$ &  & 0.3 & 0.0 &  \\
+$\Bz$&$\Dz\Ds\pi^-\pi^0$ && $$ & $$ & $10^{-}$ &  & 0.3 & 0.4 &  \\
+$\Bz$&$\Dstarp\Dstarm$ &  & $8.2$ & $0.9$ & $10^{-4}$ & 8.3 & 0.3 & 0.0 &0.988 \\
+$\Bz$&$\Dstarm\rho^+$ && $6.8$ & $0.9$ & $10^{-3}$ & 6.8 & 0.0 & 2.0 &1.000 \\  
+$\Bz$&$\Dstarz\Dstarm K^{*+}$ && $$ & $$ & $10^{-}$ &  & 0.0 & 1.2 &  \\
+$\Bz$&$\Dm D^{**+}_s$ && $3.5$ & $1.1$ & $10^{-3}$ & 4.1 & 0.0 & 1.0 &  \\
+$\Bz$&$\Dp\Dm$ &  & $2.11$ & $0.31$ & $10^{-4}$ & 2.7 & 0.0 & 0.3 &0.781 \\
+$\Bz$&$\Dm\Dz\Kp$ && $1.7$ & $0.4$ & $10^{-3}$ & 1.7 & 0.0 & 0.1 &1.000 \\
+
+%$\Bz$&$\Dzb\rho^0$ && $3.2$ & $0.5$ & $10^{-4}$ & 2.9 & 1.103 \\ 
+%$\Bz$&$\Dstarzb\rho^0$ & \multicolumn{4}{c}{$< 5.1 \times 10^{-4}$} & 2.9 & 0.879 \\ 
+\hline\hline
+\end{tabular}
+
+
+
+
+
+
+\begin{landscape} \begin{tabular}{|l||cccc|cc|ccc|ccc|cccc|cccc|cccc|}
+\hline
+ & $D^0$ & $D^{\pm}$ & $D^{*0}$ & $D^{*\pm}$ & $D^{**0}$ & $D^{**\pm}$ & $D_s^{\pm}$ & $D_s^{*\pm}$ & $D_s^{**\pm}$ & $e$ & $\mu$ & $\tau$ & $\pi^{\pm}$ & $\pi^0$ & $K^{\pm}$ & $K^0$ & $\rho^{\pm}$ & $\rho^0$ & $K^{*\pm}$ & $K^{*0}$ & $a_1^{\pm}$ & $a_1^0$ & $\omega$ & $\gamma$ \\ \hline \hline
+$D^0$  & 0 & 0 & 0 & 0 & 0 & 0 & 35 & 37 & 11 & 4 & 6 & 2 & 4 & 0 & 0 & 0 & 4 & 0 & 1 & 0 & 5 & 0 & 0 & 0 \\
+$D^{\pm}$  &  & 0 & 2 & 2 & 0 & 0 & 5 & 15 & 1 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 5 & 0 & 0 & 0 & 3 & 0 & 0 & 0 \\
+$D^{*0}$  &  &  & 0 & 2 & 0 & 0 & 46 & 85 & 13 & 15 & 30 & 4 & 0 & 0 & 0 & 0 & 8 & 0 & 0 & 0 & 7 & 0 & 0 & 0 \\
+$D^{*\pm}$  &  &  &  & 1 & 0 & 0 & 16 & 41 & 8 & 8 & 17 & 2 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 0 & 0 & 0 \\
+\hline 
+$D^{**0}$  &  &  &  &  & 0 & 0 & 2 & 4 & 0 & 6 & 8 & 1 & 0 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+$D^{**\pm}$  &  &  &  &  &  & 0 & 2 & 5 & 0 & 4 & 11 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline 
+$D_s^{\pm}$  &  &  &  &  &  &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+$D_s^{*\pm}$  &  &  &  &  &  &  &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+$D_s^{**\pm}$  &  &  &  &  &  &  &  &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline 
+$e$  &  &  &  &  &  &  &  &  &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+$\mu$  &  &  &  &  &  &  &  &  &  &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+$\tau$  &  &  &  &  &  &  &  &  &  &  &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline 
+$\pi^{\pm}$  &  &  &  &  &  &  &  &  &  &  &  &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+$\pi^0$  &  &  &  &  &  &  &  &  &  &  &  &  &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+$K^{\pm}$  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+$K^0$  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline 
+$\rho^{\pm}$  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+$\rho^0$  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+$K^{*\pm}$  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 0 & 0 & 0 & 0 & 0 & 0 \\
+$K^{*0}$  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 0 & 0 & 0 & 0 & 0 \\
+\hline 
+$a_1^{\pm}$  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 0 & 0 & 0 & 0 \\
+$a_1^0$  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 0 & 0 & 0 \\
+$\omega$  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 0 & 0 \\
+$\gamma$  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 0 \\
+\hline \end{tabular} \end{landscape}
+
+
+\begin{tabular}{rlr|lr}
+\multicolumn{3}{c|}{$\boldsymbol{B^+(94484)}$} & \multicolumn{2}{c}{$\boldsymbol{B^0(74936)}$} \\
+& Decay & \% & Decay & \% \\ \hline \hline
+1 & $D^{*0}$ $D_s^{*\pm}$ & 5.94 & $D^{*\pm}$ $D_s^{*\pm}$ & 4.46 \\
+2 & $D^{*0}$ $a_1^{\pm}$ & 3.50 & $D^{*\pm}$ $a_1^{\pm}$ & 2.78 \\
+3 & $D^0$ $\rho^{\pm}$ & 3.06 & $D^{*\pm}$ $D_s^{**\pm}$ & 2.39 \\
+4 & $D^{*0}$ $D_s^{**\pm}$ & 2.91 & $D^{*\pm}$ $D_s^{\pm}$ & 2.18 \\
+5 & $D^{*0}$ $\rho^{\pm}$ & 2.66 & $D^{*\pm}$ $\rho^{\pm}$ & 2.02 \\
+6 & $D^{*0}$ $D_s^{\pm}$ & 2.38 & $D^{\pm}$ $\rho^{\pm}$ & 1.82 \\
+7 & $D^0$ $D_s^{*\pm}$ & 2.19 & $D^{\pm}$ $a_1^{\pm}$ & 1.70 \\
+8 & $D^0$ $D_s^{\pm}$ & 2.07 & $D^{\pm}$ $D_s^{*\pm}$ & 1.55 \\
+9 & $D^0$ $a_1^{\pm}$ & 1.88 & $D^{\pm}$ $D_s^{\pm}$ & 1.33 \\
+10 & $D^{*\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ $\pi^0$ & 1.53 & $D^{**\pm}$ $D_s^{*\pm}$ & 1.31 \\
+11 & $D^{*0}$ $D^{*\pm}$ $K^0$ & 1.44 & $D^{\pm}$ $D_s^{**\pm}$ & 1.13 \\
+12 & $D^0$ $D_s^{**\pm}$ & 1.31 & $D^{*0}$ $D^{*\pm}$ $K^{\pm}$ & 1.08 \\
+13 & $D^{**0}$ $D_s^{*\pm}$ & 1.26 & $D^{\pm}$ $\pi^{\pm}$ $\omega$ & 1.07 \\
+14 & $D^{**0}$ $\rho^{\pm}$ & 1.23 & $D^{**\pm}$ $D_s^{\pm}$ & 1.00 \\
+15 & $D^0$ $\pi^0$ $\rho^{\pm}$ & 1.14 & $D^{**\pm}$ $\rho^{\pm}$ & 0.93 \\
+16 & $D^{*0}$ $D^{*0}$ $K^{\pm}$ & 1.05 & $D^{\pm}$ $D^{*\pm}$ $K^0$ & 0.83 \\
+17 & $D^{**0}$ $D_s^{\pm}$ & 0.90 & $D^{*\pm}$ $\pi^{\pm}$ $\omega$ & 0.77 \\
+18 & $D^{*0}$ $\pi^{\pm}$ & 0.90 & $D^{*\pm}$ $D^{*\pm}$ $K^0$ & 0.76 \\
+19 & $D^0$ $\pi^{\pm}$ $\omega$ & 0.89 & $D^{\pm}$ $D^{*0}$ $K^{\pm}$ & 0.68 \\
+20 & $D^0$ $D^{*0}$ $K^{\pm}$ & 0.88 & $D^{\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ $\rho^{\pm}$ & 0.66 \\
+21 & $D^{*0}$ $D^{*0}$ $K^{*\pm}$ & 0.72 & $D^{\pm}$ $D^{*\pm}$ $K^{*0}$ & 0.64 \\
+22 & $D^0$ $D^{*0}$ $K^{*\pm}$ & 0.70 & $D^{\pm}$ $D_s^{*\pm}$ $\pi^0$ $\pi^0$ & 0.61 \\
+23 & $D^{**0}$ $\pi^{\pm}$ & 0.66 & $D^{\pm}$ $D_s^{\pm}$ $\pi^0$ $\pi^0$ & 0.59 \\
+24 & $D^0$ $\pi^{\pm}$ & 0.59 & $D^{*0}$ $D^{*\pm}$ $K^{*\pm}$ & 0.58 \\
+25 & $D^{*0}$ $D^{*\pm}$ $K^{*0}$ & 0.59 & $D^{**\pm}$ $\pi^{\pm}$ $\pi^0$ & 0.58 \\
+26 & $D^{\pm}$ $D^{*0}$ $K^0$ & 0.58 & $D^{*\pm}$ $\pi^{\pm}$ & 0.57 \\
+27 & $D^0$ $D^{*\pm}$ $K^0$ & 0.58 & $D^0$ $D_s^{*\pm}$ $\pi^{\pm}$ & 0.52 \\
+28 & $D^{*0}$ $\pi^{\pm}$ $\omega$ & 0.56 & $D^{**\pm}$ $\pi^{\pm}$ & 0.50 \\
+29 & $D^{\pm}$ $D_s^{*\pm}$ $\pi^{\pm}$ $\pi^0$ & 0.56 & $D^{*\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ $\rho^{\pm}$ & 0.49 \\
+30 & $D^0$ $\pi^{\pm}$ $\pi^{\pm}$ $\rho^{\pm}$ & 0.54 & $D^0$ $D_s^{\pm}$ $\pi^{\pm}$ & 0.46 \\
+31 & $D^{\pm}$ $D^{*0}$ $K^{*0}$ & 0.49 & $D^{*\pm}$ $D^{*\pm}$ $K^{*0}$ & 0.45 \\
+32 & $D^0$ $\pi^{\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.47 & $D^{\pm}$ $D_s^{*\pm}$ $\pi^0$ & 0.44 \\
+33 & $D^0$ $D_s^{*\pm}$ $\pi^0$ & 0.44 & $D^{\pm}$ $\pi^{\pm}$ $\pi^0$ $\omega$ & 0.43 \\
+34 & $D^{\pm}$ $D_s^{\pm}$ $\pi^{\pm}$ $\pi^0$ & 0.44 & $D^{\pm}$ $D^{\pm}$ $K^{*0}$ & 0.41 \\
+35 & $D^0$ $D^{\pm}$ $K^{*0}$ & 0.43 & $D^{\pm}$ $D^{*0}$ $K^{*\pm}$ & 0.41 \\
+36 & $D^0$ $\pi^{\pm}$ $\pi^0$ $\pi^0$ & 0.42 & $D^{\pm}$ $\pi^{\pm}$ $\pi^0$ $\rho^0$ & 0.41 \\
+37 & $D^0$ $D_s^{\pm}$ $\pi^0$ & 0.40 & $D^0$ $D_s^{*\pm}$ $\pi^{\pm}$ $\pi^0$ & 0.41 \\
+38 & $D^{*0}$ $\pi^{\pm}$ $\pi^{\pm}$ $\rho^{\pm}$ & 0.40 & $D^0$ $D_s^{\pm}$ $\pi^{\pm}$ $\pi^0$ & 0.38 \\
+39 & $D^{**0}$ $\pi^{\pm}$ $\pi^0$ & 0.39 & $D^{\pm}$ $D_s^{\pm}$ $\pi^0$ & 0.38 \\
+40 & $D^{\pm}$ $D_s^{*\pm}$ $\pi^{\pm}$ & 0.39 & $D^0$ $D^{*\pm}$ $K^{\pm}$ & 0.35 \\
+41 & $D^0$ $\pi^{\pm}$ $\pi^0$ $\omega$ & 0.35 & $D^{\pm}$ $\rho^{\pm}$ $\omega$ & 0.35 \\
+42 & $D^0$ $D_s^{*\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.35 & $D^{*\pm}$ $\pi^{\pm}$ $\pi^0$ $\omega$ & 0.34 \\
+43 & $D^{\pm}$ $D_s^{\pm}$ $\pi^{\pm}$ & 0.34 & $D^{\pm}$ $\pi^0$ $\pi^0$ $\rho^{\pm}$ & 0.34 \\
+44 & $D^0$ $D_s^{\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.34 & $D^{\pm}$ $\pi^{\pm}$ & 0.33 \\
+45 & $D^0$ $D^0$ $K^{*\pm}$ & 0.32 & $D^0$ $D^{\pm}$ $K^{*\pm}$ & 0.33 \\
+46 & $D^0$ $\pi^{\pm}$ $\pi^0$ $\rho^0$ & 0.32 & $D^{*\pm}$ $\pi^{\pm}$ $\pi^0$ $\rho^0$ & 0.32 \\
+47 & $D^0$ $D^{\pm}$ $K^0$ & 0.30 & $D^0$ $D^{*0}$ $K^0$ & 0.31 \\
+48 & $D^0$ $D^{*\pm}$ $K^{*0}$ & 0.30 & $D^{\pm}$ $D_s^{*\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.31 \\
+49 & $D^0$ $\rho^{\pm}$ $\rho^0$ & 0.27 & $D^{\pm}$ $\rho^{\pm}$ $\rho^0$ & 0.30 \\
+50 & $D^{*0}$ $\pi^{\pm}$ $\pi^0$ $\omega$ & 0.26 & $D^{\pm}$ $\pi^{\pm}$ $\rho^{\pm}$ $\rho^{\pm}$ & 0.29 \\
+51 & $D^0$ $\pi^0$ $\pi^0$ $\rho^{\pm}$ & 0.26 & $D^{\pm}$ $D^{\pm}$ $K^0$ & 0.27 \\
+52 & $D^0$ $D_s^{*\pm}$ $\pi^0$ $\pi^0$ & 0.25 & $D^{**\pm}$ $\pi^0$ $\rho^{\pm}$ & 0.27 \\
+53 & $D^0$ $D_s^{\pm}$ $\pi^0$ $\pi^0$ & 0.25 & $D^0$ $D^{*\pm}$ $K^{*\pm}$ & 0.26 \\
+54 & $D^0$ $\rho^{\pm}$ $\omega$ & 0.24 & $D^{\pm}$ $D_s^{\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.25 \\
+55 & $D^{*0}$ $\pi^{\pm}$ $\pi^0$ $\rho^0$ & 0.24 & $D^{*0}$ $D^{*0}$ $K^0$ & 0.24 \\
+56 & $D^{\pm}$ $\pi^{\pm}$ $\rho^{\pm}$ & 0.24 & $D^{\pm}$ $\rho^{\pm}$ $\gamma$ & 0.24 \\
+57 & $D^{\pm}$ $D^{*\pm}$ $K^{\pm}$ & 0.23 & $D^{*\pm}$ $\rho^{\pm}$ $\gamma$ & 0.24 \\
+58 & $D^{*\pm}$ $\pi^{\pm}$ $\rho^{\pm}$ & 0.23 & $D^{*\pm}$ $\rho^{\pm}$ $\omega$ & 0.24 \\
+59 & $D^0$ $\pi^{\pm}$ $\rho^0$ & 0.23 & $D^{*\pm}$ $a_1^{\pm}$ $\gamma$ & 0.22 \\
+60 & $D^{**0}$ $\pi^0$ $\rho^{\pm}$ & 0.21 & $D^{*\pm}$ $\pi^0$ $\pi^0$ $\rho^{\pm}$ & 0.22 \\
+\hline & Total done & 55.00 & Total done & 45.70\\
+\end{tabular}
+
+
+
+\begin{tabular}{rlr|lr}
+\multicolumn{3}{c|}{$\boldsymbol{B^+(2914)}$} & \multicolumn{2}{c}{$\boldsymbol{B^0(2072)}$} \\
+& Decay & \% & Decay & \% \\ \hline \hline
+1 & $D^{*0}$ $D_s^{*\pm}$ & 17.78 & $D^{*\pm}$ $D_s^{*\pm}$ & 13.90 \\
+2 & $D^{*0}$ $D_s^{\pm}$ & 7.48 & $D^{*\pm}$ $D_s^{\pm}$ & 5.65 \\
+3 & $D^0$ $D_s^{\pm}$ & 4.50 & $D^{\pm}$ $D^{*\pm}$ $K^0$ & 4.05 \\
+4 & $D^{*0}$ $\mu$ & 4.36 & $D^{*\pm}$ $\mu$ & 4.05 \\
+5 & $D^0$ $D_s^{*\pm}$ & 4.29 & $D^{\pm}$ $D_s^{*\pm}$ & 3.76 \\
+6 & $D^{*0}$ $D^{*\pm}$ $K^0$ & 3.53 & $D^{*\pm}$ $e$ & 2.65 \\
+7 & $D^{\pm}$ $D^{*0}$ $K^0$ & 2.71 & $D^{\pm}$ $D_s^{\pm}$ & 2.36 \\
+8 & $D^{*0}$ $e$ & 2.30 & $D^{*\pm}$ $D^{*\pm}$ $K^0$ & 2.12 \\
+9 & $D^{*0}$ $D_s^{**\pm}$ & 2.26 & $D^{*\pm}$ $D_s^{**\pm}$ & 2.08 \\
+10 & $D^{**0}$ $\mu$ & 1.85 & $D^{**\pm}$ $\mu$ & 1.69 \\
+11 & $D^0$ $D^{*\pm}$ $K^0$ & 1.48 & $D^{*\pm}$ $a_1^{\pm}$ & 1.54 \\
+12 & $D^{*0}$ $e$ $\gamma$ & 1.30 & $D^{\pm}$ $D^{\pm}$ $K^0$ & 1.35 \\
+13 & $D^{*0}$ $a_1^{\pm}$ & 1.20 & $D^{**\pm}$ $e$ & 1.30 \\
+14 & $D^0$ $D^{\pm}$ $K^0$ & 1.17 & $D^{*\pm}$ $e$ $\gamma$ & 1.21 \\
+15 & $D^0$ $D_s^{**\pm}$ & 1.13 & $D^{*0}$ $D^{*\pm}$ $K^{\pm}$ & 1.06 \\
+16 & $D^0$ $\rho^{\pm}$ & 1.13 & $D^{\pm}$ $D_s^{**\pm}$ & 0.87 \\
+17 & $D^0$ $\mu$ & 1.03 & $D^{*\pm}$ $\rho^{\pm}$ & 0.87 \\
+18 & $D^{*0}$ $\rho^{\pm}$ & 0.96 & $D^{\pm}$ $D^{*\pm}$ $K^{*0}$ & 0.77 \\
+19 & $D^{**0}$ $D_s^{*\pm}$ & 0.93 & $D^{\pm}$ $\rho^{\pm}$ & 0.72 \\
+20 & $D^{*\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ $\pi^0$ & 0.86 & $D^{\pm}$ $a_1^{\pm}$ & 0.72 \\
+21 & $D^0$ $D^{*0}$ $K^{\pm}$ & 0.82 & $D^{\pm}$ $\pi^{\pm}$ $\omega$ & 0.68 \\
+22 & $D^{**0}$ $D_s^{\pm}$ & 0.82 & $D^{*\pm}$ $\mu$ $\gamma$ & 0.68 \\
+23 & $D^0$ $a_1^{\pm}$ & 0.72 & $D^{**\pm}$ $D_s^{*\pm}$ & 0.68 \\
+24 & $D^{*0}$ $D^{*0}$ $K^{\pm}$ & 0.65 & $D^{\pm}$ $D^{\pm}$ $K^{*0}$ & 0.63 \\
+25 & $D^{**0}$ $e$ & 0.62 & $D^{\pm}$ $D^{*0}$ $K^{\pm}$ & 0.63 \\
+26 & $D^{*0}$ $D^{*\pm}$ $K^{*0}$ & 0.51 & $D^{**\pm}$ $D_s^{\pm}$ & 0.63 \\
+27 & $D^{*0}$ $\mu$ $\gamma$ & 0.51 & $D^{*\pm}$ $D^{*\pm}$ & 0.58 \\
+28 & $D^{**0}$ $\rho^{\pm}$ & 0.48 & $D^{*\pm}$ $\tau$ & 0.58 \\
+29 & $D^0$ $D^{\pm}$ $K^{*0}$ & 0.45 & $D^{*\pm}$ $D^{*\pm}$ $K^{*0}$ & 0.48 \\
+30 & $D^0$ $\pi^{\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.45 & $D^{*\pm}$ $D_s^{*\pm}$ $\gamma$ & 0.48 \\
+31 & $D^0$ $\pi^{\pm}$ $\omega$ & 0.45 & $D^0$ $D^{*\pm}$ $K^{\pm}$ & 0.43 \\
+32 & $D^{\pm}$ $D^{*0}$ $K^{*0}$ & 0.45 & $D^{\pm}$ $D_s^{\pm}$ $\pi^0$ & 0.43 \\
+33 & $D^{\pm}$ $D^{*\pm}$ $K^{\pm}$ & 0.45 & $D^{*0}$ $D^{*\pm}$ $K^{*\pm}$ & 0.43 \\
+34 & $D^0$ $D_s^{\pm}$ $\pi^0$ & 0.41 & $D^{**\pm}$ $e$ $\gamma$ & 0.43 \\
+35 & $D^0$ $e$ & 0.41 & $D^0$ $D_s^{\pm}$ $\pi^{\pm}$ & 0.39 \\
+36 & $D^{*0}$ $D^{*\pm}$ & 0.41 & $D^{\pm}$ $\mu$ & 0.39 \\
+37 & $D^{*0}$ $\tau$ & 0.41 & $D^{\pm}$ $\pi^{\pm}$ $\pi^0$ $\rho^0$ & 0.39 \\
+38 & $D^0$ $D_s^{\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.38 & $D^{\pm}$ $D^{*0}$ $K^{*\pm}$ & 0.34 \\
+39 & $D^{\pm}$ $D_s^{\pm}$ $\pi^{\pm}$ & 0.38 & $D^{\pm}$ $D^{*\pm}$ $\pi^0$ $K^0$ & 0.34 \\
+40 & $D^{**0}$ $\pi^{\pm}$ & 0.38 & $D^{*\pm}$ $e$ $\gamma$ $\gamma$ & 0.34 \\
+41 & $D^{*0}$ $D^{*0}$ $K^{*\pm}$ & 0.34 & $D^{*\pm}$ $\pi^{\pm}$ & 0.34 \\
+42 & $D^{*\pm}$ $D^{*\pm}$ $K^{\pm}$ & 0.34 & $D^{\pm}$ $D^{*\pm}$ & 0.29 \\
+43 & $D^{**0}$ $e$ $\gamma$ & 0.34 & $D^{\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ $\rho^{\pm}$ & 0.29 \\
+44 & $D^{*0}$ $e$ $\gamma$ $\gamma$ & 0.31 & $D^{*\pm}$ $\pi^{\pm}$ $\omega$ & 0.29 \\
+45 & $D^{*0}$ $\pi^{\pm}$ & 0.31 & $D^{**\pm}$ $\mu$ $\gamma$ & 0.29 \\
+46 & $D^{**0}$ $\tau$ & 0.31 & $D^{**\pm}$ $\pi^{\pm}$ & 0.29 \\
+47 & $D^0$ $D^0$ $K^{*\pm}$ & 0.27 & $D^{**\pm}$ $\pi^{\pm}$ $\pi^0$ & 0.29 \\
+48 & $D^0$ $D^{*0}$ $K^{*\pm}$ & 0.27 & $D^{**\pm}$ $\rho^{\pm}$ & 0.29 \\
+49 & $D^0$ $D_s^{*\pm}$ $\pi^0$ & 0.27 & $D^0$ $D^{\pm}$ $K^{\pm}$ & 0.24 \\
+50 & $D^0$ $\pi^{\pm}$ & 0.27 & $D^{\pm}$ $D^{**\pm}$ $K^0$ & 0.24 \\
+51 & $D^{\pm}$ $D_s^{*\pm}$ $\pi^{\pm}$ $\pi^0$ & 0.27 & $D^{\pm}$ $D_s^{\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.24 \\
+52 & $D^0$ $\pi^0$ $\rho^{\pm}$ & 0.24 & $D^{\pm}$ $D_s^{*\pm}$ $\pi^0$ & 0.24 \\
+53 & $D^{\pm}$ $\pi^{\pm}$ $\rho^{\pm}$ & 0.24 & $D^{\pm}$ $D_s^{*\pm}$ $\gamma$ & 0.24 \\
+54 & $D^{*0}$ $D_s^{*\pm}$ $\gamma$ & 0.24 & $D^{\pm}$ $\pi^{\pm}$ $K^0$ $K^{*0}$ & 0.24 \\
+55 & $D^{*0}$ $\pi^{\pm}$ $\omega$ & 0.24 & $D^{*\pm}$ $D_s^{\pm}$ $\gamma$ & 0.24 \\
+56 & $D^{*\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.24 & $D^{*\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ $\rho^{\pm}$ & 0.24 \\
+57 & $D^0$ $\pi^{\pm}$ $K^0$ $K^{*0}$ & 0.21 & $D^{**\pm}$ $\tau$ & 0.24 \\
+58 & $D^{\pm}$ $D^{*0}$ & 0.21 & $D^0$ $D^{\pm}$ $K^{*\pm}$ & 0.19 \\
+59 & $D^{\pm}$ $D_s^{\pm}$ $\pi^{\pm}$ $\pi^0$ & 0.21 & $D^0$ $D^{*0}$ $K^0$ & 0.19 \\
+60 & $D^{\pm}$ $D_s^{*\pm}$ $\pi^{\pm}$ & 0.21 & $D^0$ $D_s^{\pm}$ $\pi^{\pm}$ $\pi^0$ & 0.19 \\
+\hline & Total done & 77.76 & Total done & 67.81\\
+\end{tabular}
+
+\begin{tabular}{rlr|lr}
+\multicolumn{3}{c|}{$\boldsymbol{B^+(579)}$} & \multicolumn{2}{c}{$\boldsymbol{B^0(311)}$} \\
+& Decay & \% & Decay & \% \\ \hline \hline
+1 & $D^{*0}$ $D_s^{*\pm}$ & 14.68 & $D^{*\pm}$ $D_s^{*\pm}$ & 13.18 \\
+2 & $D^{*0}$ $D_s^{\pm}$ & 7.94 & $D^{*\pm}$ $\mu$ & 5.47 \\
+3 & $D^0$ $D_s^{*\pm}$ & 6.39 & $D^{*\pm}$ $D_s^{\pm}$ & 5.14 \\
+4 & $D^0$ $D_s^{\pm}$ & 6.04 & $D^{\pm}$ $D_s^{*\pm}$ & 4.82 \\
+5 & $D^{*0}$ $\mu$ & 5.18 & $D^{\pm}$ $D^{*\pm}$ $K^0$ & 4.18 \\
+6 & $D^{\pm}$ $D^{*0}$ $K^0$ & 2.59 & $D^{*\pm}$ $D^{*\pm}$ $K^0$ & 3.54 \\
+7 & $D^{*0}$ $e$ & 2.59 & $D^{**\pm}$ $\mu$ & 3.54 \\
+8 & $D^{*0}$ $D^{*\pm}$ $K^0$ & 2.25 & $D^{*\pm}$ $D_s^{**\pm}$ & 2.57 \\
+9 & $D^{*0}$ $D_s^{**\pm}$ & 2.25 & $D^{*\pm}$ $e$ & 2.57 \\
+10 & $D^0$ $D_s^{**\pm}$ & 1.90 & $D^{\pm}$ $D^{\pm}$ $K^0$ & 1.93 \\
+11 & $D^{*0}$ $e$ $\gamma$ & 1.90 & $D^{*\pm}$ $e$ $\gamma$ & 1.93 \\
+12 & $D^0$ $D^{*\pm}$ $K^0$ & 1.55 & $D^{\pm}$ $D^{*\pm}$ $K^{*0}$ & 1.61 \\
+13 & $D^0$ $D^{\pm}$ $K^0$ & 1.38 & $D^{\pm}$ $D_s^{\pm}$ & 1.61 \\
+14 & $D^{*0}$ $\rho^{\pm}$ & 1.38 & $D^{\pm}$ $\rho^{\pm}$ & 1.61 \\
+15 & $D^{**0}$ $\mu$ & 1.38 & $D^{**\pm}$ $D_s^{*\pm}$ & 1.61 \\
+16 & $D^{*0}$ $a_1^{\pm}$ & 1.21 & $D^{\pm}$ $D^{*0}$ $K^{\pm}$ & 1.29 \\
+17 & $D^0$ $\mu$ & 1.04 & $D^{\pm}$ $\pi^{\pm}$ $\omega$ & 1.29 \\
+18 & $D^{**0}$ $e$ & 1.04 & $D^{*0}$ $D^{*\pm}$ $K^{*\pm}$ & 1.29 \\
+19 & $D^0$ $D^{*0}$ $K^{\pm}$ & 0.86 & $D^{**\pm}$ $e$ & 1.29 \\
+20 & $D^0$ $a_1^{\pm}$ & 0.86 & $D^{\pm}$ $a_1^{\pm}$ & 0.96 \\
+21 & $D^0$ $D_s^{\pm}$ $\pi^0$ & 0.69 & $D^{*\pm}$ $K^{\pm}$ $K^0$ & 0.96 \\
+22 & $D^0$ $e$ & 0.69 & $D^0$ $D^{*\pm}$ $K^{\pm}$ & 0.64 \\
+23 & $D^0$ $\pi^{\pm}$ & 0.69 & $D^{\pm}$ $D^{\pm}$ $K^{*0}$ & 0.64 \\
+24 & $D^0$ $\pi^{\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.69 & $D^{\pm}$ $D^{*0}$ $K^{*\pm}$ & 0.64 \\
+25 & $D^0$ $\pi^{\pm}$ $\pi^{\pm}$ $\rho^{\pm}$ & 0.69 & $D^{\pm}$ $D^{*\pm}$ & 0.64 \\
+26 & $D^0$ $\rho^{\pm}$ & 0.69 & $D^{\pm}$ $D_s^{\pm}$ $\pi^0$ & 0.64 \\
+27 & $D^{*0}$ $\tau$ & 0.69 & $D^{\pm}$ $D_s^{*\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.64 \\
+28 & $D^{**0}$ $D_s^{*\pm}$ & 0.69 & $D^{\pm}$ $\pi^{\pm}$ & 0.64 \\
+29 & $D^0$ $D^{\pm}$ $K^{*0}$ & 0.52 & $D^{\pm}$ $\pi^{\pm}$ $\pi^0$ $\rho^0$ & 0.64 \\
+30 & $D^0$ $D^{*0}$ $K^{*\pm}$ & 0.52 & $D^{*0}$ $D^{*\pm}$ $K^{\pm}$ & 0.64 \\
+31 & $D^0$ $D_s^{\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.52 & $D^{*\pm}$ $D_s^{\pm}$ $\gamma$ & 0.64 \\
+32 & $D^0$ $\pi^{\pm}$ $\rho^0$ & 0.52 & $D^{*\pm}$ $e$ $\gamma$ $\gamma$ & 0.64 \\
+33 & $D^{\pm}$ $D_s^{*\pm}$ $\pi^{\pm}$ & 0.52 & $D^{*\pm}$ $\tau$ & 0.64 \\
+34 & $D^{*0}$ $D^{*0}$ $K^{\pm}$ & 0.52 & $D^{*\pm}$ $a_1^{\pm}$ & 0.64 \\
+35 & $D^{*0}$ $D_s^{\pm}$ $\gamma$ & 0.52 & $D^{**\pm}$ $D_s^{\pm}$ & 0.64 \\
+36 & $D^{*0}$ $\mu$ $\gamma$ & 0.52 & $D^{**\pm}$ $e$ $\gamma$ & 0.64 \\
+37 & $D^{**0}$ $\mu$ $\gamma$ & 0.52 & $D^0$ $D^0$ $K^0$ & 0.32 \\
+38 & $D^0$ $D^{\pm}$ $K^{\pm}$ $\rho^{\pm}$ & 0.35 & $D^0$ $D^{*0}$ $K^0$ & 0.32 \\
+39 & $D^0$ $D^{*\pm}$ $\pi^{\pm}$ $K^{\pm}$ & 0.35 & $D^0$ $D^{*\pm}$ $K^{*\pm}$ & 0.32 \\
+40 & $D^0$ $D^{*\pm}$ $K^{*0}$ & 0.35 & $D^0$ $D_s^{\pm}$ $\pi^{\pm}$ $\pi^0$ & 0.32 \\
+41 & $D^0$ $D_s^{*\pm}$ $\pi^0$ & 0.35 & $D^0$ $e$ $\pi^{\pm}$ & 0.32 \\
+42 & $D^0$ $e$ $\gamma$ & 0.35 & $D^0$ $\pi^{\pm}$ $K^{\pm}$ & 0.32 \\
+43 & $D^0$ $e$ $\gamma$ $\gamma$ & 0.35 & $D^{\pm}$ $D^{\pm}$ $\pi^0$ $K^0$ & 0.32 \\
+44 & $D^0$ $\tau$ & 0.35 & $D^{\pm}$ $D^{*0}$ $\pi^{\pm}$ $K^0$ & 0.32 \\
+45 & $D^0$ $\pi^{\pm}$ $\omega$ & 0.35 & $D^{\pm}$ $D^{*0}$ $\pi^{\pm}$ $K^{*0}$ & 0.32 \\
+46 & $D^0$ $K^{\pm}$ $K^0$ & 0.35 & $D^{\pm}$ $D^{**0}$ $\pi^{\pm}$ $K^0$ & 0.32 \\
+47 & $D^0$ $K^{\pm}$ $K^{*0}$ & 0.35 & $D^{\pm}$ $D_s^{\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.32 \\
+48 & $D^0$ $K^0$ $K^{*\pm}$ & 0.35 & $D^{\pm}$ $D_s^{*\pm}$ $\gamma$ & 0.32 \\
+49 & $D^{\pm}$ $D^{*0}$ & 0.35 & $D^{\pm}$ $D_s^{**\pm}$ & 0.32 \\
+50 & $D^{\pm}$ $D^{*0}$ $K^{*0}$ & 0.35 & $D^{\pm}$ $\pi^{\pm}$ $\pi^0$ $\pi^0$ & 0.32 \\
+51 & $D^{\pm}$ $D^{*\pm}$ $K^{\pm}$ & 0.35 & $D^{\pm}$ $\pi^{\pm}$ $K^{\pm}$ $K^{\pm}$ & 0.32 \\
+52 & $D^{*0}$ $D^{*\pm}$ & 0.35 & $D^{\pm}$ $\pi^{\pm}$ $K^{\pm}$ $K^{*\pm}$ & 0.32 \\
+53 & $D^{*0}$ $\pi^{\pm}$ $\omega$ & 0.35 & $D^{\pm}$ $\pi^{\pm}$ $K^0$ $K^0$ & 0.32 \\
+54 & $D^{*0}$ $\rho^{\pm}$ $\gamma$ & 0.35 & $D^{\pm}$ $\pi^{\pm}$ $\rho^{\pm}$ $\rho^{\pm}$ & 0.32 \\
+55 & $D^{*\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ $\pi^0$ & 0.35 & $D^{\pm}$ $\pi^{\pm}$ $\omega$ $\gamma$ & 0.32 \\
+56 & $D^{**0}$ $D_s^{\pm}$ & 0.35 & $D^{\pm}$ $\pi^0$ $\rho^{\pm}$ $\rho^0$ & 0.32 \\
+57 & $D^{**0}$ $\rho^{\pm}$ & 0.35 & $D^{\pm}$ $\rho^{\pm}$ $\rho^{\pm}$ $\rho^{\pm}$ & 0.32 \\
+58 & $D^0$ $D^0$ $\pi^{\pm}$ $K^{*0}$ & 0.17 & $D^{*\pm}$ $D^{*\pm}$ & 0.32 \\
+59 & $D^0$ $D^0$ $K^{*\pm}$ & 0.17 & $D^{*\pm}$ $D^{*\pm}$ $\pi^0$ $K^{*0}$ & 0.32 \\
+\hline & Total done & 82.04 & Total done & 79.74\\
+\end{tabular}
+
+
+\begin{landscape} \begin{tabular}{|l||cccc|cc|ccc|ccc|cccc|cccc|cccc|}
+\hline
+ & $D^0$ & $D^{\pm}$ & $D^{*0}$ & $D^{*\pm}$ & $D^{**0}$ & $D^{**\pm}$ & $D_s^{\pm}$ & $D_s^{*\pm}$ & $D_s^{**\pm}$ & $e$ & $\mu$ & $\tau$ & $\pi^{\pm}$ & $\pi^0$ & $K^{\pm}$ & $K^0$ & $\rho^{\pm}$ & $\rho^0$ & $K^{*\pm}$ & $K^{*0}$ & $a_1^{\pm}$ & $a_1^0$ & $\omega$ & $\gamma$ \\ \hline \hline
+$D^0$  & 0 & 2 & 0 & 0 & 0 & 0 & 43 & 29 & 15 & 0 & 2 & 0 & 6 & 0 & 0 & 0 & 30 & 1 & 1 & 0 & 21 & 0 & 1 & 0 \\
+$D^{\pm}$  &  & 3 & 4 & 6 & 0 & 0 & 26 & 26 & 11 & 0 & 0 & 0 & 4 & 0 & 2 & 0 & 20 & 0 & 0 & 0 & 18 & 0 & 0 & 0 \\
+$D^{*0}$  &  &  & 0 & 2 & 0 & 0 & 32 & 68 & 25 & 0 & 1 & 1 & 10 & 1 & 0 & 0 & 20 & 2 & 0 & 1 & 27 & 0 & 0 & 0 \\
+$D^{*\pm}$  &  &  &  & 1 & 0 & 0 & 26 & 65 & 26 & 1 & 2 & 1 & 3 & 0 & 0 & 0 & 21 & 0 & 0 & 0 & 20 & 0 & 0 & 0 \\
+\hline 
+$D^{**0}$  &  &  &  &  & 0 & 0 & 13 & 16 & 0 & 1 & 3 & 0 & 7 & 0 & 0 & 0 & 10 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+$D^{**\pm}$  &  &  &  &  &  & 0 & 14 & 13 & 0 & 3 & 2 & 0 & 5 & 0 & 0 & 0 & 3 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline 
+$D_s^{\pm}$  &  &  &  &  &  &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+$D_s^{*\pm}$  &  &  &  &  &  &  &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+$D_s^{**\pm}$  &  &  &  &  &  &  &  &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline 
+$e$  &  &  &  &  &  &  &  &  &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+$\mu$  &  &  &  &  &  &  &  &  &  &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+$\tau$  &  &  &  &  &  &  &  &  &  &  &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline 
+$\pi^{\pm}$  &  &  &  &  &  &  &  &  &  &  &  &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+$\pi^0$  &  &  &  &  &  &  &  &  &  &  &  &  &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+$K^{\pm}$  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+$K^0$  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+\hline 
+$\rho^{\pm}$  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+$\rho^0$  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+$K^{*\pm}$  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 0 & 0 & 0 & 0 & 0 & 0 \\
+$K^{*0}$  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 0 & 0 & 0 & 0 & 0 \\
+\hline 
+$a_1^{\pm}$  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 0 & 0 & 0 & 0 \\
+$a_1^0$  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 0 & 0 & 0 \\
+$\omega$  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 0 & 0 \\
+$\gamma$  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 0 \\
+\hline \end{tabular} \end{landscape}
+
+\begin{tabular}{lr|lr}
+\multicolumn{2}{c|}{$\boldsymbol{B^+(1037)}$} & \multicolumn{2}{c}{$\boldsymbol{B^0(1067)}$} \\
+Decay & \% & Decay & \% \\ \hline \hline
+$D^{*0}$ $D_s^{*\pm}$ & 6.56 & $D^{*\pm}$ $D_s^{*\pm}$ & 6.09 \\
+$D^0$ $D_s^{\pm}$ & 4.15 & $D^{\pm}$ $D^{*\pm}$ $K^0$ & 3.00 \\
+$D^{*0}$ $D_s^{\pm}$ & 3.09 & $D^{\pm}$ $D_s^{\pm}$ & 2.44 \\
+$D^0$ $\rho^{\pm}$ & 2.89 & $D^{\pm}$ $D_s^{*\pm}$ & 2.44 \\
+$D^0$ $D_s^{*\pm}$ & 2.80 & $D^{*\pm}$ $D_s^{\pm}$ & 2.44 \\
+$D^{*0}$ $a_1^{\pm}$ & 2.60 & $D^{*\pm}$ $D_s^{**\pm}$ & 2.44 \\
+$D^{*0}$ $D_s^{**\pm}$ & 2.41 & $D^{\pm}$ $D^{*\pm}$ $K^{*0}$ & 2.06 \\
+$D^{*0}$ $D^{*\pm}$ $K^0$ & 2.31 & $D^{*\pm}$ $\rho^{\pm}$ & 1.97 \\
+$D^{*\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ $\pi^0$ & 2.31 & $D^{\pm}$ $\rho^{\pm}$ & 1.87 \\
+$D^0$ $a_1^{\pm}$ & 2.03 & $D^{*\pm}$ $a_1^{\pm}$ & 1.87 \\
+$D^{*0}$ $\rho^{\pm}$ & 1.93 & $D^{\pm}$ $a_1^{\pm}$ & 1.69 \\
+$D^0$ $D^{*\pm}$ $K^0$ & 1.54 & $D^{*\pm}$ $D^{*\pm}$ $K^0$ & 1.69 \\
+$D^{**0}$ $D_s^{*\pm}$ & 1.54 & $D^{*0}$ $D^{*\pm}$ $K^{\pm}$ & 1.59 \\
+$D^0$ $D_s^{**\pm}$ & 1.45 & $D^{**\pm}$ $D_s^{\pm}$ & 1.31 \\
+$D^0$ $\pi^0$ $\rho^{\pm}$ & 1.35 & $D^{*0}$ $D^{*\pm}$ $K^{*\pm}$ & 1.22 \\
+$D^{\pm}$ $D^{*0}$ $K^0$ & 1.25 & $D^{**\pm}$ $D_s^{*\pm}$ & 1.22 \\
+$D^{**0}$ $D_s^{\pm}$ & 1.25 & $D^{\pm}$ $D^{\pm}$ $K^0$ & 1.12 \\
+$D^{*0}$ $D^{*0}$ $K^{*\pm}$ & 1.16 & $D^{\pm}$ $D_s^{**\pm}$ & 1.03 \\
+$D^{*0}$ $D^{*0}$ $K^{\pm}$ & 1.06 & $D^{\pm}$ $\pi^{\pm}$ $\omega$ & 1.03 \\
+$D^0$ $D^{*0}$ $K^{\pm}$ & 0.96 & $D^0$ $D_s^{*\pm}$ $\pi^{\pm}$ & 0.84 \\
+$D^{*0}$ $\pi^{\pm}$ & 0.96 & $D^{\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ $\rho^{\pm}$ & 0.84 \\
+$D^{**0}$ $\rho^{\pm}$ & 0.96 & $D^{*\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ $\rho^{\pm}$ & 0.84 \\
+$D^{\pm}$ $D^{*0}$ $K^{*0}$ & 0.87 & $D^0$ $D_s^{\pm}$ $\pi^{\pm}$ & 0.75 \\
+$D^0$ $D^{\pm}$ $K^{*0}$ & 0.77 & $D^0$ $D^{\pm}$ $K^{*\pm}$ & 0.66 \\
+$D^0$ $\pi^{\pm}$ $\pi^{\pm}$ $\rho^{\pm}$ & 0.77 & $D^{\pm}$ $D^{*0}$ $K^{\pm}$ & 0.66 \\
+$D^0$ $D_s^{\pm}$ $\pi^0$ & 0.68 & $D^{\pm}$ $D_s^{*\pm}$ $\pi^0$ $\pi^0$ & 0.66 \\
+$D^0$ $\pi^{\pm}$ $\omega$ & 0.68 & $D^{\pm}$ $\pi^{\pm}$ $\pi^0$ $\rho^0$ & 0.66 \\
+$D^{*0}$ $D^{*\pm}$ $K^{*0}$ & 0.68 & $D^{*\pm}$ $D^{*\pm}$ $K^{*0}$ & 0.66 \\
+$D^{**0}$ $\pi^{\pm}$ & 0.68 & $D^{\pm}$ $D^{\pm}$ $K^{*0}$ & 0.56 \\
+$D^0$ $D^{*\pm}$ $K^{*0}$ & 0.58 & $D^{\pm}$ $D^{*\pm}$ & 0.56 \\
+$D^0$ $\pi^{\pm}$ & 0.58 & $D^{\pm}$ $D_s^{\pm}$ $\pi^0$ & 0.56 \\
+$D^{*0}$ $\pi^{\pm}$ $\omega$ & 0.58 & $D^{\pm}$ $D_s^{\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.47 \\
+$D^{**0}$ $\pi^{\pm}$ $\pi^0$ & 0.58 & $D^{\pm}$ $K^{\pm}$ $K^0$ & 0.47 \\
+$D^0$ $D^{\pm}$ $K^0$ & 0.48 & $D^{\pm}$ $K^{\pm}$ $K^{*0}$ & 0.47 \\
+$D^0$ $D_s^{*\pm}$ $\pi^0$ & 0.48 & $D^{**\pm}$ $\pi^{\pm}$ & 0.47 \\
+$D^0$ $\pi^{\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.48 & $D^0$ $D_s^{\pm}$ $\pi^{\pm}$ $\pi^0$ & 0.37 \\
+$D^{*0}$ $\pi^{\pm}$ $\pi^{\pm}$ $\rho^{\pm}$ & 0.48 & $D^{\pm}$ $D^{*0}$ $K^{*\pm}$ & 0.37 \\
+$D^0$ $D^0$ $K^{*\pm}$ & 0.39 & $D^{\pm}$ $\pi^{\pm}$ & 0.37 \\
+$D^0$ $D^{*0}$ $K^{*\pm}$ & 0.39 & $D^{**\pm}$ $\pi^{\pm}$ $\pi^0$ $\rho^0$ & 0.37 \\
+$D^0$ $\pi^{\pm}$ $\pi^0$ $\omega$ & 0.39 & $D^0$ $D^{*0}$ $K^0$ & 0.28 \\
+$D^{\pm}$ $D^{*0}$ & 0.39 & $D^0$ $D^{*\pm}$ $\pi^{\pm}$ $K^0$ & 0.28 \\
+$D^{\pm}$ $D_s^{*\pm}$ $\pi^{\pm}$ & 0.39 & $D^0$ $D^{*\pm}$ $K^{\pm}$ & 0.28 \\
+$D^{\pm}$ $D_s^{*\pm}$ $\pi^{\pm}$ $\pi^0$ & 0.39 & $D^0$ $\pi^0$ $\rho^0$ & 0.28 \\
+$D^0$ $D_s^{*\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.29 & $D^{\pm}$ $D^{\pm}$ & 0.28 \\
+$D^0$ $\pi^{\pm}$ $\pi^0$ $\pi^0$ & 0.29 & $D^{\pm}$ $D_s^{\pm}$ $\pi^0$ $\pi^0$ & 0.28 \\
+$D^0$ $\pi^{\pm}$ $\pi^0$ $\rho^0$ & 0.29 & $D^{\pm}$ $D_s^{*\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.28 \\
+$D^0$ $\pi^0$ $K^{\pm}$ $K^{*0}$ & 0.29 & $D^{\pm}$ $D_s^{*\pm}$ $\pi^0$ & 0.28 \\
+$D^0$ $K^{\pm}$ $K^{*0}$ & 0.29 & $D^{\pm}$ $\pi^{\pm}$ $\pi^0$ $\omega$ & 0.28 \\
+$D^0$ $\rho^{\pm}$ $\gamma$ & 0.29 & $D^{\pm}$ $\pi^0$ $\rho^{\pm}$ & 0.28 \\
+$D^{\pm}$ $D^{*\pm}$ $K^{\pm}$ & 0.29 & $D^{\pm}$ $K^0$ $K^{*\pm}$ & 0.28 \\
+$D^{\pm}$ $\pi^{\pm}$ $\rho^{\pm}$ & 0.29 & $D^{\pm}$ $\rho^{\pm}$ $\rho^0$ & 0.28 \\
+$D^{*0}$ $\pi^{\pm}$ $\pi^0$ & 0.29 & $D^{\pm}$ $a_1^{\pm}$ $\gamma$ & 0.28 \\
+$D^{*0}$ $\pi^0$ $\pi^0$ $\rho^{\pm}$ & 0.29 & $D^{*0}$ $D^{*0}$ $K^0$ & 0.28 \\
+$D^{*\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.29 & $D^{*0}$ $\pi^{\pm}$ $\pi^{\pm}$ $\pi^0$ & 0.28 \\
+$D^{**0}$ $\mu$ & 0.29 & $D^{*\pm}$ $D_s^{*\pm}$ $\gamma$ & 0.28 \\
+$D^{**0}$ $\pi^{\pm}$ $\rho^0$ & 0.29 & $D^{*\pm}$ $\pi^{\pm}$ & 0.28 \\
+$D^0$ $D^{\pm}$ & 0.19 & $D^{*\pm}$ $\pi^{\pm}$ $\pi^0$ $\rho^0$ & 0.28 \\
+$D^0$ $D^{\pm}$ $\pi^{\pm}$ $K^{\pm}$ & 0.19 & $D^{*\pm}$ $\pi^{\pm}$ $\rho^{\pm}$ $\rho^{\pm}$ & 0.28 \\
+$D^0$ $D^{\pm}$ $\pi^0$ $K^0$ & 0.19 & $D^{*\pm}$ $\pi^{\pm}$ $\omega$ & 0.28 \\
+\hline Total done & 62.78 & Total done & 56.04\\
+\end{tabular}
+
+
+
+
+\begin{tabular}{rlr|lr}
+\multicolumn{3}{c|}{$\boldsymbol{B^+(774)}$} & \multicolumn{2}{c}{$\boldsymbol{B^0(688)}$} \\
+& Decay & \% & Decay & \% \\ \hline \hline
+1 & $D^{*0}$ $D^{*\pm}$ $K^0$ & 8.66 & $D^{\pm}$ $D^{*\pm}$ $K^0$ & 7.41 \\
+2 & $D^{\pm}$ $D^{*0}$ $K^0$ & 4.26 & $D^{*\pm}$ $D^{*\pm}$ $K^0$ & 3.34 \\
+3 & $D^0$ $D^{*\pm}$ $K^0$ & 2.97 & $D^{\pm}$ $D^{\pm}$ $K^0$ & 2.47 \\
+4 & $D^{*0}$ $D_s^{*\pm}$ & 2.84 & $D^{*\pm}$ $a_1^{\pm}$ & 2.33 \\
+5 & $D^{*0}$ $a_1^{\pm}$ & 2.58 & $D^{\pm}$ $D^{*\pm}$ $K^{*0}$ & 1.89 \\
+6 & $D^0$ $D^{\pm}$ $K^0$ & 2.45 & $D^{*\pm}$ $D_s^{*\pm}$ & 1.74 \\
+7 & $D^0$ $\rho^{\pm}$ & 1.81 & $D^{*0}$ $D^{*\pm}$ $K^{\pm}$ & 1.60 \\
+8 & $D^{*\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ $\pi^0$ & 1.42 & $D^{\pm}$ $D^{\pm}$ $K^{*0}$ & 1.45 \\
+9 & $D^0$ $D^{\pm}$ $K^{*0}$ & 1.29 & $D^{\pm}$ $a_1^{\pm}$ & 1.16 \\
+10 & $D^0$ $D^{*0}$ $K^{\pm}$ & 1.29 & $D^{*\pm}$ $D^{*\pm}$ $K^{*0}$ & 1.16 \\
+11 & $D^0$ $D_s^{\pm}$ & 1.29 & $D^{*\pm}$ $D_s^{**\pm}$ & 1.16 \\
+12 & $D^{*0}$ $D^{*0}$ $K^{*\pm}$ & 1.29 & $D^{\pm}$ $D^{*0}$ $K^{*\pm}$ & 1.02 \\
+13 & $D^{*0}$ $D^{*\pm}$ $K^{*0}$ & 1.29 & $D^{*0}$ $D^{*\pm}$ $K^{*\pm}$ & 1.02 \\
+14 & $D^{*0}$ $D_s^{\pm}$ & 1.29 & $D^{*\pm}$ $D_s^{\pm}$ & 1.02 \\
+15 & $D^{*0}$ $\rho^{\pm}$ & 1.29 & $D^{\pm}$ $D_s^{*\pm}$ & 0.87 \\
+16 & $D^{**0}$ $D_s^{\pm}$ & 1.29 & $D^{\pm}$ $\rho^{\pm}$ & 0.87 \\
+17 & $D^{*0}$ $D^{*0}$ $K^{\pm}$ & 1.16 & $D^{*\pm}$ $\rho^{\pm}$ & 0.87 \\
+18 & $D^{\pm}$ $D^{*0}$ $K^{*0}$ & 1.03 & $D^{\pm}$ $D^{*\pm}$ $\pi^0$ $K^0$ & 0.73 \\
+19 & $D^{\pm}$ $D^{*\pm}$ $K^{\pm}$ & 1.03 & $D^{\pm}$ $D_s^{\pm}$ & 0.73 \\
+20 & $D^{*0}$ $D_s^{**\pm}$ & 1.03 & $D^{\pm}$ $D_s^{**\pm}$ & 0.73 \\
+21 & $D^{**0}$ $\rho^{\pm}$ & 1.03 & $D^{\pm}$ $\pi^{\pm}$ $\omega$ & 0.73 \\
+22 & $D^0$ $D^0$ $K^{*\pm}$ & 0.78 & $D^{*\pm}$ $\tau$ & 0.73 \\
+23 & $D^{\pm}$ $D_s^{*\pm}$ $\pi^{\pm}$ $\pi^0$ & 0.78 & $D^{**\pm}$ $D_s^{\pm}$ & 0.73 \\
+24 & $D^{*\pm}$ $D^{*\pm}$ $K^{\pm}$ & 0.78 & $D^0$ $D^{*\pm}$ $K^{\pm}$ & 0.58 \\
+25 & $D^{**0}$ $D_s^{*\pm}$ & 0.78 & $D^0$ $D_s^{\pm}$ $\pi^{\pm}$ & 0.58 \\
+26 & $D^0$ $D^{*0}$ $K^{*\pm}$ & 0.65 & $D^{\pm}$ $D^{*0}$ $K^{\pm}$ & 0.58 \\
+27 & $D^0$ $D_s^{\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.65 & $D^{\pm}$ $D_s^{\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.58 \\
+28 & $D^0$ $a_1^{\pm}$ & 0.65 & $D^{\pm}$ $\rho^{\pm}$ $\gamma$ & 0.58 \\
+29 & $D^{\pm}$ $D^{*\pm}$ $K^{*\pm}$ & 0.65 & $D^{*0}$ $D^{*0}$ $K^0$ & 0.58 \\
+30 & $D^{\pm}$ $D_s^{\pm}$ $\pi^{\pm}$ & 0.65 & $D^{*\pm}$ $\pi^{\pm}$ & 0.58 \\
+31 & $D^{\pm}$ $\pi^{\pm}$ $\rho^{\pm}$ & 0.65 & $D^{**\pm}$ $D_s^{*\pm}$ & 0.58 \\
+32 & $D^0$ $D_s^{\pm}$ $\pi^0$ & 0.52 & $D^{**\pm}$ $e$ & 0.58 \\
+33 & $D^0$ $D_s^{\pm}$ $K^{\pm}$ $K^{*\pm}$ & 0.52 & $D^{**\pm}$ $\pi^{\pm}$ & 0.58 \\
+34 & $D^0$ $D_s^{*\pm}$ & 0.52 & $D^0$ $D^{\pm}$ $K^{\pm}$ & 0.44 \\
+35 & $D^0$ $\pi^{\pm}$ $K^0$ $K^{*0}$ & 0.52 & $D^0$ $D^{\pm}$ $K^0$ $\rho^{\pm}$ & 0.44 \\
+36 & $D^0$ $\pi^0$ $\rho^{\pm}$ & 0.52 & $D^0$ $D^{\pm}$ $K^{*\pm}$ & 0.44 \\
+37 & $D^{\pm}$ $D^{*\pm}$ $\pi^0$ $K^{*\pm}$ & 0.52 & $D^{\pm}$ $D^{\pm}$ $\pi^{\pm}$ $K^{*\pm}$ & 0.44 \\
+38 & $D^{*0}$ $\tau$ & 0.52 & $D^{\pm}$ $D^{\pm}$ $\pi^0$ $K^0$ & 0.44 \\
+39 & $D^{*0}$ $\pi^{\pm}$ $\omega$ & 0.52 & $D^{\pm}$ $D^{*\pm}$ $\pi^{\pm}$ $K^{*\pm}$ & 0.44 \\
+40 & $D^{*\pm}$ $D^{*\pm}$ $K^{*\pm}$ & 0.52 & $D^{\pm}$ $D^{**\pm}$ $K^0$ & 0.44 \\
+41 & $D^{**0}$ $\mu$ & 0.52 & $D^{\pm}$ $D_s^{\pm}$ $\pi^0$ $\pi^0$ & 0.44 \\
+42 & $D^{**0}$ $\pi^{\pm}$ & 0.52 & $D^{\pm}$ $\pi^{\pm}$ $\pi^0$ $\rho^0$ & 0.44 \\
+43 & $D^0$ $D^{\pm}$ $\pi^0$ $K^0$ & 0.39 & $D^{\pm}$ $\pi^{\pm}$ $K^0$ $K^{*0}$ & 0.44 \\
+44 & $D^0$ $\pi^{\pm}$ & 0.39 & $D^{\pm}$ $\pi^{\pm}$ $\gamma$ & 0.44 \\
+45 & $D^0$ $\pi^{\pm}$ $\gamma$ & 0.39 & $D^{*\pm}$ $\mu$ & 0.44 \\
+46 & $D^0$ $K^{\pm}$ $K^{*0}$ & 0.39 & $D^{*\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ $\rho^{\pm}$ & 0.44 \\
+47 & $D^{*0}$ $e$ & 0.39 & $D^{**\pm}$ $\rho^{\pm}$ & 0.44 \\
+48 & $D^{*0}$ $\pi^{\pm}$ & 0.39 & $D^0$ $D^{\pm}$ $K^{\pm}$ $\rho^0$ & 0.29 \\
+49 & $D^{**0}$ $\tau$ & 0.39 & $D^0$ $D^{*0}$ $K^0$ & 0.29 \\
+50 & $D^0$ $D^0$ $K^{\pm}$ & 0.26 & $D^0$ $D^{*\pm}$ $\pi^{\pm}$ $K^0$ & 0.29 \\
+51 & $D^0$ $D^{\pm}$ $\pi^{\pm}$ $K^{\pm}$ & 0.26 & $D^0$ $D_s^{\pm}$ $\pi^{\pm}$ $\pi^0$ & 0.29 \\
+52 & $D^0$ $D^{*0}$ $\pi^{\pm}$ $K^0$ & 0.26 & $D^{\pm}$ $D^{*\pm}$ $\pi^{\pm}$ $K^{\pm}$ & 0.29 \\
+53 & $D^0$ $D^{*0}$ $\pi^{\pm}$ $K^{*0}$ & 0.26 & $D^{\pm}$ $D^{**\pm}$ $K^{*0}$ & 0.29 \\
+54 & $D^0$ $D^{*\pm}$ $K^{*0}$ & 0.26 & $D^{\pm}$ $D_s^{\pm}$ $\pi^0$ & 0.29 \\
+55 & $D^0$ $D_s^{*\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.26 & $D^{\pm}$ $D_s^{*\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.29 \\
+56 & $D^0$ $D_s^{*\pm}$ $\pi^0$ & 0.26 & $D^{\pm}$ $D_s^{*\pm}$ $\pi^0$ $\pi^0$ & 0.29 \\
+57 & $D^0$ $\mu$ & 0.26 & $D^{\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ $\rho^{\pm}$ & 0.29 \\
+58 & $D^0$ $\pi^{\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.26 & $D^{\pm}$ $\pi^{\pm}$ $K^{\pm}$ $K^{\pm}$ & 0.29 \\
+59 & $D^0$ $\pi^{\pm}$ $\omega$ & 0.26 & $D^{\pm}$ $\pi^{\pm}$ $\rho^{\pm}$ $\rho^{\pm}$ & 0.29 \\
+60 & $D^0$ $\rho^{\pm}$ $\rho^0$ & 0.26 & $D^{\pm}$ $\pi^{\pm}$ $\rho^0$ $\rho^0$ & 0.29 \\
+\hline & Total done & 60.85 & Total done & 51.45\\
+\end{tabular}
+
+\begin{tabular}{rlr|lr}
+\multicolumn{3}{c|}{$\boldsymbol{B^+(296)}$} & \multicolumn{2}{c}{$\boldsymbol{B^0(350)}$} \\
+& Decay & \% & Decay & \% \\ \hline \hline
+1 & $D^0$ $D^{\pm}$ $K^0$ & 5.41 & $D^{\pm}$ $D^{*\pm}$ $K^0$ & 6.29 \\
+2 & $D^{*0}$ $D^{*\pm}$ $K^0$ & 5.41 & $D^{\pm}$ $D^{\pm}$ $K^0$ & 4.57 \\
+3 & $D^0$ $D^{*\pm}$ $K^0$ & 3.38 & $D^{*\pm}$ $a_1^{\pm}$ & 3.14 \\
+4 & $D^{\pm}$ $D^{*0}$ $K^0$ & 3.38 & $D^{\pm}$ $D^{\pm}$ $K^{*0}$ & 2.57 \\
+5 & $D^{**0}$ $D_s^{\pm}$ & 2.36 & $D^{*\pm}$ $D^{*\pm}$ $K^0$ & 2.00 \\
+6 & $D^0$ $\rho^{\pm}$ & 2.03 & $D^{\pm}$ $D^{*\pm}$ $K^{*0}$ & 1.71 \\
+7 & $D^{*0}$ $D_s^{**\pm}$ & 2.03 & $D^{*0}$ $D^{*\pm}$ $K^{\pm}$ & 1.71 \\
+8 & $D^{*0}$ $D_s^{*\pm}$ & 1.69 & $D^{\pm}$ $D^{*0}$ $K^{*\pm}$ & 1.43 \\
+9 & $D^{*\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ $\pi^0$ & 1.69 & $D^{*\pm}$ $D_s^{*\pm}$ & 1.43 \\
+10 & $D^0$ $D^0$ $K^{*\pm}$ & 1.35 & $D^{\pm}$ $D_s^{\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 1.14 \\
+11 & $D^0$ $D_s^{\pm}$ & 1.35 & $D^{\pm}$ $D_s^{*\pm}$ & 1.14 \\
+12 & $D^0$ $D_s^{\pm}$ $\pi^0$ & 1.35 & $D^{\pm}$ $a_1^{\pm}$ & 1.14 \\
+13 & $D^{\pm}$ $D^{*\pm}$ $K^{\pm}$ & 1.35 & $D^{*\pm}$ $D_s^{\pm}$ & 1.14 \\
+14 & $D^{**0}$ $\mu$ & 1.35 & $D^{*\pm}$ $D_s^{**\pm}$ & 1.14 \\
+15 & $D^0$ $D^{\pm}$ $\pi^0$ $K^0$ & 1.01 & $D^{*\pm}$ $\tau$ & 1.14 \\
+16 & $D^0$ $\pi^0$ $\rho^{\pm}$ & 1.01 & $D^{\pm}$ $D^{\pm}$ $\pi^0$ $K^0$ & 0.86 \\
+17 & $D^{\pm}$ $D^{*0}$ $K^{*0}$ & 1.01 & $D^{\pm}$ $D^{**\pm}$ $K^0$ & 0.86 \\
+18 & $D^{\pm}$ $D_s^{\pm}$ $\pi^{\pm}$ & 1.01 & $D^{\pm}$ $D_s^{\pm}$ & 0.86 \\
+19 & $D^{\pm}$ $D_s^{*\pm}$ $\pi^{\pm}$ $\pi^0$ & 1.01 & $D^{\pm}$ $D_s^{\pm}$ $\pi^0$ $\pi^0$ & 0.86 \\
+20 & $D^{*0}$ $D^{*0}$ $K^{*\pm}$ & 1.01 & $D^{\pm}$ $D_s^{**\pm}$ & 0.86 \\
+21 & $D^{*0}$ $\rho^{\pm}$ & 1.01 & $D^{*\pm}$ $D^{*\pm}$ $K^{*0}$ & 0.86 \\
+22 & $D^{*0}$ $a_1^{\pm}$ & 1.01 & $D^{*\pm}$ $\mu$ & 0.86 \\
+23 & $D^{*\pm}$ $D^{*\pm}$ $K^{\pm}$ & 1.01 & $D^{**\pm}$ $D_s^{\pm}$ & 0.86 \\
+24 & $D^{**0}$ $\tau$ & 1.01 & $D^0$ $D^{\pm}$ $K^{\pm}$ & 0.57 \\
+25 & $D^0$ $D^0$ $K^{\pm}$ & 0.68 & $D^0$ $D^{\pm}$ $K^{\pm}$ $\rho^0$ & 0.57 \\
+26 & $D^0$ $D^{\pm}$ $\pi^{\pm}$ $K^{\pm}$ & 0.68 & $D^0$ $D^{\pm}$ $K^0$ $\rho^{\pm}$ & 0.57 \\
+27 & $D^0$ $D^{\pm}$ $K^{*0}$ & 0.68 & $D^0$ $D^{\pm}$ $K^{*\pm}$ & 0.57 \\
+28 & $D^0$ $D^{*0}$ $K^{\pm}$ & 0.68 & $D^0$ $D^{*\pm}$ $\pi^{\pm}$ $K^0$ & 0.57 \\
+29 & $D^0$ $D_s^{\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.68 & $D^0$ $D^{*\pm}$ $K^{\pm}$ & 0.57 \\
+30 & $D^0$ $\mu$ & 0.68 & $D^0$ $D_s^{\pm}$ $\pi^{\pm}$ $\pi^0$ & 0.57 \\
+31 & $D^0$ $\pi^{\pm}$ & 0.68 & $D^{\pm}$ $D^{\pm}$ $\pi^{\pm}$ $K^{*\pm}$ & 0.57 \\
+32 & $D^0$ $K^{\pm}$ $K^{*0}$ & 0.68 & $D^{\pm}$ $D^{**\pm}$ $K^{*0}$ & 0.57 \\
+33 & $D^{\pm}$ $D^{*\pm}$ $K^{*\pm}$ & 0.68 & $D^{\pm}$ $D_s^{*\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.57 \\
+34 & $D^{\pm}$ $\pi^{\pm}$ $\rho^{\pm}$ & 0.68 & $D^{\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ $\rho^{\pm}$ & 0.57 \\
+35 & $D^{*0}$ $D^{*\pm}$ $K^{*0}$ & 0.68 & $D^{\pm}$ $\pi^{\pm}$ $\omega$ & 0.57 \\
+36 & $D^{*0}$ $e$ & 0.68 & $D^{\pm}$ $K^0$ $K^{*\pm}$ & 0.57 \\
+37 & $D^{*0}$ $\mu$ $\gamma$ & 0.68 & $D^{\pm}$ $\rho^{\pm}$ & 0.57 \\
+38 & $D^{*0}$ $\tau$ & 0.68 & $D^{\pm}$ $K^{*\pm}$ $K^{*0}$ & 0.57 \\
+39 & $D^{*0}$ $\pi^{\pm}$ & 0.68 & $D^{**\pm}$ $D_s^{*\pm}$ & 0.57 \\
+40 & $D^{*\pm}$ $D^{*\pm}$ $\pi^{\pm}$ $K^0$ & 0.68 & $D^{**\pm}$ $e$ & 0.57 \\
+41 & $D^{**0}$ $\pi^{\pm}$ & 0.68 & $D^{**\pm}$ $\rho^{\pm}$ & 0.57 \\
+42 & $D^{**0}$ $\rho^{\pm}$ & 0.68 & $D^0$ $D^0$ $\pi^{\pm}$ $K^{\pm}$ & 0.29 \\
+43 & $D^0$ $D^0$ $\pi^{\pm}$ & 0.34 & $D^0$ $D^{*0}$ $K^{*0}$ & 0.29 \\
+44 & $D^0$ $D^{\pm}$ $\rho^0$ & 0.34 & $D^0$ $D^{**\pm}$ $\pi^{\pm}$ $K^0$ & 0.29 \\
+45 & $D^0$ $D^{*\pm}$ $\pi^{\pm}$ $K^{\pm}$ & 0.34 & $D^0$ $D_s^{\pm}$ $\pi^{\pm}$ & 0.29 \\
+46 & $D^0$ $D^{*\pm}$ $K^{*0}$ & 0.34 & $D^0$ $D_s^{\pm}$ $K^{\pm}$ $K^0$ & 0.29 \\
+47 & $D^0$ $D^{**\pm}$ $K^0$ & 0.34 & $D^0$ $\pi^{\pm}$ $\pi^{\pm}$ $K^{*0}$ & 0.29 \\
+48 & $D^0$ $D_s^{\pm}$ $\rho^0$ & 0.34 & $D^0$ $\pi^{\pm}$ $K^{\pm}$ & 0.29 \\
+49 & $D^0$ $D_s^{*\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.34 & $D^{\pm}$ $D^{\pm}$ $\pi^{\pm}$ $K^{\pm}$ & 0.29 \\
+50 & $D^0$ $D_s^{*\pm}$ $\pi^0$ & 0.34 & $D^{\pm}$ $D^{*0}$ $\pi^{\pm}$ $K^{*0}$ & 0.29 \\
+51 & $D^0$ $D_s^{**\pm}$ & 0.34 & $D^{\pm}$ $D^{*0}$ $K^{\pm}$ & 0.29 \\
+52 & $D^0$ $\tau$ & 0.34 & $D^{\pm}$ $D^{*\pm}$ & 0.29 \\
+53 & $D^0$ $\pi^{\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.34 & $D^{\pm}$ $D^{*\pm}$ $\pi^{\pm}$ $K^{\pm}$ & 0.29 \\
+54 & $D^0$ $\pi^{\pm}$ $\pi^0$ $\rho^0$ & 0.34 & $D^{\pm}$ $D^{*\pm}$ $\pi^{\pm}$ $K^{*\pm}$ & 0.29 \\
+55 & $D^0$ $\pi^{\pm}$ $\rho^0$ $\rho^0$ & 0.34 & $D^{\pm}$ $D^{*\pm}$ $\pi^0$ $K^0$ & 0.29 \\
+56 & $D^0$ $\pi^{\pm}$ $K^{*0}$ $\gamma$ & 0.34 & $D^{\pm}$ $D^{**0}$ $K^{\pm}$ & 0.29 \\
+57 & $D^0$ $\pi^{\pm}$ $\omega$ & 0.34 & $D^{\pm}$ $D_s^{\pm}$ $\pi^0$ & 0.29 \\
+58 & $D^0$ $\pi^0$ $K^{\pm}$ & 0.34 & $D^{\pm}$ $D_s^{\pm}$ $K^{\pm}$ $K^{*\pm}$ & 0.29 \\
+59 & $D^0$ $\pi^0$ $\rho^{\pm}$ $\omega$ & 0.34 & $D^{\pm}$ $D_s^{\pm}$ $K^0$ $K^{*0}$ & 0.29 \\
+60 & $D^0$ $\rho^{\pm}$ $\rho^0$ & 0.34 & $D^{\pm}$ $D_s^{*\pm}$ $\pi^0$ & 0.29 \\
+\hline & Total done & 62.50 & Total done & 54.29\\
+\end{tabular}
+
+\begin{tabular}{rlr|lr}
+\multicolumn{3}{c|}{$\boldsymbol{B^+(478)}$} & \multicolumn{2}{c}{$\boldsymbol{B^0(338)}$} \\
+& Decay & \% & Decay & \% \\ \hline \hline
+1 & $D^{*0}$ $D^{*\pm}$ $K^0$ & 10.67 & $D^{\pm}$ $D^{*\pm}$ $K^0$ & 8.58 \\
+2 & $D^{\pm}$ $D^{*0}$ $K^0$ & 4.81 & $D^{*\pm}$ $D^{*\pm}$ $K^0$ & 4.73 \\
+3 & $D^{*0}$ $D_s^{*\pm}$ & 3.56 & $D^{\pm}$ $D^{*\pm}$ $K^{*0}$ & 2.07 \\
+4 & $D^{*0}$ $a_1^{\pm}$ & 3.56 & $D^{*0}$ $D^{*\pm}$ $K^{*\pm}$ & 2.07 \\
+5 & $D^0$ $D^{*\pm}$ $K^0$ & 2.72 & $D^{*\pm}$ $D_s^{*\pm}$ & 2.07 \\
+6 & $D^{*0}$ $D_s^{\pm}$ & 1.88 & $D^{*0}$ $D^{*\pm}$ $K^{\pm}$ & 1.48 \\
+7 & $D^0$ $D^{\pm}$ $K^{*0}$ & 1.67 & $D^{*\pm}$ $D^{*\pm}$ $K^{*0}$ & 1.48 \\
+8 & $D^0$ $D^{*0}$ $K^{\pm}$ & 1.67 & $D^{*\pm}$ $\rho^{\pm}$ & 1.48 \\
+9 & $D^0$ $\rho^{\pm}$ & 1.67 & $D^{*\pm}$ $a_1^{\pm}$ & 1.48 \\
+10 & $D^{*0}$ $D^{*0}$ $K^{\pm}$ & 1.67 & $D^{\pm}$ $D^{*\pm}$ $\pi^0$ $K^0$ & 1.18 \\
+11 & $D^{*0}$ $D^{*\pm}$ $K^{*0}$ & 1.67 & $D^{\pm}$ $\rho^{\pm}$ & 1.18 \\
+12 & $D^{*0}$ $D^{*0}$ $K^{*\pm}$ & 1.46 & $D^{\pm}$ $\rho^{\pm}$ $\gamma$ & 1.18 \\
+13 & $D^{*0}$ $\rho^{\pm}$ & 1.46 & $D^{\pm}$ $a_1^{\pm}$ & 1.18 \\
+14 & $D^0$ $D_s^{\pm}$ & 1.26 & $D^{*\pm}$ $D_s^{**\pm}$ & 1.18 \\
+15 & $D^{*\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ $\pi^0$ & 1.26 & $D^0$ $D_s^{\pm}$ $\pi^{\pm}$ & 0.89 \\
+16 & $D^{**0}$ $\rho^{\pm}$ & 1.26 & $D^{\pm}$ $D^{*0}$ $K^{\pm}$ & 0.89 \\
+17 & $D^0$ $D^{*0}$ $K^{*\pm}$ & 1.05 & $D^{\pm}$ $\pi^{\pm}$ $\omega$ & 0.89 \\
+18 & $D^{\pm}$ $D^{*0}$ $K^{*0}$ & 1.05 & $D^{\pm}$ $\pi^{\pm}$ $\gamma$ & 0.89 \\
+19 & $D^{**0}$ $D_s^{*\pm}$ & 1.05 & $D^{*0}$ $D^{*0}$ $K^0$ & 0.89 \\
+20 & $D^0$ $D_s^{\pm}$ $K^{\pm}$ $K^{*\pm}$ & 0.84 & $D^{*\pm}$ $D_s^{\pm}$ & 0.89 \\
+21 & $D^0$ $D_s^{*\pm}$ & 0.84 & $D^{*\pm}$ $\pi^{\pm}$ & 0.89 \\
+22 & $D^0$ $\pi^{\pm}$ $K^0$ $K^{*0}$ & 0.84 & $D^{**\pm}$ $\pi^{\pm}$ & 0.89 \\
+23 & $D^0$ $a_1^{\pm}$ & 0.84 & $D^0$ $D^{*0}$ $K^0$ & 0.59 \\
+24 & $D^{\pm}$ $D^{*\pm}$ $K^{\pm}$ & 0.84 & $D^0$ $D^{*\pm}$ $K^{\pm}$ & 0.59 \\
+25 & $D^{*0}$ $\pi^{\pm}$ $\omega$ & 0.84 & $D^{\pm}$ $D^{*0}$ $K^{*\pm}$ & 0.59 \\
+26 & $D^{*\pm}$ $D^{*\pm}$ $K^{*\pm}$ & 0.84 & $D^{\pm}$ $D^{*\pm}$ $\pi^{\pm}$ $K^{*\pm}$ & 0.59 \\
+27 & $D^0$ $D^{\pm}$ $K^0$ & 0.63 & $D^{\pm}$ $D_s^{\pm}$ & 0.59 \\
+28 & $D^0$ $D_s^{\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.63 & $D^{\pm}$ $D_s^{*\pm}$ & 0.59 \\
+29 & $D^0$ $\pi^{\pm}$ $\gamma$ & 0.63 & $D^{\pm}$ $D_s^{**\pm}$ & 0.59 \\
+30 & $D^{\pm}$ $D^{*\pm}$ $\pi^0$ $K^{*\pm}$ & 0.63 & $D^{\pm}$ $\pi^{\pm}$ $\pi^0$ $\rho^0$ & 0.59 \\
+31 & $D^{\pm}$ $D^{*\pm}$ $K^{*\pm}$ & 0.63 & $D^{\pm}$ $\pi^{\pm}$ $K^0$ $K^{*0}$ & 0.59 \\
+32 & $D^{\pm}$ $D_s^{*\pm}$ $\pi^{\pm}$ $\pi^0$ & 0.63 & $D^{\pm}$ $\pi^0$ $\rho^{\pm}$ $\omega$ & 0.59 \\
+33 & $D^{\pm}$ $\pi^{\pm}$ $\rho^{\pm}$ & 0.63 & $D^{*\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ $\rho^{\pm}$ & 0.59 \\
+34 & $D^{*\pm}$ $D^{*\pm}$ $K^{\pm}$ & 0.63 & $D^{*\pm}$ $\pi^0$ $K^{\pm}$ $K^0$ & 0.59 \\
+35 & $D^{**0}$ $D_s^{\pm}$ & 0.63 & $D^{*\pm}$ $K^{\pm}$ $K^{*0}$ & 0.59 \\
+36 & $D^0$ $D^0$ $K^{*\pm}$ & 0.42 & $D^{**\pm}$ $D_s^{\pm}$ & 0.59 \\
+37 & $D^0$ $D^{*0}$ $\pi^{\pm}$ $K^0$ & 0.42 & $D^{**\pm}$ $D_s^{*\pm}$ & 0.59 \\
+38 & $D^0$ $D^{*0}$ $\pi^{\pm}$ $K^{*0}$ & 0.42 & $D^{**\pm}$ $e$ & 0.59 \\
+39 & $D^{\pm}$ $D^{*0}$ $\pi^{\pm}$ $K^{*\pm}$ & 0.42 & $D^0$ $D^{\pm}$ $\pi^{\pm}$ $K^0$ & 0.30 \\
+40 & $D^{\pm}$ $D^{*0}$ $\pi^0$ $K^0$ & 0.42 & $D^0$ $D^{\pm}$ $K^{\pm}$ & 0.30 \\
+41 & $D^{\pm}$ $D^{*\pm}$ $\pi^0$ $K^{\pm}$ & 0.42 & $D^0$ $D^{\pm}$ $K^0$ $\rho^{\pm}$ & 0.30 \\
+42 & $D^{\pm}$ $D_s^{\pm}$ $\pi^{\pm}$ & 0.42 & $D^0$ $D^{\pm}$ $K^{*\pm}$ & 0.30 \\
+43 & $D^{*0}$ $D_s^{\pm}$ $\pi^0$ $\rho^0$ & 0.42 & $D^0$ $D^{*0}$ $\pi^{\pm}$ $K^{*\pm}$ & 0.30 \\
+44 & $D^{*0}$ $D_s^{**\pm}$ & 0.42 & $D^0$ $D^{*\pm}$ $\pi^{\pm}$ $K^{*0}$ & 0.30 \\
+45 & $D^{*0}$ $\mu$ & 0.42 & $D^0$ $D^{**0}$ $\pi^{\pm}$ $K^{\pm}$ & 0.30 \\
+46 & $D^{*0}$ $\tau$ & 0.42 & $D^0$ $\pi^0$ & 0.30 \\
+47 & $D^{*\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.42 & $D^0$ $\pi^0$ $\rho^0$ & 0.30 \\
+48 & $D^{**0}$ $\pi^{\pm}$ & 0.42 & $D^{\pm}$ $D^{\pm}$ $\pi^{\pm}$ $K^{*\pm}$ & 0.30 \\
+49 & $D^0$ $D^{\pm}$ $\pi^{\pm}$ $K^{*\pm}$ & 0.21 & $D^{\pm}$ $D^{\pm}$ $K^0$ & 0.30 \\
+50 & $D^0$ $D^{*0}$ $K^{\pm}$ $\omega$ & 0.21 & $D^{\pm}$ $D^{\pm}$ $K^0$ $\omega$ & 0.30 \\
+51 & $D^0$ $D^{*\pm}$ & 0.21 & $D^{\pm}$ $D^{\pm}$ $K^{*0}$ & 0.30 \\
+52 & $D^0$ $D^{*\pm}$ $\pi^0$ $K^0$ & 0.21 & $D^{\pm}$ $D^{*0}$ $\pi^{\pm}$ $K^0$ & 0.30 \\
+53 & $D^0$ $D^{*\pm}$ $K^0$ $K^0$ & 0.21 & $D^{\pm}$ $D^{*0}$ $\pi^0$ $K^{*\pm}$ & 0.30 \\
+54 & $D^0$ $D^{*\pm}$ $K^0$ $\gamma$ & 0.21 & $D^{\pm}$ $D^{*0}$ $K^{\pm}$ $\gamma$ & 0.30 \\
+55 & $D^0$ $D^{*\pm}$ $K^{*0}$ & 0.21 & $D^{\pm}$ $D^{*0}$ $K^0$ $\rho^{\pm}$ & 0.30 \\
+56 & $D^0$ $D^{**0}$ $\pi^0$ $K^{\pm}$ & 0.21 & $D^{\pm}$ $D^{*\pm}$ $\pi^{\pm}$ $K^{\pm}$ & 0.30 \\
+57 & $D^0$ $D^{**0}$ $K^{\pm}$ & 0.21 & $D^{\pm}$ $D^{*\pm}$ $\pi^0$ $K^{*0}$ & 0.30 \\
+58 & $D^0$ $D_s^{\pm}$ $K^0$ $K^{*0}$ & 0.21 & $D^{\pm}$ $D^{*\pm}$ $K^{\pm}$ $\rho^{\pm}$ & 0.30 \\
+59 & $D^0$ $D_s^{*\pm}$ $\pi^{\pm}$ $\pi^{\pm}$ & 0.21 & $D^{\pm}$ $D^{*\pm}$ $K^0$ $\rho^0$ & 0.30 \\
+60 & $D^0$ $D_s^{*\pm}$ $\pi^0$ & 0.21 & $D^{\pm}$ $D^{**0}$ $\pi^{\pm}$ $K^0$ & 0.30 \\
+\hline & Total done & 64.85 & Total done & 54.44\\
+\end{tabular}
+
+
+
+
+\end{document}

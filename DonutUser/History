@@ -1,0 +1,72 @@
+//=============================================================================
+//  History file for DonutUser
+//
+//  $Id: History,v 1.8 2012/08/23 02:12:07 manuelf Exp $
+//
+//  Reverse chronological order.
+//  Tags MUST be documented.
+//=============================================================================
+
+22 Aug 2012   Manuel Franco Sevilla 
+    TAG V00-01-00
+
+    Moved the TMVA code out of DonutAnalysis.cc because it gave too many warnings
+    in SL5, and was done in SmallNtuple.cc anyway.
+    Added some mES calculations.
+
+26 May 2008   Manuel Franco Sevilla 
+    TAG V00-00-03
+
+    Took candRejectedTracks/Photons out of the MVA
+    Cleaned up some comments and unused smear
+    Added candM2Tru and uncommented some other variables
+
+14 May 2008   Manuel Franco Sevilla 
+    TAG V00-00-02
+
+    Added the 8 MVA that I intend to use, 2 per channel. Also added the
+    possibility of selecting the best B using an MVA. Set doBestBEEx to false.
+    canMES has now the mES correction, and candMES_orig is the original mES.
+    Cleaned up all the warnings by initializing all variables, and deleting
+    the ones that were not used.
+	
+05 May 2008   Michael Kelsey
+    GNUmakefile:  Solved linking problem with DonutUserApp (below).  The
+      problem was that "~manuelf/..." is not properly expanded by g++ for -I
+      (include) options (though linker did accept it for the .so library).
+      Using GMake's "$(wildcard ...)" function to do shell expansion works.
+      Also moved TMVA library reference from LOADLIBES to SYSLIB, so it
+      appears in correct link order.
+
+    DonutAnalysis.cc:  Added CVS "Id" string at top.  Manuel needs to put in
+      a proper comment header.  Also, his implementation of TMVA, with a
+      local pointer created in ::event(), will not work.  The pointer, along
+      with all of the "AddVariable" buffers, needs to be moved to class data
+      members, and instantiated in ::beginJob().
+
+30 Apr 2008   Manuel Franco Sevilla 
+    DonutAnalysis.cc/.hh have now code that makes use of a BDT trained with
+    TMVA 3.9.6, but linking still seems to be against the TMVA in root 5.14,
+    so it crashes at run time.
+		
+28 Apr 2008   Michael Kelsey
+    TAG V00-00-01
+
+    DonutNtuple:  Copy Donut-specific tag bits (DonutMCTagger) to N-tuple.
+    DonutWeightsAUB.cc:  New weights validation job adapted from GeneratorsQA.
+    GNUmakefile:  Add new weights validation executable.
+    *_DonutUser.mk:  Update dependencies for new weights validation.
+
+27 Apr 2009   Michael Kelsey
+    GNUmakefile:  Fix to locate private (Manuel's personal directory)
+      version of TMVA library; only need -L directory, not library name.
+
+    link_DonutUser.mk, bin_DonutUser.mk:  Update dependencies.
+
+27 Apr 2009   Manuel Franco Sevilla 
+    TAG V00-00-00 for Analysis-50
+
+    - Code to make ntuples used in the B->D(*)TauNu analysis
+      It does not compile because it needs to link against an up-to-date TMVA library
+
+

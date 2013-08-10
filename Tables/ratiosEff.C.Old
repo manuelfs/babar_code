@@ -1,0 +1,56 @@
+TString round(double n, int e, double d=1.);
+
+void ratiosEff(TString Gen = "Gen", TString Dss=""){
+  TString txName = "babar_code/Tables/tx";txName+=Dss;txName+="DEff";
+  txName += Gen; txName += ".txt";
+  fstream tx;
+  tx.open(txName,fstream::in);
+  TString texName = "babar_code/Tables/texRatio";texName+=Dss;texName+="DEff";
+  texName += Gen; texName += ".txt";
+  fstream tex;
+  tex.open(texName,fstream::out);
+
+  double bf[4][4], error[4][4];
+
+  for(int i=0; i<4; i++){
+    for(int j=0; j<4;j++){
+      tx>>bf[i][j]>>error[i][j];
+    }
+  }
+  TString texType = "\\bf{Signal }";
+  if(Dss=="dss") {
+    texType = "$\\boldsymbol{D^{(*)}\\pi^0}$";
+  }
+  
+  tex<<"\\begin{tabular}{lc}"<<endl<<"\\hline\\hline"<<endl;
+  tex<<texType<<" & $\\epsilon_{\\text{sig}}/\\epsilon_{\\text{norm}}$ \\\\ \\hline"<<endl;
+  TString channels[] = {"$D^0$","$D^{*0}$","$D^+$","$D^{*+}$"};
+  for(int i=0; i<4; i++){
+    double n = bf[2+i%2][0+(i>1)*2]+bf[2+i%2][1+(i>1)*2];
+    double N = bf[i%2][0+(i>1)*2]+bf[i%2][1+(i>1)*2];
+    double errn = sqrt(pow(error[2+i%2][0+(i>1)*2],2)+pow(error[2+i%2][1+(i>1)*2],2));
+    double errN = sqrt(pow(error[i%2][0+(i>1)*2],2)+pow(error[i%2][1+(i>1)*2],2));
+    double err = -1;
+    if(N!=0) err = sqrt(pow(errn/N,2)+pow(n*errN/N/N,2));
+    cout<<"Ratio "<<channels[i]<<" is "<<round(n,2,N)<<" +- "<<err<<endl;
+    tex<<channels[i]<<" & "<<round(n,2,N)<<" $\\pm$ "<<round(err,2)<<" \\\\"<<endl;
+  }
+  tex<<"\\hline\\hline \\end{tabular}\\,\\,"<<endl;
+  cout<<texName<<" done"<<endl;
+  
+}
+
+TString round(double n, int e, double d){
+  if(d==0) return " - ";
+  double b = (int)(n/d*pow(10,e)+0.5);
+  b /= pow(10,e);
+  TString result; result+= b;
+  result.ReplaceAll(" ","");
+  if(!result.Contains(".")) result += ".";
+  
+  TString afterdot = result;
+  afterdot.Remove(0,afterdot.First(".")+1);
+  for(int i=0; i<e-afterdot.Length(); i++)
+    result += "0";
+  return result;
+}

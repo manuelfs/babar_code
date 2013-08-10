@@ -1,0 +1,24 @@
+\begin{tabular}{|l||cc|c|}
+\hline
+$\mathbf{D^{(*)0}}$  & MVA & $E_{Extra}$ & Ratio \\
+\hline \hline
+Signal & 480 & 486 & 0.99 \\
+Norm. & 7846 & 7382 & 1.06 \\
+D** & 592 & 483 & 1.23 \\
+Cross. & 510 & 472 & 1.08 \\
+Comb. & 683 & 603 & 1.13 \\
+\hline \end{tabular}
+\,\,
+
+\begin{tabular}{|l||cc|c|}
+\hline
+$\mathbf{D^{(*)+}}$  & MVA & $E_{Extra}$ & Ratio \\
+\hline \hline
+Signal & 207 & 202 & 1.02 \\
+Norm. & 2979 & 2909 & 1.02 \\
+D** & 342 & 312 & 1.10 \\
+Cross. & 151 & 139 & 1.09 \\
+Comb. & 533 & 491 & 1.09 \\
+\hline \end{tabular}
+\,\,
+

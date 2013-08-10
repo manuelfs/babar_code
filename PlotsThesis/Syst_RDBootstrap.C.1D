@@ -1,0 +1,68 @@
+#include "TString.h"
+#include "TFile.h"
+#include "TCanvas.h"
+#include "TPad.h"
+#include "TLine.h"
+#include "TArrow.h"
+#include "TChain.h"
+#include "TSystem.h"
+#include "TStyle.h"
+#include "TH1F.h"
+#include "TLegend.h"
+#include "TLatex.h"
+#include "TFile.h"
+#include "TH1F.h"
+#include "babar_code/Styles/Styles.cc"
+#include "babar_code/PlotsThesis/PlotUtils.cc"
+#include <fstream>
+#include <iostream>
+
+using namespace std;
+using std::cout;
+using std::endl;
+
+void Syst_RDBootstrap(){
+
+  Styles style; style.setPadsStyle(2); style.applyStyle();
+
+  TCanvas can("can","RD from bootstrap");
+  can.Divide(2,1); TPad *cPad;
+  TString yTitleBeg = "Entries/(";
+  TString xTitle[] = {"R(D)", "R(D*)"};
+  TString PadLabel[] = {"a)", "b)"};
+  TFile PullFile("FitAll/Errors/Pulls5DataNewx100_RunAllIso.root"); PullFile.cd();
+  TH1F* h[2], *hRatio[2];
+  double limitsR[2][2] = {{0.38,0.525},{0.305,0.365}}, nomR[] = {0.444, 0.3332};
+  for(int pad=0; pad<2; pad++){
+    cPad = (TPad *)can.cd(pad+1);
+    TString hName = "Ratio"; hName += pad+1;
+    h[pad] = (TH1F *)(PullFile.Get(hName));
+    int nbins = h[pad]->GetNbinsX(); 
+    double minH = h[pad]->GetBinLowEdge(1), maxH = h[pad]->GetBinLowEdge(nbins+1);
+    double binW = (maxH-minH)/(double)nbins;
+    int binShift = (int)((nomR[pad]-h[pad]->GetMean())/binW+0.5);
+    int minbin = (int)((limitsR[pad][0]-minH)/binW-binShift+1);
+    int maxbin = (int)((limitsR[pad][1]-minH)/binW-binShift+1);
+    hName += "Subset";
+    hRatio[pad] = new TH1F(hName,"",maxbin-minbin+1,limitsR[pad][0],limitsR[pad][1]);
+    for(int bin=minbin; bin<=maxbin; bin++){
+      hRatio[pad]->SetBinContent(bin-minbin+1, h[pad]->GetBinContent(bin));
+    }
+    cout<<"binShift "<<binShift<<", minbin "<<minbin<<", maxbin "<<maxbin<<", binW "<<binW<<endl;
+    hRatio[pad]->Draw();
+    TString yTitle = yTitleBeg; yTitle += RoundNumber(limitsR[pad][1]-limitsR[pad][0],4,
+						      (double)(maxbin-minbin+1)); yTitle+=")";
+//     TString rLabel = "#splitline{Mean = "; rLabel += RoundNumber(h[pad]->GetMean(),3);
+//     rLabel += "}{RMS = "; rLabel += RoundNumber(h[pad]->GetRMS(),3);rLabel += "}";
+    TString rLabel = "RMS = "; rLabel += RoundNumber(h[pad]->GetRMS(),3);
+    style.setTitles(hRatio[pad],xTitle[pad],yTitle,PadLabel[pad],rLabel);
+  }
+
+  TString pName = "public_html/Syst_RDBootstrap.eps"; 
+  can.SaveAs(pName);
+  for(int pad=0; pad<2; pad++){
+      h[pad]->Delete();
+      hRatio[pad]->Delete();
+  }
+}
+

@@ -1,0 +1,54 @@
+
+Ratio for 50% sample
+MC: 327, data: 332	  -  Ratio: 0.98526 +- 0.08160
+MC: 418, data: 463	  -  Ratio: 0.90238 +- 0.06340
+MC: 182, data: 192	  -  Ratio: 0.94831 +- 0.10498
+MC: 51, data: 38	  -  Ratio: 1.34106 +- 0.44771
+
+Ratio for 67% sample
+MC: 551, data: 609	  -  Ratio: 0.90427 +- 0.05324
+MC: 627, data: 695	  -  Ratio: 0.90228 +- 0.05109
+MC: 245, data: 261	  -  Ratio: 0.93852 +- 0.08827
+MC: 80, data: 74	  -  Ratio: 1.07956 +- 0.23102
+
+Ratio for 80% sample
+MC: 716, data: 809	  -  Ratio: 0.88501 +- 0.04488
+MC: 827, data: 921	  -  Ratio: 0.89718 +- 0.04350
+MC: 321, data: 354	  -  Ratio: 0.90644 +- 0.07181
+MC: 115, data: 124	  -  Ratio: 0.92383 +- 0.14418
+
+Ratio for 100% sample
+MC: 954, data: 1103	  -  Ratio: 0.86556 +- 0.03740
+MC: 1177, data: 1397	  -  Ratio: 0.84303 +- 0.03245
+MC: 445, data: 493	  -  Ratio: 0.90287 +- 0.06021
+MC: 174, data: 172	  -  Ratio: 1.00911 +- 0.13262
+
+Ratio for 120% sample
+MC: 1273, data: 1446	  -  Ratio: 0.88072 +- 0.03310
+MC: 1515, data: 1787	  -  Ratio: 0.84772 +- 0.02852
+MC: 595, data: 649	  -  Ratio: 0.91676 +- 0.05282
+MC: 255, data: 280	  -  Ratio: 0.91358 +- 0.08943
+
+Ratio for 150% sample
+MC: 1745, data: 2016	  -  Ratio: 0.86574 +- 0.02740
+MC: 2136, data: 2459	  -  Ratio: 0.86852 +- 0.02465
+MC: 782, data: 881	  -  Ratio: 0.88795 +- 0.04349
+MC: 404, data: 456	  -  Ratio: 0.88727 +- 0.06417
+
+Ratio for 200% sample
+MC: 2631, data: 3016	  -  Ratio: 0.87230 +- 0.02242
+MC: 3342, data: 3725	  -  Ratio: 0.89728 +- 0.02040
+MC: 1220, data: 1360	  -  Ratio: 0.89647 +- 0.03479
+MC: 671, data: 722	  -  Ratio: 0.92976 +- 0.05066
+
+Ratio for 250% sample
+MC: 3615, data: 4127	  -  Ratio: 0.87582 +- 0.01912
+MC: 4617, data: 5084	  -  Ratio: 0.90809 +- 0.01741
+MC: 1628, data: 1769	  -  Ratio: 0.92041 +- 0.03123
+MC: 1022, data: 1092	  -  Ratio: 0.93569 +- 0.03959
+
+Ratio for 300% sample
+MC: 4646, data: 5245	  -  Ratio: 0.88593 +- 0.01712
+MC: 5776, data: 6255	  -  Ratio: 0.92333 +- 0.01576
+MC: 2136, data: 2348	  -  Ratio: 0.90987 +- 0.02652
+MC: 1409, data: 1503	  -  Ratio: 0.93735 +- 0.03262

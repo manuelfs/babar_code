@@ -1,0 +1,12 @@
+\begin{tabular}{|l||c|c|c|c|}
+\hline
+\bf{Signal }$\boldsymbol{(10^{\mbox{-}6})}$ & $D^0$ & $D^{*0}$ & $D^+$ & $D^{*+}$ \\
+\hline \hline
+$D\ell\nu$ & 79.5 $\pm$ 1.4 & 5.3 $\pm$ 0.4 & 27.2 $\pm$ 0.9 & 0.4 $\pm$ 0.1 \\
+$D^*\ell\nu$ & 71.6 $\pm$ 0.8 & 73.4 $\pm$ 0.8 & 9.0 $\pm$ 0.3 & 41.0 $\pm$ 0.6 \\
+\hline
+$D\tau\nu$ & 64.1 $\pm$ 3.2 & 5.8 $\pm$ 1.0 & 24.3 $\pm$ 2.0 & 0.0 $\pm$ 0.0 \\
+$D^*\tau\nu$ & 28.9 $\pm$ 1.4 & 38.1 $\pm$ 1.6 & 3.4 $\pm$ 0.5 & 16.1 $\pm$ 1.1 \\
+\hline \end{tabular}
+\,\,
+

@@ -1,0 +1,53 @@
+Ratio for 030% sample
+MC: 3493, data: 3884      -  Ratio: 0.89913 +- 0.01753
+MC: 1373, data: 1434      -  Ratio: 0.95762 +- 0.03116
+MC: 3493, data: 3884      -  Ratio: 0.89913 +- 0.01753
+MC: 1373, data: 1434      -  Ratio: 0.95762 +- 0.03116
+
+Ratio for 050% sample
+MC: 3251, data: 3594      -  Ratio: 0.90478 +- 0.01807
+MC: 1296, data: 1359      -  Ratio: 0.95350 +- 0.03132
+MC: 3251, data: 3594      -  Ratio: 0.90478 +- 0.01807
+MC: 1296, data: 1359      -  Ratio: 0.95350 +- 0.03132
+
+Ratio for 075% sample
+MC: 3034, data: 3292      -  Ratio: 0.92148 +- 0.01915
+MC: 1239, data: 1269      -  Ratio: 0.97630 +- 0.03300
+MC: 3034, data: 3292      -  Ratio: 0.92148 +- 0.01915
+MC: 1239, data: 1269      -  Ratio: 0.97630 +- 0.03300
+
+Ratio for 100% sample
+MC: 2759, data: 2944      -  Ratio: 0.93729 +- 0.02049
+MC: 1094, data: 1099      -  Ratio: 0.99520 +- 0.03559
+MC: 2759, data: 2944      -  Ratio: 0.93729 +- 0.02049
+MC: 1094, data: 1099      -  Ratio: 0.99520 +- 0.03559
+
+Ratio for 120% sample
+MC: 2481, data: 2625      -  Ratio: 0.94509 +- 0.02170
+MC: 1000, data: 986       -  Ratio: 1.01355 +- 0.03799
+MC: 2481, data: 2625      -  Ratio: 0.94509 +- 0.02170
+MC: 1000, data: 986       -  Ratio: 1.01355 +- 0.03799
+
+Ratio for 150% sample
+MC: 2163, data: 2311      -  Ratio: 0.93599 +- 0.02265
+MC: 841, data: 838        -  Ratio: 1.00459 +- 0.04037
+MC: 2163, data: 2311      -  Ratio: 0.93599 +- 0.02265
+MC: 841, data: 838        -  Ratio: 1.00459 +- 0.04037
+
+Ratio for 200% sample
+MC: 1606, data: 1705      -  Ratio: 0.94178 +- 0.02621
+MC: 607, data: 603        -  Ratio: 1.00745 +- 0.04708
+MC: 1606, data: 1705      -  Ratio: 0.94178 +- 0.02621
+MC: 607, data: 603        -  Ratio: 1.00745 +- 0.04708
+
+Ratio for 250% sample
+MC: 1266, data: 1336      -  Ratio: 0.94737 +- 0.02959
+MC: 394, data: 408        -  Ratio: 0.96588 +- 0.05442
+MC: 1266, data: 1336      -  Ratio: 0.94737 +- 0.02959
+MC: 394, data: 408        -  Ratio: 0.96588 +- 0.05442
+
+Ratio for 300% sample
+MC: 1058, data: 1132      -  Ratio: 0.93454 +- 0.03164
+MC: 280, data: 267        -  Ratio: 1.04949 +- 0.07278
+MC: 1058, data: 1132      -  Ratio: 0.93454 +- 0.03164
+MC: 280, data: 267        -  Ratio: 1.04949 +- 0.07278

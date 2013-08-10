@@ -1,0 +1,66 @@
+#!/bin/tcsh
+
+cd ..
+srtpath `cat .current` $BFARCH
+cd -
+
+set wFFBFSig = babar_code/Reweight/wFFBFSig.txt
+set wFFBF = babar_code/Reweight/wFFBF.txt
+
+set q = long
+set x = xlong
+set d = `date +%y-%m-%d`
+set logdir = AWG82/logfiles/results/keys/FitPdf/$d/
+mkdir -p $logdir
+
+bsub -q $q -o $logdir/logFit_0.log FitPdfSampleKEYS 0   120 170 1000 300 65 90   0.4  1.5   Rot    All                # Sample 0
+bsub -q $q -o $logdir/logFit_1.log FitPdfSampleKEYS 1   120 170 1000 300 65 90   0.4  1.5   Rot    All                # Sample 1
+bsub -q $q -o $logdir/logFit_2.log FitPdfSampleKEYS 2   120 170 1000 300 65 90   0.4  1.5   Rot    All                # Sample 2
+bsub -q $q -o $logdir/logFit_3.log FitPdfSampleKEYS 3   120 170 1000 300 65 90   0.4  1.5   Rot    All                # Sample 3
+bsub -q $q -o $logdir/logFit_8.log FitPdfSampleKEYS 8   100 160 1000 300 50 120   0.4  1.5  noRot    All                # Sample 8
+bsub -q $q -o $logdir/logFit_9.log FitPdfSampleKEYS 9   120 150 1000 300 60 105  0.4  -1.5  Rot    All                # Sample 9
+bsub -q $q -o $logdir/logFit_10.log FitPdfSampleKEYS 10 120 170 1000 300 65 90   0.4  -1.5  Rot    All                # Sample 10
+bsub -q $q -o $logdir/logFit_11.log FitPdfSampleKEYS 11 150 160 1000 300 85 95   0.4  1.5   Rot    All                # Sample 11
+
+bsub -q $q -o $logdir/logFit_12.log FitPdfSampleKEYS 12 30 500  1000 300 30 100  -0.9  2.0  noRot  All  250  50 1.6   # Sample 12
+bsub -q $q -o $logdir/logFit_13.log FitPdfSampleKEYS 13 25 400  1000 300 25 100  -0.9  2.0  noRot  All  250  50 1.4   # Sample 13
+bsub -q $q -o $logdir/logFit_14.log FitPdfSampleKEYS 14 30 600  1000 300 30 150  -0.9  2.0  noRot  All  250  50 1     # Sample 14
+bsub -q $q -o $logdir/logFit_15.log FitPdfSampleKEYS 15 30 400  1000 300 30 150  -0.9  2.0  noRot  All  250  50 1.2   # Sample 15
+bsub -q $q -o $logdir/logFit_20.log FitPdfSampleKEYS 20 60 250  1000 300 45 150  -0.9  1.8  noRot  All  250  50 2.5   # Sample 20
+bsub -q $q -o $logdir/logFit_21.log FitPdfSampleKEYS 21 90 170  1000 300 40 180  0.8   1.9  noRot  All  200  50 1     # Sample 21
+bsub -q $q -o $logdir/logFit_22.log FitPdfSampleKEYS 22 55 300  1000 300 40 180  -0.9  1.8  noRot  All  250  50 2.3   # Sample 22
+bsub -q $q -o $logdir/logFit_23.log FitPdfSampleKEYS 23 70 200  1000 300 70 95   -0.8  -2.1 Rot    All                # Sample 23
+bsub -q $q -o $logdir/logFit_26.log FitPdfSampleKEYS 26 110 200 1000 300 70 90   0.4  1.8   Rot    All                # Sample 26
+bsub -q $q -o $logdir/logFit_27.log FitPdfSampleKEYS 27 100 200 1000 300 70 100  0.4  1.8   Rot    All                # Sample 27
+bsub -q $q -o $logdir/logFit_28.log FitPdfSampleKEYS 28 120 200 1000 300 60 100  0.4  1.4   Rot    All                # Sample 28
+bsub -q $q -o $logdir/logFit_29.log FitPdfSampleKEYS 29 90 230  1000 300 50 130  0.4  1.8   Rot    All                # Sample 29
+
+bsub -q $q -o $logdir/logFit_30.log FitPdfSampleKEYS 30 40 500  1000 300 18 200  0.4  1.9   noRot  All  150  50 1.6   # Sample 30
+bsub -q $q -o $logdir/logFit_31.log FitPdfSampleKEYS 31 35 400  1000 300 18 200  0.4  1.9   noRot  All  150  50 1.6   # Sample 31
+bsub -q $q -o $logdir/logFit_32.log FitPdfSampleKEYS 32 35 500  1000 300 20 300  0.4  1.9   noRot  All  150  50 1.6   # Sample 32
+bsub -q $q -o $logdir/logFit_33.log FitPdfSampleKEYS 33 30 600  1000 300 17 480  0.4  1.9   noRot  All  150  50 1.2   # Sample 33
+bsub -q $q -o $logdir/logFit_38.log FitPdfSampleKEYS 38 80 160  1000 300 50 70   0.3  2.0   Rot    All  150  30 1.6   # Sample 38
+bsub -q $q -o $logdir/logFit_39.log FitPdfSampleKEYS 39 80 180  1000 300 50 70   0.3  2.0   Rot    All  150  30 1.6   # Sample 39
+bsub -q $q -o $logdir/logFit_40.log FitPdfSampleKEYS 40 70 150  1000 300 40 70   0.3  2.0   Rot    All  150  30 1.6   # Sample 40
+bsub -q $q -o $logdir/logFit_41.log FitPdfSampleKEYS 41 80 160  1000 300 50 70   0.3  2.0   Rot    All  150  30 1.6   # Sample 41
+bsub -q $q -o $logdir/logFit_42.log FitPdfSampleKEYS 42 80 160  1000 300 50 70   0.3  2.0   Rot    All  150  30 1.6   # Sample 42
+bsub -q $q -o $logdir/logFit_43.log FitPdfSampleKEYS 43 150 100 1000 300 150 60  -0.9  2.0  Rot    All                # Sample 43
+bsub -q $q -o $logdir/logFit_44.log FitPdfSampleKEYS 44 80 160  1000 300 50 70   0.3  2.0   Rot    All  150  30 1.6   # Sample 44
+bsub -q $q -o $logdir/logFit_45.log FitPdfSampleKEYS 45 100 100 1000 300 50 70   -0.9  1.7  Rot    All                # Sample 45
+
+bsub -q $q -o $logdir/logFit_51.log FitPdfSampleKEYS 51 80 200  1000 300 45 150  0.4  1.7   Rot    All                # Sample 51
+bsub -q $q -o $logdir/logFit_52.log FitPdfSampleKEYS 52 80 200  1000 300 35 200  0.4  1.6   Rot    All                # Sample 52
+bsub -q $q -o $logdir/logFit_53.log FitPdfSampleKEYS 53 80 200  1000 300 50 100  0.4  1.9   Rot    All                # Sample 53
+bsub -q $q -o $logdir/logFit_54.log FitPdfSampleKEYS 54 80 200  1000 300 45 130  0.4  1.8   Rot    All                # Sample 54
+bsub -q $q -o $logdir/logFit_55.log FitPdfSampleKEYS 55 50 400  1000 300 30 150  0.5  2.0   Rot    All  200  25 2.3   # Sample 55
+bsub -q $q -o $logdir/logFit_56.log FitPdfSampleKEYS 56 45 400  1000 300 40 150  0.5  2.0   Rot    All  200  25 2.3   # Sample 56
+bsub -q $q -o $logdir/logFit_57.log FitPdfSampleKEYS 57 55 500  1000 300 40 300  -0.9  1.9  Rot    All  200  25 2.1   # Sample 57
+bsub -q $q -o $logdir/logFit_58.log FitPdfSampleKEYS 58 45 600  1000 300 40 300  -0.9  1.9  Rot    All  200  25 2.1   # Sample 58
+bsub -q $q -o $logdir/logFit_59.log FitPdfSampleKEYS 59 80 120  1000 300 80 70   0.2  1.7   Rot    All                # Sample 59
+bsub -q $q -o $logdir/logFit_60.log FitPdfSampleKEYS 60 130 120 1000 300 60 120  0.2  1.5   Rot    All                # Sample 60
+bsub -q $q -o $logdir/logFit_61.log FitPdfSampleKEYS 61 130 100 1000 300 50 100  0.2  1.5   Rot    All                # Sample 61
+bsub -q $q -o $logdir/logFit_62.log FitPdfSampleKEYS 62 100 120 1000 300 50 120  0.2  1.6   Rot    All                # Sample 62
+bsub -q $q -o $logdir/logFit_63.log FitPdfSampleKEYS 63 70 300  1000 300 50 200  0.2  1.5   Rot    All                # Sample 63
+bsub -q $q -o $logdir/logFit_64.log FitPdfSampleKEYS 64 70 300  1000 300 50 200  0.2  1.5   Rot    All                # Sample 64
+bsub -q $q -o $logdir/logFit_65.log FitPdfSampleKEYS 65 70 300  1000 300 50 200  0.2  1.5   Rot    All                # Sample 65
+bsub -q $q -o $logdir/logFit_66.log FitPdfSampleKEYS 66 70 300  1000 300 50 200  0.2  1.5   Rot    All                # Sample 66

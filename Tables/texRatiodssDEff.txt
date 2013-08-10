@@ -1,0 +1,8 @@
+\begin{tabular}{lc}
+\hline\hline
+$\boldsymbol{D^{(*)}\pi^0}$ & $\epsilon_{\text{sig}}/\epsilon_{\text{norm}}$ \\ \hline
+$D^0$ & 0.26 $\pm$ 0.01 \\
+$D^{*0}$ & 0.28 $\pm$ 0.01 \\
+$D^+$ & 0.27 $\pm$ 0.01 \\
+$D^{*+}$ & 0.29 $\pm$ 0.01 \\
+\hline\hline \end{tabular}\,\,

@@ -1,0 +1,74 @@
+DECAY.dec in EvtGen V00-16-00 (22.3.4b)
+
+Decay B+
+#
+#                   b -> c semileptonic
+#	
+ New   /  Used	      
+0.0548 / 0.0617   anti-D*0     e+   nu_e          PHOTOS   HQET 0.77 1.33 0.92;
+0.0232 / 0.0224   anti-D0      e+   nu_e          PHOTOS   ISGW2;
+0.0042 / 0.0056   anti-D_10    e+   nu_e          PHOTOS   ISGW2;
+0.0048 / 0.0049   anti-D_0*0   e+   nu_e	  PHOTOS   ISGW2;
+0.0045 / 0.0090	  anti-D'_10   e+   nu_e          PHOTOS   ISGW2;
+0.0032 / 0.0030	  anti-D_2*0   e+   nu_e          PHOTOS   ISGW2;
+0.0070 / 0.0006   D*-  pi+     e+   nu_e          PHOTOS   GOITY_ROBERTS;
+0.0032 / 0.0003   anti-D*0     pi0   e+   nu_e    PHOTOS   GOITY_ROBERTS;
+0.0025 / 0.0019   D-   pi+     e+   nu_e	  PHOTOS   GOITY_ROBERTS;
+0.0012 / 0.0010   anti-D0      pi0   e+   nu_e    PHOTOS   GOITY_ROBERTS;
+              		      		        
+0.0548 / 0.0617   anti-D*0     mu+  nu_mu	  PHOTOS   HQET 0.77 1.33 0.92;
+0.0232 / 0.0224   anti-D0      mu+  nu_mu	  PHOTOS	  ISGW2;
+0.0042 / 0.0056   anti-D_10    mu+  nu_mu	  PHOTOS   ISGW2;
+0.0048 / 0.0049   anti-D_0*0   mu+  nu_mu	  PHOTOS   ISGW2;
+0.0045 / 0.0090   anti-D'_10   mu+  nu_mu	  PHOTOS   ISGW2;
+0.0032 / 0.0030   anti-D_2*0   mu+  nu_mu	  PHOTOS   ISGW2;
+0.0070 / 0.0006   D*-  pi+     mu+  nu_mu	  PHOTOS   GOITY_ROBERTS;
+0.0032 / 0.0003   anti-D*0     pi0  mu+   nu_mu   PHOTOS   GOITY_ROBERTS;
+0.0025 / 0.0019   D-   pi+     mu+  nu_mu	  PHOTOS   GOITY_ROBERTS;
+0.0012 / 0.0010   anti-D0      pi0  mu+   nu_mu   PHOTOS   GOITY_ROBERTS;
+		      
+#		      
+#                    b -> c tau nu
+#		      
+0.0160   anti-D*0     tau+ nu_tau                 ISGW2;
+0.0070   anti-D0      tau+ nu_tau                 ISGW2;
+0.0013   anti-D_10    tau+ nu_tau                 ISGW2;
+0.0013   anti-D_0*0   tau+ nu_tau                 ISGW2;
+0.0020   anti-D'_10   tau+ nu_tau                 ISGW2;
+0.0020   anti-D_2*0   tau+ nu_tau                 ISGW2;
+
+==================================================================
+Decay B0
+#                   b -> c semileptonic
+# =10.4% total  non-D and D* = 3.4% (changing to 2.7)
+ New   /  Used	      
+0.0511 / 0.0570   D*-	       e+   nu_e           PHOTOS    HQET 0.77 1.33 0.92;
+0.0217 / 0.0207   D-	       e+   nu_e           PHOTOS    ISGW2;
+0.0039 / 0.0052   D_1-	       e+   nu_e           PHOTOS    ISGW2;
+0.0045 / 0.0045   D_0*-	       e+   nu_e           PHOTOS    ISGW2;
+0.0042 / 0.0083   D'_1-	       e+   nu_e           PHOTOS    ISGW2;
+0.0031 / 0.0023   D_2*-	       e+   nu_e           PHOTOS    ISGW2;
+0.0030 / 0.0003   D*-  pi0     e+   nu_e	   PHOTOS    GOITY_ROBERTS;
+0.0064 / 0.0007   anti-D*0     pi-   e+   nu_e     PHOTOS    GOITY_ROBERTS;
+0.0011 / 0.0010   D-   pi0     e+   nu_e	   PHOTOS    GOITY_ROBERTS;
+0.0022 / 0.0020   anti-D0      pi-   e+   nu_e     PHOTOS    GOITY_ROBERTS;
+  
+0.0511 / 0.0570   D*-	       mu+  nu_mu          PHOTOS    HQET 0.77 1.33 0.92;
+0.0217 / 0.0207   D-	       mu+  nu_mu          PHOTOS    ISGW2;
+0.0039 / 0.0052   D_1-	       mu+  nu_mu          PHOTOS    ISGW2;
+0.0045 / 0.0045   D_0*-	       mu+  nu_mu          PHOTOS    ISGW2;
+0.0042 / 0.0083   D'_1-	       mu+  nu_mu          PHOTOS    ISGW2;
+0.0031 / 0.0023   D_2*-	       mu+  nu_mu          PHOTOS    ISGW2;
+0.0030 / 0.0003   D*-  pi0     mu+  nu_mu	   PHOTOS    GOITY_ROBERTS;
+0.0064 / 0.0007   anti-D*0     pi-   mu+  nu_mu	   PHOTOS    GOITY_ROBERTS;
+0.0011 / 0.0010   D-   pi0     mu+  nu_mu	   PHOTOS    GOITY_ROBERTS;
+0.0022 / 0.0020   anti-D0      pi-   mu+  nu_mu    PHOTOS    GOITY_ROBERTS;
+#
+#                  b -> c tau nu
+#
+0.0160   D*-	      tau+ nu_tau                  ISGW2;
+0.0070   D-	      tau+ nu_tau                  ISGW2;
+0.0013   D_1-	      tau+ nu_tau                  ISGW2;
+0.0013   D_0*-	      tau+ nu_tau                  ISGW2;
+0.0020   D'_1-	      tau+ nu_tau                  ISGW2;
+0.0020   D_2*-	      tau+ nu_tau                  ISGW2;

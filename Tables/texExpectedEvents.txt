@@ -1,0 +1,18 @@
+\begin{tabular}{|l||c|c|c|c|}
+\hline
+\bf{Signal }$\boldsymbol{ & $D^0$ & $D^{*0}$ & $D^+$ & $D^{*+}$ \\
+\hline \hline
+$D\ell\nu$ & 1724 & 116 & 554 & 7 \\
+$D^*\ell\nu$ & 3668 & 3759 & 433 & 1962 \\
+\hline
+$D\tau\nu$ & 210 & 19 & 79 & 0 \\
+$D^*\tau\nu$ & 216 & 285 & 25 & 120 \\
+\hline
+$D^{**}\ell\nu$ & 406 & 137 & 83 & 71 \\
+$D^{**}\tau\nu$ & 32 & 12 & 7 & 11 \\
+\hline
+$D_1^{'}(\to D^*\pi)\ell\nu$ & 84 & 21 & 24 & 2 \\
+$D_1(\to D\pi\pi)\ell\nu$ & 64 & 46 & 15 & 17 \\
+\hline \end{tabular}
+\,\,
+

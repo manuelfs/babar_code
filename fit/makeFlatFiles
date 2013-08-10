@@ -1,0 +1,35 @@
+#!/usr/local/bin/tcsh
+
+    if ( $# < 1 ) then
+	echo The format is: babar_code/fit/makeFlatFiles parFile
+	exit -1
+    endif
+
+set parFile = $1
+
+set bname = `basename $parFile`
+set file = babar_code/fit/$bname
+if (-f $file) rm $file
+touch $file
+
+set n
+echo Putting par from $parFile into $file
+foreach par (peak muL muPeak muR nuL nuR bo1 bs1 bc1 sl1 sh1 bo2 bs2 bc2 sl2 sh2 fl fh)
+  set q = `grep -w $par $parFile | awk 'NF == 2 {print $2}; NF > 2 {print $3}'`
+  if ($#q > 0) then
+    echo $q >> $file
+  else
+    echo "couldnt get $par from file $parFile"
+  endif
+  #echo "" >> $file
+end
+
+foreach par (bfrac bmean bsigr bsigl bpow bsigpow)
+  set q = `grep -w $par $parFile | awk 'NF == 2 {print $2}; NF > 2 {print $3}'`
+  if ($#q > 0) then
+    echo $q >> $file
+  else
+    echo "couldnt get $par from file $parFile"
+  endif
+  #echo "" >> $file
+end

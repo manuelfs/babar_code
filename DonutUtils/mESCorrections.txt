@@ -1,0 +1,55 @@
+
+Ratio for 030% sample
+MC: 344, data: 337.2	  -  Ratio: 1.02160 +- 0.06470
+MC: 141, data: 147.3	  -  Ratio: 0.95522 +- 0.09218
+MC: 344, data: 337.2	  -  Ratio: 1.02160 +- 0.06470
+MC: 141, data: 147.3	  -  Ratio: 0.95522 +- 0.09218
+
+Ratio for 050% sample
+MC: 1064, data: 1186.8	  -  Ratio: 0.89679 +- 0.02988
+MC: 349, data: 332.8	  -  Ratio: 1.04788 +- 0.06677
+MC: 1064, data: 1186.8	  -  Ratio: 0.89679 +- 0.02988
+MC: 349, data: 332.8	  -  Ratio: 1.04788 +- 0.06677
+
+Ratio for 075% sample
+MC: 1735, data: 1971.8	  -  Ratio: 0.87981 +- 0.02269
+MC: 532, data: 509.3	  -  Ratio: 1.04486 +- 0.05381
+MC: 1735, data: 1971.8	  -  Ratio: 0.87981 +- 0.02269
+MC: 532, data: 509.3	  -  Ratio: 1.04486 +- 0.05381
+
+Ratio for 100% sample
+MC: 2687, data: 2974.5	  -  Ratio: 0.90344 +- 0.01890
+MC: 1011, data: 1056.6	  -  Ratio: 0.95670 +- 0.03391
+MC: 2687, data: 2974.5	  -  Ratio: 0.90344 +- 0.01890
+MC: 1011, data: 1056.6	  -  Ratio: 0.95670 +- 0.03391
+
+Ratio for 120% sample
+MC: 3681, data: 4036.5	  -  Ratio: 0.91186 +- 0.01640
+MC: 1315, data: 1431.9	  -  Ratio: 0.91852 +- 0.02795
+MC: 3681, data: 4036.5	  -  Ratio: 0.91186 +- 0.01640
+MC: 1315, data: 1431.9	  -  Ratio: 0.91852 +- 0.02795
+
+Ratio for 150% sample
+MC: 4789, data: 5240.7	  -  Ratio: 0.91374 +- 0.01442
+MC: 1884, data: 2023.2	  -  Ratio: 0.93132 +- 0.02376
+MC: 4789, data: 5240.7	  -  Ratio: 0.91374 +- 0.01442
+MC: 1884, data: 2023.2	  -  Ratio: 0.93132 +- 0.02376
+
+Ratio for 200% sample
+MC: 7133, data: 7762.1	  -  Ratio: 0.91897 +- 0.01189
+MC: 2988, data: 3068.0	  -  Ratio: 0.97391 +- 0.02014
+MC: 7133, data: 7762.1	  -  Ratio: 0.91897 +- 0.01189
+MC: 2988, data: 3068.0	  -  Ratio: 0.97391 +- 0.02014
+
+Ratio for 250% sample
+MC: 9754, data: 10535.7	  -  Ratio: 0.92582 +- 0.01022
+MC: 4212, data: 4356.8	  -  Ratio: 0.96668 +- 0.01668
+MC: 9754, data: 10535.7	  -  Ratio: 0.92582 +- 0.01022
+MC: 4212, data: 4356.8	  -  Ratio: 0.96668 +- 0.01668
+
+Ratio for 300% sample
+MC: 12666, data: 13435.0  -  Ratio: 0.94280 +- 0.00917
+MC: 5404, data: 5473.1	  -  Ratio: 0.98733 +- 0.01515
+MC: 12666, data: 13435.0  -  Ratio: 0.94280 +- 0.00917
+MC: 5404, data: 5473.1	  -  Ratio: 0.98733 +- 0.01515
+

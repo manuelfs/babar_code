@@ -1,0 +1,56 @@
+\begin{tabular}{|l||cc|c|}
+\hline
+$\mathbf{D^{*0}}$ & M22 & M14 & M22/M14 \\
+\hline \hline
+D^{*0} \,\tau \,\nu & 224 & 135 & 1.60 \\
+D^{0} \,\tau \,\nu & 6 & 16 & 0.36 \\
+D^{*0} \,l \,\nu & 4030 & 2798 & 1.39 \\
+D^{0} \,l \,\nu & 114 & 72 & 1.52 \\
+D^{**} \,l \,\nu & 128 & 97 & 1.27 \\
+Crossfeed & 40 & 35 & 1.10 \\
+Comb. & 84 & 44 & 1.84 \\
+\hline \end{tabular}
+\,\,
+
+\begin{tabular}{|l||cc|c|}
+\hline
+$\mathbf{D^{0}}$ & M22 & M14 & M22/M14 \\
+\hline \hline
+D^{0} \,\tau \,\nu & 145 & 142 & 0.98 \\
+D^{*0} \,\tau \,\nu & 164 & 153 & 1.03 \\
+D^{*0} \,l \,\nu & 3618 & 3010 & 1.16 \\
+D^{0} \,l \,\nu & 1508 & 1143 & 1.27 \\
+D^{**} \,l \,\nu & 290 & 270 & 1.03 \\
+Crossfeed & 118 & 93 & 1.22 \\
+Comb. & 146 & 94 & 1.50 \\
+\hline \end{tabular}
+\,\,
+
+\begin{tabular}{|l||cc|c|}
+\hline
+$\mathbf{D^{*+}}$ & M22 & M14 & M22/M14 \\
+\hline \hline
+D^{*+} \,\tau \,\nu & 99 & 92 & 1.04 \\
+D^{+} \,\tau \,\nu & 1 & 4 & 0.24 \\
+D^{*+} \,l \,\nu & 2174 & 1695 & 1.24 \\
+D^{+} \,l \,\nu & 9 & 5 & 1.73 \\
+D^{**} \,l \,\nu & 86 & 50 & 1.66 \\
+Crossfeed & 15 & 2 & 7.22 \\
+Comb. & 55 & 27 & 1.96 \\
+\hline \end{tabular}
+\,\,
+
+\begin{tabular}{|l||cc|c|}
+\hline
+$\mathbf{D^{+}}$ & M22 & M14 & M22/M14 \\
+\hline \hline
+D^{+} \,\tau \,\nu & 67 & 43 & 1.50 \\
+D^{*+} \,\tau \,\nu & 39 & 22 & 1.71 \\
+D^{*+} \,l \,\nu & 622 & 380 & 1.58 \\
+D^{+} \,l \,\nu & 529 & 427 & 1.19 \\
+D^{**} \,l \,\nu & 117 & 34 & 3.31 \\
+Crossfeed & 33 & 9 & 3.53 \\
+Comb. & 66 & 31 & 2.05 \\
+\hline \end{tabular}
+\,\,
+

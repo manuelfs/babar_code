@@ -1,0 +1,45 @@
+D^{0} p(Chi2):   M2 32.77        Pl 285.24       Total 10.14
+D*^{0} p(Chi2):  M2 5945.13      Pl 308.97       Total 1614.49
+D^{+} p(Chi2):   M2 861.31       Pl 3273.68      Total 1184.66   M2Tot 25.89     PlTot 562.64     Combined 11.61
+D*^{+} p(Chi2):  M2 3259.04      Pl 1676.63      Total 2461.22   M2Tot 5298.41   PlTot 375.83     Combined 1522.72
+Info in <TCanvas::Print>: eps file keys/eps/FinalFit/sig030candM2_histoPl.eps has been created
+D^{0} p(Chi2):   M2 151.51       Pl 28.51        Total 6.73
+D*^{0} p(Chi2):  M2 9641.89      Pl 2131.47      Total 7674.48
+D^{+} p(Chi2):   M2 2.28         Pl 345.54       Total 0.94      M2Tot 0.52      PlTot 12.51      Combined 0.01
+D*^{+} p(Chi2):  M2 4409.41      Pl 1784.90      Total 3275.90   M2Tot 8607.41   PlTot 1863.68    Combined 6264.02
+Info in <TCanvas::Print>: eps file keys/eps/FinalFit/sig050candM2_histoPl.eps has been created
+D^{0} p(Chi2):   M2 911.62       Pl 336.61       Total 268.57
+D*^{0} p(Chi2):  M2 4519.68      Pl 502.31       Total 1669.84
+D^{+} p(Chi2):   M2 27.90        Pl 1666.32      Total 30.20     M2Tot 22.10     PlTot 402.59     Combined 7.14
+D*^{+} p(Chi2):  M2 1088.86      Pl 1020.21      Total 682.05    M2Tot 1918.82   PlTot 386.31     Combined 554.50
+Info in <TCanvas::Print>: eps file keys/eps/FinalFit/sig075candM2_histoPl.eps has been created
+D^{0} p(Chi2):   M2 790.06       Pl 644.62       Total 371.02
+D*^{0} p(Chi2):  M2 6084.01      Pl 12.48        Total 95.33
+D^{+} p(Chi2):   M2 899.53       Pl 984.15       Total 557.45    M2Tot 388.04    PlTot 461.95     Combined 127.25
+D*^{+} p(Chi2):  M2 3473.91      Pl 2361.44      Total 3188.96   M2Tot 5270.06   PlTot 20.19      Combined 184.93
+Info in <TCanvas::Print>: eps file keys/eps/FinalFit/sig100candM2_histoPl.eps has been created
+D^{0} p(Chi2):   M2 1749.82      Pl 256.02       Total 414.58
+D*^{0} p(Chi2):  M2 6510.90      Pl 465.55       Total 1693.17
+D^{+} p(Chi2):   M2 2741.77      Pl 128.95       Total 392.93    M2Tot 1826.80   PlTot 37.61      Combined 103.06
+D*^{+} p(Chi2):  M2 4206.79      Pl 7452.51      Total 6377.70   M2Tot 6154.94   PlTot 1513.10    Combined 3439.53
+Info in <TCanvas::Print>: eps file keys/eps/FinalFit/sig120candM2_histoPl.eps has been created
+D^{0} p(Chi2):   M2 980.03       Pl 76.47        Total 94.29
+D*^{0} p(Chi2):  M2 5817.91      Pl 317.08       Total 1350.92
+D^{+} p(Chi2):   M2 394.71       Pl 24.45        Total 15.30     M2Tot 232.66    PlTot 2.89       Combined 1.44
+D*^{+} p(Chi2):  M2 5497.90      Pl 2019.56      Total 3792.39   M2Tot 6637.55   PlTot 387.47     Combined 1792.81
+Info in <TCanvas::Print>: eps file keys/eps/FinalFit/sig150candM2_histoPl.eps has been created
+D^{0} p(Chi2):   M2 605.53       Pl 62.50        Total 49.94
+D*^{0} p(Chi2):  M2 3223.52      Pl 754.61       Total 1314.30
+D^{+} p(Chi2):   M2 392.08       Pl 0.97         Total 0.98      M2Tot 152.09    PlTot 0.12       Combined 0.06
+D*^{+} p(Chi2):  M2 5278.65      Pl 98.09        Total 428.22    M2Tot 4398.60   PlTot 60.76      Combined 302.74
+Info in <TCanvas::Print>: eps file keys/eps/FinalFit/sig200candM2_histoPl.eps has been created
+D^{0} p(Chi2):   M2 1153.49      Pl 216.19       Total 244.00
+D*^{0} p(Chi2):  M2 115.26       Pl 243.76       Total 23.72
+D^{+} p(Chi2):   M2 64.09        Pl 1.77         Total 0.27      M2Tot 56.85     PlTot 0.63       Combined 0.09
+D*^{+} p(Chi2):  M2 4859.04      Pl 16.08        Total 91.27     M2Tot 313.01    PlTot 4.37       Combined 1.91
+Info in <TCanvas::Print>: eps file keys/eps/FinalFit/sig250candM2_histoPl.eps has been created
+D^{0} p(Chi2):   M2 976.75       Pl 237.88       Total 222.74
+D*^{0} p(Chi2):  M2 15.55        Pl 180.64       Total 2.74
+D^{+} p(Chi2):   M2 22.06        Pl 18.23        Total 0.69      M2Tot 19.19     PlTot 6.02       Combined 0.20
+D*^{+} p(Chi2):  M2 8430.46      Pl 23.00        Total 236.00    M2Tot 106.39    PlTot 4.61       Combined 0.65
+Info in <TCanvas::Print>: eps file keys/eps/FinalFit/sig300candM2_histoPl.eps has been created

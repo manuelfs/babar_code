@@ -1,0 +1,66 @@
+Seed       Decay
+================================
+ 100     JPsi->ee
+ 101     JPsi->mumu
+
+ 110     D0->Kpi
+ 111     D0->Kpipi0
+ 112     D0->K3pi
+ 113     D0->Kspipi
+ 114     D0->Kspipipi0
+ 115     D0->KK
+ 116     D0->pipipi0
+ 117     D0->pipi
+ 118     D0->Kspi0
+
+ 120     Dc->Kspi
+ 121     Dc->Kpipi
+ 122     Dc->Kspipi0
+ 123     Dc->Kpipipi0
+ 124     Dc->Kspipipi
+ 125     Dc->KKpi
+ 126     Dc->KKpipi0
+
+ 130     D*,D0->Kpi
+ 131     D*,D0->Kpipi0
+ 132     D*,D0->K3pi
+ 133     D*,D0->Kspipi
+ 134     D*,Dc->Kspipi0
+ 135     D*,Dc->Kpipi
+ 136     D*,Dc->Kpipipi0
+ 137     D*,Dc->Kspipi0
+ 138     D*,Dc->Kspipipi
+ 139     D*,Dc->KKpi
+
+ 140     D*0->D0pi0,D0->Kpi
+ 141     D*0->D0pi0,D0->Kpipi0
+ 142     D*0->D0pi0,D0->K3pi
+ 143     D*0->D0pi0,D0->Kspipi
+ 144     D*0->D0pi0,D0->Kspipipi0
+ 145     D*0->D0pi0,D0->KK
+ 146     D*0->D0pi0,D0->pipipi0
+ 147     D*0->D0pi0,D0->pipi
+ 148     D*0->D0pi0,D0->Kspi0
+
+ 150     D*0->D0gamma,D0->Kpi
+ 151     D*0->D0gamma,D0->Kpipi0
+ 152     D*0->D0gamma,D0->K3pi
+ 153     D*0->D0gamma,D0->Kspipi
+ 154     D*0->D0gamma,D0->Kspipipi0
+ 155     D*0->D0gamma,D0->KK
+ 156     D*0->D0gamma,D0->pipipi0
+ 157     D*0->D0gamma,D0->pipi
+ 158     D*0->D0gamma,D0->Kspi0
+
+ 160     Ds->phipi
+ 161     Ds->KsK
+
+ 171     Ds*->Dsgamma,Ds->phipi
+ 172     Ds*->Dsgamma,Ds->KsK
+
+ 180     D*->D0pi,D0->Kspipipi0
+ 181     D*->D0pi,D0->KK
+ 182     D*->D0pi,D0->pipipi0
+ 183     D*->D0pi,D0->pipi
+ 184     D*->D0pi,D0->Kspi0
+ 186     D*,Dc->KKpipi0

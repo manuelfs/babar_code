@@ -1,0 +1,73 @@
+\documentclass[6pt]{article}
+\usepackage{rotating}\usepackage{lscape}
+\usepackage{amsmath}
+\usepackage{colortbl}
+\usepackage[left=2cm,top=1cm,right=3cm,nohead,nofoot]{geometry}
+\pagestyle{empty}
+\input{babarsym.tex}
+\newcommand{\Red} [1]  {\textcolor{red}{#1}}
+\begin{document} 
+
+
+\begin{tabular}{||l | c  c | c  c | c  c | c  c||}\hline\hline
+ & \multicolumn{2}{c|}{\babar, 2008} & \multicolumn{2}{c|}{Belle, 2009} & \multicolumn{2}{c|}{Belle, 2010} 
+ & \multicolumn{2}{c||}{\babar, 2011} \\ 
+ & \multicolumn{2}{c|}{232M \BB pairs} & \multicolumn{2}{c|}{657M \BB pairs} & \multicolumn{2}{c|}{657M \BB pairs} 
+ & \multicolumn{2}{c||}{471M \BB pairs} \\ \hline
+Ratio & Value & $\sigma(\%)$ & Value & $\sigma(\%)$ & Value & $\sigma(\%)$ & Value & $\sigma(\%)$ \\ \hline
+$R(D)$   & $0.42 \pm 0.13$ & 30 & $0.60 \pm 0.16$ & 27 & $0.35 \pm 0.11$ & 33 & --- & 16 \\
+$R(D^*)$ & $0.30 \pm 0.06$ & 20 & $0.47 \pm 0.11$ & 22 & $0.37 \pm 0.07$ & 19 & --- & 10 \\
+\hline\hline
+\end{tabular}
+\\ \\ \\
+
+\begin{tabular}{||l | c  c | c  c | c  c||}\hline\hline
+ & \multicolumn{2}{c|}{\babar, 2008} & \multicolumn{2}{c|}{Belle, 2009} & \multicolumn{2}{c||}{Belle, 2010} \\ 
+ & \multicolumn{2}{c|}{232M \BB pairs} & \multicolumn{2}{c|}{657M \BB pairs} & \multicolumn{2}{c||}{657M \BB pairs} \\ \hline
+Mode & Events & Signif.($\sigma$) & Events & Signif.($\sigma$) & Events & Signif.($\sigma$) \\ \hline
+$B^-\to D^0\tau^-\overline{\nu}_{\tau}$ & $35\pm19$ & 1.8  & $99\pm26$ & 3.8  & $146\pm42$ & 3.5  \\
+$B^-\to D^{*0}\tau^-\overline{\nu}_{\tau}$ & $99\pm20$ & 5.3  & $100\pm22$ & 3.9  & $446\pm57$ & 8.1  \\
+$\Bzb\to D^{+}\tau^-\overline{\nu}_{\tau}$ & $23\pm8$ & 3.3  & $17\pm8$ & 2.6  & ---& ---\\
+$\Bzb\to D^{*+}\tau^-\overline{\nu}_{\tau}$ & $16\pm7$ & 2.7  & $25\pm7$ & 4.7  & ---& ---\\
+\hline\hline
+\end{tabular}
+\\ \\ \\
+
+\begin{tabular}{||l | c  c | c  c | c  c||}\hline\hline
+ & \multicolumn{2}{c|}{\babar, 2008} & \multicolumn{2}{c|}{Belle, 2010} & \multicolumn{2}{c||}{\babar, 2011} \\ 
+ & \multicolumn{2}{c|}{232M \BB pairs} & \multicolumn{2}{c|}{657M \BB pairs} & \multicolumn{2}{c||}{471M \BB pairs} \\ \hline
+Mode & Events & Sig$_{\text{tot}}$ (Sig$_{\text{sta}}$) & Events & Sig$_{\text{tot}}$ (Sig$_{\text{sta}}$)  
+& Events & Sig$_{\text{tot}}$ (Sig$_{\text{sta}}$) \\ \hline
+$B^-\to D^0\tau^-\overline{\nu}_{\tau}$ & $35\pm19$ & 1.8 (1.8) & $146\pm42$ & 3.5 (3.6) & $180\pm35$ & - (6.1)\\
+$B^-\to D^{*0}\tau^-\overline{\nu}_{\tau}$ & $99\pm20$ & 5.3 (5.8) & $446\pm57$ & 8.1 (8.8) & $388\pm42$ & - (14)\\
+$\overline{B}^0\to D^{+}\tau^-\overline{\nu}_{\tau}$ & $23\pm8$ & 3.3 (3.6) & $17\pm8$ & 2.6 (2.8) & $89\pm19$ & - (6.4)\\
+$\overline{B}^0\to D^{*+}\tau^-\overline{\nu}_{\tau}$ & $16\pm7$ & 2.7 (2.7) & $25\pm7$ & 4.7 (5.9) & $142\pm20$ & - (11)\\
+\hline\hline
+\end{tabular}
+\\ \\ \\
+
+\begin{tabular}{l l l r @{ $\pm$ } l l}\hline\hline
+Channel & Component & $N_\mathrm{true}$ & \multicolumn{2}{c}{$N_\mathrm{fit}$} & Pull\\ \hline
+\Dstarz & $\Dstarz\taum\nutb$ & 274 & 0 & 0 & fixed \\
+ & $\Dstarz\ellm\nulb$ & 4131 & 4030 & 65 & -1.55 \\
+Total  & $\Dz\taum\nutb$ & 11 & 23 & --- & --- \\
+$4942_{true}$  & $\Dz\ellm\nulb$ & 144 & 142 & --- & --- \\
+$4649_{fit}$  & $D^{**}\ellm\nulb$ & 155 & 227 & --- & --- \\
+ & Charge XF & 62 & 62 & 0 & fixed \\
+$-34513_{LH}$  & Comb. BG & 165 & 165 & 0 & fixed \\
+ \hline
+\Dz & $\Dz\taum\nutb$ & 181 & 395 & 27 & 7.82 \\
+ & $\Dz\ellm\nulb$ & 1441 & 1419 & 42 & -0.53 \\
+Total  & $\Dstarz\taum\nutb$ & 144 & 0 & --- & --- \\
+$4840_{true}$  & $\Dstarz\ellm\nulb$ & 2636 & 2643 & 58 & 0.11 \\
+$4855_{fit}$  & $D^{**}\ellm\nulb$ & 143 & 104 & --- & --- \\
+ & Charge XF & 156 & 156 & 0 & fixed \\
+$-31723_{LH}$  & Comb. BG & 138 & 138 & 0 & fixed \\
+ \hline
+\hline
+\end{tabular}
+
+
+
+
+\end{document}

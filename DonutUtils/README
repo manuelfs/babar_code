@@ -1,0 +1,352 @@
+//=============================================================================
+//  README file for Donuttils
+//
+//  $Id: README,v 1.2 2010/02/15 02:49:42 manuelf Exp $
+//
+// Author List:
+//      Michael Mazur                           UC Santa Barbara
+//=============================================================================
+
+This file describes the main executables used in the signal fit. It is 
+assumed that you have already run the skimming stages of the analysis and 
+run a Beta executable to produce ntuples. The code here assumes ntuples in 
+my format (see ../BetaMiniUser/DonutAnalysis for details), but most of the 
+variable names are self-explanatory so it should be easy to rewrite this 
+stuff to match any ntuple format. Most of these tools use ntuple chains as 
+input (see the file DonutUtils/loadChain.hh), which you can easily create following 
+the examples in ../workdir/chains/. All of the executables describe their 
+command-line options if you run them without any options.
+
+In my framework, the ntuple production applies most of the cuts --- this 
+is necessary because the cuts must be applied BEFORE single-candidate 
+selection, and my ntuples are written for single candidates. A few final 
+cuts are applied after the ntuple stage. These are specified in the file 
+DonutUtils/basic.hh, and are summarized in the TCut named "basic". There are 
+variations of this cut for a variety of related studies. The file DonutUtils/basic.hh 
+can also be loaded in an interactive ROOT session, allowing you to use the 
+TCuts in this context as well.
+
+The major steps to follow are summarized here. I will describe each step 
+in more detail below:
+
+(1) Generate PDF samples from signal MC
+(2) Fit each of the PDF samples
+(3) Merge the results of the PDF fits into one flat file
+(4) Prepare a simple ntuple for fitting
+(5) Calculate the crossfeed constraints
+(6) Calculate the relative efficiencies
+(7) Generate combinatorial BG yields
+(8) Prepare a driver file for the main fit
+(9) Run the main fit
+
+
+
+=============================================================
+(1) Generate PDF samples from signal MC
+=============================================================
+There is a shell script that manages this, workdir/prepPdfSamples
+
+Most of the work is accomplished by two executables, GenPdfSamples and 
+GenCombSamples. They are basically identical, except that one is for the 
+32 semileptonic PDFs, and the other is for the combinatorial PDFs. Both of 
+these executables take, as an argument, a MC chain file. The executables 
+apply the final analysis cuts and then simply divide the data into 
+separate ntuples, one for each PDF type.
+
+The PDF numbering scheme is available in codes.ps, and examples of the 
+output can be seen in workdir/fitSamples/. These ntuples are pretty 
+minimal, containing just the two fit variables plus the few MC variables 
+necessary for reweighting (I'll talk about reweighting later).
+
+
+There is one other step that I found necessary here, which is performed by 
+MCUnsimSplitter.cc. This corresponds to the "generically simulated events" 
+described in Section 7.5.3 of BAD 1111v10. This step isn't necessary to 
+make the fit work, but it improves some of the PDFs. In order to use this, 
+you first run the ROOT macro above, generating an ntuple containing just 
+the "generically simulated" events. You can then add this ntuple to a 
+chain and use this (with appropriate weighting) for the PDFs. If you 
+continue to use this idea, you'll need to calculate new weights depending 
+on the new generic MC samples, and insert these into the weight manager, 
+and insert them by hand in CalcPenalties.
+
+=============================================================
+(2) Fit each of the PDF samples
+=============================================================
+This is the most CPU time-consuming step in the procedure. It's also the 
+most labor-intensive, since you'll probably be tweaking the PDF 
+parameterization and the numerical parameters and all that.
+
+There is a script to manage the job submission, workdir/doPdfFits. The 
+script makes backup copies of all the old files and then submits each of 
+the jobs. The 37 fits are all run independently --- it would be too slow 
+to run the fits in series, and this is why we split everything up in step 
+(1).
+
+The work actually happens in the FitPdfSample executable. FitPdfSample 
+takes, as command-line arguments, the following:
+
+ - the PDF number, corresponding to the same numbering scheme as step (1)
+ - the ntuple file to be fitted
+ - a text file where the fit parameters will be written
+ - a PostScript file where the fit projections will be written
+ - a ROOT file where the fit projections are stored (makes it easier to 
+   remake plots for the BAD notes)
+ - a PostScript file where the integral of the PDF will be drawn
+ - an optional file to drive the reweighting
+
+
+=============================================================
+(3) Merge the results of the PDF fits into one flat file
+=============================================================
+This is done by a shell script, workdir/makeFlatFiles, and requires that 
+all 37 fits from step (2) completed successfully.
+
+The script takes as input the 37 text files generated in step (2), and 
+generates, as output, one text file, fitPdfPars/flatpars. The script 
+simply merges the 37 output files, changing the order of parameters and 
+removing all of the text and leaving just the numbers.
+
+This flatfile is read in by the main fitter (which will be described 
+below) in DonutFitWrapper::initialize(), so any changes to the 
+makeFlatFiles script needs to be reflected here as well.
+
+
+=============================================================
+(4) Prepare a simple ntuple for fitting
+=============================================================
+This is done in the EventMixer executable. In the simplest case, 
+EventMixer takes two command-line options, a chain file and an output 
+file. A typical call looks like
+
+  EventMixer chains/allgeneric genericTuples/allGeneric.root
+
+It loads all the events in the chain, applies the final analysis 
+cuts, and produces a simplified ntuple formatted for the final fit. It is 
+usually run over generic MC or data, but it can be run over any chain to 
+produce other samples for testing.
+
+An optional third argument applies cuts (using the TCut string formatting) 
+beyond the "default" final cuts.
+
+
+=============================================================
+(5) Calculate the crossfeed constraints
+=============================================================
+There is an executable which computes the constraints called 
+CalcPenalties. You specify a MC chain and an output file, such as
+
+  CalcPenalties chains/signal constSig
+
+and sample output can be seen in ../workdir/constSig. Two additional 
+optional arguments allow for reweighting and additional cuts.
+
+Ignoring reweighting effects, these constraints are just ratios of 
+reconstructed numbers of events, so you can calculate these pretty easily 
+by hand if you need to. The errors on the constraints are reported in the 
+output file but will be completely ignored by the fitter (although there 
+should be non-zero values specified for the RooRealVar streamer to work 
+properly).
+
+Note that CalcPenalties does not calculate the two isospin constraint 
+values, although these numbers need to be included in the constraint file 
+for isospin-constrained fitting to work. The numbers are calculated in the 
+next step, and need to be added to this file by hand in the current 
+implementation of the tools.
+
+=============================================================
+(6) Calculate the relative efficiencies
+=============================================================
+There is an executable that does all of this for you, EfficiencyApp. If 
+you run it with no arguments, it calculates efficiencies for Monte Carlo; 
+if you pass it any command-line arguments, it does the same calculation 
+with all the reweighting for data.
+
+In principle, the relative efficiency is simply (eff_sig)/(eff_norm), 
+which is simply
+
+   N_reco_sig  / N_gen_sig
+   -------------------------   ,
+   N_reco_norm / N_reco_norm
+
+although, in practice, there is a lot of reweighting involved in getting 
+the right answer.
+
+The output of this executable can be dumped simply to the screen. It 
+includes the four relative efficiencies and the two isospin constraints. 
+The two isospin constraints should be added by hand to the constraint file 
+prepared in step (5). The efficiencies should be added by hand to the main 
+fitter source code in DonutFitWrapper::printBFResults(). In principle, 
+these could be configurable parameters like everything else in the fitter, 
+but I never bothered to do this and, since these numbers don't really 
+change very often, it doesn't matter too much.
+
+This executable also calculates all of the multiplicative systematic 
+errors. All of the input numbers for this are hard-coded in the 
+EfficiencyApp source code, and will need to be updated.
+
+
+=============================================================
+(7) Generate combinatorial BG yields
+=============================================================
+Because most of the comb BG yields are fixed in the fit, we need to 
+calculate them. The executable GenCombYields does this, taking, as an 
+argument, a list of ROOT files (which should be generic MC as this is 
+combinatorial BG). An optional second argument allows for reweighting.
+
+The output of this executable is a list of MC event yields. Store this in 
+a txt file for use in the next step. There is no luminosity scaling 
+applied by default, so if you want to use these yields to fit data, you 
+need to divide by the lumi ratio by hand; you can also create a 
+reweighting option to do this if you'd prefer.
+
+=============================================================
+(8) Prepare a driver file for the main fit
+=============================================================
+This is where we put all the ingredients from steps (1-6) together for the 
+fit. You will need to prepare a file that looks like the driver files in 
+workdir/current.txt. You can copy this file as a template and just modify 
+lines as needed. The actual config files used for the published results 
+are in workdir/dataFits/, and are MainFit and IsospinFit.
+
+This driver file tells the fitter what to do, and controls everything from 
+fitting to generating toy MC to plotting options. There are several major 
+config blocks: [I/O], [Graphics], and [Fit Options]. These blocks use the 
+RooFit configuration reader, which is a pretty nice way to read in data... 
+You need to keep all of the [I/O] lines together, and all of them need to 
+follow a line with "[I/O]" by itself, but otherwise it should be 
+self-explanatory. The [Graphics] and [Fit Options] blocks all have useable 
+default parameters, so that you can omit some or all of these blocks if 
+you like.
+
+The [I/O] block tells the fitter where to find its input and where to 
+write its output. You must specify a flatfile, which comes from step (3). 
+You need to specify an input dataset; this is usually an ntuple like the 
+one generated in step (4) and specified with the "rootfile" keyword, but 
+it can also be a plain text file by using the keyword "asciifile". If you 
+specify an asciifile, each row should be formatted as 
+  mm2 pstarl candType
+Note that, if you fit an ntuple, the MC truth information is automatically 
+included so that the output tables can provide pulls; if you fit an 
+asciifile, the MC truth is unavailable, and, if you want the pulls to be 
+meaningful, you need to hard-code the true event counts in 
+DonutFitWrapper::readDataset().
+
+You specify the initial event yields with the "startfile" parameter, 
+and you can look at any of the examples to see the formatting. It is 
+essential to have reasonable starting values for the combinatorial BG 
+since these are fixed in the fit; copy the lines from step (7) into this 
+file. For the floating parameters, the starting values are less important, 
+since the fit will eventually find the minimum, but having reasonable 
+statring values will help it converge quickly. Of course, the definition 
+of "reasonable" depends on luminosity, efficiency, and lots of other 
+things.
+
+You specify the constraint file prepared in step (5) using the "constfile" 
+parameter.
+
+There are four possible output file options: psfile, txtfile, htmlfile, 
+and latexfile. The first specifies the name of the PostScript file for 
+plotting. The last three specify filenames for text-, html-, and 
+latex-formatted output, and you can use any or all of these options. The 
+text output is minimally formatted and is useful if you want to grep 
+through the output file quickly (as for systematic studies); the html and 
+latex versions print pretty tables with lots of information.
+
+
+Within the [Graphics] block, you can change the colors of the various fit 
+components. You can disable plotting by setting makePlots to false. You 
+can enable or disable the makeSlicePlots option, which is what generates 
+the projections of p*l in low and high missing mass regions separately --- 
+this option is extremely slow (~24 hours) because it must be done 
+numerically --- so you should usually keep this option turned off. The 
+makeFullPage option makes each individual plot fill the full page, instead 
+of the default four-to-a-page style. You can also enable or disable the 
+plot of the likelihood curves with the makeLikelihoodPlots option.
+
+There is also a makePRL option, which changes the plotting style to 
+generate the figures used in the PRL and PRD. It's functionally the same 
+as the rest of the plotting code, but pays a lot more attention to label 
+placement and shading options.
+
+
+The [Fit Options] block controls how the fitter behaves. You can use the 
+skipTheFit option to skip the fit step, essentially using the fitter just 
+to make the plots.
+
+Two options, "combConstSig" and "combConstDss" specify whether or not the 
+combinatorial BG (in the 4 signal channels / in the 4 D** control samples) 
+are constant in the fit or are allowed to float. The configuration used in 
+the published result is true/false, respectively.
+
+The ratioFit option is set to false by default, meaning that the fit 
+extracts absolute event yields. When this option is set to true, the fit 
+extracts branching ratios. Obviously the first mode is more useful for 
+testing on MC, but the second mode is what we use for the real fit.
+
+The isospinFit option is set to false by default. When set to true, the 
+isospin constraint is applied.
+
+There is an option to control the MIGRAD strategy, "migradStrategy". The 
+default value is 2, which is the slowest but most precise fit. You can set 
+it to lower values if you like, but, it's fast enough that you should 
+probably keep it at 2.
+
+
+There are several other options available in 
+DonutFitWrapper::initializeFitter().
+
+You can enable or disable various segments of the data with the 
+"enableXXX" commands, although this is really just a debug feature and all 
+of these should be enabled by default. There are a series of 
+"constrainXXX" options which enable or disable each of the constraints 
+individually. Again, these are useful for debugging, but should all be set 
+to true by default. You can disable various elements in the fit with the 
+"disableXXX" commands, and you can force event yields to zero for various 
+categories with the "zeroXXX" commands. You can turn off the extended term 
+in the likelihood with the "noExt" command. You can run the fit only in 
+the D** control sample with the "onlyCS" command. There are a series of 
+"tweakXXX" commands which allow you to make small adjustments to the 
+crossfeed constraints; I used this for one systematic study, you may or 
+may not find it useful.
+
+
+=============================================================
+(9) Run the main fit
+=============================================================
+Run the DonutFitter executable. The only argument is the driver file 
+prepared in step (7). Enjoy.
+
+
+
+=============================================================
+Other topics -- reweighting
+=============================================================
+Several of the tools here allow for reweighting to be applied. They all 
+use a common interface to reweighting --- on the command line, you specify 
+an optional weightFile. All of the reweighting work is done by 
+weightManager.cc/.hh.
+
+The weightFile contains individual lines which 
+describe possible reweightings, usually pointing to secondary files which 
+actually specify the weights. An example weightFile looks like this:
+
+   SigMC = 4
+   Pi0Weights = dataFits/wPi0
+   FFWeights = dataFits/wDstarlnHQET
+   DlnFF = dataFits/wDlnHQET
+
+
+The possible weighting modes currently implemented are:
+
+   BFWeights , a file describing D** branching fraction reweighting
+   FFWeights , "                 D*lnu FF reweighting
+   DlnFF     , "                 Dlnu FF reweighting
+   Pi0Weights, "                 pi0 efficiency reweighting
+   SigMC     , an integer code for lumi and detector efficiency weights
+   Tail      , a float used to reweight events in the mm2 tail
+   TauWeight , a string; if set to any value, enables weights described in 
+               Section 7.5.2 of BAD 1111v10
+   corrDssTau, a float, reweights D**tau events up or down by this amount 
+   corrSoftPi, a float, reweights D**l events with soft (< 300 MeV/c) pi0 
+               up or down by this amount

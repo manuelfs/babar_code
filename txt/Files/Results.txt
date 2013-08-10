@@ -1,0 +1,155 @@
+All data, Iteration 1
+============================================
+R(D0):  0.4226 +- 0.0736, a 17.4 % error
+R(D*0): 0.3136 +- 0.0298, a 9.5 % error
+R(D+):  0.5126 +- 0.0810, a 15.8 % error
+R(D*+): 0.3561 +- 0.0381, a 10.7 % error
+
+Isospin constrained, Iteration 1
+============================================
+R(D):   0.4562 +- 0.0535, a 11.7 % error
+R(D*):	0.3244 +- 0.0227, a 7.0 % error
+
+Iteration 1: Fitting the unsimulated Mmiss resolution
+========================================================================
+D0 : 28.1 +- 6.7
+Ds0: 32.0 +- 4.0
+Dp : 7.0 +- 6.2
+Dsp: 20.5 +- 5.3
+Average Unsimulated Mmiss resolution:   23.0 +- 2.6
+
+All data, Iteration 2
+============================================
+R(D0):  0.4222 +- 0.0736, a 17.4 % error
+R(D*0): 0.3140 +- 0.0298, a 9.5 % error
+R(D+):  0.5130 +- 0.0809, a 15.8 % error
+R(D*+): 0.3563 +- 0.0381, a 10.7 % error
+
+Isospin constrained, Iteration 2
+============================================
+R(D):   0.4562 +- 0.0534, a 11.7 % error
+R(D*):  0.3247 +- 0.0227, a 7.0 % error
+
+Isospin constrained, Iteration 3 (D** not IsoCons)
+============================================
+R(D):	0.4384 +- 0.0539, a 12.3 % error
+R(D*):	0.3240 +- 0.0232, a 7.1 % error
+
+Iteration 2: Fitting the unsimulated Mmiss resolution
+========================================================================
+D0 : 28.1 +- 6.8
+Ds0: 32.0 +- 4.0
+Dp : 7.0 +- 6.2
+Dsp: 20.5 +- 5.4
+Average Unsimulated Mmiss resolution:   23.0 +- 2.6
+
+Likelihoods
+=============
+Neutral:	  -79708.43
+Charged:	  -30892.20
+IsoCons:	  -110595.55
+Neutral, no D0:	  -79689.15	Signif: 6.21
+Charged, no D+:	  -30863.98	Signif: 7.51
+IsoCons, no D:	  -110549.68	Signif: 9.58
+Neutral, no D*0:  -79637.47	Signif: 11.91
+Charged, no D*+:  -30818.79	Signif: 12.12
+IsoCons, no D*:	  -110449.32	Signif: 17.11
+
+Likelihoods runs 1-4
+=====================
+Neutral:	  -37897.18
+Charged:	  -14788.85
+IsoCons:	  
+Neutral, no D0:	  -37888.55	Signif: 4.15
+Charged, no D+:	  -14780.36	Signif: 4.12
+IsoCons, no D:	  	Signif: 
+Neutral, no D*0:  -37857.26	Signif: 8.94
+Charged, no D*+:  -14755.65	Signif: 8.15
+IsoCons, no D*:	  	Signif: 
+
+Likelihoods runs 5-6
+=====================
+Neutral:	  -32685.70
+Charged:	  -12141.13
+IsoCons:	  
+Neutral, no D0:	  -32675.08	Signif: 4.61
+Charged, no D+:	  -12119.59	Signif: 6.56
+IsoCons, no D:	  	Signif: 
+Neutral, no D*0:  -32654.41	Signif: 7.91
+Charged, no D*+:  -12100.25	Signif: 9.04
+IsoCons, no D*:	  	Signif: 
+
+
+
+All data, Resolution width per channel
+============================================
+R(D0):  0.4217 +- 0.0736, a 17.4 % error
+R(D*0): 0.3139 +- 0.0298, a 9.5 % error
+R(D+):  0.5148 +- 0.0811, a 15.8 % error
+R(D*+): 0.3562 +- 0.0381, a 10.7 % error
+
+Runs 1-4
+============================================
+R(D0):  0.3883 +- 0.1001, a 25.8 % error
+R(D*0): 0.3087 +- 0.0395, a 12.8 % error
+R(D+):  0.3671 +- 0.1011, a 27.5 % error
+R(D*+): 0.3137 +- 0.0492, a 15.7 % error
+
+
+Runs 5-6
+============================================
+R(D0):  0.4588 +- 0.1087, a 23.7 % error
+R(D*0): 0.3202 +- 0.0454, a 14.2 % error
+R(D+):  0.6935 +- 0.1312, a 18.9 % error
+R(D*+): 0.4107 +- 0.0596, a 14.5 % error
+
+
+With D**->Dpipi, 4 parameters, Dpi0 bkg not fixed
+==========================================================
+R(D0):  0.4290 +- 0.0740, a 17.3 % error
+R(D*0): 0.3050 +- 0.0305, a 10.0 % error
+R(D+):  0.4970 +- 0.0814, a 16.4 % error
+R(D*+): 0.3431 +- 0.0382, a 11.1 % error
+
+With D**->Dpipi, 2 parameters, Dpi0 bkg not fixed
+==========================================================
+R(D):   0.4536 +- 0.0538, a 11.9 % error
+R(D*):  0.3162 +- 0.0230, a 7.3 % error
+
+With D**->Dpipi, 2 parameters, Dpi0 bkg not fixed, 3x D**=>D
+==========================================================
+R(D):   0.4228 +- 0.0574, a 13.6 % error
+R(D*):  0.3139 +- 0.0231, a 7.4 % error
+
+Floating combinatoric
+============================================
+R(D):   0.6233 +- 0.0977, a 15.7 % error
+R(D*):  0.2623 +- 0.0363, a 13.9 % error
+
+Floating continuum
+============================================
+R(D):   0.6286 +- 0.0596, a 9.5 % error
+R(D*):  0.3429 +- 0.0358, a 10.4 % error
+
+No Dpi0 sample
+============================================
+R(D0):  0.4592 +- 0.0882, a 19.2 % error
+R(D*0): 0.2597 +- 0.0352, a 13.6 % error
+R(D+):  0.4974 +- 0.0989, a 19.9 % error
+R(D*+): 0.3371 +- 0.0437, a 13.0 % error
+
+No Dpi0 sample, IsoCons
+============================================
+R(D):   0.4646 +- 0.0643, a 13.8 % error
+R(D*):  0.2873 +- 0.0263, a 9.2 % error
+
+IsoTau
+============================================
+R(D):   0.4469 +- 0.0554, a 12.4 % error
+R(D*):  0.3224 +- 0.0232, a 7.2 % error
+
+
+
+
+
+

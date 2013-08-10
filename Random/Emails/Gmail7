@@ -1,0 +1,1612 @@
+
+<html>
+<pre style="font-size: 0;display: none;visibility: hidden;">
+
+
+</pre>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Gmail - Inbox</title>
+<link rel="canonical"
+href="https://mail.google.com/mail/" />
+<link rel="shortcut icon"
+href="/mail/images/favicon.ico"
+type="image/x-icon">
+<link rel="stylesheet" type="text/css"
+href="https://mail.google.com/mail/h/1cur6lod30swx/?&v=ss&name=c&ver=1u0jjnc8m0l4h">
+<style type="text/css">
+@import url("https://mail.google.com/mail/h/1wq4sfqdfwmt3/?&v=ss&name=a&ver=1sthyqjwgl8hj"); #gbar,#guser{font-size:13px;padding-right:8px;padding-top:4px !important}#gbar{padding-left:8px;height:22px}#guser{padding-bottom:7px !important;text-align:right}.gbh,.gbd{border-top:1px solid #c9d7f1;font-size:1px}.gbh{height:0;position:absolute;top:24px;width:100%}@media all{.gb1{height:22px;margin-right:.5em;vertical-align:top}#gbar{float:left}}a.gb1,a.gb4{text-decoration:underline !important}a.gb1,a.gb4{color:#00c !important}.gbi .gb4{color:#dd8e27 !important}.gbf .gb4{color:#900 !important}
+</style>
+<base href="https://mail.google.com/mail/h/1fqzabkbz5n98/">
+<script><!--
+(function(){try{var win=this;while(win.parent!=win){eval("win.frameElement.src").substr(0,1);win=win.parent}if(win.frameElement!=null)throw"";}catch(e){document.write("--\><plaintext style=display:none><\!--");open(location,"_top");top.location=location}})();
+//--></script>
+<script><!--
+
+//-->
+</script>
+</head>
+<body bgcolor=#ffffff>
+<script><!--
+(function(){try{var win=this;while(true){if(win.parent==win)break;eval("win.frameElement.src").substr(0,1);win=win.parent}if(win.frameElement!=null)throw"busted";}catch(e){document.write("--\><plaintext style=display:none><\!--");if(!open(location,"_top"))alert("this content cant be framed");top.location=location}})();
+--></script>
+<div id=gbar><nobr><b class=gb1>Gmail</b> <a target=_blank class=gb1 href="https://www.google.com/calendar?tab=mc">Calendar</a> <a target=_blank class=gb1 href="https://docs.google.com/?tab=mo&authuser=0">Documents</a> <a target=_blank class=gb1 href="https://picasaweb.google.com/home?tab=mq">Photos</a> <a target=_blank class=gb1 href="https://www.google.com/reader/?tab=my">Reader</a> <a target=_blank class=gb1 href="https://sites.google.com/?tab=m3">Sites</a> <a target=_blank class=gb1 href="http://www.google.com/webhp?tab=mw">Web</a> <a target=_blank class=gb1 style="text-decoration:none" href="http://www.google.com/intl/en/options/"><u>more</u> &raquo;</a></nobr></div><div id=guser width=100%><h2 class=hdn>Account Options</h2><nobr><span id=gbn class=gbi></span><span id=gbf class=gbf></span><b class=gb4>manufisico@gmail.com</b> | <span id=gbe><a href="?&redir=/mail/&a=stsv&at=AF6bupOXLI-2LQp-G4aoNwNhjTLl0Qe3eA" class=gb4>Standard View</a> | </span><a href="?&amp;v=prg" class=gb4>Settings</a> | <a href="https://mail.google.com/mail/h/1mhoyin0run1x/?logout&amp;hl=en" class=gb4>Sign out</a></nobr></div><div class=gbh style=left:0></div><div class=gbh style=right:0></div>
+<table width=100% cellpadding=0 cellspacing=0 border=0>
+<tr>
+<td width=143 rowspan=3>
+<h1>
+<a href="?">
+<img src="/mail/help/images/logo1.gif"
+width=143 height=59 border=0
+alt="Gmail by Google">
+</a>
+</h1>
+</td>
+<td width=1 rowspan=3>&nbsp;</td>
+<td height=25 colspan=2 align=right valign=top>
+<tr>
+<form action=? name=sf method=GET>
+<input type=hidden name=s value=q>
+</td>
+<td>
+<table width=100% cellpadding=0 cellspacing=0 border=0>
+<tr>
+<td width=1% height=25 nowrap>
+<input size=28 maxlength=2048 title="Search"
+name=q value=""
+>&nbsp;<input type=submit name=nvp_site_mail value="Search Mail"
+>&nbsp;<input type=submit name=nvp_site_web value="Search the Web">
+</td>
+<td>
+<font size=1>
+&nbsp;<a href="?&v=as&pv=tl&st=600"
+>Show&nbsp;search&nbsp;options</a>
+</font>
+<br><font size=1>
+&nbsp;<a href="?&v=caf&pv=tl&st=600"
+>Create&nbsp;a&nbsp;filter</a>
+</font>
+</form>
+</table>
+<tr>
+<td height=25 colspan=2>
+</table>
+<table width=100% cellpadding=0 cellspacing=0 border=0>
+<tr>
+<td width=120 valign=top>
+<table width=100% cellpadding=2 cellspacing=0 border=0 class=m>
+<tr>
+<td>
+<b><a href="?&v=b&pv=tl&st=600&cs=b" accesskey=c
+>Compose&nbsp;Mail</a></b>
+<tr>
+<td height=5>
+<h2 class=hdn>Folders</h2>
+<tr>
+<td bgcolor="#C3D9FF">
+<b><a href="?&"
+accesskey=i
+>Inbox</a></b>
+<tr>
+<td>
+<a href="?&s=r"
+>Starred&nbsp;<img src="/mail/images/star_on_sm_2.gif" width="13" height="13" border="0" alt="star" /></a>
+<tr>
+<td>
+<a href="?&s=s"
+>Sent Mail</a>
+<tr>
+<td>
+<h3><b><a href="?&s=d"
+>Drafts&nbsp;(3)</a></b></h3>
+<tr>
+<td>
+<a href="?&s=a"
+>All Mail</a>
+<tr>
+<td>
+<a href="?&s=m"
+>Spam</a>
+<tr>
+<td>
+<a href="?&s=t"
+>Trash</a>
+<tr>
+<td height=8>
+<tr>
+<td>
+<h3><b><a href="?&v=cl">Contacts</a></b></h3>
+<tr>
+<td height=8>
+</table>
+<table width=100% cellpadding=2 cellspacing=0 border=0 class=l>
+<tr>
+<td class=lb>
+<h2><font color=#000000>Labels</font><br></h2>
+<a href="?&s=l&l=Spain"><font color=#006633
+>Spain</font></a>
+<br>
+<a class="ml" href="?&v=prl">Edit labels</a>
+</td>
+</table>
+</td>
+<td valign=top>
+<table width=100% cellpadding=0 cellspacing=0 border=0>
+<tr>
+<td width=5 bgcolor="#C3D9FF">&nbsp;</td>
+<td>
+<form action="?&at=AF6bupOXLI-2LQp-G4aoNwNhjTLl0Qe3eA" name=f method=POST>
+<input type=hidden name=redir
+value="?&amp;st=600">
+<h2 class=hdn>Inbox</h2>
+<table width=100% cellpadding=2 cellspacing=0 border=0
+bgcolor="#C3D9FF">
+<tr>
+<td>
+<input type=submit name=nvp_a_arch value="Archive">&nbsp;&nbsp;<input type=submit name=nvp_a_sp value="Report Spam">&nbsp;&nbsp;<input type=submit name=nvp_a_tr value="Delete">&nbsp;&nbsp;
+<select name=tact>
+<option value="">More Actions...</option>
+<option value=rd>Mark as read</option>
+<option value=ur>Mark as unread</option>
+<option value=st>Add star</option>
+<option value=xst>Remove star</option>
+<option value=ig>Mute</option>
+<option value="" disabled>--------</option>
+<option value="" disabled>Apply label:</option>
+<option value="ac_Spain"
+>Spain
+</option>
+<option value="" disabled>--------</option>
+<option value="" disabled>Remove label:</option>
+<option value="rc_Spain"
+>Spain
+</option>
+</select>&nbsp;<input type=submit name=nvp_tbu_go value="Go">&nbsp;
+<a href="?&st=600">Refresh</a>
+</td>
+<td align=right>
+<a href="?&"
+><b>&laquo; Newest</b></a>&nbsp;
+<a href="?&st=500"
+><b>&#8249; Newer</b></a>&nbsp;
+<b>601</b>&nbsp;-&nbsp;<b>679</b> of <b>679</b>
+</table>
+<table width=100% cellpadding=2 cellspacing=0 border=0 bgcolor=#e8eef7 class=th>
+<tr bgcolor="#E8EEF7">
+<td width=1% nowrap>
+<input type=checkbox name=t
+value="1190d01a7ca542bb">
+<img src="/mail/images/star_on_2.gif"
+width=15 height=15 border=0 alt=Starred>
+</td>
+<td width=25%>
+<span dir="ltr">Amy Angheluta</span></td>
+<td width=73%>
+<img src="/mail/images/paperclip.gif"
+width=15 height=15 border=0 alt=Attachment class=p>
+<a href="?&v=c&st=600&th=1190d01a7ca542bb">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: Hi Anne-Marie, after 4 years
+<font color=#7777CC> - YIKES!!!!!! February 7th!!!!!! I&#39;m slow!!! School has been crazy.... which in turn has made &hellip;</font></span>
+</a></td>
+<td width=1% nowrap>
+4/1/08
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="118a05eeeaea5cde">
+<img src="/mail/images/star_on_2.gif"
+width=15 height=15 border=0 alt=Starred>
+</td>
+<td>
+<span dir="ltr">Ángel Álvarez Fernández</span></td>
+<td>
+<img src="/mail/images/paperclip.gif"
+width=15 height=15 border=0 alt=Attachment class=p>
+<a href="?&v=c&st=600&th=118a05eeeaea5cde">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+(no subject)
+<font color=#7777CC> - Hola gran manu! antes de nada...Gasol en los Lakers!!joer yo no se nada de baloncesto pero que &hellip;</font></span>
+</a></td>
+<td nowrap>
+3/11/08
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1187e8f2d3e9a139">
+</td>
+<td>
+<span dir="ltr">Felicidad Sevilla Martin.</span></td>
+<td>
+<a href="?&v=c&st=600&th=1187e8f2d3e9a139">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+RE: Presupuestillo
+<font color=#7777CC> - Respuesta al presupuestillo, supongo que ya te llego el mensaje en que te digo que te mandamos &hellip;</font></span>
+</a></td>
+<td nowrap>
+3/5/08
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="11866dac7ecb0f84">
+</td>
+<td>
+<span dir="ltr">Aniko Agárdi</span></td>
+<td>
+<a href="?&v=c&st=600&th=11866dac7ecb0f84">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+RE: Haven't you ever wondered
+<font color=#7777CC> - Hi dear, Is this weekend that you were talking about? Unfortunately, I still don&#39;t have skype &hellip;</font></span>
+</a></td>
+<td nowrap>
+2/29/08
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1184ba9bb898f59d">
+</td>
+<td>
+<span dir="ltr">Aniko Agárdi</span></td>
+<td>
+<img src="/mail/images/paperclip.gif"
+width=15 height=15 border=0 alt=Attachment class=p>
+<a href="?&v=c&st=600&th=1184ba9bb898f59d">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+RE: Haven't you ever wondered
+<font color=#7777CC> - Proposal is accepted. :-) Here are my pictures. The order of toughness is the following: 2558 &hellip;</font></span>
+</a></td>
+<td nowrap>
+2/24/08
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="117e0a78c6aa07a6">
+</td>
+<td>
+<span dir="ltr">Amy Angheluta</span></td>
+<td>
+<a href="?&v=c&st=600&th=117e0a78c6aa07a6">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+RE: Hi Anne-Marie, after 4 years
+<font color=#7777CC> - Hola Manuel!! Long time no speak. What a great surprise to hear from you. How are you? What have &hellip;</font></span>
+</a></td>
+<td nowrap>
+2/3/08
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1177d30801741f38">
+</td>
+<td>
+<span dir="ltr">Froilán Sevilla Martínez</span></td>
+<td>
+<img src="/mail/images/paperclip.gif"
+width=15 height=15 border=0 alt=Attachment class=p>
+<a href="?&v=c&st=600&th=1177d30801741f38">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+mucho que ver
+<font color=#7777CC> - Hasta que no veas todo esto que te mando, y mucho más, puedes seguir dando vueltas por los USA &hellip;</font></span>
+</a></td>
+<td nowrap>
+1/15/08
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="11777b39d9c99c0d">
+</td>
+<td>
+<span dir="ltr">Froilán Sevilla Martínez</span></td>
+<td>
+<a href="?&v=c&st=600&th=11777b39d9c99c0d">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+RE: Prueba
+<font color=#7777CC> - Funciona! Supongo que la guerra quitará presupuestos de todas partes, y lo tuyo no debe ser &hellip;</font></span>
+</a></td>
+<td nowrap>
+1/14/08
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="11732af1d8136e5a">
+<img src="/mail/images/star_on_2.gif"
+width=15 height=15 border=0 alt=Starred>
+</td>
+<td>
+<span dir="ltr">I. A. B.</span></td>
+<td>
+<a href="?&v=c&st=600&th=11732af1d8136e5a">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+(no subject)
+<font color=#7777CC> - Manu!! hehecho una pequeña escapadita, para escribirte... estamos de reunion familiar, tomando &hellip;</font></span>
+</a></td>
+<td nowrap>
+12/31/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="116ea6d8a56659b9">
+</td>
+<td>
+<span dir="ltr">Patricia Asensio</span></td>
+<td>
+<a href="?&v=c&st=600&th=116ea6d8a56659b9">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+RE: Happy birthday, miss Asensio!!!!!!!!!!!
+<font color=#7777CC> - Un gran beso para ti mi niño!! Pues anduviste equivocado unos pocos metros, el dioa de mi cumple &hellip;</font></span>
+</a></td>
+<td nowrap>
+12/17/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="116cbaa5fddd5a5b">
+<img src="/mail/images/star_on_2.gif"
+width=15 height=15 border=0 alt=Starred>
+</td>
+<td>
+<span dir="ltr">I. A. B.</span></td>
+<td>
+<a href="?&v=c&st=600&th=116cbaa5fddd5a5b">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+RE: Feliz cumple!!!!!!!!
+<font color=#7777CC> - Muchas gracias, Manu, realmente sentirte tan cerquita es algo que me llena muchopor dentro... yo &hellip;</font></span>
+</a></td>
+<td nowrap>
+12/11/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="116a054d497e2db8">
+</td>
+<td>
+<span dir="ltr">I. A. B.</span></td>
+<td>
+<a href="?&v=c&st=600&th=116a054d497e2db8">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+RE: Feliz cumple!!!!!!!!
+<font color=#7777CC> - jo, Manu! como sabia que tu ibas a estar ahi., verdad? te quiero un monton... ahora no te puedo &hellip;</font></span>
+</a></td>
+<td nowrap>
+12/3/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="11688a795005538f">
+<img src="/mail/images/star_on_2.gif"
+width=15 height=15 border=0 alt=Starred>
+</td>
+<td>
+<span dir="ltr">Ángel Álvarez Fernández</span></td>
+<td>
+<a href="?&v=c&st=600&th=11688a795005538f">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+RE: Pero por que no te callas?
+<font color=#7777CC> - vaaaaya pues no se..yo creo que el rey no debería haber perdido los papeles y no se tiene que ir &hellip;</font></span>
+</a></td>
+<td nowrap>
+11/28/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="115f01e5c019dc23">
+</td>
+<td>
+<span dir="ltr">Picasa Web Albums</span></td>
+<td>
+<img src="/mail/images/paperclip.gif"
+width=15 height=15 border=0 alt=Attachment class=p>
+<a href="?&v=c&st=600&th=115f01e5c019dc23">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+New Picasa Web Albums Activity
+<font color=#7777CC> - Picasa Web Albums You&#39;re receiving this email because there&#39;s been activity in your &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/30/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="115ea1204444f5df">
+</td>
+<td>
+<span dir="ltr">me</span></td>
+<td>
+<a href="?&v=c&st=600&th=115ea1204444f5df">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: B to Tau Nu
+<font color=#7777CC> - Small ntuples - BASE_B0 - VTX_Bc - PID_B0 - PID_Bc On 10/19/07, Manuel Franco &lt;manufisico &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/28/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="115bb1c08e08fc21">
+</td>
+<td>
+<span dir="ltr">me</span></td>
+<td>
+<a href="?&v=c&st=600&th=115bb1c08e08fc21">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: B to Tau Nu
+<font color=#7777CC> - Skimmed files /nfs/farm/babar/AWG68/BSemiExcl_SkimDir/manuelf - Log files ~snelson/ec_u05_snelson &hellip;</font></span>
+</a></td>
+<td nowrap>
+10/19/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1152acba4a3aeb4b">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=1152acba4a3aeb4b">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+?D'onde est'a el panel de control?
+<font color=#7777CC> - Estimados y rayados amigos, ?Qu&#39;e es eso del panel de control?. ?En qu&#39;e unidad se &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/21/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1152acb915dd947f">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=1152acb915dd947f">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+?D'onde est'a el panel de control?
+<font color=#7777CC> - Estimados y rayados amigos, ?Qu&#39;e es eso del panel de control?. ?En qu&#39;e unidad se &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/21/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="11529c04959f0b7e">
+</td>
+<td>
+<span dir="ltr">me</span></td>
+<td>
+<a href="?&v=c&st=600&th=11529c04959f0b7e">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: B to Tau Nu
+<font color=#7777CC> - Table with Dc modes, new and old - Skim ready with them - Look a bit further into the ROB, maybe &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/21/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="11525c0de788f7d5">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=11525c0de788f7d5">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE: ?Qu'e tal Rafa?/ Respuesta a tu correo Manu
+<font color=#7777CC> - Hola, Muy bueno el c&#39;omic, y esto me recuerda que tengo que responder m&#39;as ampliamente &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/20/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1151f67d442a36a9">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=1151f67d442a36a9">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE: Fotos
+<font color=#7777CC> - Hola, Ya he terminado la descarga. Espero acordarme esta tarde de enviaros las fotos de mi c &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/19/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1151e7f2853b6517">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=1151e7f2853b6517">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE: Fotos
+<font color=#7777CC> - Hola, Acabo de bajarme el primero. Espero bajarme el segundo a la hora de comer o esta tarde (si &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/19/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="11517292b2d0ba10">
+</td>
+<td>
+<span dir="ltr">Pachi Ostos</span></td>
+<td>
+<a href="?&v=c&st=600&th=11517292b2d0ba10">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE: Fotos
+<font color=#7777CC> - Bajando el primer archivo mientras marcho para el curro. A la noche bajaré el segundo... O a lo &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/17/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="11515255e7456674">
+</td>
+<td>
+<span dir="ltr">i Ŭ</span></td>
+<td>
+<a href="?&v=c&st=600&th=11515255e7456674">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+hi Manu
+<font color=#7777CC> - hi how&#39;s going finally i got what you are learning about!!! it&#39;s so interesting for the &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/17/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="115139beafa9d95c">
+</td>
+<td>
+<span dir="ltr">Pachi Ostos</span></td>
+<td>
+<a href="?&v=c&st=600&th=115139beafa9d95c">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE: Fotos
+<font color=#7777CC> - Ya he descargado las fotos <span dir=ltr>(¡¡Qué chulas!!)</span> Esperando los videos :oD &gt; From: dominfisico &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/17/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1150748848222902">
+</td>
+<td>
+<span dir="ltr">Chen Angel</span></td>
+<td>
+<img src="/mail/images/paperclip.gif"
+width=15 height=15 border=0 alt=Attachment class=p>
+<a href="?&v=c&st=600&th=1150748848222902">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Hey ~~~
+<font color=#7777CC> - Dear Manuel How&#39;s going on....... I&#39;m in New York now..... I&#39;m so glad to meet you in &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/14/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="11506bd2abe43aac">
+</td>
+<td>
+<span dir="ltr">me</span></td>
+<td>
+<a href="?&v=c&st=600&th=11506bd2abe43aac">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Re: B to Tau Nu
+<font color=#7777CC> - Use EventWeight in Utils On 9/14/07, Manuel Franco <span dir=ltr>&lt;manufisico@gmail.com&gt;</span> wrote: ~snelson &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/14/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="1150688064551406">
+</td>
+<td>
+<span dir="ltr">me</span></td>
+<td>
+<a href="?&v=c&st=600&th=1150688064551406">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+B to Tau Nu
+<font color=#7777CC> - snelson/releases/BToTauNu_ana40/BtnAnalysis/BtnAnalysis.cc::Loop_HybridDoubleTagStudies(TString &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/14/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="11504b858e1fe596">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=11504b858e1fe596">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+Re: Fotos
+<font color=#7777CC> - Hola, Ya me he bajado tus fotos Manu. Poner las m&#39;ias creo que llevar&#39;a un poco m&#39;as &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/14/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114fd12f656d3c4a">
+</td>
+<td>
+<span dir="ltr">i Ŭ</span></td>
+<td>
+<img src="/mail/images/paperclip.gif"
+width=15 height=15 border=0 alt=Attachment class=p>
+<a href="?&v=c&st=600&th=114fd12f656d3c4a">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+hi Manu this is Ling
+<font color=#7777CC> - how are you doing? i&#39;m Ling in vancouver we met at greentoutle hostel do u remember? Pei &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/12/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114fc6038bb01377">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=114fc6038bb01377">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE: ?Qu'e tal Rafa?/ Respuesta a tu correo Manu
+<font color=#7777CC> - Hola, Puedo escribir &quot;la compañía de ferrys&quot; correctamente, pero es ALT+números (o &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/12/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114fbbab1d64ac05">
+</td>
+<td>
+<span dir="ltr">Rafael Meléndez Pardo</span></td>
+<td>
+<a href="?&v=c&st=600&th=114fbbab1d64ac05">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE: ?Qu'e tal Rafa?/ Respuesta a tu correo Manu
+<font color=#7777CC> - Muy buenas, chavales!! Joder, la de tiempo libre que da la investigación!! Me he tenido que &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/12/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114fb30a84d5335e">
+</td>
+<td>
+<span dir="ltr">Pachi Ostos</span></td>
+<td>
+<a href="?&v=c&st=600&th=114fb30a84d5335e">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE: Fotos
+<font color=#7777CC> - Pues lo estoy intentando, pero no logro bajar más de dos megas y medio. Algún problema hay &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/12/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114fb21719c7301e">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=114fb21719c7301e">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE: Fotos
+<font color=#7777CC> - Hola, Gracias por las fotos y por la traducci&#39;on del significado de las horas. Esperar&#39;e &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/12/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114faf54e5e48237">
+</td>
+<td>
+<span dir="ltr">Pachi Ostos</span></td>
+<td>
+<a href="?&v=c&st=600&th=114faf54e5e48237">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE: Fotos
+<font color=#7777CC> - En proceso de descarga, pero no las quites hasta que te dé mi visto bueno... porque no sé si &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/12/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114fa863a387ae64">
+</td>
+<td>
+<span dir="ltr">Pachi Ostos</span></td>
+<td>
+<a href="?&v=c&st=600&th=114fa863a387ae64">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+RE: Gracias
+<font color=#7777CC> - Buenas Manu!!! Es cierto que a veces da lugar a sensaciones raras, esto del dinero. Entiendo &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/12/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114f73c8329d6356">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=114f73c8329d6356">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE: Confirmation of Reservation (0035676)
+<font color=#7777CC> - Hola, Me alegro de que llegaras bien, aunque siento que fuera tarde. Espero que ambos hay&#39;ais &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/11/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114f6db2397fb608">
+</td>
+<td>
+<span dir="ltr">Pachi Ostos</span></td>
+<td>
+<a href="?&v=c&st=600&th=114f6db2397fb608">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE: Confirmation of Reservation (0035676)
+<font color=#7777CC> - Aprovecho ahora que empieza a volver a correr sangre por mi mano derecha después de que Manu me &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/11/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114f02f4cf4dfc1c">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=114f02f4cf4dfc1c">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE: Confirmation of Reservation (0035676)
+<font color=#7777CC> - Hola, Pachi, me alegro de que llegaras bien <span dir=ltr>(aunque siento que fuera tarde)</span>. Muchas gracias a &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/10/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114f0225f599973d">
+</td>
+<td>
+<span dir="ltr">Pachi Ostos</span></td>
+<td>
+<a href="?&v=c&st=600&th=114f0225f599973d">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE: Confirmation of Reservation (0035676)
+<font color=#7777CC> - Sólo decir que yo llegué bien a Portland, cerca de las 22:00, con una hora de atasco en Tacoma &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/10/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114e1f70b518b2f0">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=114e1f70b518b2f0">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE: Confirmation of Reservation (0035676)
+<font color=#7777CC> - Hola, Intentar&#39;e coger el tren de las cinco <span dir=ltr>(creo que llego)</span>, con lo que llegar&#39;ia a &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/7/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114e0ba4db72d91e">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=114e0ba4db72d91e">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+FW: RE: Confirmation of Reservation (0035676)
+<font color=#7777CC> - Hola, Ahora ya se confirma lo de que ten&#39;eis dos camas reservadas para la noche del s &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/7/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114e07ee8df41bc6">
+</td>
+<td>
+<span dir="ltr">Pachi Ostos</span></td>
+<td>
+<a href="?&v=c&st=600&th=114e07ee8df41bc6">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE: Confirmation of Reservation (0035676)
+<font color=#7777CC> - Ole que ole que ole Pues ya está casi todo ready. Yo también tengo el coche esperándome ya &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/7/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114dd6e63ef289e9">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=114dd6e63ef289e9">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+FW: Confirmation of Reservation (0035676)
+<font color=#7777CC> - Hola, Me han mandado este correo electr&#39;onico inmediatamente tras decirme que en 24 horas me &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/6/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114dd4f58c593e38">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=114dd4f58c593e38">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE: Alojamiento en Vancouver/ D'ia de vuelta
+<font color=#7777CC> - Hola, Importante detalle el del avi&#39;on de Manu. Propongo: Manu paga avi&#39;on, Pachi paga &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/6/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114dcdc7dcb38a0b">
+</td>
+<td>
+<span dir="ltr">Pachi Ostos</span></td>
+<td>
+<a href="?&v=c&st=600&th=114dcdc7dcb38a0b">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE: Alojamiento en Vancouver/ D'ia de vuelta
+<font color=#7777CC> - me parece todo guay. Sigo negando que paguéis nada del coche. Sobre los cambios de divisa, a mí &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/6/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114dcd959079b2d2">
+</td>
+<td>
+<span dir="ltr">Pachi Ostos</span></td>
+<td>
+<a href="?&v=c&st=600&th=114dcd959079b2d2">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE: Alojamiento en Vancouver/ D'ia de vuelta
+<font color=#7777CC> - Bien... visto lo visto, cualquier albergue en Seattle valdrá. Ya me veo cogiendo un coche grande &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/6/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114dcd5da3a42229">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=114dcd5da3a42229">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+Re: Alojamiento en Vancouver/ D'ia de vuelta
+<font color=#7777CC> - Much&#39;isimas gracias a t&#39;i por lo buscar lo de Seattle y a Pachi por buscar y poner el &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/6/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114dc69b5b6c7769">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=114dc69b5b6c7769">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+Alojamiento en Vancouver/ D'ia de vuelta
+<font color=#7777CC> - Hola, Manu, teniendo en cuenta la nueva informaci&#39;on de que el lunes puedo acompanyarte hasta &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/6/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114dc3fe3b43ec6f">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=114dc3fe3b43ec6f">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+Re: Ya queda poco...
+<font color=#7777CC> - Hola, De acuerdo en lo de buscaros un hostal en el downtown de Vancouver. En cuanto vuelva de &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/6/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114db9f608c120b2">
+</td>
+<td>
+<span dir="ltr">Pachi Ostos</span></td>
+<td>
+<a href="?&v=c&st=600&th=114db9f608c120b2">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE: Ya queda poco...
+<font color=#7777CC> - Buenos días a los dos. Domingo, reserva en el que te apetezca. Si no te acercas con la bici, te &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/6/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114db92cfac497ef">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=114db92cfac497ef">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+Re: Ya queda poco...
+<font color=#7777CC> - Hola, Me parece genial el plan, al igual que la elecci&#39;on de &quot;mixed dorm&quot; como &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/6/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114d85e347c568ba">
+</td>
+<td>
+<span dir="ltr">Pachi Ostos</span></td>
+<td>
+<a href="?&v=c&st=600&th=114d85e347c568ba">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE: Ya queda poco...
+<font color=#7777CC> - Bueno... ya está bien de inglés. Ya veo que todos hablamos muy bien. En realidad, lo que ocurre &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/5/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114d83cc5e44b5b0">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=114d83cc5e44b5b0">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+Re: Ya queda poco...
+<font color=#7777CC> - Hi, The cores of their names are &quot;Green Tortoise&quot; <span dir=ltr>(the fun and happening one)</span> and &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/5/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114d71966cb4c529">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=114d71966cb4c529">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE: Ya queda poco...
+<font color=#7777CC> - Hi, I am sorry for the confusion: I will arrive around 10:50PM <span dir=ltr>(22:50)</span>, so I will probably be the &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/5/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114d6b9bd5507364">
+</td>
+<td>
+<span dir="ltr">Pachi Ostos</span></td>
+<td>
+<a href="?&v=c&st=600&th=114d6b9bd5507364">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE: Ya queda poco...
+<font color=#7777CC> - Good morning, good morning So, I&#39;m afraid I have not an US mobile, just an spanish one. But &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/5/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114d68a09434d3a0">
+</td>
+<td>
+<span dir="ltr">Pachi Ostos</span></td>
+<td>
+<a href="?&v=c&st=600&th=114d68a09434d3a0">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE: Ya queda poco...
+<font color=#7777CC> - Bien... no sé si Domingo podría permitírselo, pero lo que se nos ha olvidado es la idea de &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/5/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114d66e1583b4bc5">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=114d66e1583b4bc5">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+Re: Ya queda poco...
+<font color=#7777CC> - De acuerdo en lo de pagar el coche entre los tres (o entre Pachi y yo, porque t&#39;u billete de &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/5/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114d6611f0a07380">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=114d6611f0a07380">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE: Ya queda poco...
+<font color=#7777CC> - Hola, No te preocupes por el retraso. ?D&#39;onde y cu&#39;ando quedamos?. Yo podr&#39;ia llegar &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/5/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114d6400ddb885db">
+</td>
+<td>
+<span dir="ltr">Pachi Ostos</span></td>
+<td>
+<a href="?&v=c&st=600&th=114d6400ddb885db">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE: Ya queda poco...
+<font color=#7777CC> - Buenas a los dos. Perdón, mil perdones por el retraso. Bien, aquí me hallo en tierras &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/5/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114d3280be374d8e">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=114d3280be374d8e">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE: Ya queda poco...
+<font color=#7777CC> - Hola, ?Qu&#39;e tal con el cambio horario y el nuevo trabajo, Pachi? En cuanto a albergues, he &hellip;</font></span>
+</a></td>
+<td nowrap>
+9/4/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114bca7445adb1a2">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=114bca7445adb1a2">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE: ?Qu'e tal Rafa?/ Respuesta a tu correo Manu
+<font color=#7777CC> - Hola, Ahora ya me he enterado de lo del detector, efectivamente andaba un poco perdido. En cuanto &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/31/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114b88bfb7955023">
+</td>
+<td>
+<span dir="ltr">Pachi Ostos</span></td>
+<td>
+<a href="?&v=c&st=600&th=114b88bfb7955023">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE:
+<font color=#7777CC> - Yo me quedo con ganas de ver el físico de la física XD La de la foto no es mi hermana, es una &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/30/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114b8655c222eb9a">
+</td>
+<td>
+<span dir="ltr">Pachi Ostos</span></td>
+<td>
+<img src="/mail/images/paperclip.gif"
+width=15 height=15 border=0 alt=Attachment class=p>
+<a href="?&v=c&st=600&th=114b8655c222eb9a">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE:
+<font color=#7777CC> - Lo del móvil me interesa por trabajo. Aunque salga caro, tendré que llamar a España en más de &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/30/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114b850c9fdb1969">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=114b850c9fdb1969">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+Re:
+<font color=#7777CC> - En cuanto a lo de los m&#39;oviles, probablemente hay&#39;ais adivinado la opci&#39;on que tom &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/30/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114b81c002dba23f">
+</td>
+<td>
+<span dir="ltr">Pachi Ostos</span></td>
+<td>
+<a href="?&v=c&st=600&th=114b81c002dba23f">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE:
+<font color=#7777CC> - cómo arreglásteis lo del móvil?? &gt; From: dominfisico@hotmail.com &gt; To: pachiostosn &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/30/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114b7858f2c46686">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=114b7858f2c46686">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE:
+<font color=#7777CC> - Hola, El adaptador creo que se refiere al de &quot;dos pletinas&quot; a &quot;dos cilindros &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/30/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114b5fa57fb820fa">
+</td>
+<td>
+<span dir="ltr">Pachi Ostos</span></td>
+<td>
+<a href="?&v=c&st=600&th=114b5fa57fb820fa">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE:
+<font color=#7777CC> - Vale... pues hablamos cuando esté en tierras del lejano oeste :o) Espero que no suba mucho el &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/30/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114b5874b5712081">
+</td>
+<td>
+<span dir="ltr">Pachi Ostos</span></td>
+<td>
+<a href="?&v=c&st=600&th=114b5874b5712081">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE:
+<font color=#7777CC> - Por cierto, os agradecería algo de información ante problemas típicos que me pudiesen surgir &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/29/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114b54fb62d260ae">
+</td>
+<td>
+<span dir="ltr">Pachi Ostos</span></td>
+<td>
+<a href="?&v=c&st=600&th=114b54fb62d260ae">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE:
+<font color=#7777CC> - En cuanto a horas de trabajo... ahora mismo no tengo ni idea. Voy con un equipo de trabajo y el &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/29/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114b4571dfdc4a03">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=114b4571dfdc4a03">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+Re:
+<font color=#7777CC> - Hola, Yo en principio trabajo el viernes y el lunes, aunque podría intentar cambiar horas de &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/29/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114b44953660a905">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=114b44953660a905">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+Re:
+<font color=#7777CC> - Hola, Bueno, ahora que encontrado tiempo, respondo a las cosas menos urgentes. Lo de la &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/29/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114b42c095ff8550">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=114b42c095ff8550">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE:
+<font color=#7777CC> - Hola, De acuerdo en lo de que elija Manu. Tengo una guía de albergues, si queréis os envío los &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/29/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114b3af6a049e1f9">
+</td>
+<td>
+<span dir="ltr">Pachi Ostos</span></td>
+<td>
+<a href="?&v=c&st=600&th=114b3af6a049e1f9">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE:
+<font color=#7777CC> - Pues yo creo que es importante conocer las opciones del amigo leonés (que no gallego, jejeje &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/29/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114b3433069c5461">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=114b3433069c5461">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+Re:
+<font color=#7777CC> - Hola, Cualquier ciudad y momento <span dir=ltr>(mientras sea en fin de semana)</span> me viene bien, luego como a &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/29/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114b251c9d28c848">
+</td>
+<td>
+<span dir="ltr">Domingo Guinea</span></td>
+<td>
+<a href="?&v=c&st=600&th=114b251c9d28c848">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+RE:
+<font color=#7777CC> - Yo podr&#39;ia quedar el fin de semana del 8 y el 9. ?A t&#39;i qu&#39;e tal te viene Manu &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/29/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114b095815e300c5">
+</td>
+<td>
+<span dir="ltr">Pachi Ostos</span></td>
+<td>
+<a href="?&v=c&st=600&th=114b095815e300c5">
+<span class=ts><font size=1><font color=#006633>
+Spain
+</font></font>
+(no subject)
+<font color=#7777CC> - Novedades: Ya tengo los billetes. Salgo el Lunes. Pero la vuelta es bastante antes de lo que me &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/29/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114abe7f1bd3be9d">
+</td>
+<td>
+<span dir="ltr">Pachi Ostos</span></td>
+<td>
+<a href="?&v=c&st=600&th=114abe7f1bd3be9d">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+RE: Rumor has it...
+<font color=#7777CC> - Hi, there!!! May be true, ... ;o) May become a reality next week <span dir=ltr>(wow)</span>. I will be in Portland for &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/28/07
+<tr bgcolor="#E8EEF7">
+<td>
+<input type=checkbox name=t
+value="114ab0f95b792c18">
+</td>
+<td>
+<span dir="ltr">Gmail Team</span></td>
+<td>
+<a href="?&v=c&st=600&th=114ab0f95b792c18">
+<span class=ts><font size=1><font color=#006633>
+</font></font>
+Gmail is different. Here's what you need to know.
+<font color=#7777CC> - Messages that are easy to find, an inbox that organizes itself, great spam-fighting tools and &hellip;</font></span>
+</a></td>
+<td nowrap>
+8/27/07
+</table>
+<table width=100% cellpadding=2 cellspacing=0 border=0
+bgcolor="#C3D9FF">
+<tr>
+<td>
+<input type=submit name=nvp_a_arch value="Archive">&nbsp;&nbsp;<input type=submit name=nvp_a_sp value="Report Spam">&nbsp;&nbsp;<input type=submit name=nvp_a_tr value="Delete">&nbsp;&nbsp;
+<select name=bact>
+<option value="">More Actions...</option>
+<option value=rd>Mark as read</option>
+<option value=ur>Mark as unread</option>
+<option value=st>Add star</option>
+<option value=xst>Remove star</option>
+<option value=ig>Mute</option>
+<option value="" disabled>--------</option>
+<option value="" disabled>Apply label:</option>
+<option value="ac_Spain"
+>Spain
+</option>
+<option value="" disabled>--------</option>
+<option value="" disabled>Remove label:</option>
+<option value="rc_Spain"
+>Spain
+</option>
+</select>&nbsp;<input type=submit name=nvp_bbu_go value="Go">&nbsp;
+<a href="?&st=600">Refresh</a>
+</td>
+<td align=right>
+<a href="?&"
+><b>&laquo; Newest</b></a>&nbsp;
+<a href="?&st=500"
+><b>&#8249; Newer</b></a>&nbsp;
+<b>601</b>&nbsp;-&nbsp;<b>679</b> of <b>679</b>
+</table>
+</tr>
+</form>
+</table>
+<table cellpadding=2 cellspacing=0 border=0 align=center class=ft>
+<tr>
+<td align=center>
+Search accurately with <a style=color:#0000CC target=_blank href="http://mail.google.com/support/bin/answer.py?ctx=%67mail&answer=7190">operators</a> including <b>from:</b> &nbsp;<b>to:</b> &nbsp;<b>subject:</b>.
+<tr>
+<td align=center>
+<span style="color: #006633;
+font-weight: bold;">
+You are currently using
+567 MB
+(7%) of your
+7623 MB
+</span>
+<div style="font-size: 11px; line-height: 17px;">
+Last account activity: 23 minutes ago
+on this computer.
+&nbsp;<a href="?&amp;v=ac"
+target="details">Details</a>
+</div>
+<div style="margin:5 0 10">
+<table cellpadding=0 cellspacing=0 border=0 class=bn>
+<tr><td id=bm bgcolor=#FAE5B0>
+<div style="font-size:85%;margin:3 15 3 15;">
+Gmail view:
+<a href="?&amp;redir=/mail/&amp;a=stsv&amp;at=AF6bupOXLI-2LQp-G4aoNwNhjTLl0Qe3eA">
+standard</a> |
+<b>basic HTML</b>&nbsp;
+<a href="/support/bin/answer.py?ctx=%67mail&answer=15049"
+target="_blank">Learn more</a>
+</div>
+</td></tr>
+</table>
+</div>
+<tr>
+<td align=center>
+<font size=1>
+&copy;2011 Google -
+<a href="/mail/help/terms.html"
+target=_blank>
+Terms
+</a> -
+<a href="/mail/help/privacy.html"
+target=_blank>Privacy Policy</a> -
+<a href="http://gmailblog.blogspot.com/?utm_source=uifooter&utm_medium=et&utm_campaign=en"
+target=_blank>Gmail Blog</a> -
+<a href="http://www.google.com" target=_blank>Google Home</a>
+</font>
+</table>
+<script type="text/javascript" src="https://mail.google.com/mail/h/15n8beu6aeg6h/?&v=mjs&name=tz&ver=17jde4ey1rxj"></script>
+<script>
+_tz("_84_88_104280_84_446940","?&amp;v=tz");
+</script>
+<script>
+'name="at" value=0&name=at value=0&at=0&amp;at=0&';
+</script>
+</table>
+</body>
+</html>

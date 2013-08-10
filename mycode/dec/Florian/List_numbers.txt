@@ -1,0 +1,7 @@
+: Mode  : Decfile              : Generator   : Filter : Run Type     :
+: 10643 : B0B0bartoDnpilnu.dec : Upsilon(4S) :        : B0->Dpipilnu :
+: 10644 : BpBmtoDnpilnu.dec : Upsilon(4S) :        : Bp->Dpipilnu :
+: 10645 : B0B0bartoPStateslnu.dec : Upsilon(4S) :        : B0->PStatelnu :
+: 10646 : BpBmtoPStateslnu.dec : Upsilon(4S) :        : Bp->PStatelnu :
+: 10647 : B0B0barto2SStateslnu.dec : Upsilon(4S) :        : B0->2SStatelnu :
+: 10648 : BpBmto2SStateslnu.dec : Upsilon(4S) :        : Bp->2SStatelnu :

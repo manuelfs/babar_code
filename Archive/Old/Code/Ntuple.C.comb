@@ -1,0 +1,102 @@
+#define Ntuple_cxx
+#include "Ntuple.h"
+#include <TH2.h>
+#include <TStyle.h>
+#include <TCanvas.h>
+
+TString round(double n, double d);
+
+void Ntuple::Loop(bool doCut) {
+   if (fChain == 0) return;
+
+   TString MMiss = "candPMiss>.2";
+   TString Q2 = "candQ2>4";
+   TString ee1 = "candType<3&&candEExtra<.2";
+   TString ee2 = "candType==3&&candEExtra<.15";
+   TString ee3 = "candType==4&&candEExtra<.3";
+   TString ee = (ee1||ee2||ee3);
+   TString basic = MMiss+Q2+ee;
+   int type[90][59][6];
+   int SeedMode, YMode;
+   fstream table;
+   if(doCut)
+     table.open("modes/txt/TableRun"+Run+"_comb_cuts.txt",fstream::out);
+   else
+     table.open("modes/txt/TableRun"+Run+"_comb.txt",fstream::out);
+   int mode;
+   for(int i=0; i<87; i++){
+     if(i==2) i = 10; if(i==19) i = 20; if(i==27) i = 30;
+     if(i==49) i = 50; if(i==59) i = 60; if(i==62) i = 71;
+     if(i==73) i = 80; if(i==85) i = 86;
+     for(int j=1; j<54; j++){
+       for(int k=0; k<6; k++)
+	 type[i][j][k] = 0;
+     }
+   }
+
+   Long64_t nbytes = 0, nb = 0;
+   Long64_t nentries = fChain->GetEntriesFast();
+   //nentries = 10000;
+   cout <<"Entries are "<<nentries<<endl;
+   for (Long64_t jentry=0; jentry<nentries;jentry++) {
+      Long64_t ientry = LoadTree(jentry);
+      if (ientry < 0) break;
+      nb = fChain->GetEntry(jentry);   nbytes += nb;
+      if (jentry%10000 == 0) cout<<"Entry "<<jentry<<" of "<<nentries<<endl;
+
+      if(doCut){
+	if(candPMiss<=.2) continue;
+	if(candQ2<=4) continue;
+	if(candType<3&&candEExtra>=.2 || candType==3&&candEExtra>=.15 || candType==4&&candEExtra>=.3) continue;
+      }
+      SeedMode = (candBMode/100)%100;
+      YMode = candBMode%100;
+      if(MCType==0 || candLepTru==0){
+	if(MCCombmode==1){
+	  type[SeedMode][YMode][0]++;
+	}else if(MCCombmode>=3 && MCCombmode<=5){
+	  type[SeedMode][YMode][1]++;
+	}else if(MCCombmode==6){
+	  type[SeedMode][YMode][2]++;
+	}else if(MCCombmode==7){
+	  type[SeedMode][YMode][3]++;
+	}else if(MCCombmode==11){
+	  type[SeedMode][YMode][4]++;
+	}else{
+	  type[SeedMode][YMode][5]++;
+	}
+      }
+   }
+   for(int i=0; i<87; i++){
+     if(i==2) i = 10; if(i==19) i = 20; if(i==27) i = 30;
+     if(i==49) i = 50; if(i==59) i = 60;if(i==62) i = 71;
+     if(i==73) i = 80; if(i==85) i = 86;
+     for(int j=1; j<54; j++){
+       int tot = 0;
+       for(int k=0; k<6; k++)
+	 tot += type[i][j][k];
+       if(!(tot)) continue;
+       table<<i<<"   "<<j<<"\t|\t"<<type[i][j][0]<<"\t"<<type[i][j][1]<<"\t"<<type[i][j][2];
+       table<<"\t"<<type[i][j][3]<<"\t"<<type[i][j][4]<<"\t"<<type[i][j][5];
+       table<<endl;
+     }
+       table<<endl;
+   }
+   table.close();
+}
+
+
+TString round(double n, double d){
+  if(d==0) return " - ";
+  double b = ((int)(n/d *100+.5));
+  b/=100.;
+  TString result; result+= b;
+  result.ReplaceAll(" ","");
+  if(b<10){
+    if(result.Length() == 1)
+      result += ".00";
+    if(result.Length() == 3)
+      result += "0";
+  }
+  return result;
+}

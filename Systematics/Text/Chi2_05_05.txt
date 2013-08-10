@@ -1,0 +1,52 @@
+D^{0} p(Chi2):	 M2 113.92	 Pl 384.00	 Total 41.51
+D*^{0} p(Chi2):	 M2 5962.19	 Pl 355.24	 Total 1773.87
+D^{+} p(Chi2):	 M2 1678.27	 Pl 3517.13	 Total 2179.87	 M2Tot 138.80	 PlTot 759.83	  Combined 71.01
+D*^{+} p(Chi2):	 M2 2755.96	 Pl 1785.95	 Total 2226.02	 M2Tot 4846.48	 PlTot 443.99	  Combined 1525.54
+Info in <TCanvas::Print>: eps file keys/eps/FinalFit/sig030candM2_histoPl.eps has been created
+Warning in <TClassTable::Add>: class THtml::TFileSysRoot already in TClassTable
+D^{0} p(Chi2):	 M2 555.28	 Pl 38.22	 Total 30.91
+D*^{0} p(Chi2):	 M2 9949.96	 Pl 1909.21	 Total 7757.27
+D^{+} p(Chi2):	 M2 10.26	 Pl 475.52	 Total 5.09	 M2Tot 6.97	 PlTot 21.42	  Combined 0.20
+D*^{+} p(Chi2):	 M2 3078.57	 Pl 1704.09	 Total 2371.24	 M2Tot 7872.98	 PlTot 1661.41	  Combined 5376.68
+Info in <TCanvas::Print>: eps file keys/eps/FinalFit/sig050candM2_histoPl.eps has been created
+Warning in <TClassTable::Add>: class THtml::TFileSysRoot already in TClassTable
+D^{0} p(Chi2):	 M2 2278.45	 Pl 449.08	 Total 794.59
+D*^{0} p(Chi2):	 M2 5804.47	 Pl 378.29	 Total 1795.89
+D^{+} p(Chi2):	 M2 88.99	 Pl 2163.21	 Total 106.77	 M2Tot 141.43	 PlTot 623.28	  Combined 59.78
+D*^{+} p(Chi2):	 M2 638.83	 Pl 845.23	 Total 365.46	 M2Tot 1611.80	 PlTot 261.42	  Combined 355.63
+Info in <TCanvas::Print>: eps file keys/eps/FinalFit/sig075candM2_histoPl.eps has been created
+Warning in <TClassTable::Add>: class THtml::TFileSysRoot already in TClassTable
+D^{0} p(Chi2):	 M2 1747.15	 Pl 728.43	 Total 852.63
+D*^{0} p(Chi2):	 M2 7258.33	 Pl 12.75	 Total 119.97
+D^{+} p(Chi2):	 M2 2362.20	 Pl 1058.70	 Total 1434.99	 M2Tot 1623.62	 PlTot 541.34	  Combined 584.15
+D*^{+} p(Chi2):	 M2 2490.32	 Pl 1817.77	 Total 2066.85	 M2Tot 4897.62	 PlTot 17.22	  Combined 148.33
+Info in <TCanvas::Print>: eps file keys/eps/FinalFit/sig100candM2_histoPl.eps has been created
+Warning in <TClassTable::Add>: class THtml::TFileSysRoot already in TClassTable
+D^{0} p(Chi2):	 M2 2570.99	 Pl 262.06	 Total 615.23
+D*^{0} p(Chi2):	 M2 6625.43	 Pl 429.68	 Total 1629.35
+D^{+} p(Chi2):	 M2 4850.41	 Pl 147.85	 Total 783.44	 M2Tot 3708.77	 PlTot 43.30	  Combined 264.65
+D*^{+} p(Chi2):	 M2 3495.61	 Pl 6740.59	 Total 5386.51	 M2Tot 5602.85	 PlTot 1315.43	  Combined 2880.24
+Info in <TCanvas::Print>: eps file keys/eps/FinalFit/sig120candM2_histoPl.eps has been created
+Warning in <TClassTable::Add>: class THtml::TFileSysRoot already in TClassTable
+D^{0} p(Chi2):	 M2 1367.94	 Pl 90.07	 Total 149.14
+D*^{0} p(Chi2):	 M2 6607.90	 Pl 354.34	 Total 1685.61
+D^{+} p(Chi2):	 M2 855.69	 Pl 31.68	 Total 40.92	 M2Tot 589.78	 PlTot 4.24	  Combined 5.42
+D*^{+} p(Chi2):	 M2 3968.64	 Pl 1665.70	 Total 2562.39	 M2Tot 6141.33	 PlTot 361.95	  Combined 1549.82
+Info in <TCanvas::Print>: eps file keys/eps/FinalFit/sig150candM2_histoPl.eps has been created
+Warning in <TClassTable::Add>: class THtml::TFileSysRoot already in TClassTable
+D^{0} p(Chi2):	 M2 962.45	 Pl 70.33	 Total 86.76
+D*^{0} p(Chi2):	 M2 4628.88	 Pl 912.18	 Total 2109.89
+D^{+} p(Chi2):	 M2 843.50	 Pl 1.27	 Total 2.72	 M2Tot 433.96	 PlTot 0.17	  Combined 0.28
+D*^{+} p(Chi2):	 M2 3586.80	 Pl 63.16	 Total 203.00	 M2Tot 4477.06	 PlTot 48.73	  Combined 264.67
+Info in <TCanvas::Print>: eps file keys/eps/FinalFit/sig200candM2_histoPl.eps has been created
+Warning in <TClassTable::Add>: class THtml::TFileSysRoot already in TClassTable
+D^{0} p(Chi2):	 M2 2185.67	 Pl 224.58	 Total 469.38
+D*^{0} p(Chi2):	 M2 253.02	 Pl 217.16	 Total 45.62
+D^{+} p(Chi2):	 M2 184.34	 Pl 2.14	 Total 0.91	 M2Tot 250.30	 PlTot 0.78	  Combined 0.53
+D*^{+} p(Chi2):	 M2 3465.77	 Pl 10.09	 Total 43.06	 M2Tot 441.55	 PlTot 2.57	  Combined 1.77
+Info in <TCanvas::Print>: eps file keys/eps/FinalFit/sig250candM2_histoPl.eps has been created
+Warning in <TClassTable::Add>: class THtml::TFileSysRoot already in TClassTable
+D^{0} p(Chi2):	 M2 1744.82	 Pl 207.03	 Total 354.40
+D*^{0} p(Chi2):	 M2 46.65	 Pl 158.76	 Total 7.01
+D^{+} p(Chi2):	 M2 71.73	 Pl 20.68	 Total 2.46	 M2Tot 91.89	 PlTot 5.99	  Combined 0.98
+D*^{+} p(Chi2):	 M2 6920.63	 Pl 14.09	 Total 122.80	 M2Tot 211.11	 PlTot 2.62	  Combined 0.82

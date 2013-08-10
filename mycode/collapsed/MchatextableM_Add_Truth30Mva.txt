@@ -1,0 +1,24 @@
+\begin{tabular}{|l||cc|c|}
+\hline
+$\mathbf{D^{(*)0}}$  & New & M14 & Ratio \\
+\hline \hline
+Signal & 1360 & 430 & 2.44 \\
+Norm. & 19395 & 7023 & 2.13 \\
+D** & 1030 & 367 & 2.16 \\
+Cross. & 491 & 128 & 2.96 \\
+Comb. & 717 & 154 & 3.59 \\
+\hline \end{tabular}
+\,\,
+
+\begin{tabular}{|l||cc|c|}
+\hline
+$\mathbf{D^{(*)+}}$  & New & M14 & Ratio \\
+\hline \hline
+Signal & 430 & 157 & 2.11 \\
+Norm. & 6132 & 2507 & 1.89 \\
+D** & 306 & 84 & 2.81 \\
+Cross. & 48 & 11 & 3.37 \\
+Comb. & 209 & 62 & 2.60 \\
+\hline \end{tabular}
+\,\,
+

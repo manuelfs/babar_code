@@ -1,0 +1,13 @@
+PlotFit FitAll/fits/TextFinalDataNe2x100.txt sig All candM2 60 -0.55 1.55 curveLegPlNorm 1.05 -4 1 0.88 48
+cpf keys/eps/FinalFit/sigcandM2_curveLegPlNorm.eps public_html/12_05_15_Norm_Emu.eps
+
+PlotFit FitAll/fits/TextFinalmuDataNe2x100_RunAll.txt sig All candM2 60 -0.55 1.55 curveLegPlNormmu 1.05 -4 1 0.88 48
+cpf keys/eps/FinalFit/sigcandM2_curveLegPlNormmu.eps public_html/12_05_15_Norm_Mu.eps
+
+PlotFit FitAll/fits/TextFinaleDataNe2x100_RunAll.txt  sig All candM2 60 -0.55 1.55 curveLegPlNorme 1.05 -4 1 0.88 48
+cpf keys/eps/FinalFit/sigcandM2_curveLegPlNorme.eps public_html/12_05_15_Norm_E.eps
+
+cpf keys/eps/CSample/MVAmuConvChiNewx100_candM2_All_both.eps public_html/12_05_15_Norm_Mu_Hist.eps
+
+plotVariable MVAeConvChi candM2 60 -0.55 1.55 "candIsMu==0" no no babar_code/Reweight/wTotal.txt "" FitAll/fits/TextFinaleDataNe2x100_RunAll.txt
+cpf keys/eps/CSample/MVAeConvChiNewx100_candM2_All_both.eps public_html/12_05_15_Norm_E_Hist.eps
