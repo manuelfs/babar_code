@@ -3,6 +3,7 @@ core.*
 *~
 *.root
 *#
+.#*
 
 # Compiled Object files
 *.slo
