@@ -32,8 +32,13 @@ void prd_efficiency(long Nevents=1200, long Nrep=10, double effmin=0.02, double 
   double fmode[1000], cfmode[1000], eff[1000], f_eff, norm=0, AverEff=0;
   int Nmodes=0, imode;
   while(infile>> f_eff){
-    eff[Nmodes] = rand.Uniform(effmin, effmax);
-    fmode[Nmodes] = f_eff/eff[Nmodes];
+    //eff[Nmodes] = rand.Uniform(effmin, effmax);
+    //eff[Nmodes] = rand.Exp(effmax);
+    eff[Nmodes] = rand.Gaus(effmin,effmax);
+    if(eff[Nmodes]<=0) eff[Nmodes] = 1e-6;
+    if(eff[Nmodes]>1) eff[Nmodes] = 1.;
+    //fmode[Nmodes] = f_eff/eff[Nmodes];
+    fmode[Nmodes] = f_eff;
     norm += fmode[Nmodes];
     Nmodes++;
   }
@@ -57,10 +62,11 @@ void prd_efficiency(long Nevents=1200, long Nrep=10, double effmin=0.02, double 
   double DNrep = (double)Nrep;
   mean /= DNrep; rms = sqrt((rms - mean*mean*DNrep)/(DNrep-1));
 
-  int digits = 4;
-  cout<<"Paper: ("<<RoundNumber(AverEff*100,digits)<<" +- "<<RoundNumber(sqrt(Nevents)*100,digits,Ntotal)
-      <<")%  -  Simulation: ("<<RoundNumber(mean*100, digits)<<" +- "<<RoundNumber(rms*100, digits)
-      <<")%"<<endl;
+  int digits = 5;
+  double sig_paper = sqrt(Nevents)/Ntotal, sig_sim = rms;
+  cout<<"Paper: ("<<RoundNumber(AverEff*100,digits)<<" +- "<<RoundNumber(sig_paper*100,digits)
+      <<")%  -  Simulation: ("<<RoundNumber(mean*100, digits)<<" +- "<<RoundNumber(sig_sim*100, digits)
+      <<")%  \t  Ratio: "<< RoundNumber(sig_paper,4,sig_sim)<<endl;
 }
 
 void calc_fractions(){
