@@ -24,7 +24,7 @@ int findMode(double x, double cfmode[], int Nmodes) {
   return minMode;
 }
 
-void prd_efficiency(long Nevents=1200, long Nrep=10, double effmin=0.02, double effmax=0.08, 
+void prd_efficiency(long Nevents=1200, long Nrep=10, double effmin=0.0001, double effmax=0.8, 
 		    int seed=1){
   TString filename = "babar_code/prd/fraction_eff.txt";
   ifstream infile(filename);
@@ -32,9 +32,9 @@ void prd_efficiency(long Nevents=1200, long Nrep=10, double effmin=0.02, double 
   double fmode[1000], cfmode[1000], eff[1000], f_eff, norm=0, AverEff=0;
   int Nmodes=0, imode;
   while(infile>> f_eff){
-    //eff[Nmodes] = rand.Uniform(effmin, effmax);
+    eff[Nmodes] = rand.Uniform(effmin, effmax);
     //eff[Nmodes] = rand.Exp(effmax);
-    eff[Nmodes] = rand.Gaus(effmin,effmax);
+    //eff[Nmodes] = rand.Gaus(effmin,effmax);
     if(eff[Nmodes]<=0) eff[Nmodes] = 1e-6;
     if(eff[Nmodes]>1) eff[Nmodes] = 1.;
     //fmode[Nmodes] = f_eff/eff[Nmodes];
