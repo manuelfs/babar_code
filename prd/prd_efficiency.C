@@ -1,9 +1,14 @@
 #include "babar_code/PlotsThesis/PlotUtils.cc"
 #include "TH1F.h"
+#include "TCanvas.h"
+#include "TLatex.h"
 #include "TChain.h"
+#include "TStyle.h"
 #include "TString.h"
 #include "TRandom3.h"
 #include <fstream>
+#include <vector>
+#include <algorithm>
 
 using namespace std;
 using std::cout;
@@ -48,25 +53,63 @@ void prd_efficiency(long Nevents=1200, long Nrep=10, double effmin=0.0001, doubl
     cfmode[mode+1] = fmode[mode] + cfmode[mode];
     AverEff += fmode[mode]*eff[mode];
   }
-  double Ntotal = Nevents/AverEff;
+
+  double Ntotal = Nevents/AverEff, nSig = 4.3;
+  double sig_paper = sqrt(Nevents);
+  int nBins = 60, nperBin = 2*nSig*sig_paper/nBins;
+  int minX = Nevents-nSig*sig_paper+(2*nSig*sig_paper-nperBin*nBins)/2, maxX = minX+nperBin*nBins;
+  if(nperBin<1){
+    minX = Nevents-nBins/2; maxX = Nevents+nBins/2; nperBin = 1;
+  }
+  TString title = "Entries/"; title += nperBin;
+  gStyle->SetOptStat(0);
+  TCanvas can("can","Efficiencies",1400,800); 
+  TH1F hN("hN","",nBins, minX, maxX);
+  hN.SetXTitle("Simulated N_{sel}");
+  hN.SetYTitle(title);
+
   double mean = 0, rms = 0;
   for(int rep=0; rep<Nrep; rep++){
+    //Ntotal = rand.PoissonD(Nevents)/AverEff;
     double Npass=0;
     for(int eve=0; eve < Ntotal; eve++) {
       imode = findMode(rand.Uniform(1), cfmode, Nmodes);
       if(rand.Uniform(1) < eff[imode]) Npass++;
     }
-    double effrep = Npass/Ntotal;
-    mean += effrep; rms += effrep*effrep;
+    mean += Npass; rms += Npass*Npass;
+    hN.Fill(Npass);
   }
   double DNrep = (double)Nrep;
   mean /= DNrep; rms = sqrt((rms - mean*mean*DNrep)/(DNrep-1));
 
-  int digits = 5;
-  double sig_paper = sqrt(Nevents)/Ntotal, sig_sim = rms;
-  cout<<"Paper: ("<<RoundNumber(AverEff*100,digits)<<" +- "<<RoundNumber(sig_paper*100,digits)
-      <<")%  -  Simulation: ("<<RoundNumber(mean*100, digits)<<" +- "<<RoundNumber(sig_sim*100, digits)
-      <<")%  \t  Ratio: "<< RoundNumber(sig_paper,4,sig_sim)<<endl;
+  int digits = 2;
+  double sig_sim = rms;
+  cout<<"Paper: "<<RoundNumber(Nevents,0)<<" +- "<<RoundNumber(sig_paper,digits)
+      <<"  -  Simulation: "<<RoundNumber(mean, digits)<<" +- "<<RoundNumber(sig_sim, digits)
+      <<"  \t  Ratio: "<< RoundNumber(sig_paper,4,sig_sim)<<endl;
+
+  hN.SetLineColor(4); hN.SetLineWidth(2);
+  hN.SetMaximum(1.15*hN.GetMaximum());
+  hN.Draw("");
+
+  TLatex label; label.SetNDC(kTRUE); label.SetTextFont(132); label.SetTextSize(0.036);
+  title = "#bar{N_{sel}} = ";title += Nevents; title += ", #epsilon = ";
+  title += RoundNumber(AverEff*100,3); title += "%  #Rightarrow  N_{gen} = "; 
+  title += RoundNumber(Ntotal,0);
+  label.DrawLatex(0.129, 0.84, title); 
+
+  title = "#sqrt{#bar{N_{sel}}} = ";  title += RoundNumber(sig_paper,1); 
+  label.DrawLatex(0.129, 0.76, title); 
+
+  title = "#sigma(N_{sel}) = ";  title += RoundNumber(sig_sim,1); 
+  label.DrawLatex(0.128, 0.70, title); 
+
+  title = "#Rightarrow  #frac{#sqrt{#bar{N_{sel}}}}{#sigma(N_{sel})} = "; 
+  title += RoundNumber(sig_paper,3,sig_sim);
+  label.DrawLatex(0.235, 0.74, title); 
+
+  can.SaveAs("babar_code/prd/plot_efficiency.gif"); 
+
 }
 
 void calc_fractions(){
@@ -83,19 +126,35 @@ void calc_fractions(){
     events[candBMode-10000]++;
   }
 
+  vector<Double_t> effModes;
   TString filename = "babar_code/prd/fraction_eff.txt";
   ofstream outfile(filename);
   double total = 0;
-  int Nmodes = 0;
   for(int eve=0; eve < 10000; eve++) total += events[eve];
   for(int eve=0; eve < 10000; eve++) {
     if(events[eve] > 0) {
-      outfile << RoundNumber(events[eve]*100, 5, total) << " ";
-      Nmodes++;
-      if(Nmodes%10 == 0) outfile<<endl;
+      double effi = events[eve]*100/total;     
+      effModes.push_back(effi);
     }
   }
-  cout<<"Printed "<<Nmodes<<" in "<<filename<<endl;
+  sort(effModes.rbegin(),effModes.rend()); // Sort in descending order
+  gStyle->SetOptStat(0);
+  TCanvas can("can","Efficiencies",1400,800); 
+  TH1F hN("hN","", effModes.size(), 0, effModes.size());
+  hN.SetXTitle("B_{tag} decay mode");
+  hN.SetYTitle("Abundance (%)");
+
+  for(unsigned int mode=0; mode < effModes.size(); mode++) {
+    outfile << RoundNumber(effModes[mode], 5) << " ";
+    hN.SetBinContent(mode+1,effModes[mode]);
+    if((mode+1)%10 == 0) outfile<<endl;
+  }
+  cout<<"Printed "<<effModes.size()<<" in "<<filename<<endl;
   outfile.close();
+
+  hN.SetLineColor(2); hN.SetLineWidth(2);
+  hN.Draw("");
+  can.SaveAs("babar_code/prd/plot_abundance.gif"); 
+
 }
 
