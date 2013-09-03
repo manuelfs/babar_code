@@ -44,6 +44,7 @@ void prd_efficiency(long Nevents=1200, long Nrep=10, double effmin=0.0001, doubl
     if(eff[Nmodes]>1) eff[Nmodes] = 1.;
     //fmode[Nmodes] = f_eff/eff[Nmodes];
     fmode[Nmodes] = f_eff;
+    //fmode[Nmodes] = rand.Uniform(0,1);
     norm += fmode[Nmodes];
     Nmodes++;
   }
@@ -61,9 +62,20 @@ void prd_efficiency(long Nevents=1200, long Nrep=10, double effmin=0.0001, doubl
   if(nperBin<1){
     minX = Nevents-nBins/2; maxX = Nevents+nBins/2; nperBin = 1;
   }
-  TString title = "Entries/"; title += nperBin;
+
   gStyle->SetOptStat(0);
-  TCanvas can("can","Efficiencies",1400,800); 
+  gStyle->SetTitleSize(0.065,"xy");     // Set the 2 axes title size
+  gStyle->SetLabelSize(0.065,"xy");     // Set the 2 axes label size
+
+  gStyle->SetPadBottomMargin(0.16); 
+  gStyle->SetTitleOffset(1.1,"x");  
+   
+  gStyle->SetPadRightMargin (0.02);    
+  gStyle->SetPadLeftMargin (0.09);    
+  gStyle->SetTitleOffset(0.7,"y");  
+   
+  TString title = "Entries/"; title += nperBin;
+  TCanvas can("can","Efficiencies",1400,600); 
   TH1F hN("hN","",nBins, minX, maxX);
   hN.SetXTitle("Simulated N_{sel}");
   hN.SetYTitle(title);
@@ -92,23 +104,23 @@ void prd_efficiency(long Nevents=1200, long Nrep=10, double effmin=0.0001, doubl
   hN.SetMaximum(1.15*hN.GetMaximum());
   hN.Draw("");
 
-  TLatex label; label.SetNDC(kTRUE); label.SetTextFont(132); label.SetTextSize(0.036);
+  TLatex label; label.SetNDC(kTRUE); label.SetTextFont(132); label.SetTextSize(0.055);
   title = "#bar{N_{sel}} = ";title += Nevents; title += ", #epsilon = ";
-  title += RoundNumber(AverEff*100,3); title += "%  #Rightarrow  N_{gen} = "; 
+  title += RoundNumber(AverEff*100,1); title += "%  #Rightarrow  N_{gen} = "; 
   title += RoundNumber(Ntotal,0);
-  label.DrawLatex(0.129, 0.84, title); 
+  label.DrawLatex(0.12, 0.84, title); 
 
   title = "#sqrt{#bar{N_{sel}}} = ";  title += RoundNumber(sig_paper,1); 
-  label.DrawLatex(0.129, 0.76, title); 
+  label.DrawLatex(0.12, 0.72, title); 
 
   title = "#sigma(N_{sel}) = ";  title += RoundNumber(sig_sim,1); 
-  label.DrawLatex(0.128, 0.70, title); 
+  label.DrawLatex(0.12, 0.62, title); 
 
   title = "#Rightarrow  #frac{#sqrt{#bar{N_{sel}}}}{#sigma(N_{sel})} = "; 
   title += RoundNumber(sig_paper,3,sig_sim);
-  label.DrawLatex(0.235, 0.74, title); 
+  label.DrawLatex(0.232, 0.68, title); 
 
-  can.SaveAs("babar_code/prd/plot_efficiency.gif"); 
+  can.SaveAs("babar_code/prd/plot_efficiency.eps"); 
 
 }
 
@@ -138,10 +150,21 @@ void calc_fractions(){
     }
   }
   sort(effModes.rbegin(),effModes.rend()); // Sort in descending order
+
   gStyle->SetOptStat(0);
-  TCanvas can("can","Efficiencies",1400,800); 
+  gStyle->SetTitleSize(0.065,"xy");     // Set the 2 axes title size
+  gStyle->SetLabelSize(0.065,"xy");     // Set the 2 axes label size
+
+  gStyle->SetPadBottomMargin(0.16); 
+  gStyle->SetTitleOffset(1.1,"x");  
+   
+  gStyle->SetPadRightMargin (0.02);    
+  gStyle->SetPadLeftMargin (0.09);    
+  gStyle->SetTitleOffset(0.7,"y");  
+   
+  TCanvas can("can","Efficiencies",1400,600); 
   TH1F hN("hN","", effModes.size(), 0, effModes.size());
-  hN.SetXTitle("B_{tag} decay mode");
+  hN.SetXTitle("B_{tag} decay mode ordered by abundance");
   hN.SetYTitle("Abundance (%)");
 
   for(unsigned int mode=0; mode < effModes.size(); mode++) {
@@ -154,7 +177,7 @@ void calc_fractions(){
 
   hN.SetLineColor(2); hN.SetLineWidth(2);
   hN.Draw("");
-  can.SaveAs("babar_code/prd/plot_abundance.gif"); 
+  can.SaveAs("babar_code/prd/plot_abundance.eps"); 
 
 }
 
