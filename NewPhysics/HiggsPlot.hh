@@ -60,8 +60,9 @@ public:
   void PlotPRL(int isPsfrag = 1);
   void PlotBF(int iDecay, double tBmH_max=1., double BF_max=-1);
   void PlotExclusion(int iDecay, double tBmH_max=1.2, TString Option="col");
+  void PlotSExclusion(double rR_max=3.5, TString Option="col");
   void PlotChi2();
-  double ProbChi2(int iDecay, double tBmH);
+  double ProbChi2(int iDecay, double tBmH, double rL=0);
   double ProbChi2(int iDecay, double tBmH, double RD[2], double RDs[2]);
   double Chi2(double M1[2], double M2[2]);
   void BFTauNu(double tBmH, double BF[2], double ml=mTau);

@@ -18,6 +18,8 @@ HiggsPlot::HiggsPlot(TString NameFile) {
 
   // From hep-ph/0908.3470
   Vub[0] = 0.00352; Vub[1] = 0.00011;
+  // Inclusive Vub with BNLP calculation (2013)
+  Vub[0] = 0.0044; Vub[1] = 0.00025;
   fB[0]  = 0.196;   fB[1]  = 0.011; // [GeV]
 
   // Coefficients found with RateCalc::Errors with 10,000 variations
@@ -281,7 +283,7 @@ void HiggsPlot::PlotgSLPRL(int isgSR, double tBmH_max){
     }
   }
 
-  double tBmH, BF[2], gSL, mTau = 1.7768;
+  double tBmH, BF[2], gSL;
   for(int isDs=0; isDs<2; isDs++){
     can.cd(0);
     padName = "Pad"; padName += isDs;
@@ -508,7 +510,7 @@ void HiggsPlot::PlotExclusion(int iDecay, double tBmH_max, TString Option){
   //_varyRD = 0;
   if(iDecay<0 || iDecay>3) {cout<<"iDecay must be 0, 1, 2 or 3"<<endl; return;}
   Styles style; style.setPadsStyle(-1); style.applyStyle();
-  int nBins = 1000, nBins2D = 200;
+  int nBins = 1000, nBins2D = 400;
   double LikelytBmH=-1, Pvalue, Pmin=1;
   TString hName, epsName = "public_html/Higgs_Exclusion1D_TEMP_BaBar.eps",label;
   TCanvas can("can","Exclusion 2HDM");
@@ -536,7 +538,7 @@ void HiggsPlot::PlotExclusion(int iDecay, double tBmH_max, TString Option){
   latex.DrawLatex(xLabel,style.PadBottomMargin+0.1,label);
 
   //////////////////    Plot 2D  ///////////////////////
-  int nSigmas[] = {3,4,5, 1}, Nsig=3; double dl[5];
+  int nSigmas[] = {2,3,4, 5}, Nsig=4; double dl[5];
   for(int ns=0; ns<Nsig+1; ns++) dl[ns] = IntG(0,1,-nSigmas[ns],nSigmas[ns]);
   TLine line; line.SetLineStyle(2); line.SetLineColor(1); line.SetLineWidth(1);
   line.DrawLine(0,dl[3]*100,tBmH_max,dl[3]*100);
@@ -547,10 +549,10 @@ void HiggsPlot::PlotExclusion(int iDecay, double tBmH_max, TString Option){
 
   int colors[] = {kBlue-10, kBlue-9, kBlue-7, kBlue-4, 0};
   gStyle->SetPalette(Nsig, colors);
-  TH2F h2D("h2D","",nBins2D,0,1000,nBins2D,0,110);
+  TH2F h2D("h2D","",nBins2D,15,1000,nBins2D,0,110);
   h2D.GetYaxis()->CenterTitle(true); h2D.GetXaxis()->CenterTitle(true);
   h2D.GetYaxis()->SetTitle("tan#beta"); h2D.GetXaxis()->SetTitle("m_{H^{+}} (GeV)");
-  h2D.GetYaxis()->SetTitle("B"); h2D.GetXaxis()->SetTitle("M");
+  //  h2D.GetYaxis()->SetTitle("B"); h2D.GetXaxis()->SetTitle("M");
   for(int binH=1; binH<=nBins2D; binH++){
     for(int binB=1; binB<=nBins2D; binB++){
       tBmH = h2D.GetYaxis()->GetBinCenter(binB)/h2D.GetXaxis()->GetBinCenter(binH);
@@ -559,25 +561,79 @@ void HiggsPlot::PlotExclusion(int iDecay, double tBmH_max, TString Option){
   }
   h2D.SetContour(Nsig,dl);
   h2D.Draw(Option);
-  TH1F *histo[4];
-  double legW = 0.2, legH = 0.28;
+  TH1F *histo[5];
+  double legW = 0.134, legH = 0.37;
   double legX = 1-style.PadRightMargin-0.02, legY = style.PadBottomMargin+legH+0.04;
   TLegend *leg = new TLegend(legX-legW, legY-legH, legX, legY);
   leg->SetTextSize(0.075); leg->SetFillColor(0); leg->SetTextFont(style.nFont);
+  histo[4] = new TH1F("WhiteH","",10,0,10);
+  histo[4]->SetLineColor(10);histo[4]->SetFillColor(10);
+  leg->AddEntry(histo[4],"");
   for(int ileg=0; ileg<Nsig; ileg++) {
     TString label = "histo"; label += ileg+1; 
     histo[ileg] = new TH1F(label,"histo",10,0,10);
     histo[ileg]->SetLineColor(colors[ileg]);histo[ileg]->SetFillColor(colors[ileg]);
-    label = "Excl. at "; label += nSigmas[ileg]; label += "#sigma";
+    label = " "; label += nSigmas[ileg]; label += "#sigma";
     leg->AddEntry(histo[ileg],label);
   }
   leg->Draw();
+
+  latex.SetTextSize(style.TextSize*1.1); latex.SetTextAlign(13); 
+  latex.DrawLatex(legX-legW+0.015, legY-0.02, "Excl. at");
+
   epsName.ReplaceAll("1D","2D");
   can.SaveAs(epsName);
   for(int his=0; his<Nsig; his++) histo[his]->Delete();
 }
 
-double HiggsPlot::ProbChi2(int iDecay, double tBmH){
+void HiggsPlot::PlotSExclusion(double rR_max, TString Option){
+  Styles style; style.setPadsStyle(-1); style.applyStyle();
+  gStyle->SetPadTickX(1);             // No ticks at the right
+  gStyle->SetPadTickY(1);             // No ticks at the top
+  int nBins2D = 300;
+  TString hName, epsName = "public_html/Higgs_Favored2D.eps",label;
+  TCanvas can("can","Favored Type III 2HDM");
+  double rR, rL, rPlus, rMinus;
+  TLatex latex; latex.SetNDC(kTRUE); latex.SetTextAlign(21); latex.SetTextSize(style.TextSize*1.1);
+
+  int nSigmas[] = {3,2,1}, Nsig=3; double dl[5];
+  for(int ns=0; ns<Nsig+1; ns++) dl[ns] = 1-IntG(0,1,-nSigmas[ns],nSigmas[ns]);
+  int colors[] = {kGreen-9, kGreen-3, kGreen+2, kGreen+2, 0};
+  gStyle->SetPalette(Nsig, colors);
+  TH2F h2D("h2D","",nBins2D,-6.4,3.5, nBins2D,-3.,rR_max);
+  h2D.GetYaxis()->CenterTitle(true); h2D.GetXaxis()->CenterTitle(true);
+  h2D.GetYaxis()->SetTitle("rP"); h2D.GetXaxis()->SetTitle("rM");
+  for(int binH=1; binH<=nBins2D; binH++){
+    for(int binB=1; binB<=nBins2D; binB++){
+      rPlus = h2D.GetYaxis()->GetBinCenter(binB);
+      rMinus = h2D.GetXaxis()->GetBinCenter(binH);
+      rR = (rPlus+rMinus)/2.; rL = (rPlus-rMinus)/2.; 
+      h2D.SetCellContent(binH, binB, 1-ProbChi2(4, rR, rL));
+    }
+  }
+  h2D.SetContour(Nsig,dl);
+  h2D.Draw(Option);
+  TH1F *histo[4];
+  double legW = 0.25, legH = 0.08;
+  double legX = 1-style.PadRightMargin-0.3, legY = 1-style.PadTopMargin-0.14;
+  TLegend *leg = new TLegend(legX-legW, legY-legH, legX, legY);
+  leg->SetTextSize(0.075); leg->SetFillColor(0); leg->SetTextFont(style.nFont);
+  leg->SetBorderSize(0);
+  leg->SetNColumns(3);
+  for(int ileg=Nsig-1; ileg>=0; ileg--) {
+    TString label = "histo"; label += ileg+1; 
+    histo[ileg] = new TH1F(label,"histo",10,0,10);
+    histo[ileg]->SetLineColor(colors[ileg]);histo[ileg]->SetFillColor(colors[ileg]);
+    label = ""; label += nSigmas[ileg]; label += "#sigma";
+    leg->AddEntry(histo[ileg],label);
+  }
+  leg->Draw();
+  latex.DrawLatex(0.52, 0.88, "Favored at");
+  can.SaveAs(epsName);
+  for(int his=0; his<Nsig; his++) histo[his]->Delete();
+}
+
+double HiggsPlot::ProbChi2(int iDecay, double tBmH, double rL){
   double RD[2], RDs[2], chi2;
   double valMeas[3][2] = {{Measurement[0][0], Measurement[1][0]},
 			  {MeasuredRD[0]->Eval(tBmH), MeasuredRD[2]->Eval(tBmH)},
@@ -587,7 +643,22 @@ double HiggsPlot::ProbChi2(int iDecay, double tBmH){
     Compute(tBmH,RD,iDecay);
     chi2 = Chi2(RD,valMeas[iDecay]);
   } else {
-    Compute(tBmH,RD,1); Compute(tBmH,RDs,2);
+    if(iDecay==3) {Compute(tBmH,RD,1); Compute(tBmH,RDs,2);}
+    else {
+      double mb = 4.2, rRrL = tBmH + rL, tBmH_Eff = sqrt(fabs(rRrL/(mTau*mb))); 
+      if(rRrL > 0) RDCoef[0][0][1] = fabs(RDCoef[0][0][1]);
+      Compute(tBmH_Eff,RD,1);
+      valMeas[1][0] = MeasuredRD[0]->Eval(tBmH_Eff);
+      valMeas[1][1] = MeasuredRD[2]->Eval(tBmH_Eff);
+      rRrL = tBmH - rL; tBmH_Eff = sqrt(fabs(rRrL/(mTau*mb)));
+      if(rRrL > 0) RDCoef[1][0][1] = fabs(RDCoef[1][0][1]);
+      Compute(tBmH_Eff,RDs,2);
+      RDCoef[0][0][1] = -fabs(RDCoef[0][0][1]); RDCoef[1][0][1] = -fabs(RDCoef[1][0][1]);
+      valMeas[2][0] = MeasuredRD[1]->Eval(tBmH_Eff);
+      valMeas[2][1] = MeasuredRD[3]->Eval(tBmH_Eff);
+//       cout<<RoundNumber(RD[0],3)<<" +- "<<RoundNumber(RD[1],3)<<", "
+// 	  <<RoundNumber(RDs[0],3)<<" +- "<<RoundNumber(RDs[1],3)<<" at tBmH = "<<tBmH_Eff<<endl;
+    }
     //if(tBmH==0) {RD[0] = 0.316; RD[1] = 0.014;}  // MILC 2012
     //if(tBmH==0) {RD[0] = 0.302; RD[1] = 0.016;}  // Tanaka 2010
     //if(tBmH==0) {RD[0] = 0.310; RD[1] = 0.020;}  // Nierste 2008
@@ -608,9 +679,9 @@ double HiggsPlot::ProbChi2(int iDecay, double tBmH){
     MDiff.Mult(DiffRD,CovM);
     chi2 = MDiff(0,0)*DiffRD(0,0) + MDiff(0,1)*DiffRD(0,1);
     ndof++;
-    if(tBmH==0 && _varyRD) 
-      cout<<endl<<"SM chi2 is "<<RoundNumber(chi2,2)<<" with a p-value of "<<TMath::Prob(chi2,ndof)<<". This is "
-	  <<RoundNumber(sqrt(2)*TMath::ErfInverse(1 - TMath::Prob(chi2,ndof)),2)<<" sigma away"<<endl<<endl;
+//     if(tBmH==0 && _varyRD) 
+//       cout<<endl<<"SM chi2 is "<<RoundNumber(chi2,2)<<" with a p-value of "<<TMath::Prob(chi2,ndof)<<". This is "
+// 	  <<RoundNumber(sqrt(2)*TMath::ErfInverse(1 - TMath::Prob(chi2,ndof)),2)<<" sigma away"<<endl<<endl;
   }
 
   return 1 - TMath::Prob(chi2,ndof);

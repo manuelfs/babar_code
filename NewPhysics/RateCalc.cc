@@ -132,11 +132,11 @@ double RateCalc::GammaD_q2_Tanaka(double q2, double ml) {
   double S1 = G(w) * (1 +Delta*(-0.019 + 0.041*wm1 - 0.015*wm1*wm1));
 
   double RD = (2*sqrt(mB*mD))/(mB+mD);
-  double F1f = G(w)/RD;
+  double F1 = G(w)/RD;
   double F0 = (1-q2/pow(mB+mD,2))/RD*S1;
 
-  double fplus = F1f;
-  double fminus = (F0 - F1f) * (mB*mB-mD*mD) / q2;
+  double fplus = F1;
+  double fminus = (F0 - F1) * (mB*mB-mD*mD) / q2;
 
   double pD = mB*mB*mB*mB + mD*mD*mD*mD + q2*q2 -
     2.*mB*mB*mD*mD - 2.*mB*mB*q2 - 2.*mD*mD*q2;
