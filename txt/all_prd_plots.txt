@@ -1,0 +1,164 @@
+Control samples
+======================================================================================================================
+CSample OffnoCutSumRoot candPstarLep 60 0 2.4 "candQ2>4XXcandMES>5.27" r no babar_code/Reweight/wFFBF.txt
+cpf keys/eps/CSample/root/OffnoCutSumRoot_candPstarLep_All_both.root keys/eps/CSample/root/Pl_OffNoW.root
+
+CSample noCutSumRootNoW candPstarLep 60 0 2.4 "candQ2>4XXcandEExtra>1.2&&candEExtra<2.4" r no babar_code/Reweight/wFFBF.txt
+cpf keys/eps/CSample/root/noCutSumRootNoW_candPstarLep_All_both.root keys/eps/CSample/root/Pl_HiEexNoW.root
+
+CSample noCutSumRootW candPstarLep 60 0 2.4 "candQ2>4XXcandEExtra>1.2&&candEExtra<2.4" r no babar_code/Reweight/wPl.txt
+cpf keys/eps/CSample/root/noCutSumRootW_candPstarLep_All_both.root keys/eps/CSample/root/Pl_HiEexW.root
+
+CSample noCutSumRoot candM2 60 -2 10 "candQ2>4XXcandEExtra>0.5&&candEExtra<1.2" no no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/root/noCutSumRoot_candM2_All_both.root keys/eps/CSample/root/M2_MidEex.root
+
+CSample noMESSumRoot candEExtra 20 0 2 "candQ2>4XXcandM2>1.5XXcandMES>5.2XXcandMES<5.26" no no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/root/noMESSumRoot_candEExtra_All_both.root keys/eps/CSample/root/Eex_mESSB.root
+
+CSample noMvaSumRoot candMES 16 5.2 5.296 "candQ2>4XXcandEExtra>0.5XXcandM2>1.5" no no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/root/noMvaSumRoot_candMES_All_both.root keys/eps/CSample/root/mES_HiEex.root
+
+CSample noMvaSumRootLoEx candMES 16 5.2 5.296 "candQ2>4XXcandEExtra<0.5XXcandM2>1.5" no no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/root/noMvaSumRootLoEx_candMES_All_both.root keys/eps/CSample/root/mES_LoEex.root
+
+CSample noCutRoot candM2 35 -0.3 0.4 "candQ2<=4XXcandEExtra<0.8XXcandPMiss>0.2" r yes babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/root/noCutRoot_candM2_All_both.root keys/eps/CSample/root/M2_Res.root
+
+CSample noCutConvRoot candM2 35 -0.3 0.4 "candQ2<=4XXcandEExtra<0.8XXcandPMiss>0.2" r yes babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/root/noCutConvRoot_candM2_All_both.root keys/eps/CSample/root/M2_ResConv.root
+
+
+PDFs
+======================================================================================================================
+BootstrapBands keys/root/Times/hTimes_1_Fit.root 48 -2 10
+BootstrapBands keys/root/Times/hTimes_9_Fit.root 48 -2 10
+BootstrapBands keys/root/Times/hTimes_13_Fit.root 48 -2 10
+BootstrapBands keys/root/Times/hTimes_17_Fit.root 48 -2 10
+BootstrapBands keys/root/Times/hTimes_51_Fit.root 48 -2 10
+
+
+Fit
+======================================================================================================================
+./run/prd_fit.exe txt/fits/TextFinalDataNe2x100.txt sig All candM2 42 -0.55 1.55 curveNormLeg 1.02
+cpf keys/eps/FinalFit/PRLsigcandM2_curveNormLeg.eps public_html/Fit_M2Norm.eps
+
+./run/prd_fit.exe txt/fits/TextFinalDataNe2x100.txt sig All candPstarLep 48 0 2.4 curveNorm 0.92 -4 1
+cpf keys/eps/FinalFit/PRLsigcandPstarLep_curveNorm.eps public_html/Fit_PlNorm.eps
+
+./run/prd_fit.exe txt/fits/TextFinalDataNe2x100.txt sig All candM2 51 -2.85 9.9 curveSigLeg 15
+cpf keys/eps/FinalFit/PRLsigcandM2_curveSigLeg.eps public_html/Fit_M2Sig.eps
+
+./run/prd_fit.exe txt/fits/TextFinalDataNe2x100.txt sig All candPstarLep 20 0 2 curveSig 0.9 1 12
+cpf keys/eps/FinalFit/PRLsigcandPstarLep_curveSig.eps public_html/Fit_PlSig.eps
+
+./run/prd_fit.exe txt/fits/TextFinalDataNe2x100.txt dss All candM2 50 -2.5 7.5 curveDssLeg
+cpf keys/eps/FinalFit/PRLdsscandM2_curveDssLeg.eps public_html/Fit_M2Dss.eps
+
+./run/prd_fit.exe txt/fits/TextFinalDataNe2x100.txt dss All candPstarLep 48 0 2.4 curveDss 0.9
+cpf keys/eps/FinalFit/PRLdsscandPstarLep_curveDss.eps public_html/Fit_PlDss.eps
+
+
+
+Kinematic distributions
+======================================================================================================================
+plotVariable MVARoot candEExtra 10 0 0.5 "candM2>1.5" no 1.15 babar_code/Reweight/wTotal.txt 
+cpf keys/eps/CSample/root/MVARootNewx100_candEExtra_All_both.root keys/eps/CSample/root/EExtra.root
+
+plotVariable MVARootIso candEExtra 10 0 0.5 "candM2>1.5" no 1.15 babar_code/Reweight/wTotal.txt 0123456 FitAll/fits/TextFinalIsoDataNe2x100.txt
+cpf keys/eps/CSample/root/MVARootIsoNewx100_candEExtra_All_both.root keys/eps/CSample/root/EExtra_Sub.root
+
+
+plotVariable MVARootIso candMES 20 5.27 5.29 "candM2>1.5" no 1 babar_code/Reweight/wTotal.txt "" FitAll/fits/TextFinalIsoDataNe2x100.txt
+cpf keys/eps/CSample/root/MVARootIsoNewx100_candMES_All_both.root keys/eps/CSample/root/MES.root
+
+plotVariable MVARootIsoSub candMES 20 5.27 5.29 "candM2>1.5" no 1 babar_code/Reweight/wTotal.txt 0123456 FitAll/fits/TextFinalIsoDataNe2x100.txt
+cpf keys/eps/CSample/root/MVARootIsoSubNewx100_candMES_All_both.root keys/eps/CSample/root/MES_Sub.root
+
+plotVariable MVARootIso candPstarLep 20 0 2 "candM2>1.5" r3 1 babar_code/Reweight/wTotal.txt 0123456 FitAll/fits/TextFinalIsoDataNe2x100.txt
+cpf keys/eps/CSample/root/MVARootIsoNewx100_candPstarLep_All_both.root keys/eps/CSample/root/Pl_Sub.root
+
+
+plotVariable MVARootIso candQ2 18 4 12.1 "candM2>1.5" no 1 babar_code/Reweight/wTotal.txt 0123456 FitAll/fits/TextFinalIsoDataNe2x100.txt
+plotVariable MVARootIso candQ2 17 4 12.5 "candM2>1.5" no 1 babar_code/Reweight/wTotal.txt 0123456 FitAll/fits/TextFinalIsoDataNe2x100.txt
+cpf keys/eps/CSample/root/MVARootIsoNewx100_candQ2_All_both.root keys/eps/CSample/root/Q2_Sub.root
+
+plotVariable MVARootIso candQ2 18 4 12.1 "candM2>1.5" no 1 babar_code/Reweight/wTotal.txt 0123456 FitAll/fits/TextFinalIsoDataHi2x030.txt both All Higx030
+plotVariable MVARootIso candQ2 17 4 12.5 "candM2>1.5" no 1 babar_code/Reweight/wTotal.txt 0123456 FitAll/fits/TextFinalIsoDataHi2x030.txt both All Higx030
+cpf keys/eps/CSample/root/MVARootIsoHigx030_candQ2_All_both.root keys/eps/CSample/root/Q2_Sub030.root
+
+plotVariable MVARootIso candQ2 18 4 12.1 "candM2>1.5" no 1 babar_code/Reweight/wTotal.txt 0123456 FitAll/fits/TextFinalIsoDataHi2x045.txt both All Higx045
+plotVariable MVARootIso candQ2 17 4 12.5 "candM2>1.5" no 1 babar_code/Reweight/wTotal.txt 0123456 FitAll/fits/TextFinalIsoDataHi2x045.txt both All Higx045
+cpf keys/eps/CSample/root/MVARootIsoHigx045_candQ2_All_both.root keys/eps/CSample/root/Q2_Sub045.root
+
+
+
+Other
+======================================================================================================================
+plotVariable MVARootIso candQ2 17 4 12.5 "candM2>1.5" no 1 babar_code/Reweight/wTotal.txt "" FitAll/fits/TextFinalIsoDataNe2x100.txt
+cpf keys/eps/CSample/root/MVARootIsoNewx100_candQ2_All_both.root keys/eps/CSample/root/Q2.root
+
+plotVariable MVARootIso candQ2 17 4 12.5 "candM2>1.5" no 1 babar_code/Reweight/wTotal.txt "" FitAll/fits/TextFinalIsoDataHi2x030.txt both All Higx030
+cpf keys/eps/CSample/root/MVARootIsoHigx030_candQ2_All_both.root keys/eps/CSample/root/Q2_030.root
+
+plotVariable MVARootIso candQ2 17 4 12.5 "candM2>1.5" no 1 babar_code/Reweight/wTotal.txt "" FitAll/fits/TextFinalIsoDataHi2x045.txt both All Higx045
+cpf keys/eps/CSample/root/MVARootIsoHigx045_candQ2_All_both.root keys/eps/CSample/root/Q2_045.root
+
+
+plotVariable MVARootIso candQ2 17 4 12.5 "candM2>1.5" no 1 babar_code/Reweight/wTotal.txt "" FitAll/fits/TextFinalIsoDataNe2x050.txt both All Newx050
+cpf keys/eps/CSample/root/MVARootIsoNewx050_candQ2_All_both.root keys/eps/CSample/root/Q2_BDT050.root
+
+plotVariable MVARootIso candQ2 17 4 12.5 "candM2>1.5" no 1 babar_code/Reweight/wTotal.txt "" FitAll/fits/TextFinalIsoDataNe2x100.txt both All Newx100
+cpf keys/eps/CSample/root/MVARootIsoNewx100_candQ2_All_both.root keys/eps/CSample/root/Q2_BDT100.root
+
+plotVariable MVARootIso candQ2 17 4 12.5 "candM2>1.5" no 1 babar_code/Reweight/wTotal.txt "" FitAll/fits/TextFinalIsoDataNe2x150.txt both All Newx150
+cpf keys/eps/CSample/root/MVARootIsoNewx150_candQ2_All_both.root keys/eps/CSample/root/Q2_BDT150.root
+
+
+plotVariable MVARootIso candQ2 24 4 12.4 "candM2>1.5" no 1 babar_code/Reweight/wTotal.txt "" FitAll/fits/TextFinalIsoDataNe2x030.txt both All Newx030
+cpf keys/eps/CSample/root/MVARootIsoNewx030_candQ2_All_both.root keys/eps/CSample/root/Q2_BDT030.root
+
+plotVariable MVARootIsox2 candQ2 24 4 12.4 "candM2>1.5" no 1 babar_code/Reweight/wTotal.txt "" FitAll/fits/TextFinalIsoDataNe2x050.txt both All Newx050
+cpf keys/eps/CSample/root/MVARootIsox2Newx050_candQ2_All_both.root keys/eps/CSample/root/Q2_BDT050x2.root
+
+plotVariable MVARootIso candQ2 24 4 12.4 "candM2>1.5" no 1 babar_code/Reweight/wTotal.txt "" FitAll/fits/TextFinalIsoDataNe2x075.txt both All Newx075
+cpf keys/eps/CSample/root/MVARootIsoNewx075_candQ2_All_both.root keys/eps/CSample/root/Q2_BDT075.root
+
+
+plotVariable MVARootIsoSub candQ2 17 4 12.5 "candM2>1.5" no 1 babar_code/Reweight/wTotal.txt 0123456 FitAll/fits/TextFinalIsoDataNe2x050.txt both All Newx050
+cpf keys/eps/CSample/root/MVARootIsoSubNewx050_candQ2_All_both.root keys/eps/CSample/root/Q2_SubBDT050.root
+
+plotVariable MVARootIsoSub candQ2 17 4 12.5 "candM2>1.5" no 1 babar_code/Reweight/wTotal.txt 0123456 FitAll/fits/TextFinalIsoDataNe2x150.txt both All Newx150
+cpf keys/eps/CSample/root/MVARootIsoSubNewx150_candQ2_All_both.root keys/eps/CSample/root/Q2_SubBDT150.root
+
+
+plotVariable MVARootIso candPstarD 26 0 2 "candM2>1.5" l 1 babar_code/Reweight/wTotal.txt 0123456 FitAll/fits/TextFinalIsoDataNe2x100.txt
+cpf keys/eps/CSample/root/MVARootIsoNewx100_candPstarD_All_both.root keys/eps/CSample/root/PD_Sub.root
+
+
+plotVariable MVARootIsoNorm candQ2 34 4 12.5 "candM2<1.5" no 1 babar_code/Reweight/wTotal.txt "" FitAll/fits/TextFinalIsoDataNe2x100.txt both All Newx100
+cpf keys/eps/CSample/root/MVARootIsoNormNewx100_candQ2_All_both.root keys/eps/CSample/root/Q2_Norm.root
+
+
+CSample noMESRoot050 candQ2 22 1.2 12.5 "candM2>1.5XXcandMES>5.2XXcandMES<5.26XX(candMvaDl>0.63XXcandType==1||candMvaDl>0.51XXcandType==3||candMvaDl>0.48XXcandType==2||candMvaDl>0.41XXcandType==4)" l yes babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/root/noMESRoot050_candQ2_All_both.root keys/eps/CSample/root/Q2_SB_050.root
+
+CSample noMESRoot candQ2 22 1.2 12.5 "candM2>1.5XXcandMES>5.2XXcandMES<5.26XX(candMvaDl>0.458XXcandType==1||candMvaDl>0.36XXcandType==3||candMvaDl>0.48XXcandType==2||candMvaDl>0.41XXcandType==4)" l yes babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/root/noMESRoot_candQ2_All_both.root keys/eps/CSample/root/Q2_SB_100.root
+
+CSample noMESRootLow candQ2 44 1.5 12.5 "candM2>1.5XXcandMES>5.2XXcandMES<5.26XXcandEExtra<0.5" l yes babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/root/noMESRootLow_candQ2_All_both.root keys/eps/CSample/root/Q2_SB_mES.root
+
+CSample noCutRootMid candQ2 44 1.5 12.5 "candM2>1.5XXcandEExtra>0.5&&candEExtra<1.2" no no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/root/noCutRootMid_candQ2_All_both.root keys/eps/CSample/root/Q2_SB_Eex.root
+
+
+
+CSample noMESRoot candQ2 17 4 12.5 "candM2>1.5XXcandMES>5.2XXcandMES<5.26XX(candMvaDl>0.458XXcandType==1||candMvaDl>0.36XXcandType==3||candMvaDl>0.48XXcandType==2||candMvaDl>0.41XXcandType==4)" l yes babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/root/noMESRoot_candQ2_All_both.root keys/eps/CSample/root/Q2_SB2_050.root
+
+CSample noMESRootLow candQ2 17 4 12.5 "candM2>1.5XXcandMES>5.2XXcandMES<5.26XXcandEExtra<0.5" l yes babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/root/noMESRootLow_candQ2_All_both.root keys/eps/CSample/root/Q2_SB2_mES.root
+
+CSample noCutRootMid candQ2 17 4 12.5 "candM2>1.5XXcandEExtra>0.5&&candEExtra<1.2" no no babar_code/Reweight/wTotal.txt
+cpf keys/eps/CSample/root/noCutRootMid_candQ2_All_both.root keys/eps/CSample/root/Q2_SB2_Eex.root
+

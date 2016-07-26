@@ -156,7 +156,7 @@ void plotPl(int sam){
     h.Fill(pl,val);
   }
   h.Draw();
-  TString cName = "babar_code/fit/eps/pl";cName+=sam;cName+=".eps";
+  TString cName = "babar_code/fit/Plots/pl";cName+=sam;cName+=".eps";
   c.SaveAs(cName);
 }
 
