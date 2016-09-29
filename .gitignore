@@ -1,22 +1,42 @@
-*.log
-core.*
-*~
-*.root
-*#
-.#*
-
 # Compiled Object files
 *.slo
 *.lo
 *.o
-
+*.obj
 *.d
+
+# Precompiled Headers
+*.gch
+*.pch
 
 # Compiled Dynamic libraries
 *.so
 *.dylib
+*.dll
+
+# Fortran module files
+*.mod
 
 # Compiled Static libraries
 *.lai
 *.la
 *.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Misc.
+*~
+*#
+*.root
+*.log
+*.pdf
+*.#*
+.DS_Store
+
+# LaTeX
+*.tex
+*.aux

@@ -1,3 +1,13 @@
+Nature review
+./run/prd_fit.exe txt/fits/TextFinalIsoDataNe2x100.txt sig All candM2 240 -2 10 curveNormIso 1
+mv plots/PRLsigcandM2_curveNormIso.pdf ~/Dropbox/Nature/NatureReview/figures/fit_babar_mmiss_norm.pdf
+
+./run/prd_fit.exe txt/fits/TextFinalIsoDataNe2x100.txt sig All candM2 48 -2 10 curveSigLegIso 15
+mv plots/PRLsigcandM2_curveSigLegIso.pdf ~/Dropbox/Nature/NatureReview/figures/fit_babar_mmiss_sig.pdf
+
+./run/prd_fit.exe txt/fits/TextFinalIsoDataNe2x100.txt sig All candPstarLep 20 0 2 curveSigIso 0.95 1 12
+mv plots/PRLsigcandPstarLep_curveSigIso.pdf ~/Dropbox/Nature/NatureReview/figures/fit_babar_pl.pdf
+
 Control samples
 ======================================================================================================================
 CSample OffnoCutSumRoot candPstarLep 60 0 2.4 "candQ2>4XXcandMES>5.27" r no babar_code/Reweight/wFFBF.txt

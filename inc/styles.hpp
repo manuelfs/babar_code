@@ -27,6 +27,7 @@ public:
                      float xoff=1., float yoff=1., int divisions=405);
   void parseStyleFile(TString group, TString fnames[], float *fvalues[], int nFloat, 
                       TString inames[], int *ivalues[], int nInt);
+  void setPadsStyle(int numberPads);
   void setGroup(TString group);
 
   TString confFile, Group;

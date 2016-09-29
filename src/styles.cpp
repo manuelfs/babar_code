@@ -76,6 +76,15 @@ void styles::setGlobalStyle() {
   gStyle->SetPadTickY(1);             // No ticks at the top
 }
 
+
+void styles::setPadsStyle(int numberPads) {
+  nPads = abs(numberPads);
+  TString Section = "Pads_"; Section += nPads;
+  if(numberPads<0) Section += "b";
+  setGroup(Section);
+}
+
+
 void styles::setGroup(TString group){
   Group = group;
   readGroupStyle();
