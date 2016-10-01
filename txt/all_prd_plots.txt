@@ -1,9 +1,12 @@
 Nature review
-./run/prd_fit.exe txt/fits/TextFinalIsoDataNe2x100.txt sig All candM2 240 -2 10 curveNormIso 1
-mv plots/PRLsigcandM2_curveNormIso.pdf ~/Dropbox/Nature/NatureReview/figures/fit_babar_mmiss_norm.pdf
+./compile.sh && ./run/prd_fit.exe txt/fits/TextFinalIsoDataNe2x100.txt sig All candM2 240 -2 10 curveNormLegIso 1
+mv plots/PRLsigcandM2_curveNormLegIso.pdf ~/Dropbox/Nature/NatureReview/figures/fit_babar_mmiss_norm.pdf
 
-./run/prd_fit.exe txt/fits/TextFinalIsoDataNe2x100.txt sig All candM2 48 -2 10 curveSigLegIso 15
-mv plots/PRLsigcandM2_curveSigLegIso.pdf ~/Dropbox/Nature/NatureReview/figures/fit_babar_mmiss_sig.pdf
+./compile.sh && ./run/prd_fit.exe txt/fits/TextFinalIsoDataNe2x100.txt sig All candM2 42 -0.55 1.55 curveNormZoomLegIso 1
+mv plots/PRLsigcandM2_curveNormZoomLegIso.pdf ~/Dropbox/Nature/NatureReview/figures/fit_babar_mmiss_norm_zoom.pdf
+
+./run/prd_fit.exe txt/fits/TextFinalIsoDataNe2x100.txt sig All candM2 48 -2 10 curveSigIso 15
+mv plots/PRLsigcandM2_curveSigIso.pdf ~/Dropbox/Nature/NatureReview/figures/fit_babar_mmiss_sig.pdf
 
 ./run/prd_fit.exe txt/fits/TextFinalIsoDataNe2x100.txt sig All candPstarLep 20 0 2 curveSigIso 0.95 1 12
 mv plots/PRLsigcandPstarLep_curveSigIso.pdf ~/Dropbox/Nature/NatureReview/figures/fit_babar_pl.pdf

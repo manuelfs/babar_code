@@ -23,6 +23,7 @@
 #include "TLegend.h"
 #include "TLine.h"
 #include "TStyle.h"
+#include "TText.h"
 #include <fstream>
 #include <iostream>
 
@@ -36,6 +37,21 @@ namespace{
 
 using namespace TMath;
 using namespace std;
+
+void BABARLabel(Double_t xpos= 0.73, Double_t ypos= 0.85, Double_t scale= 1.0) {
+  TText *babar = new TText();
+  babar->SetNDC(kTRUE);
+  babar->SetTextFont(32);
+  babar->SetTextSize(0.10*scale);
+  babar->DrawText(xpos,ypos,"B");
+  babar->SetTextSize(0.075*scale);
+  babar->DrawText(xpos+0.042*scale,ypos,"A");
+  babar->SetTextSize(0.10*scale);
+  babar->DrawText(xpos+0.078*scale,ypos,"B");
+  babar->SetTextSize(0.075*scale);
+  babar->DrawText(xpos+0.120*scale,ypos,"AR");
+  delete babar;
+}
 
 void PlotFinalFit2(TString textName, TTree *tree, int nbins = 25, double minx=-0.4, double maxx=1.4, double minY=0, double maxY=2.4,
 		  TString typePlot="histo", TString var="candM2", TString sample="sig", 
@@ -201,20 +217,21 @@ void PlotFinalFit2(TString textName, TTree *tree, int nbins, double minx, double
   gStyle->SetHatchesLineWidth(1);
   int fillDl = 3654, fillDsl = 3645;
   styles style; 
-  style.LabelSize = 0.1; style.nDivisions = 308;
+  style.LabelSize = 0.126; style.nDivisions = 708;
   style.setDefaultStyle();
-  gStyle->SetNdivisions(205, "y");
-  double canH = (isIso?700:1200);
+  gStyle->SetNdivisions(505, "y");
+  double canH = (isIso ? 900:1200);
   TCanvas can("can","Final fit", 800, canH);
   TPad *Pads[4];
   //gPad->SetTicks(1,1);
 
   int maxProj = 8; if(isDss) maxProj = 6;
-  double bMargin = (isIso?0.1:0.065);
+  double bMargin = (isIso?0.12:0.065);
   double tMargin = 0.04;
   double padH = (1-bMargin-tMargin)/nPads;
   double LeftMargin = 0.14, RightMargin = 0.1, TopMargin=0, BottomMargin=0;
-  if(var=="candM2"){LeftMargin = 0.16; RightMargin = 0.08;}
+  //if(var=="candM2"){LeftMargin = 0.16; RightMargin = 0.08;}
+  LeftMargin = 0.18; RightMargin = 0.065;
   for(int pad=begChan; pad<endChan; pad++){
     if(isSum) IndPad[0][isIso][pad] = 1;
     double PadY[2] = {bMargin+padH*(3-pad), bMargin+padH*(4-pad)};
@@ -333,6 +350,10 @@ void PlotFinalFit2(TString textName, TTree *tree, int nbins, double minx, double
     //if(pad==3)  htree[pad]->SetMaximum(1.13*maxi/maxFactor/3.15);
     if(doSubtract==0) htree[pad]->SetMinimum(0);
     else htree[pad]->SetMinimum(htree[pad]->GetMinimum()*1.6);
+    if(typePlot.Contains("Log")) {
+      htree[pad]->SetMinimum(0.9);
+      Pads[pad]->SetLogy(1);
+    }
     if(typePlot.Contains("pull") && ((pad>1 && isIso) || (isIso==0&&(isSum==0 || (isSum==1&&pad==3))))){
       for(int bin=1; bin<=nbins; bin++){
 	double BinErr = htree[pad]->GetBinError(bin);
@@ -388,21 +409,22 @@ void PlotFinalFit2(TString textName, TTree *tree, int nbins, double minx, double
   if(var=="candM2") {
     ytitle += RoundNumber((maxx-minx),2,static_cast<double>(nbins)); ytitle += " GeV^{2})";
   } else {
-    ytitle += RoundNumber((maxx-minx)*1000,0,static_cast<double>(nbins)); ytitle += " MeV)";
+    //ytitle += RoundNumber((maxx-minx)*1000,0,static_cast<double>(nbins)); ytitle += " MeV)";
+    ytitle += RoundNumber((maxx-minx),1,static_cast<double>(nbins)); ytitle += " GeV)";
     xTitle = "p";
-    if(texLabels) xTitle = "|p#lower[.6]{^{*}}#kern[-.9]{#lower[-.0]{_{l}}}| [GeV]"; 
+    if(texLabels) xTitle = "E#lower[.6]{^{*}}#kern[-.9]{#lower[-.0]{_{l}}} [GeV]"; 
   }
   can.cd(0);
-  label.SetTextSize(0.047); label.SetTextAlign(32);
-  label.SetTextAngle(90); label.DrawLatex(LeftMargin/4.2,0.65,ytitle);
-  label.SetTextAngle(0); label.SetTextAlign(21); label.DrawLatex(0.55,0.02,xTitle);
+  label.SetTextSize(0.056); 
+  label.SetTextAngle(90); label.SetTextAlign(23); label.DrawLatex(0.004,0.55,ytitle);
+  label.SetTextAngle(0);  label.SetTextAlign(21); label.DrawLatex(0.55,0.02,xTitle);
 
   TBox box; box.SetFillStyle(1001); box.SetLineColor(10); box.SetFillColor(10);
   label.SetTextAlign(13); label.SetTextSize(style.LabelSize/3); 
   if(isIso) label.SetTextSize(style.LabelSize/2.4); 
   double labLeft = 0.035;
   if(var=="candPstarLep" && isDss) labLeft = 0.6;
-  if(var=="candPstarLep" && typePlot.Contains("Sig")) labLeft = 0.65;
+  //if(var=="candPstarLep" && typePlot.Contains("Sig")) labLeft = 0.65;
   for(int pad=0; pad<4; pad++){
     if(!isIso){
       if(pad<3){
@@ -412,8 +434,8 @@ void PlotFinalFit2(TString textName, TTree *tree, int nbins, double minx, double
       label.DrawLatex(LeftMargin+labLeft, bMargin+padH*(4-pad)-0.03, channelTitle[pad]);
     } else if(pad>=2){
       if(pad<3){
-	box.DrawBox(LeftMargin-0.03, bMargin+padH*(1-pad%2), LeftMargin-0.002, bMargin+padH*(1-pad%2)+0.02);
-	label.DrawLatex(LeftMargin-0.025, bMargin+padH*(1-pad%2)+0.007,"0");
+	box.DrawBox(LeftMargin-0.07, bMargin+padH*(1-pad%2), LeftMargin-0.002, bMargin+padH*(1-pad%2)+0.02);
+	label.DrawLatex(LeftMargin-0.032, bMargin+padH*(1-pad%2)+0.018,"0");
       }
       label.DrawLatex(LeftMargin+labLeft, bMargin+padH*(2-pad%2)-0.03, channelTitle[pad]);
 
@@ -424,7 +446,7 @@ void PlotFinalFit2(TString textName, TTree *tree, int nbins, double minx, double
   vector<TString> legLabel = {"Bkg", "Bkg", "Bkg", "Bkg", "Dssl", "Dsl", "Dl", "Dstau", "Dtau"};
   if(texLabels) legLabel = vector<TString>({"Bkg.", "Bkg.", "Bkg.", "Bkg.", "D#lower[.4]{^{**}}(l/#tau)#nu",
 					   "D#lower[.4]{^{*}}l#nu", "Dl#nu","D#lower[.4]{^{*}}#tau#nu","D#tau#nu"});
-  double legXY[2][2] = {{0.68, 0.87}, {bMargin+padH*(3-legPad+0.31), bMargin+padH*(3-legPad+0.95)}};
+  double legXY[2][2] = {{0.65, 0.86}, {bMargin+padH*(3-legPad+0.28), bMargin+padH*(3-legPad+0.92)}};
   if(isDss) {
     legXY[1][0] = bMargin+padH*(3-legPad+0.52);
     legLabel[3] = "Dl"; legLabel[4] = "Dsl"; legLabel[5] = "Dssl"; 
@@ -433,7 +455,7 @@ void PlotFinalFit2(TString textName, TTree *tree, int nbins, double minx, double
   TLegend leg(legXY[0][0], legXY[1][0], legXY[0][1], legXY[1][1]);
   leg.SetTextSize(style.LabelSize/3.2); leg.SetFillColor(0); 
   leg.SetTextFont(style.nFont); leg.SetBorderSize(0);
-  if(isIso) leg.SetTextSize(style.LabelSize/2.8);
+  if(isIso) leg.SetTextSize(style.LabelSize/2.5);
   for(int ipdf=maxProj; ipdf>0; ipdf--) {
     if(ipdf==2 || (ipdf==3&&isDss==0)) continue;
     int iipdf = ipdf;
@@ -467,7 +489,7 @@ void PlotFinalFit2(TString textName, TTree *tree, int nbins, double minx, double
       box.DrawBox(legXY[0][0]+legW*0.04, legXY[1][0]+legH*(row+0.15), 
     		  legXY[0][0]+legW*0.21, legXY[1][0]+legH*(row+0.85));
   }
-
+  BABARLabel(0.73,0.88,0.62);
   TString plotName = "plots/PRL"; plotName+=sample; plotName+=var; plotName+="_"; 
   plotName+=typePlot; plotName+=".pdf";
   can.SaveAs(plotName);
