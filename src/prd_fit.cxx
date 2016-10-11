@@ -201,7 +201,11 @@ void PlotFinalFit2(TString textName, TTree *tree, int nbins, double minx, double
 		      {67,57,47,31,27,23,35,-1,-1},{68,58,48,32,28,24,36,-1,-1}};
   int colDsl=kBlue-8, colDl=kCyan+1, colBkg=kYellow-7;
   int Colors[2][9] = {{colBkg,colBkg,colBkg,colBkg,colDsl,28,colDl,kGreen-7,kRed-7},
-		      {colBkg,colBkg,colBkg,colDl,colDsl,28,0,0,0}};
+  		      {colBkg,colBkg,colBkg,colDl,colDsl,28,0,0,0}};
+
+  // int colDsl=kBlue-8, colDl=kCyan+1, colBkg=kGreen-9;
+  // int Colors[2][9] = {{colBkg,colBkg,colBkg,colBkg,colDsl,28,colDl,kRed-7, kOrange-4},
+  // 		      {colBkg,colBkg,colBkg,colDl,colDsl,28,0,0,0}};
   TString channelTitle[4]={"D0","D*0","D+","D*+"};
   //TString PadLabel[] = {"a", "b", "(c)", "(d)", "e)", "f)", "g)", "h)"};
   TH1F *htree[8], pdfProj[8][9], *pdfProjCopy[8][9];
@@ -444,9 +448,10 @@ void PlotFinalFit2(TString textName, TTree *tree, int nbins, double minx, double
 
   int legPad = 3, nEntries=0;
   vector<TString> legLabel = {"Bkg", "Bkg", "Bkg", "Bkg", "Dssl", "Dsl", "Dl", "Dstau", "Dtau"};
-  if(texLabels) legLabel = vector<TString>({"Bkg.", "Bkg.", "Bkg.", "Bkg.", "D#lower[.4]{^{**}}(l/#tau)#nu",
-					   "D#lower[.4]{^{*}}l#nu", "Dl#nu","D#lower[.4]{^{*}}#tau#nu","D#tau#nu"});
-  double legXY[2][2] = {{0.65, 0.86}, {bMargin+padH*(3-legPad+0.28), bMargin+padH*(3-legPad+0.92)}};
+  if(texLabels) legLabel = vector<TString>({"Bkg.", "Bkg.", "Bkg.", "Bkg.", "B #rightarrow D#lower[.4]{^{**}}(l/#tau)#nu",
+					   "B #rightarrow D#lower[.4]{^{*}}l#nu", "B #rightarrow Dl#nu",
+	"B #rightarrow D#lower[.4]{^{*}}#tau#nu","B #rightarrow D#tau#nu"});
+  double legXY[2][2] = {{0.49, 0.70}, {bMargin+padH*(3-legPad+0.19), bMargin+padH*(3-legPad+0.87)}};
   if(isDss) {
     legXY[1][0] = bMargin+padH*(3-legPad+0.52);
     legLabel[3] = "Dl"; legLabel[4] = "Dsl"; legLabel[5] = "Dssl"; 
@@ -456,6 +461,7 @@ void PlotFinalFit2(TString textName, TTree *tree, int nbins, double minx, double
   leg.SetTextSize(style.LabelSize/3.2); leg.SetFillColor(0); 
   leg.SetTextFont(style.nFont); leg.SetBorderSize(0);
   if(isIso) leg.SetTextSize(style.LabelSize/2.5);
+  leg.AddEntry(htree[0], "Data"); nEntries++;
   for(int ipdf=maxProj; ipdf>0; ipdf--) {
     if(ipdf==2 || (ipdf==3&&isDss==0)) continue;
     int iipdf = ipdf;
@@ -470,10 +476,7 @@ void PlotFinalFit2(TString textName, TTree *tree, int nbins, double minx, double
   }
   if(typePlot.Contains("Leg")) {
     can.cd(0);
-    double xlow, xhigh, ylow, yhigh;
-    can.GetRangeAxis(xlow, ylow, xhigh, yhigh);
     leg.Draw();
-    can.cd(0);
     double iDl = 3, iDsl = 2;
     if(isDss) iDl = 1; 
     fillDl -= 300; fillDsl -= 300; 
@@ -485,10 +488,17 @@ void PlotFinalFit2(TString textName, TTree *tree, int nbins, double minx, double
     box.DrawBox(legXY[0][0]+legW*0.04, legXY[1][0]+legH*(iDsl+0.15), 
      		legXY[0][0]+legW*0.21, legXY[1][0]+legH*(iDsl+0.85));
     box.SetFillColor(0); box.SetFillStyle(0); box.SetLineWidth(1); box.SetLineColor(1); 
-    for(int row=0; row<nEntries; row++)
+    for(int row=0; row<nEntries-1; row++)
       box.DrawBox(legXY[0][0]+legW*0.04, legXY[1][0]+legH*(row+0.15), 
     		  legXY[0][0]+legW*0.21, legXY[1][0]+legH*(row+0.85));
   }
+  
+  double cutsH = 0.52, cutsX = 0.9;
+  label.SetTextAlign(33); label.SetTextSize(style.LabelSize/2.5); 
+  label.DrawLatex(cutsX, cutsH, "q^{2} > 4 GeV^{2}");
+  if(minY>=1) label.DrawLatex(cutsX, cutsH-0.05, "m^{2}_{miss} > "+RoundNumber(minY,0)+" GeV^{2}");
+
+
   BABARLabel(0.73,0.88,0.62);
   TString plotName = "plots/PRL"; plotName+=sample; plotName+=var; plotName+="_"; 
   plotName+=typePlot; plotName+=".pdf";

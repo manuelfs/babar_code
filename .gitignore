@@ -33,6 +33,7 @@
 *#
 *.root
 *.log
+*.eps
 *.pdf
 *.#*
 .DS_Store
