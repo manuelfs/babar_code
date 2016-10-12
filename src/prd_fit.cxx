@@ -308,7 +308,13 @@ void PlotFinalFit2(TString textName, TTree *tree, int nbins, double minx, double
     style.setMarkers(htree[pad], 0.7, 20);
     if(pad >1 && isIso){
       vector<TString> IsoTags = {"D","D*"};
-      if(texLabels) IsoTags = vector<TString>({"Dl","D#lower[.4]{^{*}}l"});
+      if(texLabels) {
+	IsoTags = vector<TString>({"Dl","D#lower[.4]{^{*}}l"});
+	if(var=="candM2"){
+	  if(maxFactor>5) IsoTags = vector<TString>({"(b)","(e)"});
+	  else IsoTags = vector<TString>({"(a)","(d)"});
+	} else IsoTags = vector<TString>({"(c)","(f)"});
+      }
       channelTitle[pad] = IsoTags[pad-2];
       int iPad = pad-2; 
       htree[pad]->Add(htree[iPad]);
@@ -451,7 +457,7 @@ void PlotFinalFit2(TString textName, TTree *tree, int nbins, double minx, double
   if(texLabels) legLabel = vector<TString>({"Bkg.", "Bkg.", "Bkg.", "Bkg.", "B #rightarrow D#lower[.4]{^{**}}(l/#tau)#nu",
 					   "B #rightarrow D#lower[.4]{^{*}}l#nu", "B #rightarrow Dl#nu",
 	"B #rightarrow D#lower[.4]{^{*}}#tau#nu","B #rightarrow D#tau#nu"});
-  double legXY[2][2] = {{0.49, 0.70}, {bMargin+padH*(3-legPad+0.19), bMargin+padH*(3-legPad+0.87)}};
+  double legXY[2][2] = {{0.53, 0.74}, {bMargin+padH*(3-legPad+0.12), bMargin+padH*(3-legPad+0.80)}};
   if(isDss) {
     legXY[1][0] = bMargin+padH*(3-legPad+0.52);
     legLabel[3] = "Dl"; legLabel[4] = "Dsl"; legLabel[5] = "Dssl"; 

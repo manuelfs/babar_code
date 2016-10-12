@@ -1,0 +1,32 @@
+./compile.sh && ./run/prd_fit.exe txt/fits/TextFinalIsoDataNe2x100.txt sig All candM2 120 -2 10 curveNormLegIso 1
+mv plots/PRLsigcandM2_curveNormLegIso.pdf ~/Dropbox/Nature/NatureReview/figures/fit_babar_mmiss_norm.pdf
+
+./compile.sh && ./run/prd_fit.exe txt/fits/TextFinalIsoDataNe2x100.txt sig All candM2 120 -2 4 curveNormZoomLegIso 1
+mv plots/PRLsigcandM2_curveNormZoomLegIso.pdf ~/Dropbox/Nature/NatureReview/figures/fit_babar_mmiss_norm_zoom.pdf
+
+./compile.sh && ./run/prd_fit.exe txt/fits/TextFinalIsoDataNe2x100.txt sig All candM2 48 -2 10 curveSigIso 15
+mv plots/PRLsigcandM2_curveSigIso.pdf ~/Dropbox/Nature/NatureReview/figures/fit_babar_mmiss_sig.pdf
+
+./compile.sh && ./run/prd_fit.exe txt/fits/TextFinalIsoDataNe2x100.txt sig All candPstarLep 20 0 2 curveSigIso 0.95 1 12
+mv plots/PRLsigcandPstarLep_curveSigIso.pdf ~/Dropbox/Nature/NatureReview/figures/fit_babar_pl.pdf
+
+
+
+./compile.sh && ./run/plot_results.exe -p 0
+mv plots/results_dxtaunu.pdf ~/Dropbox/Nature/NatureReview/figures/
+
+./compile.sh && ./run/plot_results.exe -p 1
+mv plots/results_taunu.pdf ~/Dropbox/Nature/NatureReview/figures/
+
+./compile.sh && ./run/plot_results.exe -p 2
+mv plots/results_dxtaunu_taunu.pdf ~/Dropbox/Nature/NatureReview/figures/
+
+./compile.sh && ./run/plot_results.exe -p 0 -n
+mv plots/results_notext_dxtaunu.pdf ~/Dropbox/Nature/NatureReview/figures/
+
+./compile.sh && ./run/plot_results.exe -p 1 -n
+mv plots/results_notext_taunu.pdf ~/Dropbox/Nature/NatureReview/figures/
+
+./compile.sh && ./run/plot_results.exe -p 2 -n
+mv plots/results_notext_dxtaunu_taunu.pdf ~/Dropbox/Nature/NatureReview/figures/
+

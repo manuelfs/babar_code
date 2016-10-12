@@ -6,6 +6,9 @@
 
 #include "TString.h"
 
+
+void GetOptions(int argc, char *argv[]);
+
 class Results {
 public: 
   Results(TString iname, float ivalue, std::vector<float> istatError, std::vector<float> isystError={0.});
