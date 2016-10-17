@@ -17,6 +17,7 @@
 using namespace std;
 
 namespace{
+  bool printSyst = false;
   bool printResults = true;
   enum whichPlots {bdxtaunu, btaunu, both};
   int whichPlot = bdxtaunu;
@@ -40,9 +41,9 @@ int main(int argc, char *argv[]){
   resTaunu.push_back(Results(s_belleHT, 0.72, {0.27, 0.25}, {0.11}));
   Results resTaunuSM("SM", 0.75, {0.10, 0.05});
   Results resTaunuAverage("Average", 1.06, {0.19});
-  float maxTaunu = (printResults?4.4:2.8);
+  float maxTaunu = (printResults?3.9:2.8);
   if(whichPlot == btaunu || whichPlot == both) 
-    pads.push_back(PadResults("#it{B}(B^{-}#rightarrow #tau^{-}#nu_{#tau}) [10^{-4}]", 0., maxTaunu, 
+    pads.push_back(PadResults("#it{B}(B^{-}#rightarrow #tau^{-}#bar{#nu}_{#tau}) [10^{-4}]", 0., maxTaunu, 
 			      resTaunu, resTaunuSM, resTaunuAverage));
 
   //////////////////// RD ////////////////////////
@@ -51,7 +52,7 @@ int main(int argc, char *argv[]){
   resRD.push_back(Results(s_belleHT, 0.375, {0.064}, {0.026}));
   Results resRDSM("SM", 0.297, {0.017});
   Results resRDAverage("Average", 0.391, {0.041},{0.028});
-  float maxRD = (printResults?0.82:0.54);
+  float maxRD = (printResults?0.74:0.54);
   if(whichPlot == bdxtaunu || whichPlot == both) 
     pads.push_back(PadResults("R(D)", 0.24, maxRD, resRD, resRDSM, resRDAverage));
 
@@ -62,7 +63,7 @@ int main(int argc, char *argv[]){
   resRDs.push_back(Results(s_lhcb, 0.336, {0.027}, {0.030}));
   Results resRDsSM("SM", 0.252, {0.003});
   Results resRDsAverage("Average", 0.322, {0.018},{0.012});
-  float maxRDs = (printResults?0.56:0.4);
+  float maxRDs = (printResults?0.53:0.4);
   if(whichPlot == bdxtaunu || whichPlot == both) 
     pads.push_back(PadResults("R(D#lower[-.1]{*})", 0.22, maxRDs, resRDs, resRDsSM, resRDsAverage));
 
@@ -94,7 +95,13 @@ int main(int argc, char *argv[]){
 
   //// Creating canvas
   float nPads = pads.size(); 
-  float sideW = 105, padW = (printResults?300:250);
+  float sideW = 105, padW = 250;
+  if(whichPlot==both){
+    if(!printSyst) {
+      sideTextSize = 0.175;
+      sideW = 90;
+    } else padW = 300;
+  }
   float canW = sideW + nPads*padW;
   TCanvas can("can","", canW, 250);
 
@@ -169,13 +176,19 @@ int main(int argc, char *argv[]){
 	if(result.name == s_babarST) digits = 1;
 	else digits = 2;
       }
+      label.SetTextSize(axisTextSize/1.1); label.SetTextAlign(32); label.SetNDC(kFALSE); 
       TString s_res = RoundNumber(result.value,digits)+" ";
-      if(result.statUp() == result.statDown()) s_res += "#pm "+RoundNumber(result.statUp(),digits)+" ";
-      else s_res += "^{+"+RoundNumber(result.statUp(),digits)+"}_{-"+RoundNumber(result.statDown(),digits)+"} ";
-      if(result.systUp() == result.systDown()) s_res += "#pm "+RoundNumber(result.systUp(),digits);
-      else s_res += "^{+"+RoundNumber(result.systUp(),digits)+"}_{-"+RoundNumber(result.systDown(),digits)+"}";
-      label.SetTextSize(axisTextSize/1.2); label.SetTextAlign(32); label.SetNDC(kFALSE); 
-      if(printResults) label.DrawLatex(pads[pad].maxX-0.03*(pads[pad].maxX-pads[pad].minX), resY, s_res);
+      if(printSyst){
+	if(result.statUp() == result.statDown()) s_res += "#pm "+RoundNumber(result.statUp(),digits)+" ";
+	else s_res += "^{+"+RoundNumber(result.statUp(),digits)+"}_{-"+RoundNumber(result.statDown(),digits)+"} ";
+	if(result.systUp() == result.systDown()) s_res += "#pm "+RoundNumber(result.systUp(),digits);
+	else s_res += "^{+"+RoundNumber(result.systUp(),digits)+"}_{-"+RoundNumber(result.systDown(),digits)+"}";
+	label.SetTextSize(axisTextSize/1.2);
+      } else {
+	if(result.errUp() == result.errDown()) s_res += "#pm "+RoundNumber(result.errUp(),digits)+" ";
+	else s_res += "^{+"+RoundNumber(result.errUp(),digits)+"}_{-"+RoundNumber(result.errDown(),digits)+"} ";
+      }
+      if(printResults) label.DrawLatex(pads[pad].maxX-0.01*(pads[pad].maxX-pads[pad].minX), resY, s_res);
     }
 
    hRD[pad]->Draw("same axis");
@@ -215,6 +228,7 @@ PadResults::PadResults(TString ititle, float iminX, float imaxX, std::vector<Res
 void GetOptions(int argc, char *argv[]){
   while(true){
     static struct option long_options[] = {
+      {"syst", no_argument, 0, 's'},   
       {"notext", no_argument, 0, 'n'},   
       {"plots", required_argument, 0, 'p'},
       {0, 0, 0, 0}
@@ -222,11 +236,14 @@ void GetOptions(int argc, char *argv[]){
 
     char opt = -1;
     int option_index;
-    opt = getopt_long(argc, argv, "p:n", long_options, &option_index);
+    opt = getopt_long(argc, argv, "p:ns", long_options, &option_index);
     if(opt == -1) break;
 
     string optname;
     switch(opt){
+    case 's':
+      printSyst = true;
+      break;
     case 'n':
       printResults = false;
       break;
