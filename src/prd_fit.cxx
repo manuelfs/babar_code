@@ -457,7 +457,7 @@ void PlotFinalFit2(TString textName, TTree *tree, int nbins, double minx, double
   if(texLabels) legLabel = vector<TString>({"Bkg.", "Bkg.", "Bkg.", "Bkg.", "B #rightarrow D#lower[.4]{^{**}}(l/#tau)#nu",
 					   "B #rightarrow D#lower[.4]{^{*}}l#nu", "B #rightarrow Dl#nu",
 	"B #rightarrow D#lower[.4]{^{*}}#tau#nu","B #rightarrow D#tau#nu"});
-  double legXY[2][2] = {{0.53, 0.74}, {bMargin+padH*(3-legPad+0.12), bMargin+padH*(3-legPad+0.80)}};
+  double legXY[2][2] = {{0.56, 0.77}, {bMargin+padH*(3-legPad+0.19), bMargin+padH*(3-legPad+0.87)}};
   if(isDss) {
     legXY[1][0] = bMargin+padH*(3-legPad+0.52);
     legLabel[3] = "Dl"; legLabel[4] = "Dsl"; legLabel[5] = "Dssl"; 
@@ -499,13 +499,16 @@ void PlotFinalFit2(TString textName, TTree *tree, int nbins, double minx, double
     		  legXY[0][0]+legW*0.21, legXY[1][0]+legH*(row+0.85));
   }
   
-  double cutsH = 0.52, cutsX = 0.9;
+  double cutsH = 0.51, cutsX = 0.9;
   label.SetTextAlign(33); label.SetTextSize(style.LabelSize/2.5); 
-  label.DrawLatex(cutsX, cutsH, "q^{2} > 4 GeV^{2}");
-  if(minY>=1) label.DrawLatex(cutsX, cutsH-0.05, "m^{2}_{miss} > "+RoundNumber(minY,0)+" GeV^{2}");
+  //label.DrawLatex(cutsX, cutsH, "q^{2} > 4 GeV^{2}");
+  //if(minY>=1) label.DrawLatex(cutsX, cutsH-0.05, "m^{2}_{miss} > "+RoundNumber(minY,0)+" GeV^{2}");
+  if(minY>=1) {
+    label.DrawLatex(cutsX, 1-tMargin-0.08, "m^{2}_{miss} > "+RoundNumber(minY,0)+" GeV^{2}");
+    label.DrawLatex(cutsX, cutsH, "m^{2}_{miss} > "+RoundNumber(minY,0)+" GeV^{2}");
+  }
 
-
-  BABARLabel(0.73,0.88,0.62);
+  BABARLabel(0.75,0.9,0.62);
   TString plotName = "plots/PRL"; plotName+=sample; plotName+=var; plotName+="_"; 
   plotName+=typePlot; plotName+=".pdf";
   can.SaveAs(plotName);
