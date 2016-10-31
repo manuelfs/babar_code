@@ -11,6 +11,7 @@
 #include "TMarker.h"
 
 #include "styles.hpp"
+#include "results.hpp"
 #include "plot_results.hpp"
 #include "keys_utils.hpp"
 
@@ -19,6 +20,7 @@ using namespace std;
 namespace{
   bool printSyst = false;
   bool printResults = true;
+  bool doST = true;
   enum whichPlots {bdxtaunu, btaunu, both};
   int whichPlot = bdxtaunu;
 }
@@ -52,6 +54,10 @@ int main(int argc, char *argv[]){
   resRD.push_back(Results(s_belleHT, 0.375, {0.064}, {0.026}));
   Results resRDSM("SM", 0.297, {0.017});
   Results resRDAverage("Average", 0.391, {0.041},{0.028});
+  if(doST) {
+    resRDSM = Results("SM", 0.300, {0.008});
+    resRDAverage = Results("Average", 0.397, {0.040},{0.028});
+  }
   float maxRD = (printResults?0.74:0.54);
   if(whichPlot == bdxtaunu || whichPlot == both) 
     pads.push_back(PadResults("R(D)", 0.24, maxRD, resRD, resRDSM, resRDAverage));
@@ -63,6 +69,10 @@ int main(int argc, char *argv[]){
   resRDs.push_back(Results(s_lhcb, 0.336, {0.027}, {0.030}));
   Results resRDsSM("SM", 0.252, {0.003});
   Results resRDsAverage("Average", 0.322, {0.018},{0.012});
+  if(doST) {
+    resRDsAverage = Results("Average", 0.316, {0.018},{0.010});
+    resRDs.push_back(Results(s_belleST, 0.302, {0.030}, {0.011}));
+  }
   float maxRDs = (printResults?0.53:0.4);
   if(whichPlot == bdxtaunu || whichPlot == both) 
     pads.push_back(PadResults("R(D#lower[-.1]{*})", 0.22, maxRDs, resRDs, resRDsSM, resRDsAverage));
@@ -73,7 +83,7 @@ int main(int argc, char *argv[]){
 
   //// Setting style
   //int colorSM = kGray+2, colorAverage = kRed;
-  int colorSM = kGreen+2, colorAverage = kRed+1, colorRes = 1;
+  int colorSM = kBlue-4, colorAverage = kRed, colorRes = 1;
   float sideTextSize = 0.188, axisTextSize = 0.08;
   float lMargin = 0.02, rMargin = 0.02;
   float bMargin = 0.2, tMargin = 0.03;
@@ -142,15 +152,16 @@ int main(int argc, char *argv[]){
     hRD[pad]->SetXTitle(pads[pad].title);
     hRD[pad]->Draw("");
 
+    float alpha = 0.24;
     //// Drawing SM
-    box.SetFillColor(colorSM); box.SetFillColorAlpha(colorSM, 0.3);
+    box.SetFillColor(colorSM); box.SetFillColorAlpha(colorSM, alpha);
     box.DrawBox(pads[pad].sm.value-pads[pad].sm.errDown(), 0,
 		pads[pad].sm.value+pads[pad].sm.errUp(), 1);
     line.SetLineColor(colorSM); line.SetLineWidth(2);
     line.DrawLine(pads[pad].sm.value, 0, pads[pad].sm.value, 1);
 
     //// Drawing Average
-    box.SetFillColor(colorAverage); box.SetFillColorAlpha(colorAverage, 0.3);
+    box.SetFillColor(colorAverage); box.SetFillColorAlpha(colorAverage, alpha);
     box.DrawBox(pads[pad].average.value-pads[pad].average.errDown(), 0,
 		pads[pad].average.value+pads[pad].average.errUp(), 1);
     line.SetLineColor(colorAverage); line.SetLineWidth(2);
@@ -201,28 +212,8 @@ int main(int argc, char *argv[]){
   plotName += ".pdf";
   can.SaveAs(plotName);
 
-  return 1;
+  return 0;
 }
-
-Results::Results(TString iname, float ivalue, vector<float> istatError, vector<float> isystError):
-  name(iname),
-  value(ivalue),
-  statError(istatError),
-  systError(isystError){
-  if(statError.size()==1) statError.push_back(statError[0]);
-  if(systError.size()==1) systError.push_back(systError[0]);
-  }
-  
-PadResults::PadResults(TString ititle, float iminX, float imaxX, std::vector<Results> ivresults, 
-		       Results ism, Results iaverage):
-  title(ititle),
-  minX(iminX),
-  maxX(imaxX),
-  vresults(ivresults),
-  sm(ism),
-  average(iaverage){
-
-  }
 
 
 void GetOptions(int argc, char *argv[]){
