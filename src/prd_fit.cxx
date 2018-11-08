@@ -59,7 +59,7 @@ void PlotFinalFit2(TString textName, TTree *tree, int nbins = 25, double minx=-0
 
 int main(int argc, char *argv[]){
   if (argc < 2 || argc > 14 ) {
-    cout << "USAGE: PlotFit textFile [sample=sig] [Subtract=] [var=candM2] [nbins=25] "<< 
+    cout << "USAGE: ./run/prd_fit.exe textFile [sample=sig] [Subtract=] [var=candM2] [nbins=25] "<< 
       "[minX=-0.5] [maxX=1.55] [typePlot=curve] [maxFactor=1] [minY=0] [maxY=2.4] [maxFactorPl=1] [nbinsPl]" << endl;
     return 0;
   }
