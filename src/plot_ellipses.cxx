@@ -121,12 +121,16 @@ int main(){
       ellipse.SetLineColor(result[0].color); ellipse.SetLineWidth(lWidth);
       ellipse.DrawEllipse(rd, rds, maxR, minR, 0, 360, angle, "c");
       if(result[0].name.Contains("SM")) ellipse.DrawEllipse(rd, rds, maxR, minR, 0, 360*10, angle, "c");
+      //cout<<"RDs = "<<rds<<" +- "<<erds/rds*100<<endl;
+      //cout<<"RD  = "<<rd<<" +- "<<erd/rd*100<<endl<<endl;
+
     } else {
       float dx = 0.003;
       float rd = 0.23+0.01*Nsingle;
       float rds = result[0].value;
       float rdsUp = result[0].value + result[0].errUp();
       float rdsDown = result[0].value - result[0].errDown();
+      //cout<<"RDs = "<<rds<<" +- "<<(rdsUp-rds)/rds*100<<endl<<endl;
 
       ellipse.SetLineColor(result[0].color); ellipse.SetLineWidth(lWidth+2);
       ellipse.DrawEllipse(rd, rds, 0.0023, 0.0023, 0, 360, 0, "c");

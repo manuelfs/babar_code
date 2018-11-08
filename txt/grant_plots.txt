@@ -1,0 +1,6 @@
+// BaBar vs LHCb mmiss resolution for NSF
+./compile.sh && ./run/prd_fit.exe txt/fits/TextFinalIsoDataNe2x100.txt sig All candM2 40 -2 10 curveNormLegIsoDs 1
+
+// BaBar zoom to signal region for NSF
+./compile.sh && ./run/prd_fit.exe txt/fits/TextFinalIsoDataNe2x100.txt sig All candM2 40 -2 10 curveSigIsoDsInset 30
+

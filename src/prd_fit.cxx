@@ -225,6 +225,8 @@ void PlotFinalFit2(TString textName, TTree *tree, int nbins, double minx, double
   style.setDefaultStyle();
   gStyle->SetNdivisions(505, "y");
   double canH = (isIso ? 900:1200);
+  if(typePlot.Contains("Ds")) canH = 1100;
+  if(typePlot.Contains("Inset")) canH = 800;
   TCanvas can("can","Final fit", 800, canH);
   TPad *Pads[4];
   //gPad->SetTicks(1,1);
@@ -246,9 +248,11 @@ void PlotFinalFit2(TString textName, TTree *tree, int nbins, double minx, double
     if(pad==endChan-1){
       PadY[0] = 0;
       BottomMargin=bMargin/(bMargin+padH);
+    } else {
+      if(typePlot.Contains("Ds")) PadY[0] += 0.05;
     }
     hname = "Pad0_"; hname += pad;
-    // cout<<"Creating pad "<<pad<<" y1,y2 "<<PadY[0]<<","<<PadY[1]<<endl;
+    //cout<<"Creating pad "<<pad<<" y1,y2 "<<PadY[0]<<","<<PadY[1]<<endl;
     //if(!isIso || pad>=2) {
     can.cd();
       Pads[pad] = new TPad(hname,"",0, PadY[0], 1, PadY[1]);
@@ -377,6 +381,8 @@ void PlotFinalFit2(TString textName, TTree *tree, int nbins, double minx, double
     }
     if(pad==3) htree[pad]->SetLabelSize(style.LabelSize*padH/(padH+bMargin),"xy");
     else htree[pad]->SetLabelSize(style.LabelSize,"xy");
+    if(typePlot.Contains("Ds") && !typePlot.Contains("Inset")) htree[pad]->SetLabelSize(style.LabelSize/1.8,"xy");
+
     htree[pad]->SetLabelOffset(0.01,"Y");
     if(!isIso || pad>=2) htree[pad]->Draw("e1");
     if(pad<3 && typePlot.Contains("Sum")){
@@ -426,28 +432,36 @@ void PlotFinalFit2(TString textName, TTree *tree, int nbins, double minx, double
   }
   can.cd(0);
   label.SetTextSize(0.056); 
-  label.SetTextAngle(90); label.SetTextAlign(23); label.DrawLatex(0.004,0.55,ytitle);
-  label.SetTextAngle(0);  label.SetTextAlign(21); label.DrawLatex(0.55,0.02,xTitle);
+  label.SetTextAngle(90); label.SetTextAlign(23);
+  if(typePlot.Contains("Ds")) {
+    if(!typePlot.Contains("Inset"))label.DrawLatex(0.004,0.38,ytitle);
+    else  label.DrawLatex(0.05,0.33,ytitle);
+  } else label.DrawLatex(0.004,0.55,ytitle);
+  label.SetTextAngle(0);  label.SetTextAlign(21);
+  if(typePlot.Contains("Ds") && !typePlot.Contains("Inset")) label.DrawLatex(0.55,0.05,xTitle);
+  else label.DrawLatex(0.55,0.02,xTitle);
 
   TBox box; box.SetFillStyle(1001); box.SetLineColor(10); box.SetFillColor(10);
   label.SetTextAlign(13); label.SetTextSize(style.LabelSize/3); 
-  if(isIso) label.SetTextSize(style.LabelSize/2.4); 
+  if(isIso) label.SetTextSize(style.LabelSize/2.4);
   double labLeft = 0.035;
   if(var=="candPstarLep" && isDss) labLeft = 0.6;
   //if(var=="candPstarLep" && typePlot.Contains("Sig")) labLeft = 0.65;
   for(int pad=0; pad<4; pad++){
-    if(!isIso){
-      if(pad<3){
-	box.DrawBox(LeftMargin-0.03, bMargin+padH*(3-pad), LeftMargin-0.002, bMargin+padH*(3-pad)+0.02);
-	label.DrawLatex(LeftMargin-0.025, bMargin+padH*(3-pad)+0.007,"0");
+    if(!typePlot.Contains("Ds")){
+      if(!isIso){
+        if(pad<3){
+          box.DrawBox(LeftMargin-0.03, bMargin+padH*(3-pad), LeftMargin-0.002, bMargin+padH*(3-pad)+0.02);
+          label.DrawLatex(LeftMargin-0.025, bMargin+padH*(3-pad)+0.007,"0");
+        }
+        label.DrawLatex(LeftMargin+labLeft, bMargin+padH*(4-pad)-0.03, channelTitle[pad]);
+      } else if(pad>=2){
+        if(pad<3){
+          box.DrawBox(LeftMargin-0.07, bMargin+padH*(1-pad%2), LeftMargin-0.002, bMargin+padH*(1-pad%2)+0.02);
+          label.DrawLatex(LeftMargin-0.032, bMargin+padH*(1-pad%2)+0.018,"0");
+        }
+        label.DrawLatex(LeftMargin+labLeft, bMargin+padH*(2-pad%2)-0.03, channelTitle[pad]);
       }
-      label.DrawLatex(LeftMargin+labLeft, bMargin+padH*(4-pad)-0.03, channelTitle[pad]);
-    } else if(pad>=2){
-      if(pad<3){
-	box.DrawBox(LeftMargin-0.07, bMargin+padH*(1-pad%2), LeftMargin-0.002, bMargin+padH*(1-pad%2)+0.02);
-	label.DrawLatex(LeftMargin-0.032, bMargin+padH*(1-pad%2)+0.018,"0");
-      }
-      label.DrawLatex(LeftMargin+labLeft, bMargin+padH*(2-pad%2)-0.03, channelTitle[pad]);
 
     }
   }
@@ -509,6 +523,7 @@ void PlotFinalFit2(TString textName, TTree *tree, int nbins, double minx, double
   }
 
   BABARLabel(0.75,0.9,0.62);
+  if(typePlot.Contains("Ds") && !typePlot.Contains("Inset")) BABARLabel(0.75,0.48,0.62);
   TString plotName = "plots/PRL"; plotName+=sample; plotName+=var; plotName+="_"; 
   plotName+=typePlot; plotName+=".pdf";
   can.SaveAs(plotName);
