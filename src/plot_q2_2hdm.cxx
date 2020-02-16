@@ -118,19 +118,19 @@ int main(int argc, char *argv[]){
       for(int bin=1; bin<=nBins; bin++){
         q2 = hQ2[isDs][histo]->GetBinCenter(bin);
         if(isDs==0) hQ2[isDs][histo]->SetBinContent(bin,1e16*Dtaunu.Compute(q2,1,ml[histo]));
-        // else hQ2[isDs][histo]->SetBinContent(bin,1e16*Dstaunu.Compute(q2,1,ml[histo]));
-        else {
-          RDs.gsR = -RDs.mb*pow(tBmH[histo],2);
-          hQ2[isDs][histo]->SetBinContent(bin,1e16*RDs.Gamma_q2(0,q2,ml[histo]));
-        }
-        // if(histo==3) {
+        else hQ2[isDs][histo]->SetBinContent(bin,1e16*Dstaunu.Compute(q2,1,ml[histo]));
+        // else {
         //   RDs.gsR = -RDs.mb*pow(tBmH[histo],2);
-        //   hQ2[isDs][histo]->SetBinContent(bin,1e16*RDs.Gamma_q2(isDs,q2,ml[histo]));
+        //   hQ2[isDs][histo]->SetBinContent(bin,1e16*RDs.Gamma_q2(0,q2,ml[histo]));
         // }
-        //////////// pD plot /////////////
-        //double squ = mB2*mB2+mDs2*mDs2+q2*q2-2*(mB2*mDs2+mDs2*q2+q2*mB2); 
-        //if(squ<0) squ=0;
-        //hQ2[isDs][histo]->SetBinContent(bin,sqrt(squ)/(2*mB));
+         if(histo==3) {
+           RDs.gsR = -RDs.mb*pow(tBmH[histo],2);
+           hQ2[isDs][histo]->SetBinContent(bin,1e16*RDs.Gamma_q2(isDs,q2,ml[histo]));
+         }
+        // ////////// pD plot /////////////
+        // double squ = mB2*mB2+mDs2*mDs2+q2*q2-2*(mB2*mDs2+mDs2*q2+q2*mB2); 
+        // if(squ<0) squ=0;
+        // hQ2[isDs][histo]->SetBinContent(bin,sqrt(squ)/(2*mB));
       }
       meanTL[isDs][histo] = hQ2[isDs][histo]->GetMean();
       intTL[isDs][histo] = hQ2[isDs][histo]->Integral();
