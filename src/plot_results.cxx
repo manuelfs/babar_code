@@ -9,6 +9,7 @@
 #include "TStyle.h"
 #include "TPad.h"
 #include "TMarker.h"
+#include "TLine.h"
 
 #include "styles.hpp"
 #include "results.hpp"

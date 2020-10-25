@@ -39,7 +39,7 @@ int main(){
 
   // Numbers from HFLAV Spring 2019
   // https://hflav-eos.web.cern.ch/hflav-eos/semi/spring19/html/RDsDsstar/RDRDs.html
-  Results RD_SM ("SM pred.", 0.299, {0.003}, {0}, kOrange);
+  Results RD_SM ("SM pred.", 0.299, {0.003}, {0}, kViolet-2);
   Results RDs_SM("SM pred.", 0.258, {0.005}, {0}, kViolet+2);
 
   Results RD_HFLAV ("HFLAV aver.", 0.340, {0.027}, {0.013}, kRed, -0.38);
@@ -48,26 +48,26 @@ int main(){
   Results RD_BABAR ("BABAR (HT)", 0.440, {0.058}, {0.042}, kGreen+2, -0.31);
   Results RDs_BABAR("BABAR (HT)", 0.332, {0.024}, {0.018}, kGreen+2, -0.31);
 
-  Results RD_BABARe ("BaBaR HT electron", 0.3466, {0.0823}, {0.04}, kGreen+1, -0.41);
-  Results RDs_BABARe("BaBaR HT electron", 0.3671, {0.0342}, {0.02}, kGreen+1, -0.41);
+  Results RD_BABARe ("BABAR electron", 0.3466, {0.0823}, {0.04}, kGreen+1, -0.41);
+  Results RDs_BABARe("BABAR HT electron", 0.3671, {0.0342}, {0.02}, kGreen+1, -0.41);
 
-  Results RD_BABARmu ("BaBaR HT muon", 0.5215, {0.0796}, {0.04}, kGreen-3, -0.41);
-  Results RDs_BABARmu("BaBaR HT muon", 0.2899, {0.0326}, {0.02}, kGreen-3, -0.41);
+  Results RD_BABARmu ("BABAR muon", 0.5215, {0.0796}, {0.04}, kGreen-3, -0.41);
+  Results RDs_BABARmu("BABAR HT muon", 0.2899, {0.0326}, {0.02}, kGreen-3, -0.41);
 
   Results RD_BelleST("Belle (ST)", 0.307, {0.037}, {0.016}, kBlue+3, -0.52);
   Results RDs_BelleST("Belle (ST)", 0.283, {0.018}, {0.014}, kBlue+3, -0.52);
 
-  Results RD_BelleSTe("Belle ST electron", 0.281, {0.042}, {0.017}, kAzure+1, -0.52);
-  Results RDs_BelleSTe("Belle ST electron", 0.304, {0.022}, {0.016}, kAzure+1, -0.52);
+  Results RD_BelleSTe("Belle electron", 0.281, {0.042}, {0.017}, kAzure+1, -0.62);
+  Results RDs_BelleSTe("Belle ST electron", 0.304, {0.022}, {0.016}, kAzure+1, -0.62);
 
-  Results RD_BelleSTmu("Belle ST muon", 0.373, {0.068}, {0.030}, kBlue-4, -0.52);
-  Results RDs_BelleSTmu("Belle ST muon", 0.245, {0.035}, {0.020}, kBlue-4, -0.52);
+  Results RD_BelleSTmu("Belle muon", 0.373, {0.068}, {0.030}, kBlue-4, -0.42);
+  Results RDs_BelleSTmu("Belle ST muon", 0.245, {0.035}, {0.020}, kBlue-4, -0.42);
 
 
   if(isWide){
-    RD_BABAR.name = "BaBar HT, PRL #font[62]{109}, 101802 (2012)";
+    RD_BABAR.name = "BABAR, PRL #font[62]{109}, 101802 (2012)";
     //RDs_BelleST.name = "Belle, PRD #font[62]{94}, 072007 (2016)";
-    RD_BelleST.name = "Belle ST, PRL #font[62]{124}, 161803 (2020)";
+    RD_BelleST.name = "Belle, PRL #font[62]{124}, 161803 (2020)";
     RDs_BelleST.name = "Belle, PRL #font[62]{124}, 161803 (2020)";
     RD_HFLAV.name = "HFLAV average Spring 2019";
     RD_SM.name = "SM predictions";
@@ -86,7 +86,7 @@ int main(){
 
   //////// Setting style
   float axisTextSize = 0.065;
-  float lMargin = 0.15, rMargin = 0.05;
+  float lMargin = 0.1, rMargin = 0.02;
   float bMargin = 0.17, tMargin = 0.05;
   gStyle->SetOptStat(0);
   gStyle->SetPadBottomMargin(bMargin);
@@ -103,8 +103,9 @@ int main(){
   gStyle->SetPadTickY(1);             // Ticks at the right
 
   if(isWide) {
-    gStyle->SetTitleOffset(0.9,"y");
-    axisTextSize *= 1.1;
+    gStyle->SetTitleOffset(0.6,"y");
+    gStyle->SetTitleOffset(0.98,"x");
+    axisTextSize *= 1.3;
   }
   gStyle->SetTitleSize(axisTextSize,"xy");     // Set the 2 axes title size
   gStyle->SetLabelSize(axisTextSize/1.1,"xy");     // Set the 2 axes label size
@@ -112,7 +113,7 @@ int main(){
 
   //////// Creating canvas and base histogram
   int cW = 500, cH = 380;
-  if(isWide) cW = 880;
+  if(isWide) cW = 780;
   TCanvas can("can","", cW, cH);
   //TCanvas can("can","", 500, 410);
   float minX=0.20, maxX=0.54, minY=0.21, maxY=0.49;
@@ -211,10 +212,10 @@ int main(){
   if(isWide) {
     Ncols = 1;
     legX -= 0.02;
-    leg2X = legX+0.37;
+    leg2X = legX+0.42;
     legW = 0.15;
     legH = legSingle * results.size()/1.8;
-    legFontSize = 0.055;
+    legFontSize = 0.057;
   } 
   TLegend leg(legX, legY-legH, legX+legW, legY);
   leg.SetTextSize(legFontSize); leg.SetFillColor(0); 

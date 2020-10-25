@@ -54,6 +54,7 @@
 #include "TMath.h"
 #include "TROOT.h"
 #include "TMatrixT.h"
+#include "TLine.h"
 
 #include "styles.hpp"
 #include "keys_utils.hpp"

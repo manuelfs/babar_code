@@ -173,7 +173,7 @@ void PlotFinalFit2(TString textName, TTree *tree, int nbins, double minx, double
   for (int i = 1 ; i <= 68 ; i ++) {
     //if(i==37)i=41; 
     if(i==49)i=51; if(i==59)i=61; 
-    TString hname = "/cms2r0/slac/keys/root/Fit/pdfKeys_"; 
+    TString hname = "/cms2r0/slac/keys/root/fitNewx100/pdfKeys_"; 
     if(TagSample.Contains("x")) {hname = "/cms2r0/slac/keys/root/fit"; hname += TagSample; hname += "/pdfKeys_"; }
     hname += i; hname += "_Fit.root";
     TFile hfile(hname); 

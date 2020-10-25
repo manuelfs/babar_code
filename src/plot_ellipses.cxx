@@ -74,12 +74,12 @@ int main(){
 
   vector<vector<Results> > results;
   results.push_back({RD_BABAR,  RDs_BABAR});
-  results.push_back({RDs_LHCb});
-  results.push_back({RD_BelleHT,  RDs_BelleHT});
-  results.push_back({RDs_Bellepi});
-  results.push_back({RDs_LHCb2});
-  results.push_back({RD_BelleST, RDs_BelleST});
-  results.push_back({RD_HFLAV,  RDs_HFLAV});
+  // results.push_back({RDs_LHCb});
+  // results.push_back({RD_BelleHT,  RDs_BelleHT});
+  // results.push_back({RDs_Bellepi});
+  // results.push_back({RDs_LHCb2});
+  // results.push_back({RD_BelleST, RDs_BelleST});
+  // results.push_back({RD_HFLAV,  RDs_HFLAV});
   results.push_back({RD_SM,    RDs_SM});
 
 
@@ -177,22 +177,22 @@ int main(){
   } // Loop over results
 
   if(isWide){
-    Results RD_HFLAV4 ("noplot", RD_HFLAV.value, {static_cast<float>(3.4 * RD_HFLAV.errUp())}, {0}, kRed, RD_HFLAV.correl);
-    Results RDs_HFLAV4("noplot", RDs_HFLAV.value, {static_cast<float>(3.4* RDs_HFLAV.errUp())}, {0}, kRed, RD_HFLAV.correl);
-    vector<Results>  result({RD_HFLAV4,  RDs_HFLAV4});
+    // Results RD_HFLAV4 ("noplot", RD_HFLAV.value, {static_cast<float>(3.4 * RD_HFLAV.errUp())}, {0}, kRed, RD_HFLAV.correl);
+    // Results RDs_HFLAV4("noplot", RDs_HFLAV.value, {static_cast<float>(3.4* RDs_HFLAV.errUp())}, {0}, kRed, RD_HFLAV.correl);
+    // vector<Results>  result({RD_HFLAV4,  RDs_HFLAV4});
 
-    float rd = result[0].value, rds = result[1].value;
-    float erd = result[0].errUp(), erds = result[1].errUp();
-    getEllipse(erd, erds, result[0].correl, maxR, minR, angle);
-    ellipse.SetFillStyle(0);
-    ellipse.SetLineWidth(1);
-    ellipse.SetLineStyle(2);
-    ellipse.SetLineColor(result[0].color); 
-    ellipse.DrawEllipse(rd, rds, maxR, minR, 0, 360, angle, "c");
-    TLatex label;  //label.SetNDC(kTRUE);
-    label.SetTextAlign(23); label.SetTextSize(0.06);
-    label.SetTextColor(kRed+1);
-    label.DrawLatex(0.3, 0.365, "#font[62]{3#sigma}");
+    // float rd = result[0].value, rds = result[1].value;
+    // float erd = result[0].errUp(), erds = result[1].errUp();
+    // getEllipse(erd, erds, result[0].correl, maxR, minR, angle);
+    // ellipse.SetFillStyle(0);
+    // ellipse.SetLineWidth(1);
+    // ellipse.SetLineStyle(2);
+    // ellipse.SetLineColor(result[0].color); 
+    // ellipse.DrawEllipse(rd, rds, maxR, minR, 0, 360, angle, "c");
+    // TLatex label;  //label.SetNDC(kTRUE);
+    // label.SetTextAlign(23); label.SetTextSize(0.06);
+    // label.SetTextColor(kRed+1);
+    // label.DrawLatex(0.3, 0.365, "#font[62]{3#sigma}");
 
   }
 
