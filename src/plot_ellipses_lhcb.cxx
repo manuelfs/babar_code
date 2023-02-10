@@ -39,11 +39,11 @@ int main(){
 
   // Numbers from HFLAV Spring 2019
   // https://hflav-eos.web.cern.ch/hflav-eos/semi/spring19/html/RDsDsstar/RDRDs.html
-  Results RD_SM ("SM pred.", 0.299, {0.003}, {0}, kBlue-4);
-  Results RDs_SM("SM pred.", 0.258, {0.005}, {0}, kViolet+2);
+  Results RD_SM ("SM pred.", 0.298, {0.003}, {0}, kMagenta+1);
+  Results RDs_SM("SM pred.", 0.252, {0.005}, {0}, kViolet+2);
 
-  Results RD_HFLAV ("HFLAV aver.", 0.340, {0.027}, {0.013}, kRed, -0.38);
-  Results RDs_HFLAV("HFLAV aver.", 0.295, {0.011}, {0.008}, kRed, -0.38);
+  Results RD_HFLAV ("HFLAV aver.", 0.339, {0.026}, {0.014}, kRed, -0.39);
+  Results RDs_HFLAV("HFLAV aver.", 0.295, {0.010}, {0.010}, kRed, -0.39);
 
   Results RD_BABAR ("BABAR (HT)", 0.440, {0.058}, {0.042}, kGreen+2, -0.31);
   Results RDs_BABAR("BABAR (HT)", 0.332, {0.024}, {0.018}, kGreen+2, -0.31);
@@ -56,17 +56,20 @@ int main(){
 
   Results RDs_Bellepi("Belle (#pi/#rho)", 0.270, {0.035}, {0.027}, kOrange+1);
 
-  float syst_rd  = sqrt(pow(4.45,2) + pow(4.47,2) + pow(2.5,2) + pow(2,2))*0.01, stat_rd = 5.82*0.01; //Add. syst, MC stats, DD, Mult. syst
-  float syst_rds = sqrt(pow(1.86,2) + pow(1.69,2) + pow(0.9,2) + pow(0.9,2))*0.01, stat_rds = 1.8*0.01; //Add. syst, MC stats, DD, Mult. syst
-  Results RD_LHCb("LHCb (#mu)", 0.34, {stat_rd}, {syst_rd}, kRed-7, -0.38);
-  Results RDs_LHCb("LHCb (#mu)", 0.336, {stat_rds}, {syst_rds}, kCyan-4, -0.38);
-  
+  //float syst_rd  = sqrt(pow(4.45,2) + pow(4.47,2) + pow(2.5,2) + pow(2,2))*0.01, stat_rd = 5.82*0.01; //Add. syst, MC stats, DD, Mult. syst
+  //float syst_rds = sqrt(pow(1.86,2) + pow(1.69,2) + pow(0.9,2) + pow(0.9,2))*0.01, stat_rds = 1.8*0.01; //Add. syst, MC stats, DD, Mult. syst
+  //Results RD_LHCb("LHCb (#mu)", 0.34, {stat_rd}, {syst_rd}, kRed-7, -0.38);
+  //Results RDs_LHCb("LHCb (#mu)", 0.336, {stat_rds}, {syst_rds}, kCyan-4, -0.38);
   Results RDs_LHCb1("LHCb (#mu)", 0.336, {0.027}, {0.030}, kCyan-2);
   
-  Results RD_LHCb2("LHCb2 (#mu)", 0.34, {0.09*0.34}, {0.09*0.34}, kRed+2, -0.38);
-  Results RDs_LHCb2("LHCb2 (#mu)", 0.336, {0.03*0.336}, {0.03*0.336}, kCyan-2, -0.38);
+  Results RDs_LHCb3pi("LHCb (#pi#pi#pi)", 0.283, {0.019}, {0.029}, kMagenta+2);
 
-  Results RDs_LHCb3pi("LHCb (#pi#pi#pi)", 0.280, {0.018}, {0.029}, kMagenta+2);
+  float Run1RD = 0.441, Run1RDs= 0.281;
+  Results RD_LHCb("LHCb (#mu)", Run1RD, {0.060}, {0.066}, kBlue-10, -0.43);
+  Results RDs_LHCb("LHCb (#mu)", Run1RDs, {0.018}, {0.023}, kCyan-4, -0.43);
+  
+  Results RD_LHCb2("LHCb2 (#mu)",  Run1RD,  {static_cast<float>(Run1RD*0.06)},  {static_cast<float>(0.1*Run1RD)}, kBlue-4, -0.38);
+  Results RDs_LHCb2("LHCb2 (#mu)", Run1RDs, {static_cast<float>(Run1RDs*0.03)}, {static_cast<float>(0.06*Run1RDs)}, kCyan-2, -0.38);
 
   if(isWide){
     RD_BABAR.name = "BaBar, PRL #font[62]{109}, 101802 (2012)";
@@ -75,25 +78,25 @@ int main(){
     RD_BelleST.name = "Belle, PRL #font[62]{124}, 161803 (2020)";
     RDs_BelleST.name = "Belle, PRL #font[62]{124}, 161803 (2020)";
     RDs_Bellepi.name = "Belle, PRL #font[62]{118}, 211801 (2017)";
-    RD_LHCb.name = "LHCb muonic Run 1 projection";
+    RD_LHCb.name = "LHCb muonic Run 1 (2022)";
     RD_LHCb2.name = "LHCb muonic Run 2 projection";
     RDs_LHCb1.name = "LHCb, PRL #font[62]{115}, 111803 (2015)";
     RDs_LHCb3pi.name = "LHCb, PRL #font[62]{120}, 171802 (2018)";
-    RD_HFLAV.name = "HFLAV average Spring 2019";
-    RD_SM.name = "SM predictions";
+    RD_HFLAV.name = "HFLAV average Spring 2021";
+    RD_SM.name = "SM predictions (HFLAV aver.)";
   }
 
   vector<vector<Results> > results;
   results.push_back({RD_BABAR,  RDs_BABAR});
-  results.push_back({RDs_LHCb1});
+  //results.push_back({RDs_LHCb1});
   results.push_back({RD_BelleHT,  RDs_BelleHT});
   results.push_back({RDs_Bellepi});
   results.push_back({RDs_LHCb3pi});
   results.push_back({RD_BelleST, RDs_BelleST});
-  //results.push_back({RD_HFLAV,  RDs_HFLAV});
-  results.push_back({RD_SM,    RDs_SM});
   results.push_back({RD_LHCb, RDs_LHCb});
-  results.push_back({RD_LHCb2, RDs_LHCb2});
+  results.push_back({RD_HFLAV,  RDs_HFLAV});
+  //results.push_back({RD_LHCb2, RDs_LHCb2});
+  results.push_back({RD_SM,    RDs_SM});
 
 
   //////// Setting style
@@ -249,9 +252,15 @@ int main(){
       hLeg.push_back(new TH1D(hname,"",10,0,10));
       hLeg.back()->SetLineWidth(lWidth);
       hLeg.back()->SetLineColor(results[ind][0].color);
-      hLeg.back()->SetFillColorAlpha(results[ind][0].color, alpha);
-      if(ind%2==0) leg.AddEntry((hLeg.back()), results[ind][0].name, "lf");
-      else leg2.AddEntry((hLeg.back()), results[ind][0].name, "lf");
+      TString legSquare = "lf";
+      float thisAlpha = alpha;
+      if(results[ind][0].name.Contains("muonic")) {
+        legSquare = "f";
+        thisAlpha = 0.8;
+      }
+      hLeg.back()->SetFillColorAlpha(results[ind][0].color, thisAlpha);
+      if(ind%2==0) leg.AddEntry((hLeg.back()), results[ind][0].name, legSquare);
+      else leg2.AddEntry((hLeg.back()), results[ind][0].name, legSquare);
     }
     leg.Draw(); leg2.Draw();
   }
@@ -259,7 +268,7 @@ int main(){
   histo.Draw("same axis");
 
 
-  TString plotName = "plots/rdx_ellipses.pdf";
+  TString plotName = "plots/rdx_ellipses_lhcb.pdf";
   can.SaveAs(plotName);
 
   return 0;
