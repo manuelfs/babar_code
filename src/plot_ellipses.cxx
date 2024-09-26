@@ -32,6 +32,8 @@ void getEllipse(float s1, float s2, float corr, float &r1, float &r2, float &ang
 int main(){
 
   bool isWide = true;
+  bool drawTotalEllipse = true;
+  bool drawHFLAV = true;
 
   //////// Results
   // int cBabar = kGreen, cLHCb = kCyan+1, cBelleHT = kBlue, cBelleST = kOrange;
@@ -63,8 +65,8 @@ int main(){
     RD_BABAR.name = "BaBar, PRL #font[62]{109}, 101802 (2012)";
     RD_BelleHT.name = "Belle, PRD #font[62]{92}, 072014 (2015)";
     //RDs_BelleST.name = "Belle, PRD #font[62]{94}, 072007 (2016)";
-    RD_BelleST.name = "Belle, Moriond EW (2019)";
-    RDs_BelleST.name = "Belle, Moriond EW (2019)";
+    RD_BelleST.name = "Belle, PRL #font[62]{124}, 161803 (2020)";
+    RDs_BelleST.name = "Belle, PRL #font[62]{124}, 161803 (2020)";
     RDs_Bellepi.name = "Belle, PRL #font[62]{118}, 211801 (2017)";
     RDs_LHCb.name = "LHCb, PRL #font[62]{115}, 111803 (2015)";
     RDs_LHCb2.name = "LHCb, PRL #font[62]{120}, 171802 (2018)";
@@ -74,12 +76,12 @@ int main(){
 
   vector<vector<Results> > results;
   results.push_back({RD_BABAR,  RDs_BABAR});
-  // results.push_back({RDs_LHCb});
-  // results.push_back({RD_BelleHT,  RDs_BelleHT});
-  // results.push_back({RDs_Bellepi});
-  // results.push_back({RDs_LHCb2});
-  // results.push_back({RD_BelleST, RDs_BelleST});
-  // results.push_back({RD_HFLAV,  RDs_HFLAV});
+  results.push_back({RDs_LHCb});
+  results.push_back({RD_BelleHT,  RDs_BelleHT});
+  results.push_back({RDs_Bellepi});
+  results.push_back({RDs_LHCb2});
+  results.push_back({RD_BelleST, RDs_BelleST});
+  if(drawHFLAV) results.push_back({RD_HFLAV,  RDs_HFLAV});
   results.push_back({RD_SM,    RDs_SM});
 
 
@@ -102,7 +104,7 @@ int main(){
   gStyle->SetPadTickY(1);             // Ticks at the right
 
   if(isWide) {
-    gStyle->SetTitleOffset(0.9,"y");
+    gStyle->SetTitleOffset(0.8,"y");
     axisTextSize *= 1.1;
   }
   gStyle->SetTitleSize(axisTextSize,"xy");     // Set the 2 axes title size
@@ -176,23 +178,23 @@ int main(){
     }
   } // Loop over results
 
-  if(isWide){
-    // Results RD_HFLAV4 ("noplot", RD_HFLAV.value, {static_cast<float>(3.4 * RD_HFLAV.errUp())}, {0}, kRed, RD_HFLAV.correl);
-    // Results RDs_HFLAV4("noplot", RDs_HFLAV.value, {static_cast<float>(3.4* RDs_HFLAV.errUp())}, {0}, kRed, RD_HFLAV.correl);
-    // vector<Results>  result({RD_HFLAV4,  RDs_HFLAV4});
+  if(isWide && drawTotalEllipse){
+    Results RD_HFLAV4 ("noplot", RD_HFLAV.value, {static_cast<float>(3.56 * RD_HFLAV.errUp())}, {0}, kRed, RD_HFLAV.correl);
+    Results RDs_HFLAV4("noplot", RDs_HFLAV.value, {static_cast<float>(3.56* RDs_HFLAV.errUp())}, {0}, kRed, RD_HFLAV.correl);
+    vector<Results>  result({RD_HFLAV4,  RDs_HFLAV4});
 
-    // float rd = result[0].value, rds = result[1].value;
-    // float erd = result[0].errUp(), erds = result[1].errUp();
-    // getEllipse(erd, erds, result[0].correl, maxR, minR, angle);
-    // ellipse.SetFillStyle(0);
-    // ellipse.SetLineWidth(1);
-    // ellipse.SetLineStyle(2);
-    // ellipse.SetLineColor(result[0].color); 
-    // ellipse.DrawEllipse(rd, rds, maxR, minR, 0, 360, angle, "c");
-    // TLatex label;  //label.SetNDC(kTRUE);
-    // label.SetTextAlign(23); label.SetTextSize(0.06);
-    // label.SetTextColor(kRed+1);
-    // label.DrawLatex(0.3, 0.365, "#font[62]{3#sigma}");
+    float rd = result[0].value, rds = result[1].value;
+    float erd = result[0].errUp(), erds = result[1].errUp();
+    getEllipse(erd, erds, result[0].correl, maxR, minR, angle);
+    ellipse.SetFillStyle(0);
+    ellipse.SetLineWidth(1);
+    ellipse.SetLineStyle(2);
+    ellipse.SetLineColor(result[0].color); 
+    ellipse.DrawEllipse(rd, rds, maxR, minR, 0, 360, angle, "c");
+    TLatex label;  //label.SetNDC(kTRUE);
+    label.SetTextAlign(23); label.SetTextSize(0.06);
+    label.SetTextColor(kRed+1);
+    //label.DrawLatex(0.3, 0.365, "#font[62]{3.1#sigma}");
 
   }
 

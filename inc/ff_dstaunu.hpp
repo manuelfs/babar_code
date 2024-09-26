@@ -57,8 +57,8 @@ public:
   static constexpr double GF   = 0.000011664;
   static constexpr double PI   = 3.14159265;
   static constexpr double hbar = 6.582119e-25;
-  static constexpr double mb_quark = 4.20;  // [GeV] in the MSbar scheme, evaluated at mb. 
-  static constexpr double mc_quark = 0.901; // From Xing, Zhang, Zhou (2008)
+  static constexpr double mb_quark = 4.18;  // [GeV] in the MSbar scheme, evaluated at mb. 
+  static constexpr double mc_quark = 1.27; // From Xing, Zhang, Zhou (2008)
 
   // Secondary constants
   double _mB, _mBSP8, _BLifeTime;

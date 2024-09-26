@@ -39,14 +39,14 @@ int main(){
 
   // Numbers from HFLAV Spring 2019
   // https://hflav-eos.web.cern.ch/hflav-eos/semi/spring19/html/RDsDsstar/RDRDs.html
-  Results RD_SM ("SM pred.", 0.299, {0.003}, {0}, kViolet-2);
+  Results RD_SM ("SM pred.", 0.299, {0.003}, {0}, kViolet+1);
   Results RDs_SM("SM pred.", 0.258, {0.005}, {0}, kViolet+2);
 
   Results RD_HFLAV ("HFLAV aver.", 0.340, {0.027}, {0.013}, kRed, -0.38);
   Results RDs_HFLAV("HFLAV aver.", 0.295, {0.011}, {0.008}, kRed, -0.38);
 
-  Results RD_BABAR ("BABAR (HT)", 0.440, {0.058}, {0.042}, kGreen+2, -0.31);
-  Results RDs_BABAR("BABAR (HT)", 0.332, {0.024}, {0.018}, kGreen+2, -0.31);
+  Results RD_BABAR ("BABAR (HT)", 0.440, {0.058}, {0.042}, kGreen+1, -0.31);
+  Results RDs_BABAR("BABAR (HT)", 0.332, {0.024}, {0.018}, kGreen+1, -0.31);
 
   Results RD_BABARe ("BABAR electron", 0.3466, {0.0823}, {0.04}, kGreen+1, -0.41);
   Results RDs_BABARe("BABAR HT electron", 0.3671, {0.0342}, {0.02}, kGreen+1, -0.41);
@@ -150,6 +150,7 @@ int main(){
       ellipse.SetLineColor(result[0].color); ellipse.SetLineWidth(lWidth);
       if(result[0].name.Contains("electron")) ellipse.SetLineStyle(2);
       else if(result[0].name.Contains("muon")) ellipse.SetLineStyle(3);
+      else if(result[0].name.Contains("HFLAV")) ellipse.SetLineStyle(5);
       else ellipse.SetLineStyle(1);
       ellipse.DrawEllipse(rd, rds, maxR, minR, 0, 360, angle, "c");
       if(result[0].name.Contains("SM")) ellipse.DrawEllipse(rd, rds, maxR, minR, 0, 360*10, angle, "c");
@@ -240,8 +241,12 @@ int main(){
       hLeg.back()->SetLineWidth(lWidth);
       hLeg.back()->SetLineColor(results[ind][0].color);
       hLeg.back()->SetFillColorAlpha(results[ind][0].color, alpha);
+      if(results[ind][0].name.Contains("aver") || results[ind][0].name.Contains("SM")) 
+	hLeg.back()->SetFillColorAlpha(results[ind][0].color, alpha+0.32);
+      else hLeg.back()->SetFillColorAlpha(results[ind][0].color, alpha);
       if(results[ind][0].name.Contains("electron")) hLeg.back()->SetLineStyle(2);
       else if(results[ind][0].name.Contains("muon")) hLeg.back()->SetLineStyle(3);
+      else if(results[ind][0].name.Contains("HFLAV")) hLeg.back()->SetLineStyle(5);
       else hLeg.back()->SetLineStyle(1);
       if(ind%2==0) leg.AddEntry((hLeg.back()), results[ind][0].name, "lf");
       else leg2.AddEntry((hLeg.back()), results[ind][0].name, "lf");

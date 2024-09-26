@@ -16,7 +16,7 @@
 
 using namespace std;
 
-void getEllipse(float s1, float s2, float corr, float &r1, float &r2, float &angle){
+void getEllipse(float s1, float s2, float corr, float &r1, float &r2, float &angle, bool do68CI){
   float sum = pow(s1,2)+pow(s2,2);
   float diff = pow(s1,2)-pow(s2,2);
   float root = pow(s1,4) - 2*pow(s1,2)*pow(s2,2) + 4*pow(s1,2)*pow(corr,2)*pow(s2,2) + pow(s2,4);
@@ -25,25 +25,26 @@ void getEllipse(float s1, float s2, float corr, float &r1, float &r2, float &ang
 
   if(corr==0) angle = 90;
   else angle = -180/3.141593*atan((diff-root)/(2*corr*s1*s2)); // Eigenvector for r1
-  r1 = sqrt((sum+root)/2.); // Largest eigenvalue of the cov. matrix
-  r2 = sqrt((sum-root)/2.); // Smallest eigenvalue of the cov. matrix
+  float factor = (do68CI ? 1.51 : 1.); // Factor to cover 68% of the confidence interval
+  r1 = sqrt((sum+root)/2.)*factor; // Largest eigenvalue of the cov. matrix
+  r2 = sqrt((sum-root)/2.)*factor; // Smallest eigenvalue of the cov. matrix
 }
 
 int main(){
 
-  bool isWide = true;
+  bool isWide = true, do68CI = true;
 
   //////// Results
   // int cBabar = kGreen, cLHCb = kCyan+1, cBelleHT = kBlue, cBelleST = kOrange;
   // int cAverage = kRed+1, cSM = kGreen+2;
 
-  // Numbers from HFLAV Spring 2019
-  // https://hflav-eos.web.cern.ch/hflav-eos/semi/spring19/html/RDsDsstar/RDRDs.html
-  Results RD_SM ("SM pred.", 0.298, {0.003}, {0}, kMagenta+1);
-  Results RDs_SM("SM pred.", 0.252, {0.005}, {0}, kViolet+2);
+  // Numbers from HFLAV Summer 2023
+  // https://hflav-eos.web.cern.ch/hflav-eos/semi/summer23/html/RDsDsstar/RDRDs.html
+  Results RD_SM ("SM pred.", 0.298, {0.004}, {0}, kMagenta+1);
+  Results RDs_SM("SM pred.", 0.254, {0.005}, {0}, kViolet+2);
 
-  Results RD_HFLAV ("HFLAV aver.", 0.339, {0.026}, {0.014}, kRed, -0.39);
-  Results RDs_HFLAV("HFLAV aver.", 0.295, {0.010}, {0.010}, kRed, -0.39);
+  Results RD_HFLAV ("HFLAV aver.", 0.342, {0.026}, {0.00}, kRed, -0.39);
+  Results RDs_HFLAV("HFLAV aver.", 0.287, {0.012}, {0.0}, kRed, -0.39);
 
   Results RD_BABAR ("BABAR (HT)", 0.440, {0.058}, {0.042}, kGreen+2, -0.31);
   Results RDs_BABAR("BABAR (HT)", 0.332, {0.024}, {0.018}, kGreen+2, -0.31);
@@ -56,20 +57,25 @@ int main(){
 
   Results RDs_Bellepi("Belle (#pi/#rho)", 0.270, {0.035}, {0.027}, kOrange+1);
 
+  Results RDs_Belle2HT("Belle II (HT)", 0.267, {0.040}, {0.031}, kCyan-2);
+
   //float syst_rd  = sqrt(pow(4.45,2) + pow(4.47,2) + pow(2.5,2) + pow(2,2))*0.01, stat_rd = 5.82*0.01; //Add. syst, MC stats, DD, Mult. syst
   //float syst_rds = sqrt(pow(1.86,2) + pow(1.69,2) + pow(0.9,2) + pow(0.9,2))*0.01, stat_rds = 1.8*0.01; //Add. syst, MC stats, DD, Mult. syst
   //Results RD_LHCb("LHCb (#mu)", 0.34, {stat_rd}, {syst_rd}, kRed-7, -0.38);
   //Results RDs_LHCb("LHCb (#mu)", 0.336, {stat_rds}, {syst_rds}, kCyan-4, -0.38);
   Results RDs_LHCb1("LHCb (#mu)", 0.336, {0.027}, {0.030}, kCyan-2);
   
-  Results RDs_LHCb3pi("LHCb (#pi#pi#pi)", 0.283, {0.019}, {0.029}, kMagenta+2);
+  Results RDs_LHCb3pi("LHCb (#pi#pi#pi)", 0.267, {0.012}, {0.019}, kMagenta+2);
 
   float Run1RD = 0.441, Run1RDs= 0.281;
-  Results RD_LHCb("LHCb (#mu)", Run1RD, {0.060}, {0.066}, kBlue-10, -0.43);
-  Results RDs_LHCb("LHCb (#mu)", Run1RDs, {0.018}, {0.023}, kCyan-4, -0.43);
+  Results RD_LHCb("LHCb (#mu)", Run1RD, {0.060}, {0.066}, kBlue, -0.43);
+  Results RDs_LHCb("LHCb (#mu)", Run1RDs, {0.018}, {0.024}, kCyan-4, -0.43);
   
   Results RD_LHCb2("LHCb2 (#mu)",  Run1RD,  {static_cast<float>(Run1RD*0.06)},  {static_cast<float>(0.1*Run1RD)}, kBlue-4, -0.38);
   Results RDs_LHCb2("LHCb2 (#mu)", Run1RDs, {static_cast<float>(Run1RDs*0.03)}, {static_cast<float>(0.06*Run1RDs)}, kCyan-2, -0.38);
+
+  Results RDp_LHCb("LHCb (D^{+} #mu)", 0.249, {0.043}, {0.047}, kGreen+3, -0.39);
+  Results RDsp_LHCb("LHCb (D^{+} #mu)", 0.402, {0.081}, {0.085}, kCyan-4, -0.39);
 
   if(isWide){
     RD_BABAR.name = "BaBar, PRL #font[62]{109}, 101802 (2012)";
@@ -78,11 +84,13 @@ int main(){
     RD_BelleST.name = "Belle, PRL #font[62]{124}, 161803 (2020)";
     RDs_BelleST.name = "Belle, PRL #font[62]{124}, 161803 (2020)";
     RDs_Bellepi.name = "Belle, PRL #font[62]{118}, 211801 (2017)";
-    RD_LHCb.name = "LHCb muonic Run 1 (2022)";
+    RDs_Belle2HT.name = "Belle II, 2401.02840 (2023)";
+    RD_LHCb.name = "LHCb, PRL #font[62]{131}, 111802 (2023)";
+    RDp_LHCb.name = "LHCb_PAPER-2024-007 (2024)";
     RD_LHCb2.name = "LHCb muonic Run 2 projection";
     RDs_LHCb1.name = "LHCb, PRL #font[62]{115}, 111803 (2015)";
-    RDs_LHCb3pi.name = "LHCb, PRL #font[62]{120}, 171802 (2018)";
-    RD_HFLAV.name = "HFLAV average Spring 2021";
+    RDs_LHCb3pi.name = "LHCb, PRD #font[62]{108}, 012018 (2023)";
+    RD_HFLAV.name = "HFLAV average Moriond 2024";
     RD_SM.name = "SM predictions (HFLAV aver.)";
   }
 
@@ -94,8 +102,10 @@ int main(){
   results.push_back({RDs_LHCb3pi});
   results.push_back({RD_BelleST, RDs_BelleST});
   results.push_back({RD_LHCb, RDs_LHCb});
+  results.push_back({RDs_Belle2HT});
   results.push_back({RD_HFLAV,  RDs_HFLAV});
-  //results.push_back({RD_LHCb2, RDs_LHCb2});
+  results.push_back({RDp_LHCb, RDsp_LHCb});
+  results.push_back({RD_LHCb2, RDs_LHCb2});
   results.push_back({RD_SM,    RDs_SM});
 
 
@@ -132,7 +142,7 @@ int main(){
   //TCanvas can("can","", 500, 410);
   float minX=0.20, maxX=0.54, minY=0.21, maxY=0.49;
   if(isWide){
-    minX = 0.19; maxX = 0.54; minY = 0.207; maxY = 0.52;
+    minX = 0.14; maxX = 0.58; minY = 0.2; maxY = 0.59;
   }
   TH1D histo("histo", "", 10, minX, maxX);
   histo.SetMinimum(minY);
@@ -157,7 +167,7 @@ int main(){
     if(result.size()>1){
       float rd = result[0].value, rds = result[1].value;
       float erd = result[0].errUp(), erds = result[1].errUp();
-      getEllipse(erd, erds, result[0].correl, maxR, minR, angle);
+      getEllipse(erd, erds, result[0].correl, maxR, minR, angle, do68CI);
       if(result[0].name.Contains("aver") || result[0].name.Contains("SM")) 
 	ellipse.SetFillColorAlpha(result[0].color, alpha+0.32);
       else if(result[0].name.Contains("muonic")) 
@@ -226,13 +236,15 @@ int main(){
     Ncols = 1;
     legX -= 0.01;
     leg2X = legX+0.37;
-    legW = 0.1;
+    legW = 0.33;
     legH = legSingle * results.size()/1.8;
-    legFontSize = 0.045;
+    legFontSize = 0.043;
   } 
   TLegend leg(legX, legY-legH, legX+legW, legY);
-  leg.SetTextSize(legFontSize); leg.SetFillColor(0); 
-  leg.SetFillStyle(0); leg.SetBorderSize(0); leg.SetNColumns(Ncols);
+  leg.SetTextSize(legFontSize);
+  //leg.SetFillColor(0); leg.SetFillStyle(0);
+  leg.SetBorderSize(0); leg.SetNColumns(Ncols);
+  leg.SetMargin(0.1); // Controls size of the boxes with the entry lines
   TLegend leg2(leg);
   leg2.SetX1(leg2X); leg2.SetX2(leg2X+legW); 
   vector<TH1D*> hLeg;
